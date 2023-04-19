@@ -3,12 +3,6 @@
 
 # Manual de desenvolvimento Indie
 
-# Indice:
-[Introdução](Capitulos/introducao.md)
-
-
-[Capítulo 1](Capitulos/capitulo1.md)
-
 # Introdução:
 
 O texto a seguir é um manual para desenvolvimento de jogos *indie*, ou seja, jogos criados em um contexto amador, de maneira independente. O foco desse material é principalmente prático, com um pouco de teoria quando se mostrar necessário. Durante o decorrer do manual, dois projetos de jogos serão criados, e o código fonte deles pode ser visualizado e baixado na página do github a seguir: (pag a criar) !!TODO
