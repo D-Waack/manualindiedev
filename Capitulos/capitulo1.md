@@ -3,12 +3,13 @@
 <br>
 
 # Capítulo 1: Design
-"É perigoso ir sozinho! Leve isso." - Velho em uma caverna, "The Legend of Zelda" (1986)
+"É perigoso ir sozinho! Leve isto." - Velho em uma caverna, "The Legend of Zelda" (1986)
 
 ![Capítulo 1 capa](https://i.imgur.com/GHZYcAZ.jpg "It's dangerous to go alone! Take this.")
 
 
-A especificação de qualquer *software* é uma das etapas mais importantes.  
+A especificação de qualquer *software* é uma das etapas mais importantes no seu desenvolvimento.   
+Um jogo, 
 Você pode estar tentando começar a programar as mecânicas de seu jogo imediatamente, ou quem sabe planejando desenhar ou modelar seus personagens e fundos imediatamente.  
 Enquanto ambos são trabalhos que sua equipe fará eventualmente, eles não devem ser a prioridade.  
 
