@@ -1,9 +1,9 @@
 <br>
 <br>
 
-# Manual de desenvolvimento Indie
+# Manual de Desenvolvimento Indie
 
-# Indice:
+## Indice:
 * [Introdução](Capitulos/introducao.md) - Introdução do manual, considerações iniciais, detalhes importantes sobre o conteúdo 
 
 * [Capítulo 1: Design](Capitulos/capitulo1.md) - Importância do Design, Conceitos Preliminares, GDDs
