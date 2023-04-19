@@ -114,4 +114,4 @@ Durante o manual, haverá uma sequência de períodos onde a equipe deverá dese
 
 Com todas estas considerações em mente, sem mais delongas, vamos ao conteúdo real do manual:
 
-[Capítulo 1: Design](Capitulos/capitulo1.md) 
+[Capítulo 1: Design](capitulo1.md) 
