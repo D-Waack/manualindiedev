@@ -8,7 +8,7 @@ O texto a seguir é um manual para desenvolvimento de jogos *indie*, ou seja, jo
 É um erro comum de pessoas que aspiram tornarem-se criadores de jogos se ocuparem com livros, vídeos de análise e *design*, gravações de GDCs (Game Development Conferences), comentários e entrevistas de desenvolvedores, entre várias outras categorias de vídeos educativos sobre jogos. Eu mesmo passo boa parte do meu tempo livre estudando estes diversos recursos online.
 
 ![GDC - Workshop de Level Design: Projetando Celeste](https://i.imgur.com/IT5UV3h.jpg "GDC - Workshop de Level Design: Projetando Celeste")
-Imagem de GDC: "Workshop de Level Design: Projetando Celeste", de Matt Thorson, desenvolvedor líder do jogo Celeste, apresentado em 2017 e publicado em 2018. Link: https://www.youtube.com/watch?v=4RlpMhBKNr0
+<sup><sub> Imagem de GDC: "Workshop de Level Design: Projetando Celeste", de Matt Thorson, desenvolvedor líder do jogo Celeste, apresentado em 2017 e publicado em 2018. Link: https://www.youtube.com/watch?v=4RlpMhBKNr0 </sup></sub>
 
 Enquanto todos estes são ótimas fontes de aprendizado, uma coisa deve ficar clara a você: Você não vai realmente aprender a fazer um jogo até o momento em que colocar essa teoria na prática. Dessa forma, a melhor maneira de começar a sua jornada de criação de jogos é "aprender fazendo", com uma boa base de instruções para que você e sua equipe não se percam no caminho.
 
