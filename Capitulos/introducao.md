@@ -16,17 +16,19 @@ Existem vários outros manuais, artigos, guias e livros que propõem esta mesma 
 
 Minha intenção com esse manual é oferecer um conteúdo diferente, tentando ao máximo casar a praticidade e simplicidade dos guias informais com a base teórica encontrada nos livros e artigos. Minha esperança é que ao final da leitura você seja capaz de planejar e executar o projeto da criação de um jogo em qualquer gênero ou ambiente. 
 
-Este manual é direcionado a qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador, sejam jogos 3D ou 2D. É claro, o manual vai assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
+O manual é direcionado a qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador, sejam jogos 3D ou 2D. Vou assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
 
-Não pense por um momento que o processo de criação de um jogo será simples, rápido ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas. Talvez você já tenha tentado criar um jogo e falhado algumas vezes, ou talvez seja a sua primeira tentativa. A experiência ajuda, mas o fator mais importante é que tenha o empenho e ânimo para levar seu projeto do zero ao sucesso. Eu mesmo passei pela experiência de falhar em vários projetos até aperfeiçoar uma maneira ideal para a construção de jogos que funcionava para mim, com o apoio da Engenharia de Software, de muito estudo, da opinião de outros desenvolvedores, e de muito empenho.
+Não pense por um momento que o processo de criação de um jogo será simples, rápido ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas. 
 
-É claro, isso não quer dizer que o meu método vai funcionar para qualquer um. E eu não tenho a presunção de dizer que você deve seguir os meus passos para alcançar o sucesso.  
+Talvez você já tenha tentado criar um jogo e falhado algumas vezes, ou talvez seja a sua primeira tentativa. A experiência ajuda, mas o fator mais importante é que tenha o empenho e ânimo para levar seu projeto do zero ao sucesso. Eu mesmo passei pela experiência de falhar em vários projetos até aperfeiçoar uma maneira ideal para a construção de jogos que funcionava para mim, com o apoio da Engenharia de Software, de muito estudo, da opinião de outros desenvolvedores, e de muito empenho.
+
+Obviamente, isso não quer dizer que o meu método vai funcionar para qualquer um. E eu não tenho a arrogância de dizer que você deve seguir os meus passos para alcançar o sucesso.  
 Enquanto eu ofereço orientações específicas, em vários momentos deste manual você vai encontrar instruções e prazos flexíveis, ou várias opções diferentes para executar uma única tarefa. Descrevo estas várias opções na esperança de que você possa adaptar ao máximo o projeto ao seu ritmo de trabalho, e da sua equipe.
 
 Lembre-se, os responsáveis pelo seu projeto são você e seu time. Enquanto descrevo aqui uma sequência de orientações para que seu projeto siga em frente, todo o esforço e tempo gasto será seu/de vocês. Da mesma forma, o mérito do produto final será completamente seu e do seu time. Te desejo sucesso nessa jornada!
 
 ![Painel, Falling Dream Shards](https://img.itch.zone/aW1nLzEwNzg1OTQzLmdpZg==/original/s411yZ.gif "Falling Dream Shards - Daniel Waack")
-Pixel art criada por mim para a _intro_ de um jogo. 
+<sup><sub> Pixel art criada por mim para a _intro_ de um jogo. </sup></sub>
 
 <br>
 <br>
@@ -109,5 +111,7 @@ Não é incomum que jogos grandes levem anos para serem construídos. O mesmo ac
 Durante o manual, haverá uma sequência de períodos onde a equipe deverá desenvolver determinados aspectos do jogo (*sprints*). É sempre possível aumentar estes períodos, a custo de demorar mais tempo para desenvolver o seu projeto. Caso o tempo livre de sua equipe seja limitado, existe flexibilidade para determinar os períodos de ação. Isso fica a critério de você(s).
 
 <br>
-<br>
-<br>
+
+Com todas estas considerações em mente, sem mais delongas, vamos ao conteúdo real do manual:
+
+[Capítulo 1: Design](Capitulos/capitulo1.md) 
