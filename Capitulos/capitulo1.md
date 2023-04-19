@@ -5,7 +5,7 @@
 # Capítulo 1: Design
 "É perigoso ir sozinho! Leve isso." - Velho em uma caverna, "The Legend of Zelda" (1986)
 
-![Capítulo 1 capa](https://upload.wikimedia.org/wikipedia/pt/b/b2/It%27s_dangerous_to_go_alone%21_Take_this..png "It's dangerous to go alone! Take this.")
+![Capítulo 1 capa](https://i.imgur.com/GHZYcAZ.jpg "It's dangerous to go alone! Take this.")
 
 
 A especificação de qualquer *software* é uma das etapas mais importantes.  
