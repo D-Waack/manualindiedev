@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Manual de desenvolvimento Indie</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+                background-color: black;
+                color: white;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <br>
+<br>
+<h1 id="manual-de-desenvolvimento-indie">Manual de desenvolvimento Indie</h1>
+<h1 id="introdução">Introdução:</h1>
+<p>O texto a seguir é um manual para desenvolvimento de jogos <em>indie</em>, ou seja, jogos criados em um contexto amador. O foco desse material é principalmente prático, com um pouco de teoria quando se mostrar necessário.</p>
+<p>Durante o decorrer do manual, dois projetos de jogos serão criados, e o código fonte deles pode ser visualizado e baixado na página do github a seguir: (pag a criar) !!TODO</p>
+<p>É um erro comum de pessoas que aspiram tornarem-se criadores de jogos se ocuparem com livros, vídeos de análise e <em>design</em>, gravações de GDCs (Game Development Conferences), comentários e entrevistas de desenvolvedores, entre várias outras categorias de vídeos educativos sobre jogos. Eu mesmo passo boa parte do meu tempo livre estudando estes diversos recursos online.</p>
+<p><img src="https://i.imgur.com/IT5UV3h.jpg" alt="GDC - Workshop de Level Design: Projetando Celeste" title="GDC - Workshop de Level Design: Projetando Celeste">
+Imagem de GDC: &quot;Workshop de Level Design: Projetando Celeste&quot;, de Matt Thorson, desenvolvedor líder do jogo Celeste. Link: <a href="https://www.youtube.com/watch?v=4RlpMhBKNr0">https://www.youtube.com/watch?v=4RlpMhBKNr0</a></p>
+<p>Enquanto estes são ótimas fontes de aprendizado, uma coisa deve ficar clara: Você não vai realmente aprender a fazer um jogo até o momento que colocar essa teoria na prática. Dessa forma, a melhor maneira de começar a sua jornada de criação de jogos é &quot;aprender fazendo&quot;, com uma boa base de instruções para que você não se perca no caminho.</p>
+<p>Existem vários outros manuais, artigos, guias e livros que propõem esta mesma ideia. Porém, os mesmos costumam ser focados em um gênero de jogos específico, ou atrelados completamente a um ambiente, ou simples/vagos demais, e muitas vezes sem embasamento em uma teoria para o desenvolvimento dos projetos. Ainda muitos guias e tutoriais vão te oferecer um módulo pronto, sem se preocupar em explicar como funciona ou o que está acontecendo no código.</p>
+<p>Minha intenção com esse manual é oferecer um conteúdo diferente. E minha esperança é que ao final da leitura você seja capaz de planejar e executar o projeto da criação de um jogo em qualquer gênero ou ambiente.</p>
+<p>Quanto ao público alvo, quero dizer que seja qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador, sejam jogos 3D ou 2D. É claro, existem restrições ao que um</p>
+<p>Não pense por um momento que esse processo será simples ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas.</p>
+<p>Talvez você já tenha tentado criar um jogo e falhado algumas vezes, ou talvez seja a sua primeira tentativa. A experiência ajuda, mas o fator mais importante é que tenha o empenho e ânimo para levar este projeto do zero ao sucesso.</p>
+<p>Eu mesmo passei pela experiência de falhar em vários projetos até aperfeiçoar uma maneira ideal para a construção de jogos que funcionava para mim, com o apoio da Engenharia de Software, de muito estudo, da opinião de outros desenvolvedores, e de muito empenho.</p>
+<p>É claro, isso não quer dizer que o meu método vai funcionar para qualquer um. E eu não tenho a presunção de dizer que você deve seguir os meus passos para alcançar o sucesso.<br>
+Enquanto eu ofereço orientações específicas, em vários momentos deste manual você vai encontrar instruções e prazos flexíveis, ou várias opções diferentes para executar uma única tarefa. Descrevo estas várias opções na esperança de que você possa adaptar ao máximo o projeto ao seu ritmo de trabalho, e da sua equipe.</p>
+<p>Lembre-se, a solução para os seus problemas não cairá do céu. Enquanto descrevo aqui uma sequência de orientações para que seu projeto siga em frente, todo o esforço e tempo gasto será seu. Da mesma forma, o mérito do produto final será completamente seu e do seu time. Te desejo sucesso nessa jornada!</p>
+<p><img src="https://img.itch.zone/aW1nLzEwNzg1OTQzLmdpZg==/original/s411yZ.gif" alt="Painel, Falling Dream Shards" title="Falling Dream Shards - Daniel Waack"></p>
+<br>
+<br>
+<h2 id="conteúdo-do-manual">Conteúdo do Manual:</h2>
+<p>Um detalhe importante sobre o conteúdo deste manual é que ele está muito preocupado com <em>o que</em> você vai fazer, e não tanto em <em>como</em> você vai fazê-lo.</p>
+<p>Como assim?<br>
+Se eu sentasse e decidisse criar um tutorial para a construção de todos os possíveis algorítmos e funções de jogos, em todas as possíveis plataformas de desenvolvimento, eu ficaria aqui por anos e não terminaria.<br>
+Enquanto algo mais específico a determinados tipos de jogos pode ser feito no futuro, o meu foco aqui é outro:</p>
+<br>
+<p><strong>O que devo fazer para criar um jogo?</strong></p>
+<br>
+<p>Em outras palavras: &quot;Qual é a sequência de ações que devo tomar para a criação de um jogo?&quot; Ou ainda, &quot;Por onde eu começo?&quot; É nesse tipo de pergunta muito mais fundamental que as pessoas costumam congelar.</p>
+<p>Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvimento, e vou exemplificar com um projeto de jogo de plataforma 2D e um <em>topdown shooter</em> 3D, é importante entender que o meu objetivo não é explicar especificamente como criar um <em>tipo</em> de jogo, mas sim explicar o processo de desenvolvimento e organização que servirá para qualquer jogo.</p>
+<p>E se você pretende fazer um jogo em um desses dois estilos, melhor ainda, você pode usar o meu processo como exemplo. Para o jogo de plataforma, usarei a <em>engine</em> Unity, e para o 3D, usarei a <em>engine</em> Godot.</p>
+<p>A escolha dos ambientes deste projeto não foi aleatória. Considero Unity a <em>engine</em> mais popular, enquanto Godot a <em>engine</em> mais didática. É claro, sinta-se livre para fazer o seu projeto em seu ambiente de escolha. Mais sobre isso nos capítulos 1 e 2.</p>
+<br>
+<br>
+<h2 id="detalhes-importantes">Detalhes Importantes:</h2>
+<p>Antes de entrar no manual em si, alguns detalhes podem te interessar.<br>
+O <em>approach</em> sugerido nesse manual vai se ramificar dependendo de alguns fatores. É claro, toda vez que isso for relevante, apontarei o fato. Entretanto, é importante que você os tenha em mente desde já.<br>
+Os fatores são:</p>
+<br>
+<br>
+<ol>
+<li>Se você trabalha em equipe ou sozinho:</li>
+</ol>
+<p>Isso é muito importante para o seu ritmo e organização de trabalho. Um grupo trabalha melhor do que uma pessoa sozinha. Porém, sozinho você terá liberdade criativa maior do que em um grupo.<br>
+Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros.<br>
+É claro, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, ocasionalmente com o apoio ocasional de terceiros, principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas.</p>
+<p>Entenda que, no contexto <em>indie</em>, um grupo de 3-5 pessoas provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento da equipe.<br>
+Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo pequeno.</p>
+<p>Quando relevante, apontaremos diferenças entre o trabalho <em>solo</em> e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.</p>
+<br>
+<br>
+<ol start="2">
+<li>Quais competências estão disponíveis na equipe:</li>
+</ol>
+<p>A criação de um jogo envolve várias competências. Neste manual, eu as dividi em alguns tópicos: <em>Design</em>, Programação e Lógica, Arte (conceitual, de fundo, 2D, 3D, de interface, etc.), Modelagem, Animação, Música (<em>BGM</em> e <em>sound design</em>), <em>Playtesting</em>.<br>
+Para certos projetos, algumas dessas competências são irrelevantes. Ainda para outros projetos, algumas competências podem ser mais importantes que as outras.</p>
+<p>Por exemplo, modelagem não é necessária em jogos 2D.</p>
+<p><img src="https://www.ubuntufree.com/wp-content/uploads/2017/05/Hollow-Knight-Gameplay.jpg" alt="Exemplo, Jogo 2D" title="Hollow Knight - Exemplo 2D"></p>
+<p>Feito na <em>engine</em> híbrida Unity, <strong>Hollow Knight</strong> é um jogo 2D. Dessa forma, a arte é toda feita em planos 2D, e modelagem não foi necessária.</p>
+<p>E para um jogo musical ou de ritmo, o <em>sound design</em> e música geralmente serão mais importantes do que a arte.</p>
+<p><img src="https://i.imgur.com/JOhEaHf.jpg" alt="Exemplo, Jogo de Ritmo" title="Deemo - Exemplo Ritmo"></p>
+<p>Deemo tem uma arte bonita, mas ela não é particularmente detalhada ou feita para ser um ponto focal do jogo. Afinal, o mais importante é a música e o ritmo.</p>
+<br>
+<p>Enquanto é preferível que o seu time contenha integrantes que cubram todas as competências necessárias para a criação do jogo, a falta delas não significa que o seu projeto não pode ser criado.<br>
+Existem alternativas para todos os casos, como ambientes onde programação não é necessária, recursos audiovisuais grátis, ou até a possibilidade de contratar artistas, programadores e músicos para auxiliar no processo.<br>
+É claro, isso tudo depende da habilidade e orçamento do seu time. Porém, o objetivo deste manual é sempre apresentar diversas opções, buscando sempre opções sem custo, ou o melhor equilíbrio entre preço e qualidade do produto final.</p>
+<br>
+<br>
+<ol start="3">
+<li>Quanto tempo você pode dedicar ao projeto.</li>
+</ol>
+<p>A quantidade de tempo em que você pode trabalhar no projeto vai refletir no produto final, ou no tempo que você vai demorar até alcançar o que idealizou para o seu projeto.<br>
+Não é incomum que jogos grandes levem anos para serem construídos. O mesmo acontece para certos jogos pequenos, mesmo com equipes maiores.<br>
+É claro, isso depende do escopo do seu projeto e organização. Durante o manual, haverá uma sequência de períodos onde a equipe deverá desenvolver determinados aspectos do jogo (<em>sprints</em>), é sempre possível aumentar estes períodos, a custo de demorar mais tempo para desenvolver o seu projeto.<br>
+Caso sua equipe não tenha tanto tempo livre, existe flexibilidade para determinar os períodos de ação. Isso fica a critério de você(s).</p>
+<br>
+<br>
+<br>
+<h1 id="capítulo-1-design">Capítulo 1: Design</h1>
+<p>&quot;É perigoso ir sozinho! Leve isso.&quot; - Velho em uma caverna, &quot;The Legend of Zelda&quot; (1986)</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/pt/b/b2/It%27s_dangerous_to_go_alone%21_Take_this..png" alt="Capítulo 1 capa" title="It's dangerous to go alone! Take this."></p>
+<p>A especificação de qualquer <em>software</em> é uma das etapas mais importantes.<br>
+Você pode estar tentando começar a programar as mecânicas de seu jogo imediatamente, ou quem sabe planejando desenhar ou modelar seus personagens e fundos imediatamente.<br>
+Enquanto ambos são trabalhos que sua equipe fará eventualmente, eles não devem ser a prioridade.</p>
+<p>Por quê?</p>
+<p>Porque suas ideias podem mudar no decorrer do projeto. E todo o seu trabalho árduo para gerar estes artefatos vai ser desperdiçado.</p>
+<p>A diferença entre um projeto organizado que alcança sucesso e uma completa bagunça que acaba cancelada muitas vezes está na etapa de idealização.<br>
+Isso ocorre por vários motivos:</p>
+<ul>
+<li>Diferenças entre visões criativas entre integrantes da equipe;</li>
+<li>Esquecimento de decisões e escolhas feitas pela equipe;</li>
+<li>Falta de organização na manutenção do projeto;</li>
+<li>entre outros.</li>
+</ul>
+<p>Tudo isso deve ser evitado para que o risco de cancelmaneto seja o menor possível.<br>
+Por isso, a primeira coisa que fazemos é sempre documentar tudo o que planejamos fazer no projeto, para ter-se uma base sólida para consultar quando necessário.</p>
+<p>É claro, você não precisa delimitar o seu projeto inteiramente no primeiro momento, e naturalmente acontecerão mudanças no decorrer do desenvolvimento. Mas é importante criar uma base.</p>
+<p>Entramos então no mérito do <em>design</em>.</p>
+<br>
+<p>E como isso é feito?</p>
+<h2 id="game-design-document-gdd">Game Design Document (GDD)</h2>
+<p>O formato mais comum que encontramos para o <em>deisgn</em> em projetos de jogo é chamado Game Design Document (Documento de <em>Design</em> de Jogos).</p>
+<p>O GDD pode servir para vários motivos. Ele pode ser mostrado a outros, ou ele pode ficar só no seu time. Pessoalmente, eu não me dou ao trabalho de criar muita frescura &quot;em volta&quot; do GDD. Um texto claro e objetivo costuma ser a melhor opção. E acho que isso fala bastante.</p>
+<p>O seu GDD pode estar em qualquer lugar entre um documento simples de 3 ou 4 páginas, até um enorme documento super detalhado como a Doom Bible. Pessoalmente, eu costumo ficar no primeiro caso.</p>
+<p>Exemplos de GDD: <a href="https://www.reddit.com/r/gamedesign/comments/7ze7xq/finished_game_design_document_examples/">https://www.reddit.com/r/gamedesign/comments/7ze7xq/finished_game_design_document_examples/</a>, <a href="http://allowe.com/games/game-designs.html">http://allowe.com/games/game-designs.html</a>, <a href="http://www.graybeardgames.com/download/diablo_pitch.pdf">http://www.graybeardgames.com/download/diablo_pitch.pdf</a>, <a href="https://www.gamedeveloper.com/design/annotated-version-of-an-original-i-deus-ex-i-design-doc-surfaces">https://www.gamedeveloper.com/design/annotated-version-of-an-original-i-deus-ex-i-design-doc-surfaces</a>, <a href="https://5years.doomworld.com/doombible/doombible.pdf">https://5years.doomworld.com/doombible/doombible.pdf</a>, <a href="https://www.systemshock.org/index.php?PHPSESSID=0009ltomhecn6he3upgtu0kkc9;topic=2121.msg21031#msg21031">https://www.systemshock.org/index.php?PHPSESSID=0009ltomhecn6he3upgtu0kkc9;topic=2121.msg21031#msg21031</a>, file:///C:/Users/55619/Downloads/BioshockPitch.pdf,</p>
+
+        
+        
+    </body>
+    </html>
