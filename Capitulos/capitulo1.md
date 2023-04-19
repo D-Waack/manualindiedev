@@ -9,26 +9,28 @@
 
 
 A especificação de qualquer *software* é uma das etapas mais importantes no seu desenvolvimento.   
-Um jogo, 
-Você pode estar tentando começar a programar as mecânicas de seu jogo imediatamente, ou quem sabe planejando desenhar ou modelar seus personagens e fundos imediatamente.  
-Enquanto ambos são trabalhos que sua equipe fará eventualmente, eles não devem ser a prioridade.  
+Jogos eletrônicos de todo o tipo se encaixam também na categoria de _software_. Mas as mesmas regras se aplicão a eles?  
 
-Por quê?
+Mais ou menos. Apesar de ser um _software_, existem detalhes sobre o desenvolvimento de jogos que os diferem de outros projetos de _software_. Entretanto, a etapa da especificação também é muito importante para os jogos.
+
+Você pode estar tentando começar a programar as mecânicas de seu jogo imediatamente, ou quem sabe planejando desenhar ou modelar seus personagens e fundos antes de comçear a pensar em mais nada. Isso não é muito aconselhável. Enquanto arte, modelagem, programação, etc. são trabalhos que você e sua equipe farão eventualmente, eles não devem ser a prioridade.  
+
+**Por quê?**
 
 Porque suas ideias podem mudar no decorrer do projeto. E todo o seu trabalho árduo para gerar estes artefatos vai ser desperdiçado.  
 
-A diferença entre um projeto organizado que alcança sucesso e uma completa bagunça que acaba cancelada muitas vezes está na etapa de idealização.  
-Isso ocorre por vários motivos:
+Se você está planejando criar um jogo, você provavelmente já tem ideias sobre mecânicas, sobre a arte, sobre a história, e quem sabe sobre a música. Isso é ótimo, mas antes que você possa dar forma a estas idealizações, um passo importante é colocá-las "no papel" de alguma forma.
+
+A diferença entre um projeto organizado que alcança sucesso e um que acaba cancelada muitas vezes está na etapa de formalização das ideias. Isso ocorre por vários motivos:
 
 - Diferenças entre visões criativas entre integrantes da equipe;
 - Esquecimento de decisões e escolhas feitas pela equipe;
 - Falta de organização na manutenção do projeto;
-- entre outros.
+- outros...
 
-Tudo isso deve ser evitado para que o risco de cancelmaneto seja o menor possível.  
-Por isso, a primeira coisa que fazemos é sempre documentar tudo o que planejamos fazer no projeto, para ter-se uma base sólida para consultar quando necessário.  
+Tudo isso deve ser evitado para que o risco de cancelmaneto seja o menor possível. Por isso, a primeira coisa que fazemos é sempre documentar tudo o que planejamos fazer no projeto, para ter-se uma base sólida para consultar quando necessário. Você não precisa delimitar o seu projeto inteiramente no primeiro momento, e naturalmente acontecerão mudanças no decorrer do desenvolvimento. 
 
-É claro, você não precisa delimitar o seu projeto inteiramente no primeiro momento, e naturalmente acontecerão mudanças no decorrer do desenvolvimento. Mas é importante criar uma base.
+Mas é importante criar um documento que servirá para ancorar o seu projeto, para que ele não venha a derivar sem controle.
 
 Entramos então no mérito do *design*.
 
