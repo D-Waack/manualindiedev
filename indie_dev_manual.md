@@ -34,11 +34,12 @@ Pixel art criada por mim para a _intro_ de um jogo.
 <br>
 
 ## Conteúdo do Manual:
-Um detalhe importante sobre o conteúdo deste manual é que ele está muito preocupado com *o que* você vai fazer, e não tanto em *como* você vai fazê-lo.  
+Um detalhe importante sobre o conteúdo deste manual é que ele está muito preocupado com *o que* você vai fazer, e não tanto com *como* você vai fazê-lo.  
 
 Como assim?  
-Se eu sentasse e decidisse criar um tutorial para a construção de todos os possíveis algorítmos e funções de jogos, em todas as possíveis plataformas de desenvolvimento, eu ficaria aqui por anos e não terminaria.  
-Enquanto algo mais específico a determinados tipos de jogos pode ser feito no futuro, o meu foco aqui é outro:
+Se eu sentasse e decidisse criar um tutorial para a construção de todos os possíveis algorítmos e funções de jogos, em todas as possíveis plataformas de desenvolvimento, eu ficaria aqui por duas vidas e não terminaria.  
+E eu não preciso fazer isso, pois já existem diversos recursos de todos os tipos que exploram estes méritos, e procurá-los será invevitvalmente parte do seu trabalho, ou de alguém na equipe. Como procurá-los, filtrá-los, entendê-los e usá-los será mais relevante para este manual. Até porque se você sabe exatamente o que procurar, você já avançou considervalemnte.  
+A pergunta fundamental que exemplifica o foco desse manual é a seguinte:
 
 <br>
 
@@ -46,20 +47,18 @@ Enquanto algo mais específico a determinados tipos de jogos pode ser feito no f
 
 <br>
 
-Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo?" É nesse tipo de pergunta muito mais fundamental que as pessoas costumam congelar.  
+Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo?" É com esse tipo de pergunta muito mais fundamental que as pessoas costumam encontrar problemas.  
 
-Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvimento, e vou exemplificar com um projeto de jogo de plataforma 2D e um *topdown shooter* 3D, é importante entender que o meu objetivo não é explicar especificamente como criar um *tipo* de jogo, mas sim explicar o processo de desenvolvimento e organização que servirá para qualquer jogo.
+Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvimento, e vou exemplificar com um projeto de jogo de plataforma 2D e um *topdown shooter* 3D, é importante entender que o meu objetivo não é explicar especificamente como criar um *tipo* de jogo, mas sim descrever um processo de desenvolvimento e organização que servirá para qualquer jogo.
 
-E se você pretende fazer um jogo em um desses dois estilos, melhor ainda, você pode usar o meu processo como exemplo. Para o jogo de plataforma, usarei a *engine* Unity, e para o 3D, usarei a *engine* Godot.
-
-A escolha dos ambientes deste projeto não foi aleatória. Considero Unity a *engine* mais popular, enquanto Godot a *engine* mais didática. É claro, sinta-se livre para fazer o seu projeto em seu ambiente de escolha. Mais sobre isso nos capítulos 1 e 2.
+E se você pretende fazer um jogo em um desses dois estilos, melhor ainda, você pode usar o meu processo como exemplo. Para o jogo de plataforma, usarei a *engine* Unity, e para o 3D, usarei a *engine* Godot. A escolha dos ambientes deste projeto não foi aleatória. Unity por ser uma das *engines* grátis (com algumas restrições) mais populares, tendo uma quantidade enorme de material de apoio focado nela. E Godot por ser a minha *engine* de escolha para desenvolvimento, e por sua estrutura de árvores que eu considero mais amigável para novos usuários. De qualquer forma, sinta-se livre para fazer o seu projeto em seu ambiente de escolha. Mais sobre isso nos capítulos 1 e 2.
 
 <br>
 <br>
 
 ## Detalhes Importantes:
 Antes de entrar no manual em si, alguns detalhes podem te interessar.  
-O *approach* sugerido nesse manual vai se ramificar dependendo de alguns fatores. É claro, toda vez que isso for relevante, apontarei o fato. Entretanto, é importante que você os tenha em mente desde já.  
+O *approach* sugerido nesse manual vai se ramificar dependendo de alguns fatores. Toda vez que isso for relevante, apontarei o fato. Entretanto, é importante que você os tenha em mente desde já.  
 Os fatores são:
 
 <br>
@@ -67,14 +66,11 @@ Os fatores são:
 
 1. Se você trabalha em equipe ou sozinho:
 
-Isso é muito importante para o seu ritmo e organização de trabalho. Um grupo trabalha melhor do que uma pessoa sozinha. Porém, sozinho você terá liberdade criativa maior do que em um grupo.  
-Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros.  
-É claro, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, ocasionalmente com o apoio ocasional de terceiros, principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas.
+Isso é muito importante para o seu ritmo e organização de trabalho. Um grupo trabalha melhor do que um indivíduo. Porém, sozinho você terá liberdade criativa maior do que em um grupo.  
+Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros. É claro, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, com o apoio ocasional de terceiros, principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas.
 
 Entenda que, no contexto *indie*, um grupo de 3-5 pessoas provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento da equipe.  
-Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo pequeno.
-
-Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
+Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
 
 <br>
 <br>
@@ -82,7 +78,7 @@ Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho
 2. Quais competências estão disponíveis na equipe:
 
 A criação de um jogo envolve várias competências. Neste manual, eu as dividi em alguns tópicos: *Design*, Programação e Lógica, Arte (conceitual, de fundo, 2D, 3D, de interface, etc.), Modelagem, Animação, Música (*BGM* e *sound design*), *Playtesting*.  
-Para certos projetos, algumas dessas competências são irrelevantes. Ainda para outros projetos, algumas competências podem ser mais importantes que as outras. 
+Para certos projetos, algumas dessas competências são irrelevantes. Ainda para outros projetos, algumas podem ser mais importantes que as outras. 
 
 Por exemplo, modelagem não é necessária em jogos 2D. 
 
@@ -92,27 +88,27 @@ Por exemplo, modelagem não é necessária em jogos 2D.
 
 Feito na *engine* híbrida Unity, **Hollow Knight** é um jogo 2D. Dessa forma, a arte é toda feita em planos 2D, e modelagem não foi necessária.
 
-E para um jogo musical ou de ritmo, o *sound design* e música geralmente serão mais importantes do que a arte.  
+<br>
+
+Outro exemplo, para um jogo musical ou de ritmo, o *sound design* e música geralmente serão mais importantes do que a arte.  
 
 ![Exemplo, Jogo de Ritmo](https://i.imgur.com/JOhEaHf.jpg "Deemo - Exemplo Ritmo")
 
-Deemo tem uma arte bonita, mas ela não é particularmente detalhada ou feita para ser um ponto focal do jogo. Afinal, o mais importante é a música e o ritmo.
+Deemo tem uma arte bonita, mas ela não é particularmente detalhada ou feita para ser um ponto focal do jogo. Afinal, o aspecto de maior importância neste jogo é a música e som.
 
 <br>
 
-Enquanto é preferível que o seu time contenha integrantes que cubram todas as competências necessárias para a criação do jogo, a falta delas não significa que o seu projeto não pode ser criado.  
-Existem alternativas para todos os casos, como ambientes onde programação não é necessária, recursos audiovisuais grátis, ou até a possibilidade de contratar artistas, programadores e músicos para auxiliar no processo.  
-É claro, isso tudo depende da habilidade e orçamento do seu time. Porém, o objetivo deste manual é sempre apresentar diversas opções, buscando sempre opções sem custo, ou o melhor equilíbrio entre preço e qualidade do produto final.
+Enquanto é preferível que o seu time contenha integrantes que cubram todas as competências necessárias para a criação do jogo, a falta delas não significa que o seu projeto não pode ser criado. Existem alternativas para todos os casos, como ambientes onde programação não é necessária, recursos audiovisuais grátis, ou até a possibilidade de contratar artistas, programadores e músicos para auxiliar no processo.  
+É claro, isso tudo depende da habilidade e orçamento do seu time. Porém, o objetivo deste manual é sempre apresentar diversas opções, buscando sempre opções sem custo, ou o melhor equilíbrio entre preço baixo e qualidade do produto final.
 
 <br>
 <br>
 
 3. Quanto tempo você pode dedicar ao projeto.
 
-A quantidade de tempo em que você pode trabalhar no projeto vai refletir no produto final, ou no tempo que você vai demorar até alcançar o que idealizou para o seu projeto.  
-Não é incomum que jogos grandes levem anos para serem construídos. O mesmo acontece para certos jogos pequenos, mesmo com equipes maiores.  
-É claro, isso depende do escopo do seu projeto e organização. Durante o manual, haverá uma sequência de períodos onde a equipe deverá desenvolver determinados aspectos do jogo (*sprints*), é sempre possível aumentar estes períodos, a custo de demorar mais tempo para desenvolver o seu projeto.  
-Caso sua equipe não tenha tanto tempo livre, existe flexibilidade para determinar os períodos de ação. Isso fica a critério de você(s).
+A quantidade de tempo em que você pode trabalhar no projeto vai refletir no produto final, ou no tempo que você vai demorar até alcançar o que idealizou para o seu projeto. 
+Não é incomum que jogos grandes levem anos para serem construídos. O mesmo acontece para certos jogos pequenos, mesmo com equipes maiores. Isso depende de vários fatores, como o escopo e a organização do seu projeto.  
+Durante o manual, haverá uma sequência de períodos onde a equipe deverá desenvolver determinados aspectos do jogo (*sprints*). É sempre possível aumentar estes períodos, a custo de demorar mais tempo para desenvolver o seu projeto. Caso o tempo livre de sua equipe seja limitado, existe flexibilidade para determinar os períodos de ação. Isso fica a critério de você(s).
 
 <br>
 <br>
