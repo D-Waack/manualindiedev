@@ -32,7 +32,7 @@ Não existe um padrão exato para como o GDD deve ser criado. E se você procura
 
 O seu GDD pode estar em qualquer lugar entre um documento simples de 3 ou 4 páginas, até um enorme documento extremamente detalhado como a [_Doom Bible_](https://5years.doomworld.com/doombible/doombible.pdf) (GDD do jogo Doom de 1993). Como o seu projeto acabou de começar, meu conselho é seguir a primeira opção. Porém, durante o desenvolvimento do seu projeto, é esperado que o documento cresça consideravalmente, então sinta-se à vontade para colocar quanto detalhe achar interessante no futuro.
 
-Eu criei um template bem simples que costumo usar para a proposta inicial do jogo, e vou usá-lo aqui para exemplificar um preenchimento inicial. Se desejar usá-lo: 
+Eu criei um template bem simples que costumo usar para a proposta inicial do jogo, e vou usá-lo aqui para exemplificar um preenchimento inicial. Se desejar usá-lo: [Versão Office](/../Arquivos/modelo_GDDv1.1.docx) Versão
 
 Se procura por inspiração, vários exemplos notáveis de GDDs podem ser encontrados no seguinte repositório no Github: [Awesome GDDs](https://github.com/Roobyx/awesome-game-design). Note que a maioria destes vão ser muito maiores e mais complexos do que a especificação do seu projeto. Isso é esperado.
 
