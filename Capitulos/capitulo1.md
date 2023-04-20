@@ -9,41 +9,34 @@
 
 
 A especificação de qualquer *software* é uma das etapas mais importantes no seu desenvolvimento.   
-Jogos eletrônicos de todo o tipo se encaixam também na categoria de _software_. Mas as mesmas regras se aplicão a eles?  
+Jogos eletrônicos de todo o tipo se encaixam também na categoria de _software_. Mas as mesmas regras se aplicam a eles?  
 
-Mais ou menos. Apesar de ser um _software_, existem detalhes sobre o desenvolvimento de jogos que os diferem de outros projetos de _software_. Entretanto, a etapa da especificação também é muito importante para os jogos.
+Mais ou menos. Apesar de ser um _software_, existem detalhes sobre o desenvolvimento de jogos que os diferem de outros projetos de _software_. No entanto, a etapa da especificação não deixa de ser de extrema importância para os jogos.
 
-Você pode estar tentando começar a programar as mecânicas de seu jogo imediatamente, ou quem sabe planejando desenhar ou modelar seus personagens e fundos antes de comçear a pensar em mais nada. Isso não é muito aconselhável. Enquanto arte, modelagem, programação, etc. são trabalhos que você e sua equipe farão eventualmente, eles não devem ser a prioridade.  
+Pode ser sua intenção começar a trabalhar na história, na arte, música ou programação do seu jogo imediatamente. E as chances são altas de que você já tem uma boa ideia do que fazer com pelo menos um desses. Mas enquanto eles são todos aspectos nos quais você e sua equipe vão trabalhar eventualmente, é importante dar forma a estas idealizações, ou seja, colocar essas ideias "no papel" de alguma forma.
 
-**Por quê?**
+Qual é a importância real disso? Primeiramente, a organização. A diferença entre um projeto organizado que alcança sucesso e um que acaba cancelada muitas vezes está na etapa de formalização das ideias. Isso ocorre por vários motivos:
 
-Porque suas ideias podem mudar no decorrer do projeto. E todo o seu trabalho árduo para gerar estes artefatos vai ser desperdiçado.  
+- Diferenças de visões criativas entre integrantes da equipe;
+- Esquecimento de decisões e escolhas feitas anteriormente;
+- Falta de foco na manutenção do projeto;
+- entre outros...
 
-Se você está planejando criar um jogo, você provavelmente já tem ideias sobre mecânicas, sobre a arte, sobre a história, e quem sabe sobre a música. Isso é ótimo, mas antes que você possa dar forma a estas idealizações, um passo importante é colocá-las "no papel" de alguma forma.
+Estes problemas devem ser evitados para que o risco de cancelmaneto seja o menor possível. Por isso, a primeira coisa que fazemos é sempre documentar tudo o que planejamos realizar no projeto, para ter-se uma base sólida para consultar quando necessário. Você não precisa delimitar o seu projeto inteiramente no primeiro momento, e naturalmente acontecerão mudanças no decorrer do desenvolvimento. Mas é importante criar um documento que servirá para ancorar o seu projeto.
 
-A diferença entre um projeto organizado que alcança sucesso e um que acaba cancelada muitas vezes está na etapa de formalização das ideias. Isso ocorre por vários motivos:
+Além de ser um ótimo jeito de organizar e lembrar suas ideias, manter um documento assim pode ser útil caso entre um novo membro na sua equipe, ou se precisar demonstrar suas ideias para um possível investidor ou em uma campanha de _crowdfunding_. 
 
-- Diferenças entre visões criativas entre integrantes da equipe;
-- Esquecimento de decisões e escolhas feitas pela equipe;
-- Falta de organização na manutenção do projeto;
-- outros...
-
-Tudo isso deve ser evitado para que o risco de cancelmaneto seja o menor possível. Por isso, a primeira coisa que fazemos é sempre documentar tudo o que planejamos fazer no projeto, para ter-se uma base sólida para consultar quando necessário. Você não precisa delimitar o seu projeto inteiramente no primeiro momento, e naturalmente acontecerão mudanças no decorrer do desenvolvimento. 
-
-Mas é importante criar um documento que servirá para ancorar o seu projeto, para que ele não venha a derivar sem controle.
-
-Entramos então no mérito do *design*.
-
-<br>
-
-E como isso é feito?
+Entramos então no mérito do **design**. Você pode pensar no design como um planejamento, uma idealização, ou como uma especificação. Geralmente, no contexto de desenvolvimento de jogos, nós chamamos o documento de design por um nome um tanto criativo: Game Design Document (Documento de Design de Jogo).
 
 ## Game Design Document (GDD)
 
-O formato mais comum que encontramos para o *deisgn* em projetos de jogo é chamado Game Design Document (Documento de *Design* de Jogos). 
+Não existe um padrão exato para como o GDD deve ser criado. E se você procurar online, você vai encontrar dúzias de padrões e templates diferentes. Na hora de delimitar o formato do seu documento, é importante considerar quem verá o documento, e quanto tempo você quer passar detalhando-o. Pessoalmente, eu tento ser curto e objetivo nos meus, tentando passar o máximo de informação no menor espaço possível.
 
-O GDD pode servir para vários motivos. Ele pode ser mostrado a outros, ou ele pode ficar só no seu time. Pessoalmente, eu não me dou ao trabalho de criar muita frescura "em volta" do GDD. Um texto claro e objetivo costuma ser a melhor opção. E acho que isso fala bastante.
+O seu GDD pode estar em qualquer lugar entre um documento simples de 3 ou 4 páginas, até um enorme documento extremamente detalhado como a [_Doom Bible_](https://5years.doomworld.com/doombible/doombible.pdf). Como o seu projeto acabou de começar, meu conselho é seguir a primeira opção. Mas sinta-se à vontade para colocar quanto detalhe achar interessante durante o desenvolvimento do projeto.
 
-O seu GDD pode estar em qualquer lugar entre um documento simples de 3 ou 4 páginas, até um enorme documento super detalhado como a Doom Bible. Pessoalmente, eu costumo ficar no primeiro caso.
+Eu criei um template que costumo usar para 
 
-Exemplos de GDD: https://www.reddit.com/r/gamedesign/comments/7ze7xq/finished_game_design_document_examples/, http://allowe.com/games/game-designs.html, http://www.graybeardgames.com/download/diablo_pitch.pdf, https://www.gamedeveloper.com/design/annotated-version-of-an-original-i-deus-ex-i-design-doc-surfaces, https://5years.doomworld.com/doombible/doombible.pdf, https://www.systemshock.org/index.php?PHPSESSID=0009ltomhecn6he3upgtu0kkc9;topic=2121.msg21031#msg21031, file:///C:/Users/55619/Downloads/BioshockPitch.pdf, 
+Se procura por inspiração, vários exemplos notáveis de GDDs podem ser encontrados no seguinte repositório no Github: [Awesome GDDs](https://github.com/Roobyx/awesome-game-design). Note que a maioria destes vão ser muito maiores e mais complexos do que a especificação do seu projeto. Isso é esperado.
+
+
+
