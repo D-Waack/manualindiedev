@@ -1,6 +1,3 @@
-<br>
-<br>
-<br>
 
 # Capítulo 1: Design
 "É perigoso ir sozinho! Leve isto." - Velho em uma caverna, "The Legend of Zelda" (1986)
