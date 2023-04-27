@@ -77,9 +77,29 @@ O "formato da narrativa" se refere a como a história será contada. Serão _cut
 ### Detalhes Conceituais Exemplificados 1
 
 ### Detalhes de Gameplay
+A quarta seção, "Detalhes de Gameplay" se refere mais especificamente a como o jogo vai funcionar. Aqui, o conceito de mecânica é muito importante. Uma mecânica é uma regra ou conjunto de regras que define como o jogo vai funcionar e como o jogador vai interagir com ele.  
+As "mecânicas primárias" são as mecânicas que definem o seu jogo e o seu estilo. Por exemplo, para o jogo Super Mario Bros. seria pular e correr. Para o jogo _Call of Duty_, isso seria correr, mirar e atirar. Elas se referem especificamente ao _core loop_, ou seja, as ações principais que o seu jogador fará durante o seu tempo jogando. Podem ser poucas como em Super Mario, ou muitas como em jogos de sobrevivência.
+As "mecânicas secundárias" são qualquer mecânica ou regra que não seja principal ao _core loop_ do jogo. Por exemplo, o funcionamento de menus, como funciona a loja de itens em um jogo, como os pontos serão contados, etc...  
+O tópico "world/level design" se refere a como as fases, mapas ou mundo em um jogo serão construídos para que o jogo funcione da maneira esperada. Por exemplo, eu poderia colocar o sonic e sua física em uma fase do jogo super mario. Porém, os mapas do Super Mario não são próprios para o tipo de jogo que é o Sonic, onde o objetivo é atingir grandes velocidades e encontrar o melhor caminho. Da mesma forma, Mario não teria como navegar a maioria das fases do Sonic.  
+Os "objetivos/condições de vitória" são o que o jogador deve conseguir para atingir vitória no jogo. Seja navegar ao final de uma fase, coletar itens, resolver um enigma, derrotar um inimigo, ou uma combinação de todos esses. Sinta-se livre para descrever como o seu jogo decorre, e como uma condição de vitória pode levar a outra.  
+Analogamente, as "condições de derrota" se referem a o que leva a derrota do jogador. Isso pode ser em termos de vidas, tempo, energia, entre vários outros. Em certos casos, pode haver mais de uma condição de derrota, e em muitos jogos, existem vários graus diferentes de derrota. Em _castlevania_, cair em um buraco sem fundo ou levar dano de um inimigo leva a uma derrota temporária, ou uma derrota de grau menor, a morte do personagem. Entretanto, caso o jogador morra várias vezes sem coletar vidas novas, ele alcança o estado "game over", ou seja, a derrota final.  
+O "desafio" é tudo aquilo que se coloca entre o jogador e sua condição de vitória. Um desafio muito baixo e seu jogo pode ficar sem graça, um desafio muito alto e seu jogo pode ficar injusto. Na maioria dos jogos, é preferível que exista uma cruva de dificuldade, onde o jogo começa fácil e fica mais desafiador a medida que o jogador começa a dominar melhor suas mecânicas.  
+O "sistema de recompensa" envolve o que o seu jogador ganhará ao completar determinado desafio. Isso pode vir em forma de powerups, itens colecionáveis, ugprades ao personagem, equipamento/armas alternativas, skins diferentes, novas habilidades, o nome do jogador em um _ranking_, entre vários outros. Isso é um tópico importante se deseja manter seu jogador engajado continuamente.
 
 ### Detalhes Audiovisuais
+A quinta seção, "Detalhes Áudiovisuais", diz respeito aos estilos planejados para aspectos visuais e auditórios.  
+Não há muito o que explicar para estes casos. "Estilo visual" é sobre como o jogo será visualmente (pixel art, voxel, vector, 3D realista, 3D fantástico, etc.). "Estilo musical" diz respeito ao tipo de música que tocará no fundo do seu jogo (música orquestral, _chiptune_, rock progressivo, música de elevador, vários tipos diferentes, etc.). Os "efeitos sonoros" se refere ao estilo do _sound design_ no geral, se tenta ser realista ou fantástico, se atmosférico ou satisfatório, ou qualquer outra categoria que tiver em mente. O "estilo da interface" tem a ver com os menus e telas que o jogador verá durante o jogo (se existem informações em tela como HUDs, contadores de itens/vidas/pontos, entre outros elementos. 
 
 ### Objetos e Assets de Jogo
+A sexta seção, "Objetos e Assets de Jogo" será preenchida principalmente no decorrer do projeto conforme suas ideias forem evoluindo. Aqui você vai listar artefatos que serão criados e usados no decorrer do jogo, como entidades e objetos de cenário, e cada uma de suas respectivas representações visuais/sonoras.  
+O tópico "entidades" se refere a qualquer personagem que aparecerá no jogo. Este tópico é análogo aos "sersonagens" na seção de detalhes conceituais, mas tem um foco mais focado em simplesmente listar os personagens/vilões para referência.  
+O tópico "objetos" deve conter qualquer objeto que não encaixe na categoria de "entidade". Isso geralmente vai incluir objetos interativos que não são simplesmente parte do cenário (eles podem ser "parte" do cenário, mas que geralmente seriam objetos criados separadamente para que possa haver interação com eles).  
+O tópico "texturas/modelos/sons/etc." se refere a todo tipo de recurso audiovisual que será necessário durante o jogo, como _sprites_ ou modelos de personagens (e suas texturas), planos de fundo, _skyboxes_ (planos de fundo para o céu), mapas/fases do jogo (sejam imagens ou modelos), músicas de fundo, efeitos sonoros, e quaisquer outros artefatos necessários.
 
-### Wishlist
+### Planos
+A última seção, "Planos", possui apenas um tópico, "wishlist", que é um lugar que eu reservo para listar ideias que eu tive sobre o jogo durante o desenvolvimento, e que não decidi se implementarei ou não ainda. É apenas uma seção para anotações, e não precisa ser preenchida se não for relevante.
+
+## Conclusão
+Ao final desse capítulo, você deveria ter uma ideia de como começar a criar seu GDD, ou idealmente já o tenha preenchido conforme lia o capítulo.
+
+No próximo capítulo vamos lidar com a etapa de "Preparação", onde vamos decidir alguns detalhes importantes como o ambiente de desenvolvimento (engine/framework/linguagem) e como organizaremos os arquivos do projeto.
