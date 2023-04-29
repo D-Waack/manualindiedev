@@ -3,8 +3,6 @@
 
 # Introdução:
 
-O texto a seguir é um manual para desenvolvimento de jogos *indie*, ou seja, jogos criados em um contexto amador, de maneira independente. O foco desse material é principalmente prático, com um pouco de teoria quando se mostrar necessário. Durante o decorrer do manual, dois projetos de jogos serão criados, e o código fonte deles pode ser visualizado e baixado na página do github a seguir: (pag a criar) !!TODO
-
 É um erro comum de pessoas que aspiram tornarem-se criadores de jogos se ocuparem com livros, vídeos de análise e *design*, gravações de GDCs (Game Development Conferences), comentários e entrevistas de desenvolvedores, entre várias outras categorias de vídeos educativos sobre jogos. Eu mesmo passo boa parte do meu tempo livre estudando estes diversos recursos online.
 
 ![GDC - Workshop de Level Design: Projetando Celeste](https://i.imgur.com/IT5UV3h.jpg "GDC - Workshop de Level Design: Projetando Celeste")
