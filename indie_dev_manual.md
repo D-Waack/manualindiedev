@@ -3,6 +3,11 @@
 
 # Manual de Desenvolvimento Indie
 
+O texto a seguir é um manual para desenvolvimento de jogos indie, ou seja, jogos criados em um contexto amador, de maneira independente. O foco desse material é principalmente prático, com um pouco de teoria quando se mostrar necessário. Durante o decorrer do manual, dois projetos de jogos serão criados, e o código fonte deles pode ser visualizado e baixado nas páginas do github a seguir: 
+
+- [Sleepy Runner (mobile)](https://github.com/D-Waack/sleepy-runner-godot4)
+- [Top Down Shooter](https://github.com/D-Waack/vortex-tautology-demo)
+
 ## Indice:
 * [Introdução](Capitulos/introducao.md) - Introdução do manual, considerações iniciais, detalhes importantes sobre o conteúdo 
 
