@@ -4,15 +4,17 @@
 
 ![Capítulo 1 capa](https://i.imgur.com/GHZYcAZ.jpg "It's dangerous to go alone! Take this.")
 
+## Introdução
 
 A especificação de qualquer *software* é uma das etapas mais importantes no seu desenvolvimento.   
 Jogos eletrônicos se encaixam também na categoria de _software_. Mas as mesmas regras se aplicam a eles?  
 
-Mais ou menos. Apesar de serem _software_, existem detalhes sobre o desenvolvimento de jogos que os diferem de outros projetos de _software_. No entanto, a etapa da especificação não deixa de ser de extrema importância para os jogos.
+Apesar de serem _software_, existem alguns detalhes sobre o desenvolvimento de jogos que os diferem de outros projetos de _software_.  
+No entanto, a etapa da especificação não deixa de ser de grande importância para os jogos.
 
 Pode ser sua intenção começar a trabalhar na história, na arte, música ou programação do seu jogo imediatamente. E as chances são altas de que você já tem uma boa ideia do que fazer com pelo menos um desses. Mas enquanto eles são todos aspectos nos quais você e sua equipe vão trabalhar eventualmente, é importante dar forma a estas idealizações. Ou seja, colocar essas ideias "no papel" de alguma forma.
 
-Qual é a importância real disso? Primeiramente, a organização. A diferença entre um projeto organizado que alcança sucesso e um que acaba cancelado muitas vezes está na etapa de formalização das ideias. Isso ocorre por vários motivos:
+Qual é a importância real disso? Primeiramente, a organização. A diferença entre um projeto organizado que alcança sucesso e um que acaba cancelado pode estar na etapa de formalização das ideias. Isso ocorre por vários motivos:
 
 - Diferenças de visões criativas entre integrantes da equipe;
 - Esquecimento de decisões e escolhas feitas anteriormente;
@@ -22,21 +24,21 @@ Qual é a importância real disso? Primeiramente, a organização. A diferença 
 
 Estes problemas devem ser evitados para que o risco de cancelmaneto seja o menor possível. Por isso, a primeira coisa que fazemos é sempre documentar tudo o que planejamos realizar no projeto, para ter-se uma base sólida para consultar quando necessário. Você não precisa delimitar o seu projeto inteiramente no primeiro momento, e naturalmente acontecerão mudanças no decorrer do desenvolvimento. Mas é importante criar um documento que servirá para ancorar o seu projeto, pelo menos na fase inicial.
 
-Além de ser um ótimo jeito de organizar e documentar suas ideias, manter um documento assim pode ser útil caso entre um novo membro na sua equipe, ou se precisar demonstrar suas ideias para um possível investidor em uma campanha de _crowdfunding_. Dessa forma, o documento deve conter a quantidade de detalhes que será relevante ao leitor. Nesse caso, também é interessante que inclua detalhes sobre o que será necessário na construção do jogo.
+Além de ser um ótimo jeito de organizar e documentar suas ideias, manter um documento assim pode ser útil caso entre um novo membro na sua equipe (e ele precise entender o projeto para trabalhar nele), ou se precisar demonstrar suas ideias para um possível investidor em uma campanha de _crowdfunding_. Dessa forma, o documento deve conter a quantidade de detalhes que será relevante ao leitor. Em vários casos também é interessante que inclua detalhes sobre o que será necessário na construção do jogo.
 
 Entramos então no mérito do **design**. Você pode pensar no design como um planejamento, uma idealização, ou como uma especificação. Geralmente, no contexto de desenvolvimento de jogos, nós chamamos o documento de design pelo nome criativo "Game Design Document" (Documento de Design de Jogo).
 
 ## Game Design Document (GDD)
 
-Não existe um padrão exato para como o GDD deve ser criado. E se você procurar online, você vai encontrar dúzias de padrões e templates diferentes. Na hora de delimitar o formato do seu documento, é importante considerar quem verá o documento e quanto tempo você quer passar detalhando-o. Pessoalmente, eu tento ser curto e objetivo nos meus, tentando passar o máximo de informação no menor espaço possível.
+Não existe um padrão exato para como o GDD deve ser criado. E se você procurar online, você vai encontrar dúzias de padrões e modelos/templates diferentes. Na hora de delimitar o formato do seu documento, é importante considerar quem verá o documento e quanto tempo você quer passar detalhando-o. Pessoalmente, eu tento ser curto e objetivo nos meus, tentando passar o máximo de informação no menor espaço possível.
 
-O seu GDD pode estar em qualquer lugar entre um documento simples de 3 ou 4 páginas, até um enorme documento extremamente detalhado como a [_Doom Bible_](https://5years.doomworld.com/doombible/doombible.pdf) (GDD do jogo Doom de 1993). Como o seu projeto acabou de começar, meu conselho é seguir a primeira opção. Porém, durante o desenvolvimento do seu projeto, é esperado que o documento cresça consideravalmente, então sinta-se à vontade para colocar quanto detalhe achar interessante no futuro.
+O seu GDD pode estar em qualquer lugar entre um documento simples de 3 ou 4 páginas, até um enorme documento descrevendo cada detalhe do funcionamento de seu jogo como a [_Doom Bible_](https://5years.doomworld.com/doombible/doombible.pdf) (GDD do jogo Doom de 1993). Como o seu projeto acabou de começar, meu conselho é seguir a primeira opção. Porém, durante o desenvolvimento do seu projeto, é esperado que o documento cresça consideravalmente, então sinta-se à vontade para colocar quanto detalhe achar interessante no futuro.
 
 Eu criei um template bem simples que costumo usar para a proposta inicial do jogo, e vou usá-lo aqui para exemplificar um preenchimento inicial. Se desejar usá-lo: 
 - [Versão Word](/Arquivos/modelo_GDDv1.2.docx) 
 - [Versão LibreOffice](/Arquivos/modelo_GDDv1.2.odt)
 
-Se procura por inspiração, vários exemplos notáveis de GDDs podem ser encontrados no seguinte repositório no Github: [Awesome GDDs](https://github.com/Roobyx/awesome-game-design). Note que a maioria destes vão ser muito maiores e mais complexos do que a especificação do seu projeto. Isso é esperado.
+Se procura por inspiração, vários exemplos notáveis de GDDs podem ser encontrados no seguinte repositório no Github: [Awesome GDDs](https://github.com/Roobyx/awesome-game-design). Note que a maioria destes vão ser muito maiores e mais complexos do que a especificação do seu projeto. Isso é esperado. Outra coisa interessante é que, se você observar, vários desses documentos são bem diferentes do que o jogo final se tornou. Isso também pode acontecer com o seu projeto, e pode ser algo bom ou ruim.
 
 Enquanto eu deixei várias notas no modelo do documento, achei relevante falar brevemente sobre cada campo aqui. Você pode encontrar o GDD inicial para os 2 projetos desenvolvidos em conjunto com o manual nos seguintes links: [Sleepy Runner], [Topdown Space Shooter]
 
@@ -44,7 +46,7 @@ Enquanto eu deixei várias notas no modelo do documento, achei relevante falar b
 A primeiro seção, "Conceito", tem o objetivo de explicar a ideia por trás do jogo de maneira simples e sucinta.  
 O "título provisório" é exatamente o que o nome implica. Talvez te interesse incluir um título de projeto. Não se preocupe muito em decidi-lo, o título final do jogo em si pode ser decidido mais a frente no projeto.  
 O "conceito inicial" é uma explicação de qual é a ideia geral para o jogo. Explique a ideia do jogo, e porque ela é interessante.  
-"Gêneros" se refere a classificação do jogo: É um shooter como _Call of Duty_? Ou um jogo de plataforma como _Super Mario Odyssey_? Talvez seja um jogo de corrida, ou um _metroidvania_. Qual é o estilo da arte? O estilo da câmera? Pense em outros gêneros também.  
+"Gêneros" se refere a classificação do jogo: É um shooter como _Call of Duty_? Ou um jogo de plataforma como _Super Mario Odyssey_? Talvez seja um jogo de corrida, ou um _metroidvania_. Qual é o estilo da arte? O estilo da câmera? Pense em outros gêneros também. Gêneros geralmente serão usados no _marketing_ de seu jogo.  
 A intenção de "detalhes interessantes" é dar um destaque aos atributos únicos ou de maior interesse no seu jogo. Isso pode ser parte do que descreveu no conceito inicial.  
 O "público alvo" é também bem óbvio. Para qual público este jogo é criado? Ou seja, que tipo de jogador você deseja interessar com seu projeto?
 
