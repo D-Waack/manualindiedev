@@ -8,7 +8,7 @@
 
 Após documentar o seu projeto, o próximo passo é começá-lo. Entretanto, existem inúmeros ambientes, linguagens, formatos e plataformas nas quais você pode desenvolver um jogo.
 
-E você tem que escolher uma.
+E você deve escolher uma.
 
 É claro, eu pretendo te ajudar com essa escolha. Mas ao final do dia, isso será decidido por você (ou o programador em sua equipe). E essa escolha vai mudar completamente como o desenvolvimento de seu jogo vai funcionar.
 
