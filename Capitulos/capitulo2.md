@@ -67,7 +67,7 @@ Não só isso, mas uma simples pesquisa vai revelar que existem dúzias e dúzia
 
 Enquanto eu não posso decidir por você, e acho bom que faça sua própria pesquisa sobre o assunto, vou te dar algumas dicas e opções para auxiliar sua decisão. (Lembrando que este manual está sendo escrito em 2023, e novas tecnologias e opções melhores podem ter aparecido se estiver lendo este manual em um futuro não tão distante). Se existe um programador em sua equipe, a dele(a) deve ser a opinião principal neste tema.
 
-# Fator 1: Programar ou Não Programar (Eis a questão?)
+### Fator 1: Programar ou Não Programar (Eis a questão?)
 
 A programação é um detalhe muito importante, pois, na maioria dos casos, vai ser a parte mais importante do seu projeto. Cada _engine_ tem a sua prórpria abordagem pra como as coisas devem ser programadas. Geralmente, isso é demonstrado em formas de linguagens diferentes. 
 
@@ -82,19 +82,52 @@ Pessoalmente, creio que ter um programador na equipe é sempre bom. Isso é porq
 
 Entretanto, a escolha continua sendo sua, algumas opções de _engines_ que permitem criação de jogos sem uso de programação são: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
 
-# Fator 2: Plataforma Alvo
+### Fator 2: Plataforma Alvo
 
 Um detalhe muito importante é para onde você deseja exportar o seu jogo. Certas _engines_ não podem exportar para _mobile_, outras não exportam muito bem para _Mac_ e _Linux_. Na hora de escolher sua _engine_, você deve procurar sobre a possibilidade de exportar para sua plataforma desejada.
 
-# Fator 3: Estilo do Jogo
+### Fator 3: Estilo do Jogo
 
 Certas _engines_ vão servir apenas para jogos 2D ou 3D, enquanto várias delas são híbridas.
 
 Dependendo do gênero do seu jogo, você pode querer usar uma _engine_ específica voltada para ele. A maioria das _engines_ são feitas para usos gerais, e vão conseguir criar qualquer tipo de jogo, mas uma pode ser melhor do que a outra em determinada tarefa, e isso você deve considerar. 
 
-Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. Por exemplo, a série de _engines_ _RPG Maker_ vêm com todo o formato necessário para criação de um jogo no estilo de JRPGs antigos como os _Final Fantasy I-V_, _Dragon Quest_, etc... A _engine_ _Renpy_ é ótima para criar jogos no estilo _Visual Novel_, e 
+Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. Por exemplo, a série de _engines_ _RPG Maker_ vêm com todo o formato necessário para criação de um jogo no estilo de JRPGs antigos como os _Final Fantasy I-V_, _Dragon Quest_, etc... A _engine_ _Renpy_ é ótima para criar jogos no estilo _Visual Novel_, entre outros exemplos.
+
+É sempre possível criar o mesmo estilo de jogo em outras _engines_ gerais, mas se o seu objetivo é criar algo específico, talvez seja mais fácil usar uma _engine_ especializada.
+
+### Fator 4: Recursos e Material
+
+Outro fator muito importante é a disponibilidade de recursos e materiais para a _engine_ relevante. Geralmente, quanto mais material educativo está disponível para sua _engine_, mais fácil será o processo de desenvolvimento. 
+
+Como assim?
+
+Muitas vezes o programador de seu jogo vai ficar sem saber como implementar determinada ideia. Nesse caso, uma simples pesquisa no Google pode ser a solução para esse problema. Isto é, se a _engine_ for popular e tiver fóruns de dúvidas, tutoriais e afins. Não é esperado que você encontre isso para _engines_ novas e obscuras, o que vai implicar em mais tempo lendo documentações ou fazendo posts em fóruns.
+
+Para _engines_ populares como _Unity_, por exemplo, é muito mais fácil encontrar uma solução para o seu problema imediatamente, e adaptá-la para seu projeto se torna muito mais rápido e prático.
+
+### Sugestões:
+
+Mesmo com todos esses fatores em mente, às vezes continua sendo difícil encontra a _engine_ perfeita. Então eu deixarei minhas próprias recomendações aqui:
+
+Se não deseja programar, as opções acima são a solução: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
+
+Se o seu jogo é 3D, Unity ou Unreal são as opções mais completas. 
+
+Se o seu jogo é um RPG 2D ou uma visual novel, talvez te interesse RPG Maker, ou Renpy.
+
+Para jogos 2D como jogos de plataforma, _metroidvanias_ e outros jogos do tipo, recomendo Unity ou Godot.
+
+Para o caso dos projetos que montarei durante a criação do manual, fiquei sem conseguir decidir entre Godot e Unity. Ao final, decidi usar Godot para as duas, pois é a _engine_ com a qual eu estou mais familiar, e acho seu formato de árvores e nós mais simples de entender que o formato de cenas no Unity. Godot tem bastante material para desenvolvimento 2D, enquanto para o 3D nem tanto.
+
+Para o seu caso, sinta-se livre para escolher a que achar mais adequada. De qualquer forma, Unity será minha recomendação geral para a maioria dos projetos, com Godot vindo pertinho em segundo. Após escolher sua _engine_, não esqueça de preenchê-la no seu GDD! Sugiro que salve como uma nova versão, e não por cima do documento atual. Será interessante comparar as diferentes versões no final de seu projeto.
+
+### Link GDD atualizada !!TODO
+### Link GDD atualizada
 
 ## Organização de Arquivos
+
+
 
 ## Conclusão
 Ao final desse capítulo, você deveria ter um entendimento básico sobre as diferentes opções para desenvolvimento de jogos. Idealmente, também já teria alguma ideia de qual _engine_ ou _framework_ usará para seu projeto. Além disso, esperamos que tenha decidido como organizar seus arquivos, ou já estava considerando qual formato funcionará melhor para sua organização.
