@@ -1,8 +1,8 @@
 
 # Capítulo 4: O (Primeiro) Ciclo
-"Um homem escolhe, um escravo obedece." - Andrew Ryan, "Bioshock" (2007)
+"O homem certo no lugar errado pode fazer toda a diferença no mundo." - G-Man, "Half Life 2" (2004)
 
-![Capítulo 2 capa](../Arquivos/Imagens/capa_02.jpg 'A man chooses, a slave obeys.')
+![Capítulo 4 capa](../Arquivos/Imagens/capa_04.jpg 'The right man in the wrong place can make all the difference in the world.')
 
 ## Introdução
 
