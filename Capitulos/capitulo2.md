@@ -1,8 +1,8 @@
 
-# Capítulo 1: Design
-"É perigoso ir sozinho! Leve isto." - Velho em uma caverna, "The Legend of Zelda" (1986)
+# Capítulo 2: Preparação
+"Um homem escolhe, um escravo obedece." - Andrew Ryan, "Bioshock" (2007)
 
-![Capítulo 1 capa](https://i.imgur.com/GHZYcAZ.jpg "It's dangerous to go alone! Take this.")
+![Capítulo 2 capa]('Arquivos/Imagens/capa_02.jpg')
 
 ## Introdução
 
