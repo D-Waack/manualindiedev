@@ -6,27 +6,37 @@
 
 ## Introdução
 
-A especificação de qualquer *software* é uma das etapas mais importantes no seu desenvolvimento.   
-Jogos eletrônicos se encaixam também na categoria de _software_. Mas as mesmas regras se aplicam a eles?  
+Após documentar o seu projeto, o próximo passo é começá-lo. Entretanto, existem inúmeros ambientes, linguagens, formatos e plataformas nas quais você pode desenvolver um jogo.
 
-Apesar de serem _software_, existem alguns detalhes sobre o desenvolvimento de jogos que os diferem de outros projetos de _software_.  
-No entanto, a etapa da especificação não deixa de ser de grande importância para os jogos.
+E você tem que escolher uma.
 
-Pode ser sua intenção começar a trabalhar na história, na arte, música ou programação do seu jogo imediatamente. E as chances são altas de que você já tem uma boa ideia do que fazer com pelo menos um desses. Mas enquanto eles são todos aspectos nos quais você e sua equipe vão trabalhar eventualmente, é importante dar forma a estas idealizações. Ou seja, colocar essas ideias "no papel" de alguma forma.
+É claro, eu pretendo te ajudar com essa escolha. Mas ao final do dia, isso será decidido por você (ou o programador em sua equipe). E essa escolha vai mudar completamente como o desenvolvimento de seu jogo vai funcionar.
 
-Qual é a importância real disso? Primeiramente, a organização. A diferença entre um projeto organizado que alcança sucesso e um que acaba cancelado pode estar na etapa de formalização das ideias. Isso ocorre por vários motivos:
+## Frameworks e Engines
 
-- Diferenças de visões criativas entre integrantes da equipe;
-- Esquecimento de decisões e escolhas feitas anteriormente;
-- Aumento constante do escopo do projeto;
-- Falta de foco na manutenção do projeto;
-- entre outros...
+Todo jogo é basicamente um conjunto de sistemas diferentes, sendo executados ao mesmo tempo e interagindo entre si. 
 
-Estes problemas devem ser evitados para que o risco de cancelmaneto seja o menor possível. Por isso, a primeira coisa que fazemos é sempre documentar tudo o que planejamos realizar no projeto, para ter-se uma base sólida para consultar quando necessário. Você não precisa delimitar o seu projeto inteiramente no primeiro momento, e naturalmente acontecerão mudanças no decorrer do desenvolvimento. Mas é importante criar um documento que servirá para ancorar o seu projeto, pelo menos na fase inicial.
+Por exemplo, quando eu clico no executável de _Minecraft_, aparece uma tela de menu principal (visual); ao mesmo tempo, uma música agradável começa a tocar (áudio); e se eu mexer o meu mouse e clicar em um botão, a tela vai reagir e fazer alguma coisa (_input_); se eu clicar em _multiplayer_, o jogo vai se conectar a internet e tentar se comunicar com um servidor (_networking_); se eu clicar em novo mundo, ele vai criar um (geração de mapas); e ao final, meu personagem será livre para interagir com esse mundo, onde várias coisas funcionam como o mundo real (simulação de mundo e física).
 
-Além de ser um ótimo jeito de organizar e documentar suas ideias, manter um documento assim pode ser útil caso entre um novo membro na sua equipe (e ele precise entender o projeto para trabalhar nele), ou se precisar demonstrar suas ideias para um possível investidor em uma campanha de _crowdfunding_. Dessa forma, o documento deve conter a quantidade de detalhes que será relevante ao leitor. Em vários casos também é interessante que inclua detalhes sobre o que será necessário na construção do jogo.
+Tudo isso acontece simultâneamente e de maneira harmoniosa, mas no plano de fundo, vários processos diferentes são executados ao mesmo tempo para garantir que tudo aconteça na ordem e maneira correta.
 
-Entramos então no mérito do **design**. Você pode pensar no design como um planejamento, uma idealização, ou como uma especificação. Geralmente, no contexto de desenvolvimento de jogos, nós chamamos o documento de design pelo nome criativo "Game Design Document" (Documento de Design de Jogo).
+No contexto de desenvolvimento, você vai encontrar cada uma dessas tarefas (_networking_, input, _display_ visual, gerenciamento de música, etc.) executada pelo que chamamos de uma "biblioteca" (_library_). Uma biblioteca para redes geralmente vai conter diversas funções necessárias para conectar diferentes computadores em um único jogo, enquanto uma biblioteca gráfica vai conter diferentes funções para mostrar coisas em sua tela.
+
+Como cada biblioteca só se preocupa com uma tarefa, você não pode ter um jogo usando apenas uma. É aí que entram os _frameworks_.
+
+Um _framework_ já fez o trabalho de juntar diversas bibliotecas para uso unificado. 
+
+A melhor escolha para desenvolvimento costuma vir no formato de uma _Game Engine_ (motor de jogos), que são programas de computador que oferecem um ambiente quase completo para a construção de um jogo. Eles fazem a maior parte do trabalho, incluindo renderizar os gráficos, incluir áudio, gerenciar memória, simular física. Algumas vão até incluir editores de mapas e outras ferramentas úteis.
+
+Para um desenvolvedor _indie_, partir de uma dessas é provavelmente a melhor escolha. Porém, existem casos onde uma _engine_ não oferece as ferramentas necessárias para que seu jogo seja criado da maneira que deseja. Neste caso, existem algumas opções: 
+- tentar forçar que a _engine_ faça o que deseja (através de uma gambiarra, talvez);
+- usar uma _engine_ diferente;
+- criar sua prórpia _engine_;
+- usar um _framework_.
+
+Você vai perceber que muitos desenvolvedores AAA vão fazer seus jogos em uma _engine_ já estabelecida, ou aparecer com uma nova. Por exemplo, "Fortnite", um jogo bem popular atualmente, desenvolvido pela empresa _Epic Games_, foi criado usando a _engine_ Unreal. Enquanto "Resident Evil Village", um jogo que eu tenho jogado atualmente, foi desenvolvido pela empresa _Capcom_, usando sua própria _engine_ "RE ENGINE".
+
+
 
 ## Game Design Document (GDD)
 
