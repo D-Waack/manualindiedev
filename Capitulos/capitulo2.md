@@ -40,9 +40,10 @@ Caso você se depare com uma necessidade que sua _engine_ não consegue suprir, 
 - tentar forçar que a _engine_ faça o que deseja (através de uma gambiarra, talvez);
 - usar uma _engine_ diferente;
 - usar um _framework_;
-- criar sua prórpia _engine_ (talvez a partir de um _framework_).
+- criar sua prórpia "_engine_" a partir de um _framework_;
+- criar sua própria "_engine_" do zero.
 
-A última possibilidade, criar uma _engine_, ou até mesmo criar um _framework_, é algo que eu desaprovo completamente para o contexto _indie_. Essencialmente, você estaria perdendo um tempo enorme reinventando a roda e provavelmente chegaria a resultados inferiores do que se tivesse apenas utilizado uma _engine_ pronta. Caso seu objetivo seja a criação de uma _engine_ do zero, então vá em frente, mas provavelmente levará um bom tempo até que o manual que está lendo seja de utilidade para você.
+A última possibilidade, criar uma _engine_ a partir do nada, é algo que eu desaprovo completamente para o contexto _indie_. Essencialmente, você estaria perdendo um tempo enorme reinventando a roda e provavelmente chegaria a resultados inferiores do que se tivesse apenas utilizado uma _engine_ pronta. É claro, é um ótimo jeito de aprender programação para jogos a fundo. Caso seu objetivo seja a criação de uma _engine_ do zero, então vá em frente, mas provavelmente levará um bom tempo até que o manual que está lendo agora seja de utilidade para você.
 
 Na indústria como um todo, você vai perceber que muitos desenvolvedores AAA vão fazer seus jogos em uma _engine_ já estabelecida, ou criar uma nova. Por exemplo, "Fortnite", um jogo bem popular atualmente, desenvolvido pela empresa _Epic Games_, foi criado usando a _engine_ Unreal. Enquanto "Resident Evil Village", um jogo que eu tenho jogado atualmente, foi desenvolvido pela empresa _Capcom_, usando sua própria _engine_ "RE ENGINE".
 
@@ -50,6 +51,50 @@ No contexto _indie_, _engines_ como Unity, Unreal, Godot, Game Maker, entre vár
 
 ## Escolhendo sua Engine
 
+A _engine_ ideal para o seu projeto pode não ser a _engine_ ideal para o meu projeto. E cabe a você escolher o que encaixa melhor para seu jogo e para seu formato de trabalho. Por exemplo, enquanto eu acho Unreal uma ótima engine para desenvolvimento 3D, eu nunca a recomendaria para desenvolvimento 2D.
+
+Entre _engines_ diferentes, você vai encontrar diferenças diversas:
+- linguagens de programação usadas;
+- tipo de ambiente (focado em jogos 2D, 3D ou híbridos);
+- disponibilidade de ferramentas e _plugins_ para auxílio;
+- lojas com recursos e _assets_ para uso e reuso;
+- tempo de _building_ (criação do executável do jogo);
+- plataformas de exportação (se pode facilmente exportar para PC, consoles, web ou mobile);
+- especialidade (se geral, se focado em algum gênero de jogo);
+- entre outros...
+
+Não só isso, mas uma simples pesquisa vai revelar que existem dúzias e dúzias de opções diferentes. E com isso em mente, não é difícil ficar indeciso quanto à qual _engine_ usar. Hoje, após muita experiência, eu tenho uma boa ideia de quais _engines_ e ferramentas usarei para qualquer projeto que começar, mas já passei muito tempo testando várias opções diferentes até chegar nesse ponto.
+
+Enquanto eu não posso decidir por você, e acho bom que faça sua própria pesquisa sobre o assunto, vou te dar algumas dicas e opções para auxiliar sua decisão. (Lembrando que este manual está sendo escrito em 2023, e novas tecnologias e opções melhores podem ter aparecido se estiver lendo este manual em um futuro não tão distante). Se existe um programador em sua equipe, a dele(a) deve ser a opinião principal neste tema.
+
+# Fator 1: Programar ou Não Programar (Eis a questão?)
+
+A programação é um detalhe muito importante, pois, na maioria dos casos, vai ser a parte mais importante do seu projeto. Cada _engine_ tem a sua prórpria abordagem pra como as coisas devem ser programadas. Geralmente, isso é demonstrado em formas de linguagens diferentes. 
+
+Para um programador experiente que entende de lógica, pular de uma linguagem para outra exige um pouco de estudo, mas não é uma mudança impossível. Seu programador pode ser familiar com uma linguagem como C++, e talvez seja interessante escolher uma _engine_ como Unity ou Unreal, onde é possível utilizá-la. Entretanto, caso escolha uma _engine_ com uma outra linguagem, é possível que o seu programador consiga se adaptar à nova linguagem (isso pode levar certo tempo, dependendo do conhecimento dele.)
+
+Entretanto, caso você não tenha um programador em sua equipe, a questão se torna um pouco mais complexa. Neste caso, você teria algumas opções:
+- Utilizar uma _engine_ que não exige programação;
+- Escolher alguém da equipe para aprender programação;
+- Recrutar um programador para a equipe.
+
+Pessoalmente, creio que ter um programador na equipe é sempre bom. Isso é porque programação permite uma flexibilidade e usabilidade maior do que as alternativas. É claro, isso também exige mais conhecimento e treino. Aprender programação não é algo trivial, mas não é nada impossível. Caso esteja disposto, é uma boa opção. Caso decida recrutar um programador, seja um novo membro ou uma pessoa contratada, lembre-se dos pros e cons de trabalhar com mais uma pessoa na equipe.
+
+Entretanto, a escolha continua sendo sua, algumas opções de _engines_ que permitem criação de jogos sem uso de programação são: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
+
+# Fator 2: Plataforma Alvo
+
+Um detalhe muito importante é para onde você deseja exportar o seu jogo. Certas _engines_ não podem exportar para _mobile_, outras não exportam muito bem para _Mac_ e _Linux_. Na hora de escolher sua _engine_, você deve procurar sobre a possibilidade de exportar para sua plataforma desejada.
+
+# Fator 3: Estilo do Jogo
+
+Certas _engines_ vão servir apenas para jogos 2D ou 3D, enquanto várias delas são híbridas.
+
+Dependendo do gênero do seu jogo, você pode querer usar uma _engine_ específica voltada para ele. A maioria das _engines_ são feitas para usos gerais, e vão conseguir criar qualquer tipo de jogo, mas uma pode ser melhor do que a outra em determinada tarefa, e isso você deve considerar. 
+
+Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. Por exemplo, a série de _engines_ _RPG Maker_ vêm com todo o formato necessário para criação de um jogo no estilo de JRPGs antigos como os _Final Fantasy I-V_, _Dragon Quest_, etc... A _engine_ _Renpy_ é ótima para criar jogos no estilo _Visual Novel_, e 
+
+## Organização de Arquivos
 
 ## Conclusão
 Ao final desse capítulo, você deveria ter um entendimento básico sobre as diferentes opções para desenvolvimento de jogos. Idealmente, também já teria alguma ideia de qual _engine_ ou _framework_ usará para seu projeto. Além disso, esperamos que tenha decidido como organizar seus arquivos, ou já estava considerando qual formato funcionará melhor para sua organização.
