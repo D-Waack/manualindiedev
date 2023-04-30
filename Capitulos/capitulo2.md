@@ -6,7 +6,7 @@
 
 ## Introdução
 
-Após documentar o seu projeto, o próximo passo é começá-lo. Existem inúmeros ambientes, linguagens, formatos e plataformas nas quais você pode desenvolver um jogo.
+Após documentar o seu projeto, o próximo passo é começá-lo. Existem inúmeros ambientes, linguagens, formatos e plataformas nos quais você pode desenvolver um jogo.
 
 E você deve escolher entre eles.
 
@@ -127,9 +127,29 @@ Para o seu caso, sinta-se livre para escolher a que achar mais adequada. De qual
 
 ## Organização de Arquivos
 
+Com uma _engine_ em mente, outro detalhe importante é como organizará seus arquivos. Isso não é um detalhe trivial. É de **extrema importância**. 
 
+Muitas coisas em seu projeto serão arquivos. Por exemplo, imagens de fundo, _sprites_ de personagens, modelos 3D e texturas, músicas e sons diversos, mapas, _scripts_. Todos estes arquivos estarão dentro da pasta de seu projeto. E eles são os principais responsáveis pelo "peso" dos jogos que você baixa.
+
+Algumas _engines_ vão tirar essa opção das suas mãos, seguindo sua própria estrutura de arquivos, e cabe a você colocá-los no lugar certo. Entretanto, na maioria dos casos a estrutura de arquivos fica completamente a critério do desenvolvedor.
+
+Para a manutenção de seu projeto é importante ter em mente como organizá-los. Pois quanto mais complexo ele ficar, mais difícil vai ser encontrar seus arquivos. Saber exatamente onde encontrar cada arquivo se torna indispensável à medida que os mesmos vão se amontoando na pasta de seu jogo.
+
+Não existe um jeito "certo" de organizar seus arquivos. Mas existem jeitos melhores e piores. 
+
+Pessoalmente, eu costumava separá-los no seguinte formato, tentando seguir certa noção de orientação a objetos: **Entities**, **Managing**, **Persistent**, **Resources**, **UI** e **World**
+(imagem do arquivo)
+
+Esse formato é compreensível e útil, mas deixa muito a desejar. Os "recursos" eram todo o tipo de arquivo que não era um _script_. Ou seja, texturas, _sprites_, e música todos ficavam em uma mesma pasta, enquanto todo o resto ficava espalhado. É fácil imaginar a frustração de ter que passar por uma dúzia de pastas completamente separadas ao meu objeto para encontrar uma textura específcia toda vez que quero mudar seu visual.
+
+Percebendo que isso não era tão prático, mudei para um novo jeito de organizar as pastas:
+(imagem 2 do arquivo)
+
+Objetos, seus _scripts_, modelos, texturas e sons ficam todos juntos na mesma pasta. Caso um artefato seja usado em mais de um objeto, o mesmo fica na pasta "common". Dessa forma, evito o problema que ocorria antes. É claro, dependendo do projeto, essa estrutura pode não ser ideal.
+
+Minha sugestão fica para o formato que uso atualmente, mas sinta-se livre para usar sua própria estrutura. Apenas lembre-se de mantê-la consistente e organizada sempre, para evitar futuros transtornos. Anote-o em algum lugar, mesmo no GDD se quiser.
 
 ## Conclusão
-Ao final desse capítulo, você deveria ter um entendimento básico sobre as diferentes opções para desenvolvimento de jogos. Idealmente, também já teria alguma ideia de qual _engine_ ou _framework_ usará para seu projeto. Além disso, esperamos que tenha decidido como organizar seus arquivos, ou já estava considerando qual formato funcionará melhor para sua organização.
+Ao final desse capítulo, você deveria ter um entendimento básico sobre as diferentes opções para desenvolvimento de jogos. Idealmente, também já teria alguma ideia de qual _engine_ ou _framework_ usará para seu projeto. Além disso, esperamos que tenha decidido como organizar seus arquivos, ou já esteja considerando qual estrutura funcionará melhor para sua organização.
 
 No próximo capítulo vamos entrar no mérito do "Ciclo de Desenvolvimento", onde vou explicar como funcionará o desenvolvimento em si, abordando temas como planejamento, prazos, priorização de tarefas, entre vários outros aspectos importantes.
