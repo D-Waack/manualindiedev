@@ -6,7 +6,7 @@
 
 ## Introdução
 
-Após documentar o seu projeto, o próximo passo é começá-lo. Entretanto, existem inúmeros ambientes, linguagens, formatos e plataformas nas quais você pode desenvolver um jogo.
+Após documentar o seu projeto, o próximo passo é começá-lo. Existem inúmeros ambientes, linguagens, formatos e plataformas nas quais você pode desenvolver um jogo.
 
 E você deve escolher uma.
 
