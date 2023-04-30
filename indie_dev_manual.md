@@ -13,13 +13,13 @@ O texto a seguir é um manual para desenvolvimento de jogos indie, ou seja, jogo
 
 * [Capítulo 1: Design](Capitulos/capitulo1.md) - Importância do Design, Conceitos Preliminares, GDDs
 
-* [Capítulo 2: Preparação] - Escolha do ambiente de desenvolvimento, organização de arquivos
+* [Capítulo 2: Preparação](Capitulos/capitulo2.md) - Escolha do ambiente de desenvolvimento, organização de arquivos
 
-* [Capítulo 3: O Ciclo] - Explicação sobre o ciclo de desenvolvimento (como funcionam sprints, como organizá-los dependendo da organização do time)
+* [Capítulo 3: O Ciclo](Capitulos/capitulo3.md) - Explicação sobre o ciclo de desenvolvimento (como funcionam sprints, como organizá-los dependendo da organização do time)
 
-* [Capítulo 4: O Primeiro Ciclo] - Sprint inicial, decidindo os detalhes mais importantes para a primeira fase, práticas de programação importantes
+* [Capítulo 4: O Primeiro Ciclo](Capitulos/capitulo4.md) - Sprint inicial, decidindo os detalhes mais importantes para a primeira fase, práticas de programação importantes
 
-* [Capítulo 5: Planejando os Ciclos] - Como priorizar e planejar os próximos ciclos de desenvolvimento do jogo
+* [Capítulo 5: Planejando os Ciclos](Capitulos/capitulo5.md) - Como priorizar e planejar os próximos ciclos de desenvolvimento do jogo
 
 * [Capítulo 6: Diversos Problemas] - Problemas que podem surgir durante os sprints, como evitá-los e resolvê-los, como fazer uma pesquisa técnica, como fazer um post em um fórum de dúvidas
 
