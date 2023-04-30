@@ -1,8 +1,8 @@
 
 # Capítulo 5: Planejando os Ciclos
-"Um homem escolhe, um escravo obedece." - Andrew Ryan, "Bioshock" (2007)
+"Você se encontrou com um destino terrível, não foi?" - Vendedor de Máscaras Alegre, "The Legend of Zelda - Majora's Mask" (2000)
 
-![Capítulo 2 capa](../Arquivos/Imagens/capa_02.jpg 'A man chooses, a slave obeys.')
+![Capítulo 5 capa](../Arquivos/Imagens/capa_05.jpg 'A man chooses, a slave obeys.')
 
 ## Introdução
 
