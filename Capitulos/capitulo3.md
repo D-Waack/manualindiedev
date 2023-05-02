@@ -1,8 +1,8 @@
 
-# Capítulo 3: O Primeiro Ciclo
-"Ciência não é sobre 'por que'. É sobre 'por que não'." - Cave Johnson, "Portal 2" (2011)
+# Capítulo 3: O Ciclo de Desenvolvimento
+"Eu já te contei a definição de insanidade?" - Vaas Montenegro, "Far Cry 3" (2012)
 
-![Capítulo 3 capa](../Arquivos/Imagens/capa_03.png 'Science isn\'t about \"why\". It\'s about \"why not\".')
+![Capítulo 3 capa](../Arquivos/Imagens/capa_03.png 'Have I ever told you the definition of insanity?')
 
 ## Introdução
 
@@ -10,8 +10,15 @@ Se tudo deu certo, você já escolheu qual será sua _engine_ e já tem certa no
 
 Bom, mais ou menos.
 
-Antes que sua equipe comece a trabalhar nos diversos artefatos, é interessante que você crie um protótipo básico que ilustrará seu jogo. 
+Antes que sua equipe comece a trabalhar nos diversos artefatos, é necessário definiar duas coisas:
 
+- A divisão das tarefas;
+- O ritmo de trabalho.
 
+### Divisão de tarefas 
+
+Se seu projeto é solo, seus ciclos devem seguir uma estrutura simples que vou discutir mais a frente. Mas se você trabalha em um grupo, as coisas ficam um pouco mais complexas.
+
+Uma ótima coisa quando trabalhando em grupo é que várias pessoas podem trabalhar ao mesmo tempo. Porém, isso traz um trabalho para organização da equipe.
 
 ## Conclusão
