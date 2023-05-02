@@ -73,10 +73,59 @@ Se você delimitar um trabalho muito complexo para um tempo muito curto, o mesmo
 
  Em certos casos, as opções acima não serão possíveis, pois você e sua equipe não entendem o escopo da próxima tarefa. Por exemplo, na primeira vez que você criar um sistema de física, você não vai saber como dividi-lo em pedaços. Nesse caso, delimitar estes diferentes aspectos pode ser parte do objetivo. Se a sua equipe é inexperiente, "pesquisar sobre sistemas de física e começar a implementá-lo para o personagem jogável" é melhor do que "sistema de física".
 
-Aqui eu foquei especificamente para o pessoal da programação, mas o mesmo se aplica aos outros membros de cada equipe. Seja sempre específico e focado com seus objetivos.
+Aqui eu foquei especificamente para o pessoal da programação, mas o mesmo se aplica aos outros membros de cada equipe. Seja sempre que possível específico e focado com seus objetivos.
 
-### Executar o Ciclo
+### 2. Executar o ciclo
 
-Durante o tempo delimitado para seu ciclo, você ou o time fará o que foi decidido. O programador vai criar um sistema, o artista vai trabalhar em algum _design_, o músico vai criar um tema. Ao líder fica o papel de ver se todo mundo está trabalhando conforme foi decidido. Lembrando sempre de respeitar o tempo e privacidade de sua equipe.
+Durante o tempo delimitado para seu ciclo, você e o time farão o que foi decidido. O programador vai criar um sistema, o artista vai trabalhar em algum _design_, o músico vai criar um tema musical. Ao líder fica o papel de ver se todo mundo está trabalhando conforme foi decidido. Lembrando sempre de respeitar o tempo e privacidade de sua equipe.
+
+Durante a execução do ciclo, os membros _vão_ encontrar dificuldades ou dúvidas. O diálogo deve ser sempre presente para que membros possam se apoiar e opinar sobre cada situação.
+
+Caso o trabalho de um ciclo tenha sido terminado por um membro, pode ser interessante a ele começar a trabalhar em outra coisa, ou apoiar outros membros em suas tarefas.
+
+Instruções específicas de como melhor executar cada ciclo virão em seus respectivos capítulos mais a frente.
+
+### 3. Concluir o ciclo
+
+Ao final do tempo delimitado, você deve juntar sua equipe novamente (ou falar com cada um a parte) para discutir o que foi feito durante o mesmo. Aqui encontramos um binário. O trabalho delimitado foi feito ou não.
+
+Para o futuro do seu projeto, a avaliação desse trabalho importa tanto quanto a execução dele. Se o trabalho não foi feito, vale analisar algumas questões:
+
+- Houve algum imprevisto que impediu a realização da meta?
+- O tempo alocado foi muito curto para essa tarefa?
+- Houve alguma dificuldade para a realização do trabalho? (Bem comum)
+
+Entender as respostas a perguntas como essas é fundamental para adaptar o melhorar o ritmo de trabalho. Às vezes, realmente houve um problema. Em outros casos, os membros de sua equipe simplesmente não quiseram trabalhar. E isso é algo com o qual você terá que lidar às vezes.
+
+Caso o trabalho tenha sido feito todo com sucesso, algumas outras perguntas podem ser relevantes:
+
+- O trabalho delimitado foi pouco?
+- O que contribuiu para que o trabalho fluísse tão bem?
+- Existe algum jeito de melhorar?
+
+Novamente, essas perguntas e outras podem ajudar a aprimorar o processo para o próximo ciclo.
+
+De qualquer forma, é esperado que pelo menos alguma coisa tenha sido feita. É importante documentar algumas coisas:
+
+- O que foi feito com sucesso?
+- O que faltou fazer?
+
+Esses detalhes devem ser documentados e mantidos em mente na hora do planejamento do próximo ciclo. O que ficar para trás, e ideias que foram tidas durante o ciclo são documentadas no _backlog_.
+
+Após uma reflexão sobre o resultado do ciclo anterior, geralmente se inicia o próximo, mas existe uma outra etapa muito importante.
+
+### 4. Testando resultados
+
+Após o fechamento de um ciclo, você pode ou não ter um produto executável. Geralmente, esse tipo de protótipo leva um pouco de tempo para sair do chão na etapa de produção, mas depois é facilmente construído por cima (_build_) a cada ciclo (_alfa_).
+
+Para o desenvolvimento de jogos, testar estes protótipos é extremamente importante para encontrar _bugs_, problemas e verificar se está ficando da maneira desejada. A isso chamamos de _playtesting_. Certas equipes podem ter um membro específico apenas para fazer isso. Em outras, os próprios membros da equipe testam o que foi feito.
+
+Quando estes testes serão feitos vai depender da sua organização. Em certos casos, pode ser interessante testar um módulo criado ao final do ciclo, durante a avaliação. Assim, aprimorá-lo já entra como parte do próximo ciclo. Em outros casos, pode-se iniciar o trabalho em outro módulo, e testar o anterior pode ser feito durante o próximo ciclo. 
+
+Eu falo mais sobre _playtesting_ nos capítulos voltados à programação.
 
 ## Conclusão
+
+Ao final desse capítulo, esperamos que tenha uma boa ideia de como planejará e executará o ciclo de desenvolvimento para o seu jogo. Isso pode parecer bem simplista e vago, mas você perceberá eventualmente que o estabelecimento de metas e reflexão sobre o que foi realizado serão de extrema importância para a organização do seu projeto.
+
+Definido o ciclo, no próximo capítulo falaremos do primeiro ciclo, e como delimitar os próximos até a criação do primeiro protótipo.
