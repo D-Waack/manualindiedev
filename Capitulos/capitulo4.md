@@ -1,9 +1,14 @@
 
 # Capítulo 4: O (Primeiro) Ciclo
-"O homem certo no lugar errado pode fazer toda a diferença no mundo." - G-Man, "Half Life 2" (2004)
+"Ciência não é sobre 'por que'. É sobre 'por que não'." - Cave Johnson, "Portal 2" (2011)
 
-![Capítulo 4 capa](../Arquivos/Imagens/capa_04.jpg 'The right man in the wrong place can make all the difference in the world.')
+<p align="center">
+  <img src="../Arquivos/Imagens/capa_04.jpg" />
+</p>
+
+![Capítulo 4 capa](../Arquivos/Imagens/capa_04.jpg 'Science isn't about \'why\'. It's about \'why not\'.')
 
 ## Introdução
+
 
 ## Conclusão
