@@ -6,7 +6,7 @@
   <img src="../Arquivos/Imagens/capa_04.jpg" />
 </p>
 
-![Capítulo 4 capa](../Arquivos/Imagens/capa_04.jpg 'Science isn't about \'why\'. It's about \'why not\'.')
+![Capítulo 4 capa](../Arquivos/Imagens/capa_04.jpg 'Science isn\'t about \'why\'. It's about \'why not\'.')
 
 ## Introdução
 
