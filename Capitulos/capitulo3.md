@@ -2,7 +2,7 @@
 # Capítulo 3: O Ciclo de Desenvolvimento
 "Eu já te contei a definição de insanidade?" - Vaas Montenegro, "Far Cry 3" (2012)
 
-![Capítulo 3 capa](../Arquivos/Imagens/capa_03.png 'Have I ever told you the definition of insanity?')
+![Capítulo 3 capa](../Arquivos/Imagens/capa_03.jpg 'Have I ever told you the definition of insanity?')
 
 ## Introdução
 
