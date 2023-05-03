@@ -98,4 +98,11 @@ Geralmente, o fórum vai ter uma seção em algum lugar te oferecendo sugestões
 - Mostre evidências: nesse contexto, uma imagem não equivale a mil palavras, mas ajuda bastante a entender seu problema.
 - Engaje: Ajude-os a ajudá-lo. Responda as perguntas que fizerem, tente contribuir.
 
+O maior problema com questões em fóruns é que nada garante que pode demorar certo tempo para que sejam respondidas, e que em certos casos elas simplesmente não são respondidas. Por isso, esse tipo de ação deve ficar para último caso.
+
+## Erros no código
+
 ## Conclusão
+Neste capítulo descrevemos um _workflow_ para lidar com situações adversas durante um ciclo de desenvolvimento. Esse é um tipo de coisa com a qual você deve estar acostumado lidar, pois não vão ser poucas às vezes em que precisará procurar por uma solução.
+
+No próximo capítulo, vou falar um pouco sobre _playtesting_ e como coletar _feedback_ de jogadores.
