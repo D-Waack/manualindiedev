@@ -101,6 +101,21 @@ Geralmente, o fórum vai ter uma seção em algum lugar te oferecendo sugestões
 O maior problema com questões em fóruns é que nada garante que pode demorar certo tempo para que sejam respondidas, e que em certos casos elas simplesmente não são respondidas. Por isso, esse tipo de ação deve ficar para último caso.
 
 ## Erros no código
+Outro caso que você inevitavelmente vai encontrar são erros no seu código. 
+
+Erros podem ser coisas simples, como uma vírgula faltando, ou algo muito mais complexo que destrói todo o seu sistema de iluminação que você descobre por acidente um mês depois. Por esse motivo, é sempre bom testar o seu código com frequência e diagnosticar os erros antes que eles fiquem complicados demais.
+
+No geral, quando um erro de execução é encontrado, o próprio console da _engine_ vai te oferecer uma mensagem sobre ele. Eles podem ser erros de sintaxe, erros de variáveis, de parâmetros, de lógica, entre outros. E, geralmente, serão resolvidos com mudanças no seu código. A mensagem de erro vai ser o seu melhor amigo nestes casos, pois ela vai apontar em qual linha o erro ocorreu, e porque ele ocorreu.
+
+Certas vezes, o erro vai ser algo óbvio e basta consertar o código na linha especificada. Outras vezes, você não vai entender o motivo do erro. Nesses casos, seguir o mesmo processo de pesquisa explicado anteriomente vai servir.
+
+## Alguns erros específicos !!TODO
+
+Aqui eu detalho alguns problemas comuns que você pode encontrar como iniciante. 
+
+- Execução lenta
+- Personagem/camera não se move
+- outros?
 
 ## Conclusão
 Neste capítulo descrevemos um _workflow_ para lidar com situações adversas durante um ciclo de desenvolvimento. Esse é um tipo de coisa com a qual você deve estar acostumado lidar, pois não vão ser poucas às vezes em que precisará procurar por uma solução.
