@@ -6,24 +6,24 @@
 É um erro comum de pessoas que aspiram tornarem-se criadores de jogos se ocuparem com livros, vídeos de análise e *design*, gravações de GDCs (Game Development Conferences), comentários e entrevistas de desenvolvedores, entre várias outras categorias de vídeos educativos sobre jogos. Eu mesmo passo boa parte do meu tempo livre estudando estes diversos recursos online.
 
 ![GDC - Workshop de Level Design: Projetando Celeste](https://i.imgur.com/IT5UV3h.jpg "GDC - Workshop de Level Design: Projetando Celeste")
-<sup><sub> Imagem de GDC: "Workshop de Level Design: Projetando Celeste", de Matt Thorson, desenvolvedor líder do jogo Celeste, apresentado em 2017 e publicado em 2018. Link: https://www.youtube.com/watch?v=4RlpMhBKNr0 </sup></sub>
+<sup><sub> Imagem de GDC: "Workshop de Level Design: Projetando Celeste", de Matt Thorson, desenvolvedor líder do jogo Celeste, apresentado em 2017 e publicado em 2018. Disponível em: https://www.youtube.com/watch?v=4RlpMhBKNr0 </sup></sub>
 
-Enquanto todos estes são ótimas fontes de aprendizado, uma coisa deve ficar clara a você: Você não vai realmente aprender a fazer um jogo até o momento em que colocar essa teoria na prática. Dessa forma, a melhor maneira de começar a sua jornada de criação de jogos é "aprender fazendo", com uma boa base de instruções para que você e sua equipe não se percam no caminho.
+Enquanto todos estes são ótimas fontes de aprendizado, não se deve esquecer de um detalhe: Você não vai realmente aprender a fazer um jogo até o momento em que colocar essa teoria na prática. Dessa forma, a melhor maneira de começar a sua jornada de criação de jogos é "aprender fazendo", com uma boa base de instruções para que você e sua equipe não se percam no caminho.
 
-Existem vários outros manuais, artigos, guias e livros que propõem esta mesma ideia. Porém, os mesmos costumam ser focados em um gênero de jogos específico, ou atrelados completamente a um ambiente de desenvolvimento, ou simples/vagos demais. Enquanto os livros e artigos acadêmicos sobre o assunto costumam ter uma boa base em teorias de _design_, engenharia de _software_ e padrões de desenvolvimento, a maioria dos outros materiais costumam faltar nesse aspecto. Por outro lado, muitos dos livros e artigos exigem entendimento teórico, e um grande investimento de tempo para entender seu conteúdo, enquanto os demais formatos exigem um investimento menor, e costumam ser mais práticos, tornando sua aplicação mais fácil.
+Existem vários outros manuais, artigos, guias e livros que propõem esta mesma ideia. Porém, os mesmos costumam ser focados em um gênero de jogos específico, ou atrelados completamente a um ambiente de desenvolvimento, ou simples/vagos demais. Enquanto os livros e artigos acadêmicos sobre o assunto costumam ter uma boa base em teorias de _design_, engenharia de _software_ e padrões de desenvolvimento, a maioria dos outros materiais costumam faltar nesse aspecto. Por outro lado, muitos dos livros e artigos exigem entendimento teórico, e um grande investimento de tempo para compreender seu conteúdo, enquanto os demais formatos exigem um investimento menor, e costumam ser mais práticos.
 
 Minha intenção com esse manual é oferecer um conteúdo diferente, tentando ao máximo casar a praticidade e simplicidade dos guias informais com a base teórica encontrada nos livros e artigos. Minha esperança é que ao final da leitura você seja capaz de planejar e executar o projeto da criação de um jogo em qualquer gênero ou ambiente. 
 
-O manual é direcionado a qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador, sejam jogos 3D ou 2D. Vou assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
+O manual é direcionado a qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador. Sejam jogos 3D ou 2D. Vou assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
 
 Não pense por um momento que o processo de criação de um jogo será simples, rápido ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas. 
 
-Talvez você já tenha tentado criar um jogo e falhado algumas vezes, ou talvez seja a sua primeira tentativa. A experiência ajuda, mas o fator mais importante é que tenha o empenho e ânimo para levar seu projeto do zero ao sucesso. Eu mesmo passei pela experiência de falhar em vários projetos até aperfeiçoar uma maneira ideal para a construção de jogos que funcionava para mim, com o apoio da Engenharia de Software, de muito estudo, da opinião de outros desenvolvedores, e de muito empenho.
+Talvez você já tenha tentado criar um jogo e falhado algumas vezes, ou talvez seja a sua primeira tentativa. A experiência ajuda, mas o fator mais importante é que tenha o empenho e ânimo para levar seu projeto do zero ao sucesso. Eu mesmo passei pela experiência de falhar em vários projetos até aperfeiçoar uma maneira ideal para a construção de jogos que funcionava para mim, com o apoio da Engenharia de Software, de muito estudo, da opinião de outros desenvolvedores, e empenho de sobra.
 
 Obviamente, isso não quer dizer que o meu método vai funcionar para qualquer um. E eu não tenho a arrogância de dizer que você deve seguir os meus passos para alcançar o sucesso.  
 Enquanto eu ofereço orientações específicas, em vários momentos deste manual você vai encontrar instruções e prazos flexíveis, ou várias opções diferentes para executar uma única tarefa. Descrevo estas várias opções na esperança de que você possa adaptar ao máximo o projeto ao seu ritmo de trabalho, e da sua equipe.
 
-Lembre-se, os responsáveis pelo seu projeto são você e seu time. Enquanto descrevo aqui uma sequência de orientações para que seu projeto siga em frente, todo o esforço e tempo gasto será seu/de vocês. Da mesma forma, o mérito do produto final será completamente seu e do seu time. Te desejo sucesso nessa jornada!
+Lembre-se, os responsáveis pelo seu projeto são você e seu time. Enquanto descrevo aqui uma sequência de orientações para que seu projeto siga em frente, todo o esforço e tempo gasto será seu/de vocês. Da mesma forma, o mérito do produto final será completamente seu e do seu time. Te desejo sucesso!
 
 ![Painel, Falling Dream Shards](https://img.itch.zone/aW1nLzEwNzg1OTQzLmdpZg==/original/s411yZ.gif "Falling Dream Shards - Daniel Waack")
 <sup><sub> Pixel art criada por mim para a _intro_ de um jogo. </sup></sub>
@@ -36,7 +36,7 @@ Um detalhe importante sobre o conteúdo deste manual é que ele está muito preo
 
 Como assim?  
 Se eu sentasse e decidisse criar um tutorial para a construção de todos os possíveis algorítmos e funções de jogos, em todas as possíveis plataformas de desenvolvimento, eu ficaria aqui por duas vidas e não terminaria.  
-E eu não preciso fazer isso, pois já existem diversos recursos de todos os tipos que exploram estes méritos, e procurá-los será invevitvalmente parte do seu trabalho, ou de alguém na equipe. Como procurá-los, filtrá-los, entendê-los e usá-los será mais relevante para este manual. Até porque se você sabe exatamente o que procurar, você já avançou considervalemnte.  
+E eu não preciso fazer isso, pois já existem diversos recursos de todos os tipos que exploram estes méritos, e procurá-los será invevitvalmente parte do seu trabalho, ou de alguém na sua equipe. Como procurá-los, filtrá-los, entendê-los e usá-los será mais relevante para este manual.  
 A pergunta fundamental que exemplifica o foco desse manual é a seguinte:
 
 <br>
@@ -45,11 +45,9 @@ A pergunta fundamental que exemplifica o foco desse manual é a seguinte:
 
 <br>
 
-Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo?" É com esse tipo de pergunta muito mais fundamental que as pessoas costumam encontrar problemas.  
+Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo (e como eu termino)?" É com esse tipo de pergunta muito mais fundamental que as pessoas costumam encontrar problemas.  
 
 Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvimento, e vou exemplificar com um projeto de jogo de plataforma 2D e um *topdown shooter* 3D, é importante entender que o meu objetivo não é explicar especificamente como criar um *tipo* de jogo, mas sim descrever um processo de desenvolvimento e organização que servirá para qualquer jogo.
-
-E se você pretende fazer um jogo em um desses dois estilos, melhor ainda, você pode usar o meu processo como exemplo. Para o jogo de plataforma, usarei a *engine* Unity, e para o 3D, usarei a *engine* Godot. A escolha dos ambientes deste projeto não foi aleatória. Unity por ser uma das *engines* grátis (com algumas restrições) mais populares, tendo uma quantidade enorme de material de apoio focado nela. E Godot por ser a minha *engine* de escolha para desenvolvimento, e por sua estrutura de árvores que eu considero mais amigável para novos usuários. De qualquer forma, sinta-se livre para fazer o seu projeto em seu ambiente de escolha. Mais sobre isso nos capítulos 1 e 2.
 
 <br>
 <br>
@@ -57,6 +55,7 @@ E se você pretende fazer um jogo em um desses dois estilos, melhor ainda, você
 ## Detalhes Importantes:
 Antes de entrar no manual em si, alguns detalhes podem te interessar.  
 O *approach* sugerido nesse manual vai se ramificar dependendo de alguns fatores. Toda vez que isso for relevante, apontarei o fato. Entretanto, é importante que você os tenha em mente desde já.  
+
 Os fatores são:
 
 <br>
@@ -64,10 +63,11 @@ Os fatores são:
 
 1. Se você trabalha em equipe ou sozinho:
 
-Isso é muito importante para o seu ritmo e organização de trabalho. Um grupo trabalha melhor do que um indivíduo. Porém, sozinho você terá liberdade criativa maior do que em um grupo.  
-Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros. É claro, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, com o apoio ocasional de terceiros, principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas.
+Isso é muito importante para o seu ritmo e organização de trabalho. Um grupo trabalha melhor do que um indivíduo. E quanto mais gente no seu time, maior pode ser a escala e complexidade do seu projeto. Porém, sozinho você terá liberdade criativa maior do que em um grupo.  
+Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros. Ter um grupo pequeno e empenhado aumenta suas chances de sucesso.
+Entretanto, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, com o apoio ocasional de terceiros, principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas. Talvez te interesse evitar isso.
 
-Entenda que, no contexto *indie*, um grupo de 3-5 pessoas provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento da equipe.  
+No contexto *indie*, um grupo pequeno de 3-5 pessoas provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento dos membros.  
 Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
 
 <br>
