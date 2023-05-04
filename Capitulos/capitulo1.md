@@ -1,5 +1,5 @@
 
-# Capítulo 1: Design
+# Capítulo 1: Design Inicial
 "É perigoso ir sozinho! Leve isto." - Velho em uma caverna, "The Legend of Zelda" (1986)
 
 ![Capítulo 1 capa](https://i.imgur.com/GHZYcAZ.jpg "It's dangerous to go alone! Take this.")
