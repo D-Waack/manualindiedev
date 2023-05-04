@@ -11,7 +11,7 @@ O texto a seguir é um manual para desenvolvimento de jogos indie, ou seja, jogo
 ## Indice:
 * [Introdução](Capitulos/introducao.md) - Introdução do manual, considerações iniciais, detalhes importantes sobre o conteúdo 
 
-* [Capítulo 1: Design](Capitulos/capitulo1.md) - Importância do Design, Conceitos Preliminares, GDDs
+* [Capítulo 1: Design Inicial](Capitulos/capitulo1.md) - Importância do Design, Conceitos Preliminares, GDDs
 
 * [Capítulo 2: Preparação](Capitulos/capitulo2.md) - Escolha do ambiente de desenvolvimento, organização de arquivos
 
