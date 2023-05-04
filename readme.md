@@ -1,5 +1,3 @@
-<br>
-<br>
 
 # Manual de Desenvolvimento Indie
 
