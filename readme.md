@@ -6,6 +6,8 @@ O texto a seguir é um manual para desenvolvimento de jogos indie, ou seja, jogo
 - [Sleepy Runner (mobile)](https://github.com/D-Waack/sleepy-runner-godot4)
 - [Top Down Shooter](https://github.com/D-Waack/vortex-tautology-demo)
 
+Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introducao.md). Caso contrário, siga o índice abaixo.
+
 ## Indice:
 * [Introdução](Capitulos/introducao.md) - Introdução do manual, considerações iniciais, detalhes importantes sobre o conteúdo 
 
