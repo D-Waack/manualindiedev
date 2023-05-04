@@ -69,7 +69,7 @@ Entretanto, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na
 No contexto *indie*, um grupo pequeno de 3-5 pessoas provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento dos membros.  
 Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
 
-![Jogo - Pikmin](../Arquivos/Imagens/00_02.png 'Game Dev Tycoon')
+![Jogo - Pikmin](../Arquivos/Imagens/00_02.jpg 'Game Dev Tycoon')
 <sup><sub> Imagem de animação de Pikmin trabalhando em conjunto, da série de jogos "Pikmin"</sup></sub>
 
 <br>
