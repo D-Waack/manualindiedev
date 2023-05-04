@@ -45,21 +45,20 @@ A pergunta fundamental que exemplifica o foco desse manual é a seguinte:
 
 <br>
 
+![Jogo - Game Dev Tycoon](../Arquivos/Imagens/00_01.png 'Game Dev Tycoon')
+<sup><sub> Imagem de jogo "Game Dev Tycoon"</sup></sub>
+
 Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo (e como eu termino)?" É com esse tipo de pergunta muito mais fundamental que as pessoas costumam encontrar problemas.  
 
 Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvimento, e vou exemplificar com um projeto de jogo de plataforma 2D e um *topdown shooter* 3D, é importante entender que o meu objetivo não é explicar especificamente como criar um *tipo* de jogo, mas sim descrever um processo de desenvolvimento e organização que servirá para qualquer jogo.
 
-<br>
 <br>
 
 ## Detalhes Importantes:
 Antes de entrar no manual em si, alguns detalhes podem te interessar.  
 O *approach* sugerido nesse manual vai se ramificar dependendo de alguns fatores. Toda vez que isso for relevante, apontarei o fato. Entretanto, é importante que você os tenha em mente desde já.  
 
-Os fatores são:
-
-<br>
-<br>
+Esses fatores são:
 
 1. Se você trabalha em equipe ou sozinho:
 
@@ -70,17 +69,17 @@ Entretanto, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na
 No contexto *indie*, um grupo pequeno de 3-5 pessoas provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento dos membros.  
 Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
 
-<br>
+![Jogo - Pikmin](../Arquivos/Imagens/00_02.png 'Game Dev Tycoon')
+<sup><sub> Imagem de animação de Pikmin trabalhando em conjunto, da série de jogos "Pikmin"</sup></sub>
+
 <br>
 
 2. Quais competências estão disponíveis na equipe:
 
-A criação de um jogo envolve várias competências. Neste manual, eu as dividi em alguns tópicos: *Design*, Programação e Lógica, Arte (conceitual, de fundo, 2D, 3D, de interface, etc.), Modelagem, Animação, Música (*BGM* e *sound design*), *Playtesting*.  
-Para certos projetos, algumas dessas competências são irrelevantes. Ainda para outros projetos, algumas podem ser mais importantes que as outras. 
+A criação de um jogo envolve várias competências. Neste manual, eu as dividi em alguns tópicos: *Design*, Programação e Lógica, Arte (conceitual, de fundo, 2D, 3D, de interface, etc.), Modelagem, Animação, Música (*BGM* e *sound design*), *Playtesting*. Se você trabalha em grupo, existe também um papel de supervisão e organização.  
+Para certos projetos, algumas dessas competências são irrelevantes. Ainda para outros projetos, algumas serão mais importantes que as outras. 
 
 Por exemplo, modelagem não é necessária em jogos 2D. 
-
-[comment]: <(![Exemplo, Jogo 2D](files://C:/Users/55619/Documents/Dev/TCC/Hollow-Knight-Gameplay.jpg "Hollow Knight - Exemplo 2D"))>
 
 ![Exemplo, Jogo 2D](https://www.ubuntufree.com/wp-content/uploads/2017/05/Hollow-Knight-Gameplay.jpg "Hollow Knight - Exemplo 2D")
 
@@ -94,19 +93,19 @@ Outro exemplo, para um jogo musical ou de ritmo, o *sound design* e música gera
 
 Deemo tem uma arte bonita, mas ela não é particularmente detalhada ou feita para ser um ponto focal do jogo. Afinal, o aspecto de maior importância neste jogo é a música e som.
 
-<br>
-
 Enquanto é preferível que o seu time contenha integrantes que cubram todas as competências necessárias para a criação do jogo, a falta delas não significa que o seu projeto não pode ser criado. Existem alternativas para todos os casos, como ambientes onde programação não é necessária, recursos audiovisuais grátis, ou até a possibilidade de contratar artistas, programadores e músicos para auxiliar no processo.  
-É claro, isso tudo depende da habilidade e orçamento do seu time. Porém, o objetivo deste manual é sempre apresentar diversas opções, buscando sempre opções sem custo, ou o melhor equilíbrio entre preço baixo e qualidade do produto final.
+É claro, isso tudo depende da habilidade e orçamento do seu time. Porém, um dos objetivos deste manual é apresentar diversas opções, buscando sempre opções sem custo, ou o melhor equilíbrio entre preço baixo e qualidade do produto final.
 
-<br>
 <br>
 
 3. Quanto tempo você pode dedicar ao projeto.
 
 A quantidade de tempo em que você pode trabalhar no projeto vai refletir no produto final, ou no tempo que você vai demorar até alcançar o que idealizou para o seu projeto. 
-Não é incomum que jogos grandes levem anos para serem construídos. O mesmo acontece para certos jogos pequenos, mesmo com equipes maiores. Isso depende de vários fatores, como o escopo e a organização do seu projeto.  
-Durante o manual, haverá uma sequência de períodos onde a equipe deverá desenvolver determinados aspectos do jogo (*sprints*). É sempre possível aumentar estes períodos, a custo de demorar mais tempo para desenvolver o seu projeto. Caso o tempo livre de sua equipe seja limitado, existe flexibilidade para determinar os períodos de ação. Isso fica a critério de você(s).
+Não é incomum que jogos grandes levem anos para serem construídos. O mesmo acontece para certos jogos pequenos. Isso depende de vários fatores, como o escopo e a organização do seu projeto.  
+Durante o manual, haverá uma sequência de períodos onde a equipe deverá desenvolver determinados aspectos do jogo (*sprints*). É sempre possível aumentar estes períodos, a custo de demorar mais tempo para desenvolver o seu projeto. Caso o tempo livre de sua equipe seja limitado, existe essa flexibilidade. Isso fica a seu critério.
+
+![Jogo - Return of the Obra Dinn](../Arquivos/Imagens/00_03.png 'Return of the Obra Dinn')
+<sup><sub> Imagem de jogo "Return of the Obra Dinn"</sup></sub>
 
 <br>
 
