@@ -95,4 +95,4 @@ A última seção, "Planos", possui apenas um tópico, "wishlist", que é um lug
 ## Conclusão
 Ao final desse capítulo, você deveria ter uma ideia de como começar a criar seu GDD, ou idealmente já o tenha preenchido conforme lia o capítulo.
 
-No próximo capítulo vamos lidar com a etapa de "Preparação", onde vamos decidir alguns detalhes importantes como o ambiente de desenvolvimento (engine/framework/linguagem) e como organizaremos os arquivos do projeto.
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo2.md) vamos lidar com a etapa de "Preparação", onde vamos decidir alguns detalhes importantes como o ambiente de desenvolvimento (engine/framework/linguagem) e como organizaremos os arquivos do projeto.
