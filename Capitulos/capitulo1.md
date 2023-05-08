@@ -52,13 +52,6 @@ O "conceito inicial" é uma explicação de qual é a ideia geral para o jogo. E
 A intenção de "detalhes interessantes" é dar um destaque aos atributos únicos ou de maior interesse no seu jogo. Isso pode ser parte do que descreveu no conceito inicial.  
 O "público alvo" é também bem óbvio. Para qual público este jogo é criado? Ou seja, que tipo de jogador você deseja interessar com seu projeto?
 
-### Conceito Exemplificado 1
-Título Provisório: Sleepy Runner  
-Conceito Inicial: Um jogo sobre um pequeno espírito da névoa correndo através da terra. Sleepy foi forçado a vestir as botas dos pés inquietos, tornando-o incapaz de parar de correr. Este é um jogo onde o personagem corre automaticamente, e o jogador deve tocar na tela e interagir com diversos objetos para livrá-lo de todos os perigos em seu caminho.  
-Gêneros: Plataforma, Puzzle, Autorunner, Sidescroller, Pixelart, Mobile  
-Detalhes Interessantes: O jogo toma um formato diferente do habitual. Geralmente, jogos do gênero “autorunner” (corredor autmático) contêm mapas infinitos (endless runners), onde o jogador deve reagir a diferentes obstáculos escolhidos pseudo-aleatoriamente que vêm cada vez mais rápido (e.g. Subway Surfer, Temple Run, entre outros). A ideia desse jogo não é essa, nesse sentido, ele é mais parecido com um jogo puzzle, tendo fases curtas onde o jogador deve descobrir a melhor forma de alcançar determinado objetivo, controlando objetos da fase como plataformas e objetos do cenário.  
-Público Alvo: O público-alvo são os jogadores de celular casuais. O jogo será simples e fácil de entender, com uma estética agradável.  
-
 ### Detalhes Técnicos
 A segunda seção, "Detalhes Técnicos" se refere a vários aspectos que serão importantes durante a construção do jogo. Caso não saiba como responder um, não se preocupe, isso ficará melhor definido conforme seu projeto evoluir.  
 A "plataforma" é, como o nome sugere, a plataforma onde seu jogo será executado. Podem ser computadores, celulares, navegadores, consoles de jogos, entre outros. E qualquer combinação destes. Lembre-se que fazer uma versão para um ambiente diferente (port) pode não ser um processo tão simples. Certas ferramentas e motores vão facilitar muito esse processo, para outros casos será impossível. O mesmo pode acontecer entre diferentes sistemas operacionais de computador. A plataforma em que deseja que seu jogo rode deve influenciar a escolha do ambiente de desenvolvimento.  
@@ -66,8 +59,6 @@ As "tencologias" estão intimamente relacionadas ao tópico anterior. Nós entra
 A "interação" se refere às interfaces com as quais o seu jogador vai interagir com o jogo em si. Seja através de _touchscreen_, controles, mouses/teclados ou algum outro tipo de dispositivo de _input_. Também vale incluir situações especiais como controle por movimento/giroscópio. No caso de controles de console, é interessante incluir se existe vibração e outras reações do controle também.  
 A "monetização" se refere a como você pretende ganhar dinheiro com o jogo. Se pretende vendê-lo como um jogo separado. Ou se será free 2 play com microstransações para diferentes personagens, cosméticos, etc. Quem sabe seu jogo é completamente grátis e não pretende ganhar dinheiro algum com ele? Qualquer que seja sua ideia, aqui é o lugar onde pode incluí-la.
 As "ferramentas de desenvolvimento" são uma lista de ferramentas que serão utilizadas para a criação de recursos diversos como música, arte, modelos 3D, mapas, entre vários outros.
-
-### Detalhes Técnicos Exeplificados 1
 
 ### Detalhes Conceituais
 A terceira seção, "Detalhes Conceituais", começa a lidar com alguns aspectos mais abstratos, relacionados à narrativa. É possível que seu jogo não tenha um enredo, personagens ou um cenário específico. Por exemplo, um jogo _Candy Crush_ ou algo como Xadrez dificilmente vai ter uma história. Neste caso, pode pular os tópicos que achar desnecessários.
@@ -77,8 +68,6 @@ O "enredo" se refere a história do jogo em si, a narrativa que será contada du
 O "contexto" engloba qualquer detalhe do enredo que não encaixe nos tópicos anteriores. Por exemplo, se isso é uma sequência, e o que ocorreu antes. Ou se existem acontecimentos paralelos que afetam a história do jogo, mas não são mostrados durante a narrativa.  
 Os "temas" são palavras-chave que definirão o estilo do enredo que tem em mente.
 O "formato da narrativa" se refere a como a história será contada. Serão _cutscenes_ cinematográficas, ou algo mais simples como caixas de diálogo, animações simples, etc.?
-
-### Detalhes Conceituais Exemplificados 1
 
 ### Detalhes de Gameplay
 A quarta seção, "Detalhes de Gameplay" se refere mais especificamente a como o jogo vai funcionar. Aqui, o conceito de mecânica é muito importante. Uma mecânica é uma regra ou conjunto de regras que define como o jogo vai funcionar e como o jogador vai interagir com ele.  
