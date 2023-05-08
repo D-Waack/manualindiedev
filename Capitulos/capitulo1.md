@@ -42,7 +42,7 @@ Se procura por inspiração, vários exemplos notáveis de GDDs podem ser encont
 
 Enquanto eu deixei várias notas no modelo do documento, achei relevante falar brevemente sobre cada campo aqui. Você pode encontrar o GDD inicial para os 2 projetos desenvolvidos em conjunto com o manual nos seguintes links: 
 - [Sleepy Runner](https://github.com/D-Waack/sleepy-runner-godot4/blob/main/Docs/Sleepy_GDDv1.0.pdf)
-- [Topdown Space Shooter]([https://github.com/D-Waack/vortex-tautology-demo](https://github.com/D-Waack/vortex-tautology-demo/blob/main/Docs/VortexTautology_GDDv1.0.pdf))
+- [Topdown Space Shooter]([https://github.com/D-Waack/vortex-tautology-demo](https://github.com/D-Waack/vortex-tautology-demo/blob/main/Docs/VortexTautology_GDDv1.0.pdf)
 
 ### Conceito
 A primeiro seção, "Conceito", tem o objetivo de explicar a ideia por trás do jogo de maneira simples e sucinta.  
