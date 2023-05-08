@@ -64,7 +64,7 @@ Isso é muito importante para o seu ritmo e organização de trabalho. Um grupo 
 Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros. Ter um grupo pequeno e empenhado aumenta suas chances de sucesso.
 Entretanto, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, com o apoio ocasional de terceiros, principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas. Talvez te interesse evitar isso.
 
-No contexto *indie*, um grupo pequeno de 3-5 pessoas provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento dos membros.  
+No contexto *indie*, um grupo pequeno (talvez um de 3-5 pessoas) provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento dos membros.  
 Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
 
 ![Jogo - Pikmin](../Arquivos/Imagens/00_02.jpg 'Game Dev Tycoon')
@@ -74,7 +74,7 @@ Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo peque
 
 2. Quais competências estão disponíveis na equipe:
 
-A criação de um jogo envolve várias competências. Neste manual, eu as dividi em alguns tópicos: *Design*, Programação e Lógica, Arte (conceitual, de fundo, 2D, 3D, de interface, etc.), Modelagem, Animação, Música (*BGM* e *sound design*), *Playtesting*. Se você trabalha em grupo, existe também um papel de supervisão e organização.  
+A criação de um jogo requer várias competências. Neste manual, eu as dividi em alguns tópicos diferentes: *Design*, Programação e Lógica, Arte (conceitual, de fundo, 2D, 3D, de interface, etc.), Modelagem, Animação, Música (*BGM* e *sound design*), *Playtesting*. Se você trabalha em grupo, existe também um papel de supervisão e organização.  
 Para certos projetos, algumas dessas competências são irrelevantes. Ainda para outros projetos, algumas serão mais importantes que as outras. 
 
 Por exemplo, modelagem não é necessária em jogos 2D. 
