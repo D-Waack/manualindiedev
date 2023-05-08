@@ -12,7 +12,7 @@ Existem vários outros manuais, artigos, guias e livros que propõem esta mesma 
 
 Minha intenção com esse manual é oferecer um conteúdo diferente, tentando ao máximo casar a praticidade e simplicidade dos guias informais com a base teórica encontrada nos livros e artigos. Minha esperança é que ao final da leitura você seja capaz de planejar e executar o projeto da criação de um jogo em qualquer gênero ou ambiente. 
 
-O manual é direcionado a qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador. Sejam jogos 3D ou 2D. Vou assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
+O manual é direcionado principalmente a desenvolvedores e programadores, mas pode ser usado por qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador. Sejam eles 3D ou 2D. Vou assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
 
 Não pense por um momento que o processo de criação de um jogo será simples, rápido ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas. 
 
