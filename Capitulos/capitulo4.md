@@ -40,6 +40,9 @@ Dessa forma, o seu primeiro passo é definir as mecânicas principais do seu jog
 
 ## Protótipo 0 - Exemplo 2
 
+## Quando parar
+
+
 ## Conclusão
 
 O trabalho de criar esse protótipo inicial não é trivial. E esse é um passo muito importante. Se o seu time é inexperiente, ele vai naturalmente encontrar problemas e dúvidas durante o processo. 
