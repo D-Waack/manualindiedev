@@ -10,20 +10,20 @@ Se tudo deu certo, você já escolheu qual será sua _engine_ e já tem certa no
 
 Geralmente, definimos o ciclo de vida para o desenvolvimento de um jogo da seguinte forma: **Pré-Produção** -> **Produção** -> **Alfa** -> **Beta** -> **Produto Final**
 
-Seguindo esta classificação, você teria passado pela etapa de pré-produção. A pré-produção na indústria como um todo geralmente é um processo mais formal. Isso não é um problema. Em muitos casos, um pequeno protótipo é projetado também durante a pré-produção. Decidim incluir isto na etapa de produção, por vários motivos.
+Seguindo esta classificação, você teria passado pela etapa de pré-produção. A pré-produção na indústria como um todo geralmente é um processo mais formal. Isso não é um problema. Em muitos casos, um pequeno protótipo é projetado também durante a pré-produção. Decidi incluir isto na etapa de produção, por vários motivos.
 
-A partir de agora, você e sua equipe entrarão no que eu chamo de ciclos de desenvolvimento. Outros vão chamá-los de _sprints_. O nome pouco importa. Esse nomenclatura é emprestada do Scrum, um _framework_ para a criação de projetos de _software_. O que interessa para o nosso caso é o ciclo de trabalho, e como isso será avaliado. A princípio, o que você vai definir é simples:
+A partir de agora, você e sua equipe entrarão no que eu chamo de ciclos de desenvolvimento. Outros vão chamá-los de _sprints_. Você pode usar um nome diferente também se preferir. O nome em si pouco importa. Esse nomenclatura é emprestada do Scrum, um _framework_ para a criação de projetos de _software_. O que interessa para o nosso caso é o próprio ciclo de trabalho, e como ele será avaliado. A princípio, o que você vai definir é simples:
 
 - A divisão das tarefas;
 - O ritmo de trabalho.
 
 ### Divisão de tarefas 
 
-Se seu projeto é solo, decidir isso vai ser bem fácil. Torna-se apenas uma questão de prioridades. E, para essse caso, existe um caminho ideal que vou discutiro mais a frente. Porém, se você trabalha em um grupo, as coisas ficam um pouco mais complexas.
+Se seu projeto é solo, decidir isso vai ser bem fácil. Torna-se apenas uma questão de prioridades. E, para essse caso, existe um caminho ideal que vou discutir mais a frente. Porém, se você trabalha em um grupo, as coisas ficam um pouco mais complexas.
 
 Uma ótima coisa quando trabalhando em grupo é que várias pessoas podem trabalhar ao mesmo tempo. Porém, isso vai gerar maior trabalho organizacional, porque nem todas as competências devem ser desenvolvidas no mesmo ritmo.
 
-Por exemplo, se sua equipe tem 2 programadores, ambos podem facilmenete trabalhar em diferentes aspectos de seu jogo. Digamos, um trabalha no movimento do personagem e o outro trabalha no funcionamento dos menus principais. Da mesma forma, se a equipe tem 2 artistas, um pode trabalhar no _design_ de um personagem, enquanto o outro trabalha em fundos, ou em outro personagem. O mesmo se aplica a músicos, _level designers_, e a lista segue.
+Por exemplo, se sua equipe tem 2 programadores, ambos podem facilmente trabalhar em diferentes aspectos de seu jogo. Digamos, um trabalha no movimento do personagem e o outro trabalha no funcionamento dos menus principais. Da mesma forma, se a equipe tem 2 artistas, um pode trabalhar no _design_ de um personagem, enquanto o outro trabalha em fundos, ou em outro personagem. O mesmo se aplica a músicos, _level designers_, e a lista segue.
 
 No entanto, o trabalho do programador e do artista não seguem o mesmo ritmo. E, em certos casos, um depende de um resultado do outro. Por exemplo, implementar uma certa ação como puxar uma alvanca no jogo _Tomb Raider_ precisaria que os animadores tivessem completado a animação de puxar a alavanca. Esses animadores precisaram esperar que os modeladores tivessem completado o modelo de Lara Croft. E esses modeladores precisaram usar a _concept art_ do time de arte para criar o modelo e suas texturas.
 
@@ -33,11 +33,11 @@ O seu trabalho como gerente do time é certificar-se de que um membro não vai a
 
 Os ciclos de desenvolvimento estarão atrelados a um **período de tempo** específico.
 
-A ideia por trás do Scrum é de dividir o seu projeto em partes menores, cada uma sendo implementada em um período delimitado pela equipe (geralmente de 2-4 semanas). Dessa forma, o processo de produção fica mais simples e organizado. Eu não "trabalho no jogo", eu "termino o sistema de dano e _knockback_". 
+A ideia por trás do Scrum é de dividir o seu projeto em partes menores, cada uma sendo implementada em um período delimitado pela equipe (geralmente de 2-4 semanas). Dessa forma, o processo de produção fica mais simples e organizado. Por exemplo, eu não "trabalho no jogo", mas sim "termino o sistema de dano e _knockback_". 
 
 Isso implica em algumas coisas para você e para sua equipe: Vocês terão metas a cumprir (onde podem ter sucesso ou não); vocês terão metas a decidir; vocês devem refletir sobre o resultado encontrado ao final de cada ciclo.
 
-Existe flexibilidade no tamanho destes ciclos, e quanto é feito em cada um. E isso é importante que decidam. Pessoalmente, para projetos pequenos eu costumo trabalhar com ciclos de 1 semana. Talvez para você seja melhor 2 semanas. Para o contexto _indie_, eu não recomendo nada maior que isso a não ser que sua equipe não tenha tempo algum para trabalhar no projeto. No geral, é melhor termos ciclos com tempos menores, mesmo que as metas para estes ciclos sejam mais simples.
+Existe flexibilidade no tamanho destes ciclos, e quanto é feito em cada um. E isso é importante que decidam. Pessoalmente, para projetos pequenos eu costumo trabalhar com ciclos de 1 semana. Talvez para você seja melhor 2 semanas. Para o contexto _indie_, eu não recomendo nada muito maior que isso a não ser que sua equipe não tenha muito tempo para trabalhar no projeto. No geral, é melhor termos ciclos com tempos menores, mesmo que as metas para estes ciclos sejam mais simples.
 
 ## O Ciclo
 
@@ -53,7 +53,7 @@ Quanto mais diálogo houver entre as diferentes competências, mais elas podem c
 
 A delimitação do ciclo pode ser feita através de uma reunião pessoal, uma chamada de vídeo, ou mensagens de texto. É preferível que possam se comunicar por voz, pois isso ajuda a fluir a discussão. Isso deve ser decidido logo no início do ciclo, ou no final do anterior.
 
-Lembrando sempre que a opinião que deve pesar mais para cada aspecto é a dos especialistas para esse aspecto, mas que as opiniões do resto da equipe são de importância também. Enquanto o programador pode não saber tanto de arte, seu _input_ sobre o processo pode ser muito útil para o artista. Isso é importante porque mais a frente no projeto você terá de unir todos estes aspectos diferentes.
+Lembrando sempre que a opinião que deve pesar mais para cada aspecto é a dos especialistas para esse aspecto, mas que as opiniões do resto da equipe são de importância também. Enquanto, por exemplo, o programador pode não saber tanto de arte, seu _input_ sobre o processo pode ser muito útil para o artista. Isso também é importante porque mais a frente no projeto você terá de unir todos estes aspectos diferentes.
 
 Outra coisa importante é manter em mente o ritmo de trabalho de cada pessoa. Alguns membros vão ter mais tempo e terminar seu trabalho antes de outros, outros vão ter imprevistos e gerar atrasos. Como você vai lidar com estes aspectos fica ao critério seu e de sua equipe. Se vai dar mais trabalho para um para agilizar o processo, ou se vai pedir que um membro complemente onde outro faltar. Não existe uma resposta certa, isso apenas deve ser considerado para evitar atrasos.
 
@@ -67,7 +67,7 @@ Se você delimitar um trabalho muito complexo para um tempo muito curto, o mesmo
  
 - Objetivos simples
 
- Você não precisa descrever o ciclo inteiro em uma única palavra. Pode dividi-lo em pedaços menores. Por exemplo, "sistema de física" pode ser dividido em "movimento e colisão", e movimento pode ser dividido em "input, velocidade, gravidade". Isso fica a preferência de cada um, e muitas vezes a melhor opção depende do caso, mas dividir o trabalho em pedaços menores costuma ser mais fácil. Além disso, caso não consiga compreender todos os detalhes, o trabalho que já foi feito fica bem claro.
+ Você não precisa descrever o ciclo inteiro em uma única palavra. Pode dividi-lo em pedaços menores. Por exemplo, "sistema de física" pode ser dividido em "movimento e colisão", e movimento pode ser dividido em "input, velocidade, gravidade". Isso fica a preferência de cada um, e muitas vezes a melhor opção depende do caso, mas dividir o trabalho em pedaços menores costuma ser mais fácil. Além disso, caso não consigam desenvolver todos os detalhes durante o ciclo, o trabalho que já foi feito fica bem claro.
  
 - Quando na dúvida, objetivos gerais, mas não vagos
 
@@ -105,7 +105,7 @@ Caso o trabalho tenha sido feito todo com sucesso, algumas outras perguntas pode
 
 Novamente, essas perguntas e outras podem ajudar a aprimorar o processo para o próximo ciclo.
 
-De qualquer forma, é esperado que pelo menos alguma coisa tenha sido feita. É importante documentar algumas coisas:
+De qualquer forma, é esperado que pelo menos alguma coisa tenha sido feita com sucesso. É importante documentar certos aspectos do ciclo:
 
 - O que foi feito com sucesso?
 - O que faltou fazer?
@@ -116,11 +116,11 @@ Após uma reflexão sobre o resultado do ciclo anterior, geralmente se inicia o 
 
 ### 4. Testando resultados
 
-Após o fechamento de um ciclo, você pode ou não ter um produto executável. Geralmente, esse tipo de protótipo leva um pouco de tempo para sair do chão na etapa de produção, mas depois é facilmente construído por cima (_build_) a cada ciclo (_alfa_).
+Após o fechamento de um ciclo, você pode ou não ter um produto executável. Geralmente, esse tipo de protótipo leva um pouco de tempo para sair do chão na etapa de produção, mas depois é facilmente construído por cima do que já existe (_build_) a cada ciclo (_alfa_, _beta_).
 
 Para o desenvolvimento de jogos, testar estes protótipos é extremamente importante para encontrar _bugs_, problemas e verificar se está ficando da maneira desejada. A isso chamamos de _playtesting_. Certas equipes podem ter um membro específico apenas para fazer isso. Em outras, os próprios membros da equipe testam o que foi feito.
 
-Quando estes testes serão feitos vai depender da sua organização. Em certos casos, pode ser interessante testar um módulo criado ao final do ciclo, durante a avaliação. Assim, aprimorá-lo já entra como parte do próximo ciclo. Em outros casos, pode-se iniciar o trabalho em outro módulo, e testar o anterior pode ser feito durante o próximo ciclo. 
+Quando estes testes serão feitos vai depender da sua organização. Em certos casos, pode ser interessante testar um módulo criado ao final do ciclo, durante a avaliação. Assim, aprimorá-lo já entra como parte do próximo ciclo. Em outros casos, pode-se iniciar o trabalho em outro módulo, e testes do anterior podem ser feitos durante o próximo ciclo. 
 
 Eu falo mais sobre _playtesting_ nos capítulos voltados à programação.
 
@@ -128,4 +128,4 @@ Eu falo mais sobre _playtesting_ nos capítulos voltados à programação.
 
 Ao final desse capítulo, esperamos que tenha uma boa ideia de como planejará e executará o ciclo de desenvolvimento para o seu jogo. Isso pode parecer bem simplista e vago, mas você perceberá eventualmente que o estabelecimento de metas e reflexão sobre o que foi realizado serão de extrema importância para a organização do seu projeto.
 
-Definido o ciclo, no próximo capítulo falaremos do primeiro ciclo, e como delimitar os próximos até a criação do primeiro protótipo.
+Definido o ciclo, no [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo4.md) falaremos do primeiro ciclo, e como delimitar os próximos até a criação do primeiro protótipo.
