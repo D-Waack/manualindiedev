@@ -154,4 +154,4 @@ Minha sugestão fica para o formato que uso atualmente, mas sinta-se livre para 
 ## Conclusão
 Ao final desse capítulo, você deveria ter um entendimento básico sobre as diferentes opções para desenvolvimento de jogos. Idealmente, também já teria alguma ideia de qual _engine_ ou _framework_ usará para seu projeto. Além disso, esperamos que tenha decidido como organizar seus arquivos, ou já esteja considerando qual estrutura funcionará melhor para sua organização.
 
-No próximo capítulo vamos entrar no mérito do "Ciclo de Desenvolvimento", onde vou explicar como funcionará o desenvolvimento em si, abordando temas como planejamento, prazos, priorização de tarefas, entre vários outros aspectos importantes.
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo3.md) vamos entrar no mérito do "Ciclo de Desenvolvimento", onde vou explicar como funcionará o desenvolvimento em si, abordando temas como planejamento, prazos, priorização de tarefas, entre vários outros aspectos importantes.
