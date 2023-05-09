@@ -10,7 +10,7 @@ Após documentar o seu projeto, o próximo passo é começá-lo. Existem inúmer
 
 E você deve escolher entre eles.
 
-É claro, eu pretendo te ajudar com essa escolha. Mas ao final do dia, isso será decidido por você (ou o programador em sua equipe). E essa escolha vai mudar completamente como o desenvolvimento de seu jogo vai funcionar.
+É claro, eu pretendo te ajudar com essa escolha. Mas, ao final do dia, isso será decidido por você (ou o programador/desenvolvedor em sua equipe). E essa escolha vai mudar completamente como o desenvolvimento de seu jogo vai funcionar.
 
 ## Frameworks e Engines
 
