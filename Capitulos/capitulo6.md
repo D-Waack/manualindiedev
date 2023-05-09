@@ -1,8 +1,8 @@
 
-# Capítulo 5: Problemas Diversos
-"Você se encontrou com um destino terrível, não foi?" - Vendedor de Máscaras Alegre, "The Legend of Zelda - Majora's Mask" (2000)
+# Capítulo 6: Alfa
+"O homem certo no lugar errado pode fazer toda a diferença no mundo." - G-man, "_Half Life 2_" (2004)
 
-![Capítulo 5 capa](../Arquivos/Imagens/capa_05.jpg 'A man chooses, a slave obeys.')
+![Capítulo 6 capa](../Arquivos/Imagens/capa_06.jpg 'The right man in the wrong place can make all the difference in the world.')
 
 ## Introdução
 
