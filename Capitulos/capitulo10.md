@@ -1,8 +1,8 @@
 
-# Capítulo 10: Builds
-"Você se encontrou com um destino terrível, não foi?" - Vendedor de Máscaras Alegre, "The Legend of Zelda - Majora's Mask" (2000)
+# Capítulo 10: Música e Efeitos Sonoros
+"Pesaroso seja o coração, Penitente cheio de clemência" - Tirso, "_Blasphemous_" (2019)
 
-![Capítulo 5 capa](../Arquivos/Imagens/capa_05.jpg 'A man chooses, a slave obeys.')
+![Capítulo 10 capa](../Arquivos/Imagens/capa_05.jpg 'Sorrowful be the heart, Penitent One full of clemency.')
 
 ## Introdução
 
