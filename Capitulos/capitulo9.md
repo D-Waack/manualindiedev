@@ -1,8 +1,8 @@
 
-# Capítulo 9: Integrando Recursos
-"Você se encontrou com um destino terrível, não foi?" - Vendedor de Máscaras Alegre, "The Legend of Zelda - Majora's Mask" (2000)
+# Capítulo 9: Arte, Modelos, Visual
+"Nenhum preço tão alto." - Rei Pálido, "_Hollow Knight_" (2017)
 
-![Capítulo 5 capa](../Arquivos/Imagens/capa_05.jpg 'A man chooses, a slave obeys.')
+![Capítulo 9 capa](../Arquivos/Imagens/capa_09.jpg 'No cost too high.')
 
 ## Introdução
 
