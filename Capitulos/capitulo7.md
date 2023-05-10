@@ -18,5 +18,39 @@ Isso pode ser por vários motivos, mas no geral é simplesmente porque seu _play
 Esse tipo de situação é muito mais comum do que parece. E é por isso que o papel do _playtester_ é tão importante.
 
 ## Quem deve testar?
+Basicamente, você, sua equipe, e outros. Os testes que você fará virão naturalmente durante o desenvolvimento. Por exemplo, se eu criar um botão no meu jogo, eu vou testá-lo para ver o mesmo consegue ser pressionado, e se ele faz o que deveria quando pressionado.
+
+Isso é óbvio e natural. Você pede testar diferentes maneiras de interagir com cada objeto. Se for um botão que reage a peso, o que acontece se eu colocar um objeto em cima dele? E se (...)? Tente testar todas as possibilidades e interagir de todas as formas que conseguir pensar. Esse é o tipo de teste que as pessoas que criaram o jogo devem fazer.
+
+Um outro caso são outros membros de sua equipe. Estes vão ser menos informados sobre o funcionamento exato do seu jogo, mas eles podem ter uma vaga ideia de como ele _deveria_ funcionar. O que provavelmente vai resultar em interações similares, mas não completamente iguais as suas. Eles podem tomar ações inesperadas, e caso não o façam, você pode estimular que tentem. 
+
+Por fim, os outros. Novamente, é importante que tome cuidado com _quem_ e _como_ você vai disponibilizar seu jogo para testes, para que não compartilhem seu jogo sem sua permissão. De qualquer forma, é normal esperar que a experiência desses jogadores vai ser consideravelmente diferente dos outros dois casos.
+
+## Como funciona o teste?
+Isso vai depender das condições. O ideal seria _observar_ e _gravar_ como o jogador interage e reage ao jogo.
+
+Não é interessante dar _input_ algum ao seu jogador sobre como interagir com o jogo, para que a experiência dele seja o mais pura o possível. Afinal, quando seu jogo for lançado, o seu jogador não terá um desenvolvedor ao lado para guiá-lo pelo jogo.
+
+É ideal que você tenha uma gravação da voz e da tela do seu _playtester_. Entretanto, isso nem sempre é possível. Enquanto menos confiável, é sempre possível esperar que seus _playtesters_ descrevam quaisquer problemas e inconsistências que encontrarem no jogo. Isso acontece muitas vezes com _betas_ abertas, onde jogadores podem contribuir com a caça por _bugs_ através de fóruns e formulários.
+
+## Builds de teste
+A maioria das _engines_ e ambientes de programação vai permitir que você crie uma versão executável do seu jogo. Você pode criar uma para distribuir entre diferentes jogadores.
+
+Enquanto não existem regras para como criar uma _build_ para testes, alguns detalhes são importantes:
+
+- Não inclua todo o conteúdo disponível numa build de testes:
+
+Em certos casos, é possível usar certas técnicas para desconstruir o executável de seu jogo, dando acesso a todo o código e arquivos disponíveis na criação da _build_ para o jogador. Enquanto isso não é um problema com uma pessoa em que você confia, pode ser ruim para _betas_ abertas ao público e casos similares.
+
+- Crie uma interface simples:
+
+Caso não tenha criado um menu envolvido, deixe um menu rudimentar para o acesso de seus _playtesters_. Pelo menos com uma opção de "Iniciar" e "Sair" para interação.
+
+- Inclua notas caso necessário:
+
+Se for uma nova versão, inclua notas de problemas que foram consertados e mudanças que foram feitas. Interessa ao seu _playtester_ conferir o que mudou, e se o que consertou realmente funciona da maneira correta agora.
+
+## Interpretando e Integrando _Feedback_
+Os diferentes 
 
 ## Conclusão
