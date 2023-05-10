@@ -1,8 +1,8 @@
 
-# Capítulo 10: Música e Efeitos Sonoros
-"Pesaroso seja o coração, Penitente cheio de clemência" - Tirso, "_Blasphemous_" (2019)
+# Capítulo 12: Versões Beta, Finalizando Builds
+"A vós que labutas em vão. Sois tolo, sois tolo, sois tolo." - Inscrição gravada na pedra, "_La Mulana_" (2006)
 
-![Capítulo 10 capa](../Arquivos/Imagens/capa_10.jpg 'Sorrowful be the heart, Penitent One full of clemency.')
+![Capítulo 12 capa](../Arquivos/Imagens/capa_12.jpg 'Sorrowful be the heart, Penitent One full of clemency.')
 
 ## Introdução
 
