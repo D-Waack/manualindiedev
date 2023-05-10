@@ -21,14 +21,18 @@ Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introdu
 
 * [Capítulo 5: Lidando com Problemas](Capitulos/capitulo5.md) - Problemas que podem surgir durante os sprints, como evitá-los e resolvê-los, como fazer uma pesquisa técnica, como fazer um post em um fórum de dúvidas
 
-* [Capítulo 6: Playtesting e Feedback] - Builds de teste, formas de capturar playtesting, como interpretar feedback, como planejar resoluções
+* [Capítulo 6: Versões Alfa]
 
-* [Capítulo 7: Sobre Arte e Aspectos Visuais] - Diferentes opções para criação de recursos visuais
+* [Capítulo 7: Playtesting e Feedback] - Builds de teste, formas de capturar playtesting, como interpretar feedback, como planejar resoluções
 
-* [Capítulo 8: Sobre Música e Sound Design] - Diferentes opções para criação de efeitos sonoros e músicas
+* [Capítulo 8: Enredos e Narrativas]
 
-* [Capítulo 9: Integrando Recursos Audiovisuais ao Jogo] - Como fazer a integração harmoniosa dos diversos recursos audiovisuais e o jogo em si, passo depende muito do ambiente
+* [Capítulo 9: Arte, Modelos, Visual] - Diferentes opções para criação de recursos visuais
 
-* [Capítulo 10: Finalizando Builds] - Otimização, polishing, finalização, testes finais
+* [Capítulo 10: Música e Sound Design] - Diferentes opções para criação de efeitos sonoros e músicas
 
-* [Capítulo 11: Publicação] - Lojas de publicação de jogos, *pitching* para publicadoras, ~~marketing?~~
+* [Capítulo 11: Integrando Recursos Audiovisuais] - Como fazer a integração harmoniosa dos diversos recursos audiovisuais e o jogo em si, passo depende muito do ambiente
+
+* [Capítulo 12: Versões Beta, Finalizando Builds] - Otimização, polishing, finalização, testes finais
+
+* [Capítulo 13: Publicação] - Lojas de publicação de jogos, *pitching* para publicadoras, ~~marketing?~~
