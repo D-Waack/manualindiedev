@@ -1,8 +1,8 @@
 
-# Capítulo 10: Música e Efeitos Sonoros
-"Pesaroso seja o coração, Penitente cheio de clemência" - Tirso, "_Blasphemous_" (2019)
+# Capítulo 11: Integrando Recursos Audiovisuais
+"Mas o futuro se recusou a mudar." - "_Chrono Trigger_" (1995)
 
-![Capítulo 10 capa](../Arquivos/Imagens/capa_10.jpg 'Sorrowful be the heart, Penitent One full of clemency.')
+![Capítulo 10 capa](../Arquivos/Imagens/capa_11.jpg 'But the future refused to change.')
 
 ## Introdução
 
