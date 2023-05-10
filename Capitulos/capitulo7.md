@@ -24,7 +24,7 @@ Isso é óbvio e natural. Você pede testar diferentes maneiras de interagir com
 
 Um outro caso são outros membros de sua equipe. Estes vão ser menos informados sobre o funcionamento exato do seu jogo, mas eles podem ter uma vaga ideia de como ele _deveria_ funcionar. O que provavelmente vai resultar em interações similares, mas não completamente iguais as suas. Eles podem tomar ações inesperadas, e caso não o façam, você pode estimular que tentem. 
 
-Por fim, os outros. Novamente, é importante que tome cuidado com _quem_ e _como_ você vai disponibilizar seu jogo para testes, para que não compartilhem seu jogo sem sua permissão. De qualquer forma, é normal esperar que a experiência desses jogadores vai ser consideravelmente diferente dos outros dois casos.
+Por fim, os outros. Novamente, é importante que tome cuidado com _quem_ e _como_ você vai disponibilizar seu jogo para testes, para que não compartilhem seu jogo sem sua permissão. De qualquer forma, é normal esperar que a experiência desses jogadores vai ser consideravelmente diferente dos outros dois casos. É interessante que os _playtesters_ estejam relativamente familiares com o gênero de jogo, mas _input_ de jogadores não familiares pode ser valioso também.
 
 ## Como funciona o teste?
 Isso vai depender das condições. O ideal seria _observar_ e _gravar_ como o jogador interage e reage ao jogo.
@@ -51,6 +51,23 @@ Caso não tenha criado um menu envolvido, deixe um menu rudimentar para o acesso
 Se for uma nova versão, inclua notas de problemas que foram consertados e mudanças que foram feitas. Interessa ao seu _playtester_ conferir o que mudou, e se o que consertou realmente funciona da maneira correta agora.
 
 ## Interpretando e Integrando _Feedback_
-Os diferentes 
+Os diferentes meios como o _feedback_ pode chegar vão resultar em diferentes métodos para interpretá-los e considerá-los.
+
+Para o caso de **textos**, não há muito o que fazer além de lê-los e tentar entender o problema ou sugestão. Certas vezes o texto incluído não vai ser o suficiente para entender e reproduzir o problema, certas vezes o texto estará bem claro, mas você simplesmente não conseguirá reproduzir o caso. Esse tipo de coisa acontece. Às vezes, diferentes programas rodando ao mesmo tempo ou problemas específicos a máquina de execução podem ocorrer.
+
+De qualquer forma, conseguir entender e reproduzir algum problema é o primeiro passo para encontrar o que está causando-o. E se você chegou até aqui, provavelmente já tem uma boa ideia de como prosseguir com isso.
+
+Para o caso de **vídeo e áudio**, ou somente vídeo, você pode ver diretamente o que causou o erro em tempo real. Você pode tentar seguir os passos diretamente, ou pode usar o próprio vídeo para seguir com sua análise. Da mesma forma, você pode se ver incapaz de reproduzir o problema, mas para estes casos é muito mais fácil entender o problema.
+
+Nesses casos, é interessante ver onde o seu jogador encontra dificuldades, se ele entendeu o que deveria ser feito, se é necessário fazer algum ajuste para facilitar o entendimento e _gameplay_.
+
+Existe ainda outro caso, vamos chamá-los de **entrevistas**. Após o processo de _playtesting_, você pode conduzir uma entrevista diretamente com o jogador, perguntando sobre a experiência, problemas encontrados, o que gostou e o que não gostou, etc. Esse tipo de entrevista pode ser muito útil, mas tome sempre cuidado para não mudar sua visão do jogo para acatar aos desejos de _cada_ _playtester_.
+
+Lembre-se sempre, não há como agradar a todos.
+
+Entendendo os erros, problemas e coisas que não funcioname como deveriam, você deve decidir como irá atacá-los. Se vai incluir suas soluções no próximo ciclo de desenvolvimento, ou se vai deixar no _backlog_ para tentar resolvê-los mais tarde. 
 
 ## Conclusão
+Ao final desse capítulo, você deveria entender o processo de _playtesting_ e porque ele é importante.
+
+No próximo capítulo, vamos discutir o mérito de enredos e narrativas.
