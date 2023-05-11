@@ -21,18 +21,18 @@ Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introdu
 
 * [Capítulo 5: Lidando com Problemas](Capitulos/capitulo5.md) - Problemas que podem surgir durante os sprints, como evitá-los e resolvê-los, como fazer uma pesquisa técnica, como fazer um post em um fórum de dúvidas
 
-* [Capítulo 6: Versões Alfa]
+* [Capítulo 6: Versões Alfa](Capitulos/capitulo6.md)
 
-* [Capítulo 7: Playtesting e Feedback] - Builds de teste, formas de capturar playtesting, como interpretar feedback, como planejar resoluções
+* [Capítulo 7: Playtesting e Feedback](Capitulos/capitulo7.md) - Builds de teste, formas de capturar playtesting, como interpretar feedback, como planejar resoluções
 
-* [Capítulo 8: Enredos e Narrativas]
+* [Capítulo 8: Enredos e Narrativas](Capitulos/capitulo8.md)
 
-* [Capítulo 9: Arte, Modelos, Visual] - Diferentes opções para criação de recursos visuais
+* [Capítulo 9: Arte, Modelos, Visual](Capitulos/capitulo9.md) - Diferentes opções para criação de recursos visuais
 
-* [Capítulo 10: Música e Sound Design] - Diferentes opções para criação de efeitos sonoros e músicas
+* [Capítulo 10: Música e Sound Design](Capitulos/capitulo10.md) - Diferentes opções para criação de efeitos sonoros e músicas
 
-* [Capítulo 11: Integrando Recursos Audiovisuais] - Como fazer a integração harmoniosa dos diversos recursos audiovisuais e o jogo em si, passo depende muito do ambiente
+* [Capítulo 11: Integrando Recursos Audiovisuais](Capitulos/capitulo11.md) - Como fazer a integração harmoniosa dos diversos recursos audiovisuais e o jogo em si, passo depende muito do ambiente
 
-* [Capítulo 12: Versões Beta, Finalizando Builds] - Otimização, polishing, finalização, testes finais
+* [Capítulo 12: Versões Beta, Finalizando Builds](Capitulos/capitulo12.md) - Otimização, polishing, finalização, testes finais
 
-* [Capítulo 13: Publicação] - Lojas de publicação de jogos, *pitching* para publicadoras, ~~marketing?~~
+* [Capítulo 13: Publicação](Capitulos/capitulo13.md) - Lojas de publicação de jogos, *pitching* para publicadoras, ~~marketing?~~
