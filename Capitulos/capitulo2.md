@@ -38,7 +38,7 @@ Como cada biblioteca só se preocupa com uma tarefa, você não pode criar um jo
 
 Partindo de _frameworks_, quando subimos um pouco mais o nível de sofisticação e facilidade de uso, chegamos às _Game Engines_ (motores de jogos). Estas oferecem o mesmo conjunto de bibliotecas para gráficos, áudio, memória, _networking_, física, etc., além de diversas outras ferramentas úteis no desenvolvimento. Diferente dos _frameworks_, _Engines_ costumam ser ambientes completos, com uma interface gráfica amigável acoplada de um editor de mapas/fases onde se pode visualizar e modificar o jogo em tempo real.
 
-![Interface do Unity](../Arquivos/Imagens/02_07.png 'Unity Interface.')
+![Interface do Unity](../Arquivos/Imagens/02_07.jpg 'Unity Interface.')
 
 _Engines_ facilitam muito o processo de desenvolvimento. Algumas oferecem a possibilidade de criar jogos sem programação alguma, mas programação ainda é uma necessidade na grande maioria delas. No geral, a maior diferença entre _engines_ e _frameworks_ está no editor de mapas, e no visualizador de cenas. Porém, existem vários casos onde essa diferença não é tão acentuada.
 
@@ -94,13 +94,17 @@ Entretanto, caso você não tenha um programador em sua equipe, a questão se to
 - Escolher alguém da equipe para aprender programação;
 - Recrutar um programador para a equipe.
 
-Pessoalmente, acredito que ter uma pessoa familiar com programação em sua equipe é importante. Isso é porque programação permite uma flexibilidade e usabilidade maior do que as alternativas. É claro, isso também exige mais conhecimento e treino. Aprender programação não é algo trivial, mas não é impossível. Caso esteja disposto, é uma boa opção. Caso decida recrutar um programador, seja um novo membro ou uma pessoa contratada, lembre-se dos pros e cons de trabalhar com mais uma pessoa na equipe.
+Pessoalmente, acredito que ter uma pessoa familiar com programação em sua equipe é importante. Isso é porque programação permite uma flexibilidade e usabilidade maior do que as alternativas. É claro, isso também exige mais conhecimento e treino. Aprender programação não é algo trivial, mas existe uma infinidade de cursos e material _online_ grátis cujo objetivo é te ensinar exatamente isso. Caso esteja disposto, é uma boa opção. Caso decida recrutar um programador, seja um novo membro ou uma pessoa contratada, lembre-se dos pros e cons de trabalhar com mais uma pessoa na equipe.
 
 Entretanto, a escolha continua sendo sua, algumas opções de _engines_ que permitem criação de jogos sem uso de programação são: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
+
+![Interface do GDevelop](../Arquivos/Imagens/02_10.jpg 'GDevelop Interface.')
 
 ### Fator 2: Plataforma Alvo
 
 Um detalhe muito importante é para onde você deseja exportar o seu jogo. Certas _engines_ não podem exportar para _mobile_, outras não exportam muito bem para _Mac_ e _Linux_. Na hora de escolher sua _engine_, você deve procurar sobre a possibilidade de exportar para sua plataforma desejada.
+
+![Consoles de Jogos](../Arquivos/Imagens/02_11.jpg 'Gaming Consoles')
 
 ### Fator 3: Estilo do Jogo
 
@@ -112,6 +116,8 @@ Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. 
 
 É sempre possível criar o mesmo estilo de jogo em outras _engines_ gerais, mas se o seu objetivo é criar algo específico, talvez seja mais fácil usar uma _engine_ especializada.
 
+![Interface do RPG Maker VX](../Arquivos/Imagens/02_12.png 'RPG MAKER VX interface')
+
 ### Fator 4: Recursos e Material
 
 Outro fator muito importante é a disponibilidade de recursos e materiais para a _engine_ relevante. Geralmente, quanto mais material educativo está disponível para sua _engine_, mais fácil será o processo de desenvolvimento. 
@@ -121,6 +127,8 @@ Como assim?
 Muitas vezes o desenvolvedor de seu jogo vai ficar sem saber como implementar determinada ideia. Nesse caso, uma simples pesquisa no Google pode ser a solução para esse problema. Isto é, se a _engine_ for popular e tiver fóruns de dúvidas, tutoriais e afins. Não é esperado que você encontre isso para _engines_ novas e obscuras, o que vai implicar em mais tempo lendo documentações ou fazendo posts em fóruns.
 
 Para _engines_ populares como _Unity_, por exemplo, é muito mais fácil encontrar uma solução para o seu problema imediatamente, e adaptá-la para seu projeto se torna muito mais rápido e prático.
+
+![Godot Tutorials](../Arquivos/Imagens/02_13.png 'Godot Tutorials')
 
 ### Sugestões:
 
@@ -134,7 +142,7 @@ Se o seu jogo é um RPG 2D ou uma visual novel, talvez te interessem _engines_ c
 
 Para jogos 2D como jogos de plataforma, _metroidvanias_ e outros jogos do tipo, recomendo Unity ou Godot.
 
-Para o caso dos projetos que montarei durante a criação do manual, tive certa dificuldade em decidir entre Godot e Unity. Ao final, decidi usar Godot para as duas, pois é a _engine_ com a qual eu estou mais familiar, e acho seu formato de árvores e nós mais simples de entender que o formato de cenas no Unity. Godot tem bastante material para desenvolvimento 2D, enquanto para o 3D nem tanto. Entretanto, a quantidade de material não é tão grande quanto para Unity.
+Para o caso dos projetos que montarei durante a criação do manual, tive certa dificuldade em decidir entre Godot e Unity. Ao final, decidi usar Godot para as duas, pois é a _engine_ com a qual eu estou mais familiar, e acho seu formato de árvores e nós mais simples de entender que o formato de cenas no Unity. Godot tem bastante material para desenvolvimento 2D, enquanto para o 3D ainda não há tanto. Entretanto, a quantidade de material não é tão grande quanto para Unity.
 
 Para o seu caso, sinta-se livre para escolher a que achar mais adequada. De qualquer forma, Unity será minha recomendação geral para a maioria dos projetos, com Godot vindo perto em segundo. Após escolher sua _engine_, não esqueça de preenchê-la no seu GDD! Sugiro que salve como uma nova versão, e não por cima do documento atual. Será interessante comparar as diferentes versões no final de seu projeto.
 
@@ -154,12 +162,14 @@ Para a manutenção de seu projeto é importante ter em mente como organizá-los
 Não existe um jeito "certo" de organizar seus arquivos. Mas existem jeitos melhores e piores. 
 
 Pessoalmente, eu costumava separá-los no seguinte formato, tentando seguir certa noção de orientação a objetos: **Entities**, **Managing**, **Persistent**, **Resources**, **UI** e **World**
-(imagem do arquivo)
+
+![Arquivos 1](../Arquivos/Imagens/02_01.png 'Arquivos 1')
 
 Esse formato é compreensível e útil, mas deixa muito a desejar. Os "recursos" eram todo o tipo de arquivo que não era um _script_. Ou seja, texturas, _sprites_, e música todos ficavam em uma mesma pasta, enquanto todo o resto ficava espalhado. É fácil imaginar a frustração de ter que passar por uma dúzia de pastas completamente separadas ao meu objeto para encontrar uma textura específcia toda vez que quero mudar seu visual.
 
 Percebendo que isso não era tão prático, mudei para um novo jeito de organizar as pastas:
-(imagem 2 do arquivo)
+
+![Arquivos 2](../Arquivos/Imagens/02_02.png 'Arquivos 2')
 
 Objetos, seus _scripts_, modelos, texturas e sons ficam todos juntos na mesma pasta. Caso um artefato seja usado em mais de um objeto, o mesmo fica em uma pasta "common". Dessa forma, evito o problema que ocorria antes. É claro, dependendo do projeto, essa estrutura pode não ser ideal.
 
