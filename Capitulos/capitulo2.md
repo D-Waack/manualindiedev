@@ -146,8 +146,8 @@ Para o caso dos projetos que montarei durante a criação do manual, tive certa 
 
 Para o seu caso, sinta-se livre para escolher a que achar mais adequada. De qualquer forma, Unity será minha recomendação geral para a maioria dos projetos, com Godot vindo perto em segundo. Após escolher sua _engine_, não esqueça de preenchê-la no seu GDD! Sugiro que salve como uma nova versão, e não por cima do documento atual. Será interessante comparar as diferentes versões no final de seu projeto.
 
-### Link GDD atualizada !!TODO
-### Link GDD atualizada
+[Sleepy Runner - GDD Cap 2](https://github.com/D-Waack/sleepy-runner-godot4/blob/main/Docs/Sleepy_GDD_cap2.pdf)
+[Vortex Tautology - GDD Cap 2](https://github.com/D-Waack/vortex-tautology-demo/blob/main/Docs/VortexTautology_GDD_cap2.pdf)
 
 ## Organização de Arquivos
 
