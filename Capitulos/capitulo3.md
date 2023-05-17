@@ -6,7 +6,7 @@
 
 ## Introdução
 
-Se tudo deu certo, você já escolheu qual será sua _engine_ e já tem certa noção de como organizará seus arquivos. Nesse caso, você já está pronto para começar o desenvolvimento de seu jogo.
+Se tudo deu certo durante o [capítulo interior](/capitulo2.md), você escolheu qual será sua _engine_ e já tem certa noção de como organizará seus arquivos. Nesse caso, você já está pronto para começar o desenvolvimento de seu jogo.
 
 Geralmente, definimos o ciclo de vida para o desenvolvimento de um jogo da seguinte forma: **Pré-Produção** -> **Produção** -> **Alfa** -> **Beta** -> **Produto Final**
 
