@@ -185,6 +185,27 @@ Para esse caso, eu ainda não lembrava como configurar colisões em Tilemaps par
 
 ![Ajuste de colisão](../Arquivos/Imagens/04_38.png 'Ajuste de colisão')
 
+Agora, o personagem cai até encontrar o chão. E é possível controlá-lo com as setas e a barra de espaço. O movimento não é muito bom, e o personagem não é animado, nem sequer vira para o lado onde está andando, porque nenhuma dessas funções foi programada. 
+
+![Gif, Movimento básico](../Arquivos/Imagens/04_39.gif "Movimento básico")
+
+Contudo, já temos os primeiros passo para o protótipo 0. Uma cena de testes, um personagem jogável, e um plano de ação. Antes de prosseguirmos, vamos entender o código que já temos.
+
+### Desmistificando o código
+Para alguém que acabou de começar sua jornada de desenvolvimento, isso pode parecer mágica. Mas não há mágica alguma em códigos, são apenas conjuntos de instruções, e, como eu mencionei anteriormente, entendendo as instruções, você entenderá o funcionamento do código. Então, vamos observar o _script_ do jogador que temos até agora.
+
+![Código Player](../Arquivos/Imagens/04_40.png 'Script Player')
+
+Esse é um _script_ bem simples. Ele contém apenas uma função, e são apenas 29 linhas de código, incluindo linhas em branco.
+
+![Linha 1](../Arquivos/Imagens/04_41.png 'Linha 1')
+
+A primeira linha é padrão na maioria dos scripts no Godot. "Extends" indica herança, que é um conceito de programação orientada a objetos. Em termos simples, quando um objeto herda de outro, ele recebe todos os atributos do objeto o qual ele herda. Nesse caso, nosso nó Player herda de CharacterBody2D. Ou seja, ele herda todos os atributos e funções da classe CharacterBody2D, e pode fazer coisas como andar pela tela e colidir com outros objetos. Sempre que você quiser entender qual é o tipo de objeto no Godot, você pode procurar por essa linha.
+
+![Linhas 4-8](../Arquivos/Imagens/04_41.png 'Linhas 4-8')
+
+As linhas 4-8 são declarações de constantes e variáveis. Velocidade e velocidade de pulo sempre apontam 
+
 ## Protótipo 0 - Exemplo 2
 
 ## Quando parar
