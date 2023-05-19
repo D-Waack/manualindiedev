@@ -117,19 +117,13 @@ Se eu executar essa cena do jeito que está, vou encontrar o mapa que desenhei, 
 
 Um detalhe interessante sobre a estrutura de árvores, é que nós filhos podem ter seus próprios nós filhos. Talvez você tenha reparado que o nó do meu personagem tem um triângulo de aviso. Isso é porque nós do tipo "corpo" precisam de um formato de colisão para funcionarem normalmente. Nesse caso, basta incluir um nó de colisão como filho. 
 
-![Incluir colisão](../Arquivos/Imagens/04_18.png 'Incluir colisão')
+![Incluir colisão](../Arquivos/Imagens/04_19.png 'Incluir colisão')
 
-Geralmente, quando existe alguma configuração faltante, o próprio editar vai me avisar. Aqui, ele reclama que é preciso incluir um formato para o nó de colisão, então eu o faço. 
+Geralmente, quando existe alguma configuração faltante, o próprio editar vai me avisar. Aqui, ele reclama que é preciso incluir um formato para o nó de colisão, então eu o faço. Nesse caso, selecionei um simples formato de retângulo, que é provavelmente o que vou usar para o personagem de qualquer forma.
 
-![Colisão 1](../Arquivos/Imagens/04_18.png 'Colisão 1')
+![Colisão 1](../Arquivos/Imagens/04_20.png 'Colisão 1')
 
-Nesse caso, selecionei um simples formato de retângulo, que é provavelmente o que vou usar para o personagem de qualquer forma.
-
-![Colisão 2](../Arquivos/Imagens/04_19.png 'Colisão 2')
-
-![Colisão 3](../Arquivos/Imagens/04_20.png 'Colisão 3')
-
-![Colisão 4](../Arquivos/Imagens/04_21.png 'Colisão 4')
+![Colisão 2](../Arquivos/Imagens/04_21.png 'Colisão 2')
 
 Agora, tenho um "personagem" com colisão, mas ele não é visível durante a execução. Isso é porque ele não contém nenhum nó visual. Por isso, incluo um nó "Sprite 2D" como filho. Eu já tenho um sprite para o personagem, mas desenhei um provisório apenas por questões de ilustração. Da mesma forma, um quadrado sólido também serviria, mas tente fazer um quadrado de cor diferente do mapa para facilitar sua visualização.
 
