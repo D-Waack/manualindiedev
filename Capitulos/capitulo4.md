@@ -204,7 +204,61 @@ A primeira linha é padrão na maioria dos scripts no Godot. "Extends" indica he
 
 ![Linhas 4-8](../Arquivos/Imagens/04_41.png 'Linhas 4-8')
 
-As linhas 4-8 são declarações de constantes e variáveis. Velocidade e velocidade de pulo sempre apontam 
+As linhas 4-8 são declarações de constantes e variáveis. Velocidade e velocidade de pulo **não mudarão** durante a execução do jogo, então declaras como _constant_ é melhor. Quanto ao que significam, SPEED é a velocidade com que o jogador anda horizontalmente, e JUMP_VELOCITY é a força com que o jogador pula quando o botão de pulo é pressionado. Além disso, temos a variável gravity, que herda um valor nas configurações, para que haja sincronia entre ela e corpos rígidos. No meu caso, eu não pretendo usar corpos rígidos por enquanto, mas posso decidir usá-os adiante, então vou manter essa linha assim.
+
+Você pode editar estes valores e perceber como eles afetam o personagem. Diminuindo a gravidade, por exmeplo, o personagem leva mais tempo para cair. E aumentando a velocidade, ele anda mais rápido através da tela.
+
+![Mudando configurações](../Arquivos/Imagens/04_43.png 'Mudando configurações')
+
+![Linhas 11-28](../Arquivos/Imagens/04_44.png 'Linhas 11-28')
+
+O próximo bloco de código é uma função. Funções são blocos de código que podem ser executados quando chamados em outras partes do código. No Godot, além de poder criar suas próprias funções, encontramos algumas funções comuns para quase todos os tipos de objetos. Estas são:
+
+- Funções de inicialização: funções como _\_ready()_ e _\_init()_ são ótimas para incluir configurações importantes na hora que o seu nó entra em ação. Ambas rodam uma única vez em condições específicas. Ready roda quando o objeto é criado em uma cena, e init quando é instanciado como um objeto.
+- Funções de execução: funções como _\_physics_process()_ e _\_process()_ rodam todo frame (geralmente, 60 vezes por segundo), e são as funções de código primárias para seus objetos. A maioria das ações, checks e mudanças são feitas nestas funções. É importante lembrar que muitos objetos ativos ao mesmo tempo com muitas instruções nessas funções vão causar com que a execução do seu jogo fique lenta.
+- Funções _trigger_: Estas funções ficam separadas da execução dos processos, mas rodam como resposta a algum acontecimento. Geralmente, elas estão atreladas a signals (sinais), e vão rodar quando as condições necessárias forem realizadas. Por exemplo, quando o personagem jogável colidir com um espinho, um sinal vai indicar que ele rode a função que diminui seus pontos de vida por 1.
+
+Para objetos submetidos a física como corpos, fazemos seu código por padrão na função _physics_process_, pois ela é a mais adequada para as operações deles. Ela recebe a variável _delta_, que indica o tempo entre a renderização do frame anterior e o atual. Esse delta é usado para que o tempo de execução de certas ações seja o mesmo, independente do tempo de execução do computador. Nesse caso, o _delta_ vai permitir que o movimento do jogador não seja afetado por lentidão ou rapidez do computador.
+
+A linha 13 verifica se o jogador está no chão (_is_on_floor_). Caso não esteja, gravidade é aplicada na linha 14. Essa gravidade é aplicada diretamente ao valor Y da posição do jogador. Isso demonstra outro aspecto do funcionamento da _engine_. Todos os objetos em tela tem uma **posição**, representada por um vetor com 2 valores, uma posição X e uma posição Y (para objetos 2D, os 3D também têm uma posição Z). Mover estes objetos é simplesmente uma questão de mudar o valor X,Y dessas posições. 
+
+Para movimento de objetos físicos, Godot utiliza a função _move_and_slide_. Essa função usa uma variável velocity (velocidade) e a aplica na posição do corpo que a invocou. Dessa forma, para movimentar um personagem em Godot 4, basta calcular sua velocidade através da variável velocity e rodar a função _move_and_slide_, como é feito na linha 28.
+
+Para o caso da gravidade, o movimento vai para baixo (Y positivo), logo, gravidade * delta é aplicado para o corpo a cada frame quando não estiver tocando o chão.
+
+Na linha 17, temos uma verificação de _input_. Caso pressione a tecla "ui_accept" (que se refere, por padrão, às teclas Enter e Barra de Espaço), e o personagem esteja no chão (pois ele não pode pular no ar), a velocidade Y é igualada a JUMP_VELOCITY, que é um valor negativo, causando com que o personagem mova-se para cima (Y negativo).
+
+Após o cálculo do movimento vertical, é calculado o movimento horizontal. A linha 22 declara uma variável que verifica se as teclas direcionais estão pressionadas. Caso a tecla esquerda esteja pressionada, _direction_ é -1. Caso seja a direita, _direction_ é 1. Caso nenhuma ou ambas estejam pressionadas, _direction_ é 0. Isso indica qual direção o personagem deve se mover (-1 para esquerda, +1 para direita).
+
+Em seguida, na linha 23, é verificado se essa direção é diferente de 0. Caso seja, o valor X de _velocity_ é alterado para que o personagem se mova na direção correta. Caso contrário, a velocidade do personagem é diminuída até chegar a 0 através da linha 26.
+
+Por fim, move_and_slide é executado para que essas mudanças calculadas sejam atualizadas. Esse processo inteiro ocorre a cada frame, ou seja, em torno de 60 vezes por segundo.
+
+Quebrando o código assim, linha por linha, fica muito mais fácil entender como ele funciona, e seguir com mudanças necessárias.
+
+### Próximos Passos
+
+Eu tenho um código para um personagem jogável de um plataforma. Mas isso não é o jogo que eu tinha planejado. Eu devo adaptar o código para seguir da forma que eu desejo. Primeiramente, isso se trata de um endless runner, então a princípio, meu personagem deveria correr sozinho.
+
+Meu primeiro passo foi virar o personagem para que encare a direção onde ele andará. Em seguida, mudei o código da seguinte maneira:
+
+![Código Runner](../Arquivos/Imagens/04_45.png 'Código Runner')
+
+Com essa mudança, o personagem não mais reage ao _input_ de direção do teclado, mas sempre segue em frente na direção para onde está olhando. Também incluí paredes nos cantos do mapa para que o personagem não caia no abismo.
+
+![Pós Mudança](../Arquivos/Imagens/04_46.gif "Pós Mudança")
+
+Okay, a situação evoluiu um pouco, mas temos outro problema, o personagem continua tentando avançar para dentro da parede. Geralmente, em jogos desse estilo, encontrar um obstáculo significa o fim dessa jogada, ou esse tipo de obstáculo não existe. Para o caso do meu jogo, minha intenção é ter fases menores e mais fechadas, então precisarei de outro tipo de solução. 
+
+A solução que cheguei é que o personagem irá trocar de direção quando encostar em uma parede ou algum obstáculo similar. Para isso, fiz com que o personagem trocasse de direção toda vez que encontrar uma parede.
+
+![Código Runner 2](../Arquivos/Imagens/04_48.png 'Código Runner 2')
+
+![Vai e volta](../Arquivos/Imagens/04_46.gif "Vai e volta")
+
+Quanto ao botão de pulo, decidi mantê-lo por enquanto. Talvez eu faça pulos automáticos mais a frente no projeto, mas, por enquanto, usar a barra de espaço é o suficiente. Fiz também algumas mudanças ao mapa para testar o movimento.
+
+
 
 ## Protótipo 0 - Exemplo 2
 
