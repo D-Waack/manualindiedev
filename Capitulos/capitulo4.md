@@ -254,7 +254,7 @@ A solução que cheguei é que o personagem irá trocar de direção quando enco
 
 ![Código Runner 2](../Arquivos/Imagens/04_48.png 'Código Runner 2')
 
-![Vai e volta](../Arquivos/Imagens/04_46.gif "Vai e volta")
+![Vai e volta](../Arquivos/Imagens/04_49.gif "Vai e volta")
 
 Quanto ao botão de pulo, decidi mantê-lo por enquanto. Talvez eu faça pulos automáticos mais a frente no projeto, mas, por enquanto, usar a barra de espaço é o suficiente. Fiz também algumas mudanças ao mapa para testar o movimento.
 
