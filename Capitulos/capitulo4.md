@@ -55,6 +55,8 @@ Em seguida, eu passo por algumas configurações que serão relevantes para a co
 
 ![Configurações2](../Arquivos/Imagens/04_05.png 'Configurações 2')
 
+![Configurações3](../Arquivos/Imagens/04_06.png 'Configurações 3')
+
 Após fazer essas mudanças, pressiono CONTROL + S para salvar meu projeto, e passo a trabalhar no protótipo em si.
 
 Na _engine_ Godot, todos os elementos de um jogo são divididos em _cenas_. Cenas são um conceito comum para várias _engines_, e geralmente essas cenas são o elemento executável primário de um jogo. Ou seja, uma cena seria equivalente a um mapa ou fase. Ao rodar o seu jogo, a _engine_ partirá de uma cena específica, e poderá mudar para outras cenas durante a execução.
@@ -63,7 +65,23 @@ Essas cenas executáveis são então compostas de vários elementos. Por exemplo
 
 TODO -> montar diagrama exemplo
 
-No Godot, toda cena é uma estrutura de árvore. Dessa forma, 
+No Godot, toda cena é uma estrutura de árvore. Estruturas de árvore são compostas de um nó pai e vários nós filhos. Aqui, estes nós filhos representam diferentes objetos de cada cena. Por exemplo, um personagem que se move na tela seria um _CharacterBody_ ou _CharacterBody2D_. O mapa pode ser composto de vários objetos estáticos _StaticBody3D_/_StaticBody2D_, ou de um _Tilemap_ (mapa formado por blocos).
+
+Aqui, para criar a primeira cena, eu escolho a opção "2D Scene", e em seguida eu dou um nome para esta cena. Para nomenclatura de cenas e nós, eu costumo usar o padrão CamelCase (palavras diferentes vêm em uma mesma linha, mas cada palavra nova tem sua primeira letra em caixa alta). Eu faço isso para separar objetos instanciados de nomes de variáveis quando escrevo meus scripts. Mas você pode nomear suas cenas como preferir.
+
+![Primeira Cena](../Arquivos/Imagens/04_07.png 'Primeira Cena')
+
+![Primeira Cena 2](../Arquivos/Imagens/04_08.png 'Primeira Cena 2')
+
+Em seguida, eu adiciono os elementos que vou precisar para a criação desse primeiro mapa teste. Ou seja, adiciono nós filhos. No caso, um nó para o mapa em si (Tilemap), um nó para a câmera (Camera2D), e um nó que representará o personagem jogável (CharacterBody2D). Por experiência, eu já sei exatamente quais são os nós que precisarei para isso, mas é normal que você precise pesquisar nas primeiras vezes.
+
+![Adicionando nós filhos](../Arquivos/Imagens/04_09.png 'Adicionando nós filhos')
+
+![Procurando nós filhos](../Arquivos/Imagens/04_10.png 'Procurando nós filhos')
+
+![Nós filhos](../Arquivos/Imagens/04_11.png 'Nós filhos')
+
+Ao final, temos uma cena TestMap com vários 
 
 ## Protótipo 0 - Exemplo 2
 
