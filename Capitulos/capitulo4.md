@@ -169,7 +169,21 @@ Eu sempre salvo o script com o mesmo nome e na mesma pasta que a cena. Uma adiç
 
 Esse script já inclui controle lateral, pulo e gravidade. Se eu fosse escrever um _script_ do zero para essa mesma função, ele seria bem similar a esse. Porém, se eu rodar a cena de teste nesse exato momento, notarei que o meu jogador apenas cai. Isso é porque a câmera não está configurada para seguir o jogador.
 
+![Gif, Player caindo]((../Arquivos/Imagens/04_35.gif "Player Caindo")
 
+Existem vários jeitos de fazer isso. O mais simples é simplesmente colocar a câmera como um nó filho do jogador. Enquanto eu não pretendo usar isso na versão final do jogo (pois quero ter diferentes câmeras em diferentes fases), para motivos do protótipo, isso vai servir. Incluo agora também no backlog o item "Ajustar funcionamento da câmera".
+
+Na minha cena de teste, arrasto a câmera para que se torne nó filho do Player.
+
+![Ajuste de câmera](../Arquivos/Imagens/04_36.png 'Ajuste de câmera')
+
+Agora, ao tentar executar a cena, a câmera segue o personagem como esperado, mas me deparo com outro problema. Eu não incluí colisão para o mapa que criei abaixo, e a gravidade faz com que o personagem caia diretamente através do chão.
+
+![Gif, Player caindo 2]((../Arquivos/Imagens/04_37.gif "Player Caindo 2")
+
+Para esse caso, eu ainda não lembrava como configurar colisões em Tilemaps para o Godot 4 (pois tenho mais experiência com a versão 3). Então tive que pesquisar sobre, e [este vídeo](https://www.youtube.com/watch?v=1Uk1yhGtnOo) me mostrou como fazê-lo. Segui os passos descritos, e incluí colisão para os dois tiles que eu usei no tileset.
+
+![Ajuste de colisão](../Arquivos/Imagens/04_38.png 'Ajuste de colisão')
 
 ## Protótipo 0 - Exemplo 2
 
