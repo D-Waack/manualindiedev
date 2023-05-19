@@ -81,7 +81,101 @@ Em seguida, eu adiciono os elementos que vou precisar para a criação desse pri
 
 ![Nós filhos](../Arquivos/Imagens/04_11.png 'Nós filhos')
 
-Ao final, temos uma cena TestMap com vários 
+Ao final, temos uma cena TestMap com alguns nós filhos. Esses são os **blocos principais** para o meu protótipo 0. Um personagem jogável, um mapa com o qual ele poderá interagir, e uma câmera para acompanhar o personagem durante o jogo.
+
+Por enquanto, se executar essa cena, vou notar que ela não faz nada. Não há nada para executar nela, apenas uma câmera apontada para um espaço vazio. O próximo passo é incluir objetos nessa cena. Em qual objeto você trabalharia fica a seu critério. Eu começarei pelo mapa, pois não conseguirei testar o meu jogador sem ter um mapa onde ele possa andar.
+
+Para isso, criei um simples tileset com 2 tiles diferentes. Em jogos 2D, tilesets são imagens onde você cria diferentes "azulejos" que pode usar como blocos em suas fases. Esse tipo de construção era comumente usada em jogos até a quarta geração de consoles, por motivos de memória e armazenamento. Hoje em dia, ainda é usada em jogos por questões de simplicidade, ou para emular um estilo de jogo antigo.
+
+(Diagrama mostrando Tiles em jogos)
+
+Como mencionei antes, não é relevante me dar ao trabalho de criar um mapa bom para o protótipo 0. Criei um tileset com 2 cores sólidas, cada um de 16x16 pixels. Por questões de facilidade de divisão da tela e padronização de tamanhos, costumamos usar múltiplos de 16 para os tamanhos de _tiles_ (e.g. 16, 32, 64, 128, e, raramente, 8). Esse print é da ferramenta _Aseprite_, que uso para criar pixel art.
+
+![Tileset Básico](../Arquivos/Imagens/04_12.png 'Tileset Básico')
+
+Em seguida, adicionei o tileset aos arquivos do meu projeto. Nesse caso, junto ao arquivo do mapa. No Godot, é possível fazer isso arrastando o arquivo para dentro do editor. Também é possível encontrar a pasta no seu explorador de arquivos e adiconá-lo manualmente.
+
+![Adicionando arquivo ao editor](../Arquivos/Imagens/04_13.png 'Adicionando arquivo ao editor')
+
+Agora, posso começar a criar o mapa, no outro canto da janela, opções de edição do nó selecionado aparecem. No campo Tile Set, adiciono um novo tileset, e clico nele, para que o editor de tileset apareça no canto inferior da tela. Arrastando o arquivo de imagem de meu tileset para este editor, a _engine_ já separa os tiles da maneira correta. (Isso acontece porque o tamanho padrão da _engine_ é 16x16 pixels. Caso meu tile tivesse um tamanho maior, seria necessário mudar essa configuração).
+
+![Tileset](../Arquivos/Imagens/04_14.png 'Tileset')
+
+![Tileset 2](../Arquivos/Imagens/04_15.png 'Tileset 2')
+
+![Tileset 3](../Arquivos/Imagens/04_16.png 'Tileset 3')
+
+Agora, eu posso clicar em uma tile qualquer e desenhar o meu mapa como quiser.
+
+![Desenhando Mapa](../Arquivos/Imagens/04_17.png 'Desenhando Mapa')
+
+Eu sabia que isso aconteceria, mas o tamanho que escolhi para minha tela é grande demais para o tamanho dos _tiles_. Isso é algo que vou ter que corrigir depois. Por enquanto, anotarei isso no meu documento de backlog.
+
+Se eu executar essa cena do jeito que está, vou encontrar o mapa que desenhei, mas nada acontece. O próximo é incluir algum tipo de interação. E o melhor jeito de seguir com isso é criar o jogador. 
+
+![Cena em execução](../Arquivos/Imagens/04_18.png 'Cena em execução')
+
+Um detalhe interessante sobre a estrutura de árvores, é que nós filhos podem ter seus próprios nós filhos. Talvez você tenha reparado que o nó do meu personagem tem um triângulo de aviso. Isso é porque nós do tipo "corpo" precisam de um formato de colisão para funcionarem normalmente. Nesse caso, basta incluir um nó de colisão como filho. 
+
+![Incluir colisão](../Arquivos/Imagens/04_18.png 'Incluir colisão')
+
+Geralmente, quando existe alguma configuração faltante, o próprio editar vai me avisar. Aqui, ele reclama que é preciso incluir um formato para o nó de colisão, então eu o faço. 
+
+![Colisão 1](../Arquivos/Imagens/04_18.png 'Colisão 1')
+
+Nesse caso, selecionei um simples formato de retângulo, que é provavelmente o que vou usar para o personagem de qualquer forma.
+
+![Colisão 2](../Arquivos/Imagens/04_19.png 'Colisão 2')
+
+![Colisão 3](../Arquivos/Imagens/04_20.png 'Colisão 3')
+
+![Colisão 4](../Arquivos/Imagens/04_21.png 'Colisão 4')
+
+Agora, tenho um "personagem" com colisão, mas ele não é visível durante a execução. Isso é porque ele não contém nenhum nó visual. Por isso, incluo um nó "Sprite 2D" como filho. Eu já tenho um sprite para o personagem, mas desenhei um provisório apenas por questões de ilustração. Da mesma forma, um quadrado sólido também serviria, mas tente fazer um quadrado de cor diferente do mapa para facilitar sua visualização.
+
+![Sprite embaçado](../Arquivos/Imagens/04_22.png 'Sprite embaçado')
+
+Adicionado o arquivo ao editor, e incluído como textura do sprite, percebo um problema com o meu desenho. Ele aparece um tanto embaçado no editor. Isso é porque a _engine_ tenta "filtrar" as imagens adicionadas para melhorar sua visualização. E isso costuma ser algo bom, mas para resoluções muito baixas (como 16x16 pixels), isso não é desejável. Nesse caso, basta mudar a configuração de filtro, e o sprite aparece da forma desejada.
+
+![Configuração de filtro](../Arquivos/Imagens/04_23.png 'Configuração de filtro')
+
+Se eu executar a cena agora, notamos que o personagem existe, mas ele não faz nada. Aqui, me incomodo novamente com a resolução e a diminuo novamente nas configurações do projeto. Agora, o tamanho da câmera é pequeno demais para mostrar o mapa que criei abaixo, porém mais importante é o fato de que o personagem permanece flutuando no ar.
+
+![Flutuando](../Arquivos/Imagens/04_24.png 'Flutuando')
+
+![Flutuando 2](../Arquivos/Imagens/04_25.png 'Flutuando 2')
+
+Para mudar isso, será necessário criar um _script_. Normalmente, _engines_ vão conter dois tipos de "corpos". Corpos 'rígidos' e 'cinemáticos'. Corpos rígidos têm sua física pré-programada, e são rígidos também no sentido de que o jeito que funcionam não é tão fácil de mudar. Corpos cinemáticos funcionam ao contrário, eles só funcionam se forem programados manualmente, mas é muito mais fácil mudá-los para que fiquem da maneira desejada. O corpo cinemático é mais adequado ao tipo de jogo que estou construindo.
+
+Como mencionei antes, para dar funcionalidade a esse corpo será necessário incluir um script. Por ora, esse _script_ cuidará apenas de física e controle. Mas antes de fazer isso, é interessante tomar outro passo: Salvar o jogador como uma cena diferente. Isso é outro caso interessante que pode ser feito no Godot. Eu posso salvar qualquer nó e seus filhos como uma cena separada, e reutilizar essa cena como nó filho em diversas cenas diferentes.
+
+Eu simplesmente salvo o nó do jogador como uma cena diferente, na minha pasta de Entities/Player, chamando-o de Player. Agora é possível clicar no botão de edição para abrir a cena do jogador. Eu também renomeio o nó pai dessa cena para "Player". Tanto a nova cena quanto o nó filho na cena do mapa.
+
+![Salvando como cena](../Arquivos/Imagens/04_26.png 'Salvando como cena')
+
+![Salvando como cena 2](../Arquivos/Imagens/04_27.png 'Salvando como cena 2')
+
+![Botão de edição](../Arquivos/Imagens/04_28.png 'Botão de edição')
+
+![Renomeando](../Arquivos/Imagens/04_29.png 'Renomeando')
+
+![Renomeando 2](../Arquivos/Imagens/04_30.png 'Renomeando 2')
+
+Teria sido melhor renomear o nó antes de salvá-lo como filho, mas seguir assim é uma opção também. De qualquer forma, agora é mais simples adicionar um script a cena Player. Aproveitando a oportunidade, também levei o sprite do jogador para a mesma pasta onde salvei a cena do Player.
+
+![Ajuste de arquivos](../Arquivos/Imagens/04_32.png 'Ajuste de arquivos')
+
+![Incluindo Script](../Arquivos/Imagens/04_31.png 'Incluindo Script')
+
+Eu sempre salvo o script com o mesmo nome e na mesma pasta que a cena. Uma adição interessante ao Godot 4 é a desse script padrão para o nó do tipo CharacterBody2D (corpo cinemático). 
+
+![Nome do script](../Arquivos/Imagens/04_33.png 'Nome do script')
+
+![Script padrão](../Arquivos/Imagens/04_34.png 'Script padrão')
+
+Esse script já inclui controle lateral, pulo e gravidade. Se eu fosse escrever um _script_ do zero para essa mesma função, ele seria bem similar a esse. Porém, se eu rodar a cena de teste nesse exato momento, notarei que o meu jogador apenas cai. Isso é porque a câmera não está configurada para seguir o jogador.
+
+
 
 ## Protótipo 0 - Exemplo 2
 
