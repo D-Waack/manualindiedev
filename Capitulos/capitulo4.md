@@ -258,6 +258,111 @@ A solução que cheguei é que o personagem irá trocar de direção quando enco
 
 Quanto ao botão de pulo, decidi mantê-lo por enquanto. Talvez eu faça pulos automáticos mais a frente no projeto, mas, por enquanto, usar a barra de espaço é o suficiente. Fiz também algumas mudanças ao mapa para testar o movimento.
 
+Meu próximo passo foi tentar concretizar minha ideia de construir plataformar no mapa durante a execução do jogo. Para isso, criei um script na cena do mapa em si, em vez da cena do Player. Dessa vez, essa não veio pronta para eu adaptar.
+
+![Código Mapa](../Arquivos/Imagens/04_49.png 'Código Mapa')
+
+No _script padrão_, sempre temos duas funções: _ready_ e _process_. Eu poderia usar apenas uma, ambas ou nenhuma delas. Para este caso, não precisarei usar _ready_ por enquanto, mas process será importante. 
+
+Meu objetivo é fazer a seguinte ação: Ao clicar em algum pedaço do mapa, eu gostaria que fosse criado um _tile_ no lugar onde cliquei. Eu posso dividir em alguns requerimentos diferentes:
+- Reconhecer o input de clique
+- Localizar a posição desse clique no mapa
+- Interagir com o tilemap para criar um novo tile nessa posição
+
+Felizmente, isso é tudo bem simples de fazer. A primeira coisa que eu checo em minha função _process_ é se houve um clique do mouse. Para isso, eu uso o singleton _Input_. Um singleton, no contexto da _engine_ Godot, se refere a qualquer _script_ que pode ser invocado em qualquer outro _script_ durante a execução do jogo. Ou seja, um _script_ de acesso universal que fica carregado na memória o tempo todo.
+
+_Input_, como o nome sugere, é um singleton que captura qualquer input feito pelo jogador, seja através de um controle, mouse. teclado, ou qualquer outro método de _input_ reconhecido pela _engine_. Daí vem nossa primeira linha, uma condicional. Caso o botão esquerdo do mouse seja clicado, faremos algo:
+
+![Código Mapa 2](../Arquivos/Imagens/04_50.png 'Código Mapa 2')
+
+O que seria esse algo? O que eu descrevi acima. Primeiro, vamos descobrir a posição do ponteiro do mouse. Uma simples pesquisa no Google me retornou qual função deveria ser usada, _get_global_mouse_pos_.
+
+![Pesquisa 1](../Arquivos/Imagens/04_51.png 'Pesquisa 1')
+
+![Pesquisa 2](../Arquivos/Imagens/04_52.png 'Pesquisa 2')
+
+Além de saber a posição no mapa, eu também precisarei incluir essa posição no meu _tilemap_. Eu sei, por experiência, que o _tilemap_ trabalha com uma _grid_ quadriculada, e nela trabalha com coordenadas X,Y. Porém, eu não sabia como traduzir as posições globais para as coordenadas do _tilemap_. Por isso, procurei a documentação da _engine_ para _tilemap_.
+
+Convenientemente, Godot já deixa a maior parte da documentação disponível no próprio editor de _scripts_. Através do botão "Search Help", eu encontrei a documentação para o _tilemap_. Percebo que _tilemap_ tem muitas funções, então eu procuro por palavras-chave como "position" ou "coordinates". Não demora muito para encontrar o que eu preciso.
+
+![Documentação 1](../Arquivos/Imagens/04_53.png 'Documentação 1')
+
+A primeira função interessante é _local_to_map_. Ela retorna a posição em coordenadas do mapa para uma **posição local**. Entretanto, a posição adquirida do mouse é uma posição global. Eu sei que isso não vai fazer diferença nesse caso (porque o meu _tilemap_ está na origem, ou seja, a posição global será a mesma que a local), mas apenas por questões de boas práticas, vou incluir a função _to_local_ para passar essa posição global para local. Assim, mesmo que eu tire o mapa da origem global, não terei problemas com isso.
+
+![Documentação 2](../Arquivos/Imagens/04_55.png 'Documentação 2')
+
+Essas funções são as peças do quebra cabeça para montar o jogo que desejo ter. Primeiramente, para usar funções do _tilemap_ eu preciso de acesso a ele. Em Godot 4, acessar um nó pelo script é simples, basta criar uma variável anotada como @onready, e apontar para seu nome na árvore com o símbolo $. Além disso, eu crio uma variável para salvar a posição do meu clique (mouse_position), e uma variável para salvar as coordenadas em posição local (tile_position).
+
+![Código Mapa 3](../Arquivos/Imagens/04_56.png 'Código Mapa 3')
+
+Tendo feito isso tudo, o próximo passo é: Reconhecer se não há nenhum bloco na posição clicada, incluir um bloco caso não tenha nada. Nesse caso, as funções relevantes são _get_cell_source_id_, que retorna o ID do _tile_ nesta coordenada, e -1 caso não haja nada. E a função _set_cell_, que insere determinado _tile_ na coordenada indicada.
+
+![Documentação 3](../Arquivos/Imagens/04_54.png 'Documentação 3')
+
+![Documentação 4](../Arquivos/Imagens/04_57.png 'Documentação 4')
+
+Essas duas são as últimas peças necessárias para criar o que eu tenho em mente. Caso o ID para esta coordenada seja -1, sabemos que isso é um espaço vazio, logo, inserimos a célula 0 nessa posição.
+
+![Código Mapa 4](../Arquivos/Imagens/04_58.png 'Código Mapa 4')
+
+![Protótipo Novamente](../Arquivos/Imagens/04_59.gif "Protótipo Novamente")
+
+Se você deu uma olhada no gif acima, provavelmente notou um problema. É possível criar plataformas na mesma posição onde o personagem está, causando com que ele seja lançado para cima em alta velocidade. Não preciso dizer que isso não estava em minhas intenções. Outra coisa que eu notei foi o fato de que o personagem é rápido demais, o que dificulta o controle de onde você está incluindo blocos ou não. Por ora, decidi incluir também a opção de excluir blocos, apenas para teste.
+
+A primeira coisa que fiz foi incluir ainda **outro** _tilemap_. Este outro tilemap permite que eu construa um mapa que não pode ser deletado, mas que o que o jogador construir possa ser. Assim, não encontro o problema de o jogador destruir o mapa completamente (o que poderia ser interessante, mas não é minha intenção com esse jogo).
+
+![Código Mapa 5](../Arquivos/Imagens/04_60.png 'Código Mapa 5')
+
+Aqui, incluí também o _tilemap2_. Agora, a primeira verificação procura se existe um _tile_ nessa coordenada tanto para o _tilemap_ 1 quanto para o 2, e caso contrário o _tile_ é inserido no _tilemap2_. Em seguida, fiz um bloco similar ao anterior para o botão direito do mouse. Para o botão direito, se existe alguma coisa na coordenada clicada, esse _tile_ é deletado.
+
+Em seguida, fiz uma mudança ao código do Player. Nele incluí também um nó de "Area2D". Este nó tem algumas propriedades especiais para detecção de vários objetos, inclusive, verificação se o mouse está dentro de sua área, o que será útil para mim. Minha intenção aqui é que eu **não** consiga criar novos _tiles_ se o mouse estiver muito próximo do jogador.
+
+![Mudança ao Player](../Arquivos/Imagens/04_61.png 'Mudança ao Player')
+
+Por isso, criei essa área em volta do Player. Além disso, incluí os sinais relevantes no código. No menu na direita, existe uma opção "Node", onde você pode ver os diferentes _signals_ que cada nó possui. Estes _signals_ são ativados em reação a diferentes condições. Nesse caso, selecionei as condições "Mouse entered" e "Mouse exited" para a área 2D. 
+
+![Signals](../Arquivos/Imagens/04_62.png 'Signals')
+
+Ao clicar duas vezes em qualquer signal, o mesmo cria um nome e pede para selecionar a qual nó este sinal será conectado. Essa conexão apenas ocorre quando um nó contém um script. Nesse caso, minha intenção é conectá-lo ao próprio Player.
+
+![Signals 2](../Arquivos/Imagens/04_63.png 'Signals 2')
+
+Aqui, ele só pode ser conectado ao próprio Player. Porém, eu preciso que essa informação chegue ao script do meu mapa. Eu poderia acessar o meu Player através do script do mapa. Mas, uma opção de melhor organização é emitir um novo sinal a partir do meu próprio Player. Esse sinal será criado manualmente, já que o sinal de Area2D não existe para um CharacterBody2D (que é o tipo do meu Player).
+
+O primeiro passo é declarar o sinal no código. Em seguida, editar o código dos sinais abaixo para emiti-lo. Para cada um, emito o signal como _true_ ou _false_, para que eu possa usar o mesmo sinal para os dois casos.
+
+![Signals 3](../Arquivos/Imagens/04_64.png 'Signals 3')
+
+![Signals 4](../Arquivos/Imagens/04_65.png 'Signals 4')
+
+Agora, posso pegar este signal que criei no meu Player e usá-lo no meu mapa principal. Uma vez conectado, eu crio uma variável _mouse_on_player_ e a configuro como _false_. Agora, toda vez que o mouse entrar ou sair da Area2D do meu Player, essa emitirá um signal que causará com que o Player emita o signal com _true_ ou _false_, e esse valor será atribuído à variável _mouse_on_player_. 
+
+![Signals 5](../Arquivos/Imagens/04_66.png 'Signals 5')
+
+![Signals 6](../Arquivos/Imagens/04_67.png 'Signals 6')
+
+Por fim, eu incluo uma última alteração no código do meu mapa. Nas linhas 13 e 14, caso o meu mouse esteja na área delimitada pelo Area2D, o jogador não conseguirá incluir blocos novos nessa posição, pois o comando retorna, interrompendo a execução da função neste frame. Isso não acontece para o caso de deleção. Ou seja, o jogador consegue destruir blocos próximos a ele, mas não consegue criar novos.
+
+![Signals 7](../Arquivos/Imagens/04_68.png 'Signals 7')
+
+![Execução pós mudança](../Arquivos/Imagens/04_69.gif "Execução pós mudança")
+
+Agora é possível notar que eu exagerei um pouco no tamanho da minha área, principalmente para baixo, e eu mudei o tamanho da área mais a frente para que não inclua o espaço logo abaixo do personagem. De qualquer forma, a deleção e bloqueio pela área estão funcionando normalmente. 
+
+![Ajuste de área](../Arquivos/Imagens/04_70.gif "Ajuste de área")
+
+Após fazer tudo isso, eu subi o progresso para o _github_, para salvar essa versão em algum outro lugar.
+
+### Um pequeno problema
+
+Ao continuar brincando com este protótipo, eu notei que ele não era muito o que eu tinha em mente. Enquanto eu consegui criar o que havia envisionado, isso não era muito divertido. 
+
+Após pensar muito sobre isso, e testar diferentes velocidades e ideias, cheguei à conclusão de mudar um pouco a ideia do jogo. Mas como eu cheguei a uma ideia evoluída?
+
+A primeira coisa que fiz foi analisar outros jogos de plataforma. Não consegui encontrar um jogo com uma ideia similar, onde você mesmo constrói o mapa ao vivo. Mas construir o mapa em si é uma ideia que já existe em jogos como _Mario Maker_. Neste jogo, você constrói sua fase _antes_ e a joga em seguida, podendo compartilhá-la com outros jogadores. 
+
+Minha intenção não é criar um jogo como _Mario Maker_, mas isso me deu uma ideia interessante. E se toda a edição da fase fosse feita _antes_ que ela começasse? Assim, você ainda é responsável por arranjar o mapa, mas também tem que navegá-lo, e o problema de ter que criar blocos mais rápido do que você pode raciocinar é resolvido. Porém, isso tira o foco no _gameplay_ rápido que eu queria inicialmente. Para manter esse _gameplay_, pensei em outro elemento interativo, o arco e flecha que Sleepy costuma usar.
+
 
 
 ## Protótipo 0 - Exemplo 2
