@@ -403,7 +403,39 @@ Ao tentar rodar isso, percebo que os objetos ainda não são arrastáveis. A op�
 
 ![Script para objetos arrastáveis](../Arquivos/Imagens/04_78.png 'Script para objetos arrastáveis')
 
-Criei algumas cópias deles, e as incluí na tela. Agora sim conseguimos arrastar os objetos. Outra coisa que eu gostaria de poder arrastar é a câmera, como em um scroll de celular. Isso não é tão simples de implementar, pois não desejo que isso aconteça durante a execução do jogo em si, apenas na etapa de preparação da fase. Para isso, utilizarei um conceito muito importante para o desenvolvimento de jogos, o das máquinas de estado.
+Criei algumas cópias deles, e as incluí na tela. Agora sim conseguimos arrastar os objetos. Porém, permance um problema: Conseguimos arrastar objetos para dentro de outros. Terei que lidar com isso eventualmente.
+
+![Gif, Objetos arrastáveis](../Arquivos/Imagens/04_79.gif "Gif, Objetos arrastáveis")
+
+Outra coisa que eu gostaria de poder arrastar é a câmera, como em um scroll de celular. Isso não é tão simples de implementar, pois não desejo que isso aconteça durante a execução do jogo em si, apenas na etapa de preparação da fase. Para isso, utilizarei um conceito muito importante para o desenvolvimento de jogos, o das máquinas de estado.
+
+Primeiramente, preciso decidir como isso vai funcionar. Minha intenção é que por padrão, arrastar o clique na tela causará com que ocorra o scroll da câmera. Por esse motivo, arrastar objetos deve tomar outro formato. A solução que pensei foi que, caso o jogador pressione/clique a posição do objeto por certo tempo, este irá entrar no modo de arrasto, e a câmera não mudará de posição. Mais a frente, interessa fazer um scroll seletivo da tela (por exemplo, quando o objeto está no canto).
+
+![Máquina de estados](../Arquivos/Imagens/04_80.png 'Máquina de estados')
+
+Dividi a execução da cena em três estados: Prepare, Select, Run. Prepare é o estado padrão, onde você pode fazer o scroll da tela e selecionar objetos. Select é o estado onde você está selecionando um objeto. E Run é o estado para iniciar a execução de cada fase. Mudei o processo para seguir com esses estados, e ali ele se refere a dois novos scripts. Um para a câmera, e outro para o container de objetos.
+
+Primeiramente, alterei o _script_ dos objetos para _apenas_ selecioná-los quando o jogador segura o clique por 0.15 segundos. Isso evita atrapalhar o jogador selecionando um objeto quando ele deseja apenas fazer o _scroll_ da tela.
+
+![Script de objetos arrastáveis novo](../Arquivos/Imagens/04_81.png 'Script de objetos arrastáveis novo')
+
+Se o jogador mover o toque antes do timer acabar, o objeto não é selecionado, e o _scroll_ normal da tela segue. Caso contrário, o objeto é selecionado e arrastado. Em seguida, adicionei um _script_ ao container de objetos. Este simplesmente verifica se algum dos objetos está selecionado. Caso haja algum, marca uma variável como verdadeiro. E caso contrário, esta é marcada como falso.
+
+![Script de objetos arrastáveis novo](../Arquivos/Imagens/04_82.png 'Script de objetos arrastáveis novo')
+
+De volta em nosso _script_ com a máquina de estados. Nossa condição de mudança de estados é o _script_ acima. Quando algum objeto está selecionado, nosso estado é o de seleção. Caso contrário, vamos ao estado padrão de preparação. A condição para o estado de início ainda não existe.
+
+![Máquina de estados 2](../Arquivos/Imagens/04_83.png 'Máquina de estados 2')
+
+Dependendo de qual for esse estado, permitimos ou não que a câmera seja arrastada com a variável _can_drag_ do script da câmera. 
+
+![Máquina de estados 3](../Arquivos/Imagens/04_84.png 'Máquina de estados 3')
+
+E por fim, o _script_ da câmera é bem simples: Caso a variável _can_drag_ seja verdadeira, fazemos o scroll da tela para o lado onde ela for deslizada. O gif abaixo ilustra os resultados:
+
+![Gif, Arrasto e Scroll](../Arquivos/Imagens/04_86.gif "Gif, Arrasto e Scroll")
+
+Agora, resta trabalhar na execução em si. Incluí o botão embaixo de um nó _CanvasLayer_, que faz que os objetos abaixo dele sempre estejam presentes na tela. Em seguida, conectei o sinal de clique do botão ao nó de controle principal, e esse ao nó pai do mapa. Ao clicar no botão, a cadeia de signals muda o estado no _script_ principal, e permite que o jogo se incie.
 
 
 
