@@ -357,11 +357,53 @@ Após fazer tudo isso, eu subi o progresso para o _github_, para salvar essa ver
 
 Ao continuar brincando com este protótipo, eu notei que ele não era muito o que eu tinha em mente. Enquanto eu consegui criar o que havia envisionado, isso não era muito divertido. 
 
-Após pensar muito sobre isso, e testar diferentes velocidades e ideias, cheguei à conclusão de mudar um pouco a ideia do jogo. Mas como eu cheguei a uma ideia evoluída?
+Talvez você desenvolva o seu projeto e consiga ver nele a semente para sua visão original do jogo. Neste caso, siga em frente. Porém, é mais provável que você se encontre na mesma situação que eu. As coisas não estão se realizando da forma que você esperava. Neste caso, vale a pena revisar o seu _design_ para o jogo, e melhorá-lo aos poucos para que a ideia que sua ideia se concretize da melhor forma possível.
 
-A primeira coisa que fiz foi analisar outros jogos de plataforma. Não consegui encontrar um jogo com uma ideia similar, onde você mesmo constrói o mapa ao vivo. Mas construir o mapa em si é uma ideia que já existe em jogos como _Mario Maker_. Neste jogo, você constrói sua fase _antes_ e a joga em seguida, podendo compartilhá-la com outros jogadores. 
+Após pensar muito sobre isso, e testar diferentes velocidades e ideias, cheguei à conclusão de mudar um pouco a ideia do jogo. Mas como minha ideia evoluiu?
 
-Minha intenção não é criar um jogo como _Mario Maker_, mas isso me deu uma ideia interessante. E se toda a edição da fase fosse feita _antes_ que ela começasse? Assim, você ainda é responsável por arranjar o mapa, mas também tem que navegá-lo, e o problema de ter que criar blocos mais rápido do que você pode raciocinar é resolvido. Porém, isso tira o foco no _gameplay_ rápido que eu queria inicialmente. Para manter esse _gameplay_, pensei em outro elemento interativo, o arco e flecha que Sleepy costuma usar.
+A primeira coisa que fiz foi analisar outros jogos de plataforma. Não consegui encontrar um jogo com uma ideia similar, onde você mesmo constrói o mapa em tempo real. Mas construir o mapa em si é uma ideia que já existe em jogos como _Mario Maker_. Neste jogo, você constrói sua fase _antes_ e a joga em seguida, podendo compartilhá-la com outros jogadores. 
+
+Minha intenção não é criar um jogo como _Mario Maker_, mas isso me deu uma ideia interessante. E se toda a edição da fase fosse feita _antes_ que ela começasse? Assim, você ainda é responsável por arranjar o mapa, mas também tem que navegá-lo, e o problema de ter que criar blocos mais rápido do que você pode raciocinar é resolvido. Porém, isso tira o foco no _gameplay_ rápido que eu queria inicialmente. Para manter esse _gameplay_, pensei em outro elemento interativo, o arco e flecha que meu personagem Sleepy costuma usar em outros jogos.
+
+Logo, o design revisado do meu jogo é o seguinte: Ao início de cada fase, você é apresentado uma fase com diversos objetos que podem ser rearranjados. Em um primeiro momento, você os rearranja da maneira que achar melhor. Em seguida, você terá um botão de _play_ que iniciará a execução da fase, onde você deve controlar os pulos e o arco e flecha de Sleepy para alcançar o final da fase.
+
+### Protótipo 0 v2
+
+Imediatamente eu me ponho a trabalhar nesta segunda versão do meu protótipo. Primeiramente, após certificar-me que o meu backup estava disponível no _github_, desfiz todo o meu _script_ na cena do mapa. Para o meu Player, excluí a Area2D e as funções para os dois sinais, além do sinal que eu declarei. 
+
+Além disso, no mapa original, mudei a posição de meu Player para ele comece a execução caindo. Um detalhe importante sobre essa nova ideia é de que, a princípio, mais do mapa deve estar visível a todo o tempo. Por isso, aumentei a resolução da tela novamente. Também adicionei um novo nó à cena de meu mapa, e o renomeei para "Objects". Este nó vai servir como um _container_ para todos os objetos que incluirei em cada fase.
+
+![Ajustes Mapa](../Arquivos/Imagens/04_71.png 'Ajustes Mapa')
+
+Por agora, criei estes objetos como instâncias do _StatidBody2D_, usando a imagem de meu _tileset_ como textura para eles. Estes objetos também são corpos como os rígidos e cinemáticos, mas eles são estáticos, e não são feitos para serem movidos junto em frames de física. Estes serão os objetos de teste. 
+
+![Novos objetos](../Arquivos/Imagens/04_72.png 'Novos objetos')
+
+Agora, eu preciso fazer com que seja possível arrastá-los antes do jogo começar. Além disso, preciso fazer com que o jogador **não** comece a andar antes que eu permita que isso aconteça. Para isso, incluirei um botão de _play_ no canto da tela. Até que esse botão seja pressionado, meu jogador permanecerá desativado. Para isso, incluí um nó _Control_, que servirá como _container_ para nós de interface, e um _TextureButton_, que será o botão de _play_ ao qual me referi.
+
+![Nós de controle](../Arquivos/Imagens/04_73.png 'Nós de controle')
+
+Criei uma simples textura para este botão e a incluí como a textura do nó relevante. Além disso, incluí a função _ready_ no _script_ do Player, para que seu processo físico seja desativado antes de iniciar a execução do jogo, e ele não se jogue da plataforma imediatamente.
+
+![Script player stop](../Arquivos/Imagens/04_74.png 'Script player stop')
+
+Tratando-se dos objetos que devem ser arrastados, ativei a opção _pickable_ em suas abas de _Input_. Esta opção permite com que eles sejam clicáveis e arrastáveis. Por enquanto, porém, botão de _play_ não faz nada.
+
+![Opção de arrasto](../Arquivos/Imagens/04_75.png 'Opção de arrasto')
+
+Antes de poder testar se o que eu fiz funcionou, percebo que não consigo ver os objetos, pois a câmera continua centrada no Player, e sequer posso mexê-lo. Por isso, passei a trabalhar na câmera. No próprio _script_ do mapa, na função _ready_, incluo um limite de fundo e esquerda para a câmera. Esse limite impede que a câmera caia além do fundo da tela, ou vá além do início do mapa. 
+
+![Câmera inadequada](../Arquivos/Imagens/04_76.png 'Câmera inadequada')
+
+Além disso, incluí no processo um update para que a posição da câmera seja sempre atualizada para a posição do Player (respeitando os limites configurados).
+
+![Configurando câmera](../Arquivos/Imagens/04_77.png 'Configurando câmera')
+
+Ao tentar rodar isso, percebo que os objetos ainda não são arrastáveis. A opção _pickable_ não fez exatamente o que eu esperava. Sem problemas, a gente descobre um jeito. Dessa vez, encontrei uma forma de atualizar a posição do objeto. Nesse caso, tive que atrelar um _script_ diretamente ao objeto arrastável. 
+
+![Script para objetos arrastáveis](../Arquivos/Imagens/04_78.png 'Script para objetos arrastáveis')
+
+Criei algumas cópias deles, e as incluí na tela. Agora sim conseguimos arrastar os objetos. Outra coisa que eu gostaria de poder arrastar é a câmera, como em um scroll de celular. Isso não é tão simples de implementar, pois não desejo que isso aconteça durante a execução do jogo em si, apenas na etapa de preparação da fase. Para isso, utilizarei um conceito muito importante para o desenvolvimento de jogos, o das máquinas de estado.
 
 
 
