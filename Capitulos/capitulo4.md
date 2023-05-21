@@ -433,11 +433,19 @@ Dependendo de qual for esse estado, permitimos ou não que a câmera seja arrast
 
 E por fim, o _script_ da câmera é bem simples: Caso a variável _can_drag_ seja verdadeira, fazemos o scroll da tela para o lado onde ela for deslizada. O gif abaixo ilustra os resultados:
 
+![Máquina de estados 3](../Arquivos/Imagens/04_85.png 'Máquina de estados 3')
+
 ![Gif, Arrasto e Scroll](../Arquivos/Imagens/04_86.gif "Gif, Arrasto e Scroll")
 
 Agora, resta trabalhar na execução em si. Incluí o botão embaixo de um nó _CanvasLayer_, que faz que os objetos abaixo dele sempre estejam presentes na tela. Em seguida, conectei o sinal de clique do botão ao nó de controle principal, e esse ao nó pai do mapa. Ao clicar no botão, a cadeia de signals muda o estado no _script_ principal, e permite que o jogo se incie.
 
+Beleza, minha ideia funcionou. É claro, isso ainda não é um jogo. Temos algumas coisas a considerar: Problemas de colisão, um highlight para objetos selecionados, velocidade, _scroll_ da tela, condições de vitória e derrota. E, olhando melhor, percebo que ainda é arrastar os objetos durante a execução. Ainda falta bastante para termos um protótipo 0 completo. Mas já temos uma ideia de como esse jogo será.
 
+![Execução completa](../Arquivos/Imagens/04_87.gif "Execução completa")
+
+Primeiramente, conserto o problema que mencionei antes, para que o jogador não possa arrastar objetos ou deslizar a tela durante a execução do jogo. Além disso, incluí um _shader_ de contorno nos objetos quando selecionados, adaptado a partir [deste _shader_](https://godotshaders.com/shader/2d-outline-inline/). Lembrando-me de incluir a opção _local_to_scene_ para que o mesmo shader não se aplique a todas as cópias do mesmo objeto em tela.
+
+![Shader de outline](../Arquivos/Imagens/04_88.png 'Shader de outline')
 
 ## Protótipo 0 - Exemplo 2
 
