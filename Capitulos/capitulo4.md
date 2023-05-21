@@ -443,9 +443,29 @@ Beleza, minha ideia funcionou. É claro, isso ainda não é um jogo. Temos algum
 
 ![Execução completa](../Arquivos/Imagens/04_87.gif "Execução completa")
 
-Primeiramente, conserto o problema que mencionei antes, para que o jogador não possa arrastar objetos ou deslizar a tela durante a execução do jogo. Além disso, incluí um _shader_ de contorno nos objetos quando selecionados, adaptado a partir [deste _shader_](https://godotshaders.com/shader/2d-outline-inline/). Lembrando-me de incluir a opção _local_to_scene_ para que o mesmo shader não se aplique a todas as cópias do mesmo objeto em tela.
+Primeiramente, conserto o problema que mencionei acima, para que o jogador não possa arrastar objetos ou deslizar a tela durante a execução da fase. Além disso, incluí um _shader_ de contorno nos objetos quando selecionados, adaptado a partir [deste _shader_](https://godotshaders.com/shader/2d-outline-inline/). Lembrando-me de incluir a opção _local_to_scene_ para que o mesmo shader não se aplique a todas as cópias do mesmo objeto em tela.
+
+![Condicionais de arrasto](../Arquivos/Imagens/04_89.png 'Condicionais de arrasto')
 
 ![Shader de outline](../Arquivos/Imagens/04_88.png 'Shader de outline')
+
+Decidi incluir também uma condição de derrota, já que eu estou caindo várias vezes no buraco em meus testes, e tenho que resetar o jogo toda vez. No fundo do mapa, incluí um nó do tipo _Marker2D_, que eu nomeei BottomBoundary, e que basicamente marca uma posição. Além disso, incluí uma condição na função _process_, que roda uma função _kill_ do Player caso sua posição Y seja menor do que a posição do _Marker2D_.
+
+![Marker2D](../Arquivos/Imagens/04_90.png 'Marker2D')
+
+![Kill caso abaixo do marker](../Arquivos/Imagens/04_90.png 'Kill caso abaixo do marker')
+
+No Player, a função kill simplesmente desativa seu processo físico, e emite um signal que será reconhecido pelo _script_ do mapa. Você pode pensar que é redundante que o mapa invoque uma função que simplesmente irá emitir um signal para ele mesmo. Mas eu faço isso porque este não será o único meio pelo qual o Player morrerá, então este será interessante para outras situações.
+
+![Função kill](../Arquivos/Imagens/04_92.png 'Função kill')
+
+Minha intenção é que, após o jogador morrer, o jogo imediatamente volte ao estado em que estava antes que isso acontecesse. Ou seja, que o mapa permaneça da maneira que estava para que o jogador possa testar uma iteração nova a partir da anterior. Dessa forma, não faz sentido reiniciar a cena inteira, pois as posições dos objetos seriam resetadas. O que preciso fazer é retornar apenas o jogador (e quaisquer coletáveis) para a posição original deles, e voltar ao estado de edição da fase.
+
+Para isso, incluí uma variável que salva a posição do jogador configurada no editor do mapa. Além disso, uma função que retorna o personagem para o lugar original. Não incluirei a câmera, porque provavelmente o ponto de interesse de edição para o jogador será onde ele morreu. Além disso, incluirei um marcador de mortes mais a frente no desenvolvimento.
+
+![Salvando posição do Player](../Arquivos/Imagens/04_93.png 'Salvando posição do Player')
+
+![Soft reset](../Arquivos/Imagens/04_93.png 'Soft reset')
 
 ## Protótipo 0 - Exemplo 2
 
