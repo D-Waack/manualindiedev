@@ -107,10 +107,14 @@ No geral, quando um erro de execução é encontrado, o próprio console da _eng
 
 Certas vezes, o erro vai ser algo óbvio e basta consertar o código na linha especificada. Outras vezes, você não vai entender o motivo do erro. Nesses casos, seguir o mesmo processo de pesquisa explicado anteriomente vai servir.
 
-## Erros de lógica
-Você implementou algo e não encontrou um "erro", mas o jogo não funciona do jeito que esperava.
+## Execução Inesperada
+Você implementou algo e o console não apontou um "erro", mas o jogo não funciona do jeito que esperava.
 
+Esse tipo de erro é muito comum. E o motivo geralmente é que existe algum erro na sua lógica. Por exemplo, algo que você deixou passar, uma variável que você confundiu e atribuiu o valor errado. Esse tipo de coisa.
 
+Às vezes, o erro vai estar em um lugar óbvio. Outras vezes, nem tanto. Nesses casos, o método mais eficiente costuma seguir todo o caminho lógico de trás para frente até encontrar algum tipo de valor inconsistente. Isso não é tão simples de explicar, mas basicamente, tente imprimir no console todos os valores que podem influenciar a execução inesperada, ou crie "checkpoints" na execução, pois se "até aqui ocorreu como esperado", então você sabe que o erro veio depois.
+
+Esses erros costumam ser bem simples, mas também estressantes. Mantenha a calma e continue procurando, e teste com frequência. Quanto mais cedo você encontrar estes erros, mais fácil será resolvê-los.
 
 ## Alguns erros específicos !!TODO
 
