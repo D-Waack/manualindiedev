@@ -461,19 +461,42 @@ No Player, a função kill simplesmente desativa seu processo físico, e emite u
 
 Minha intenção é que, após o jogador morrer, o jogo imediatamente volte ao estado em que estava antes que isso acontecesse. Ou seja, que o mapa permaneça da maneira que estava para que o jogador possa testar uma iteração nova a partir da anterior. Dessa forma, não faz sentido reiniciar a cena inteira, pois as posições dos objetos seriam resetadas. O que preciso fazer é retornar apenas o jogador (e quaisquer coletáveis) para a posição original deles, e voltar ao estado de edição da fase.
 
-Para isso, incluí uma variável que salva a posição do jogador configurada no editor do mapa. Além disso, uma função que retorna o personagem para o lugar original. Não incluirei a câmera, porque provavelmente o ponto de interesse de edição para o jogador será onde ele morreu. Além disso, incluirei um marcador de mortes mais a frente no desenvolvimento.
+Para isso, incluí uma variável que salva a posição do jogador configurada no editor do mapa. Além disso, uma função que retorna o personagem para o lugar original. Não incluirei a câmera, porque provavelmente o ponto de interesse de edição para o jogador será onde ele morreu. Além disso, incluirei um marcador de mortes mais a frente no desenvolvimento. Também mudei o funcionamento da função _block_grabbing_ para levar uma condição _true_ or _false_, para que eu possa reativá-los quando necessário.
 
 ![Salvando posição do Player](../Arquivos/Imagens/04_93.png 'Salvando posição do Player')
 
-![Soft reset](../Arquivos/Imagens/04_93.png 'Soft reset')
+![Soft reset](../Arquivos/Imagens/04_94.png 'Soft reset')
+
+Pensando bem, talvez seja interessante fazer com que a câmera volte à posição inicial antes que o personagem passe a se mover. Também vou considerar usar um animador _tween_ para fazer isso mais adiante. Por agora, quero fazer com que objetos não consigam sobrepor um ao outro. E isso causou bastante trabalho e dificuldade, e ainda não está perfeito. Também fiz com que a câmera fizesse o scroll durante a seleção, o que foi bem simples. 
+
+Mais importante que qualquer coisa, falta algo fundamental para que isso se torne um jogo. Nós temos uma condição de derrota, mas não uma de vitória. Fiz um objeto para representar a vitória do jogador. Eu mudo o formato da fase e incluo o objeto _goal_. E dou ao meu player um nome de classe. Por fim, _Goal_ recebe um _script_ simples. Caso entre um corpo da classe Player, emita um signal de vitória.
+
+![Novo Mapa](../Arquivos/Imagens/04_95.png 'Novo Mapa')
+
+![Classe do Player](../Arquivos/Imagens/04_96.png 'Classe do Player')
+
+![Goal script](../Arquivos/Imagens/04_97.png 'Goal script')
+
+![Tela de vitória](../Arquivos/Imagens/04_98.png 'Tela de vitória')
+
+Ao final disso, quando meu Player encostar na bandeia _goal_, a função fará com que o novo painel (ColorRect) que adicionei apareça com a mensagem de vitória. Agora, podemos chamar isso de um jogo. Não é um jogo bom, e não é um jogo completo, mas é um jogo, como pode ver no gif abaixo:
+
+![Protótipo 0](../Arquivos/Imagens/04_99.gif "Protótipo 0")
+
+E eu vou fechar meu protótipo 0 por aqui. Ainda há muita coisa para fazer, como o documento de _backlog_ indica. E isso é só o que eu pensei por agora. Mas o _core_ do jogo em si foi criado. A partir do capítulo da versão _alfa_, vou focar menos na execução da programação em si, e em boas práticas de programação geral. 
 
 ## Protótipo 0 - Exemplo 2
 
+TODO -> link para apêndice com protótipo 2
+
 ## Quando parar
 
+O objetivo de seu protótipo 0 é testar sua ideia de forma mais concreta. Os básicos de controle, física e funcionamento deverão ser o seu foco. No meu projeto exemplo, eu sequer implementei a maioria das mecânicas, apenas incluí o mínimo para ver que a ideia de meu jogo era viável e divertida. Com isso feito, já me senti preparado para partir para a próxima etapa, a versão alfa.
 
 ## Conclusão
 
+Ao final desse capítulo, esperamos que tenha uma certa ideia de como planejar e executar a criação de seu protótipo 0. Isso não deve ser algo muito formal, e eu não me preocupei muito com boas práticas ou com um processo organizado. Meu único objetivo era completar uma simples versão jogável de minha ideia, e o seu deve ser similar a isso.
+
 O trabalho de criar esse protótipo inicial não é trivial. E esse é um passo muito importante. Se o seu time é inexperiente, ele vai naturalmente encontrar problemas e dúvidas durante o processo. 
 
-No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo5.md) discuto o que fazer quando você fica sem saber o que fazer durante a execução de etapas de programação.
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo5.md) discuto o que fazer quando você fica sem saber o que fazer durante a execução de etapas de programação. E no [capítulo seguinte](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo6.md), começo a falar das versões _alfa_ de seu projeto.
