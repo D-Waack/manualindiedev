@@ -127,4 +127,4 @@ Aqui eu detalho alguns problemas comuns que você pode encontrar como iniciante.
 ## Conclusão
 Neste capítulo descrevemos um _workflow_ para lidar com situações adversas durante um ciclo de desenvolvimento. Esse é um tipo de coisa com a qual você deve estar acostumado lidar, pois não vão ser poucas às vezes em que precisará procurar por uma solução.
 
-No próximo capítulo, vou falar um pouco sobre _playtesting_ e como coletar _feedback_ de jogadores.
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo6.md), vamos falar sobre o passo seguinte ao protótipo 0, o início do desenvolvimento das versões _alfa_.
