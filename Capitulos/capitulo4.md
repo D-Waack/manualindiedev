@@ -495,8 +495,8 @@ O objetivo de seu protótipo 0 é testar sua ideia de forma mais concreta. Os b�
 
 ## Conclusão
 
-Ao final desse capítulo, esperamos que tenha uma certa ideia de como planejar e executar a criação de seu protótipo 0. Isso não deve ser algo muito formal, e eu não me preocupei muito com boas práticas ou com um processo organizado. Meu único objetivo era completar uma simples versão jogável de minha ideia, e o seu deve ser similar a isso.
+Ao final desse capítulo, espero que tenha uma certa ideia de como planejar e executar a criação de seu protótipo 0. Isso não deve ser algo muito formal, e eu não me preocupei muito com boas práticas ou com um processo tão organizado. Meu único objetivo era completar uma simples versão jogável de minha ideia, e o seu deve ser similar a isso.
 
 O trabalho de criar esse protótipo inicial não é trivial. E esse é um passo muito importante. Se o seu time é inexperiente, ele vai naturalmente encontrar problemas e dúvidas durante o processo. 
 
-No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo5.md) discuto o que fazer quando você fica sem saber o que fazer durante a execução de etapas de programação. E no [capítulo seguinte](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo6.md), começo a falar das versões _alfa_ de seu projeto.
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo5.md) discuto o que fazer quando você fica sem saber o que fazer durante a execução de etapas de programação. E no [capítulo seguinte a ele](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo6.md), começo a falar das versões _alfa_ de seu projeto.
