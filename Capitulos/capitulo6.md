@@ -62,8 +62,9 @@ Para muitos projetos, essa lista começa a ficar cada vez maior. Por isso, é in
 
 - Usar alguma ferramenta de organização
 
-Similar ao tópico anterior, utilizar uma ferramenta como o Trello, JIRA ou o Teamwork pode ser interessante também. Especialmente se você trabalha em equipe. Trabalhando solo, eu geralmente me limito à minha lista manual, mas as interfaces destes programas podem ajudar a organizar seu trabalho de maneira mais eficiente também. Sugiro pelo menos dar uma olhada no Trello.
+Similar ao tópico anterior, utilizar uma ferramenta como o Trello ou JIRA pode ser interessante também. Especialmente se você trabalha em equipe. Trabalhando solo, eu geralmente me limito à minha lista manual, mas as interfaces destes programas podem ajudar a organizar seu trabalho de maneira mais eficiente também. Sugiro pelo menos dar uma olhada no Trello.
 
+### Boas Práticas - Programação
 - 
 
 ## Priorização 
