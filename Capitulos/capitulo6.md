@@ -47,6 +47,8 @@ Costumo recomendar como primeiro passo que faça uma revisão de seu protótipo 
 
 Para isso, minha sugestão é que volte por todos os seus _scripts_ e configurações para certificar-se de que está seguindo as boas práticas que vou listar a seguir. Quando a essas práticas, algumas se referem diretamente a programação, e outras se referem ao gerenciamento do projeto em si.
 
+Além disso, cabe revisar o _design_ e fazer uma formalizar melhor uma atualização de seu GDD a cada ciclo.
+
 ### Boas Práticas - Gerenciamento do projeto
 - Usar alguma forma de controle de versões
 
@@ -66,6 +68,8 @@ Similar ao tópico anterior, utilizar uma ferramenta como o Trello ou JIRA pode 
 
 ### Boas Práticas - Programação
 - 
+
+## Revisitando o _Design_
 
 ## Priorização 
 Após a revisão do seu protótipo 0, você pode partir para os outros aspectos. Mas por onde prosseguir?
