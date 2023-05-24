@@ -21,7 +21,7 @@ Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introdu
 
 * [Capítulo 5: Lidando com Problemas](Capitulos/capitulo5.md) - Problemas que podem surgir durante os sprints, como evitá-los e resolvê-los, como fazer uma pesquisa técnica, como fazer um post em um fórum de dúvidas
 
-* [Capítulo 6: Versões Alfa](Capitulos/capitulo6.md)
+* [Capítulo 6: Versões Alfa](Capitulos/capitulo6.md) - Revisitando o _design_, construindo o jogo em si
 
 * [Capítulo 7: Playtesting e Feedback](Capitulos/capitulo7.md) - Builds de teste, formas de capturar playtesting, como interpretar feedback, como planejar resoluções
 
