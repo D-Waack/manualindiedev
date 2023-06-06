@@ -87,7 +87,35 @@ Alguns jogos como _Undertale_ ainda utilizam aspectos comuns de jogos para subve
 
 Quando estiver contando sua história, é interessante considerar o tema que deseja transmitir. Caso não tenha um tema específico em mente, isso também é aceitável. Muitos jogos bons não exploram um tema específico. Inclusive, muitos jogos bons sequer contêm uma história. Porém, caso tenha algo em mente, tente pensar em formas criativas de transmitir essa ideia através do _gameplay_, e você terá um jogo mais especial.
 
-## Incluindo a História em Seu Jogo vs Interrompendo o _flow_ do jogo
+## Bolando uma história
+Esse é um aspecto no qual eu posso te ajudar muito pouco. E, geralmente, é algo que os próprios criadores do jogo bolam conforme o projeto anda.
 
+O que eu costumo fazer é bolar o jogo em si (em termos de mecânicas), e depois pensar para quais personagens essa mecânica faria sentido como um jogo, ou criar novos personagens atrelados a estas mecânicas. Enfim, eu crio a história em volta deste personagem, para explorar algum tema que eu achar interessante.
+
+Certas vezes, eu já começo diretamente com um personagem, ou não estabeleço um tema, ou qualquer outra variação. Este não é um processo rígido. Alguns autores começam bolando o final da história, outros pelos personagens, e outros pelo tema.
+
+O mais importante é que a história e o _gameplay_ devem complementar um ao outro, para que o jogo fique coeso.
+
+Neste manual pouco me interessa entrar no mérito de escrita, estruturação do enredo, estudo de personagens, etc. Porém, caso queira escrever uma narrativa interessante, sugiro que procure artigos e _posts_ sobre este assunto.
+
+## Incluindo a História em Seu Jogo vs Interrompendo o _flow_ do jogo
+Após bolar a história, será necessário integrá-la ao seu jogo. Como expliquei anteriormente, isso costuma ser feito de algumas formas diferentes. É importante verificar qual é o formato mais relevante para o seu projeto.
+
+Para a maioria dos casos, eu recomendo o método das caixas de diálogo, mas caso tenha o orçamento para contratar dubladores, um formato completo de _cutscenes_ ou um híbrido pode ser tão interessante quanto.
+
+Você provavelmente já tem isso decidido, não é uma escolha difícil. O que costuma pegar mais é quando/onde introduzir os elementos de sua história na narrativa. Coisas como exposição, _world building_, diálogos, etc. são muito importantes, mas jogá-los todos de uma vez no jogador é uma ideia ruim.
+
+Existem tantas abordagens diferentes para esse tipo de coisa quanto jogos, então eu vou deixar algumas dicas simples:
+
+- Introduza primeiro o _gameplay_, antes de entrar em _backstories_, intrigas políticas, acontecimentos do mundo, motivações dos personanges. Você quer engajar o seu jogador o mais rápido o possível, e ele pouco vai se importar com o seu mundo antes de reconhecer se o jogo é divertido ou não. Uma _cutscene_ de introdução é aceitável, mas tente mantê-la curta.
+- Da mesma forma, tente manter cenas de diálogo e _cutscenes_ relativamente curtas. Se seu jogo for mais focado na narrativa, isso não será um problema, mas se o foco for o _gameplay_, é possível que o jogador não se interesse pela história. Sempre permita que ele pule _cutscenes_ quando for relevante, principalmente porque é muito frustrante jogar um jogo novamente e ter que assistir a história toda de novo.
+- Escolhas os momentos. Após o fim de uma área ou missão é uma boa hora para introduzir uma nova cena calma de exposição, mas no meio de uma batalha não é, a não ser que isso faça sentido no contexto do jogo. 
+- Seja criativo e lembre-se de alternativas. Caixas de diálogo e dublagem não precisam estar atreladas a cenas. Um NPC pode abrir uma caixa de diálogo quando interagir com ele. Personagens podem falar e conversar durante _gameplay_, para jogos dublados. Algo escrito em uma parede, ou um áudio/livro disponível para visualização no jogo pode dizer tanto quanto uma cena. 
+
+E por fim, como regra geral:
+- Lembre-se de sempre fazer sentido. Estabeleça regras de como o seu mundo funcione, e as respeite. 
 
 ## Conclusão
+Neste capítulo, apresentei alguns diferentes formatos pelos quais o enredo toma forma em um jogo. Ao final dele, espero que o leitor tenha uma boa ideia de como montar e incluir sua história em seu jogo.  Essa é uma lista generalizada, e sugiro que o desenvolvedor seja criativo quanto à maneira que deseja apresentar sua história. Porém, as opções apresentadas são sempre utilizadas com sucesso, tanto em jogos _indie_ quanto na indústria de jogos como um todo. 
+
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo9.md), tratarei de aspectos visuais como arte, modelagem, e estilos.
