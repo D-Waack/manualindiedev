@@ -74,10 +74,20 @@ Isso é muito utilizado em jogos até hoje. Como os corpos encontrados em divers
 
 [Exemplo de hollow knight]
 
-Tratando-se do contexto _indie_, o principal método de _storytelling_ costuma ser caixas de diálogo e _envinronmental_. Hoje em dia, é mais fácil contratar dubladores que não são profissionais para dar voz ao seu jogo, mas utilizar apenas texto é completamente válido e bem comum.
+Tratando-se do contexto _indie_, o principal método de _storytelling_ costuma ser caixas de diálogo e _envinronmental_. Hoje em dia, é mais fácil contratar dubladores que não são profissionais para dar voz ao seu jogo, mas utilizar apenas texto é completamente válido e bem comum. 
 
 ## Temas
+Existem alguns meios diferentes de descrever uma história. O "enredo", que descreve a trajetória da história, os "personagens", que costumam envolver as pessoas ou seres que interagem e crescem durante a história, e, por fim, os "temas". Os temas descrevem os tópicos explorados na história, ou ainda a mensagem que a história quer passar.
 
-## Interrompendo _flow_ do jogo
+Na literatura, assim como em filmes, encontramos temas diversos como solidão, justiça, identidade, amadurecimento, vingança, sobrevivência, guerra, entre dúzias de outros. Os jogos seguem a mesma ideia, e apresentam estes mesmos temas. O formato que utilizam para explorar estes temas, porém, podem ou não ser os mesmos. 
+
+A maior diferença entre os outros meios artísticos e os jogos é a _interatividade_. Por causa disso, é possível fazer explorar um tema diretamente através das ações de um jogador. Muitos jogos utilizam artifícios para fazer com que os jogadores se sintam na pele do personagem, podendo explorar temas como solidão, medo, desespero, realização, esforço, perserverança, crescimento, de uma maneira muito mais _real_ do que outros formatos.
+
+Alguns jogos como _Undertale_ ainda utilizam aspectos comuns de jogos para subverter as expectativas do jogador e contar uma história de pacifismo e aceitação com muito mais impacto do que outro jogo ou filme que narra sobre a guerra de uma maneira mais direta.
+
+Quando estiver contando sua história, é interessante considerar o tema que deseja transmitir. Caso não tenha um tema específico em mente, isso também é aceitável. Muitos jogos bons não exploram um tema específico. Inclusive, muitos jogos bons sequer contêm uma história. Porém, caso tenha algo em mente, tente pensar em formas criativas de transmitir essa ideia através do _gameplay_, e você terá um jogo mais especial.
+
+## Incluindo a História em Seu Jogo vs Interrompendo o _flow_ do jogo
+
 
 ## Conclusão
