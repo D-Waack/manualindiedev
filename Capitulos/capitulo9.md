@@ -53,12 +53,23 @@ Para a criação de imagens 2D, existem diversas ferramentas. Enquanto você pod
 
 ## Recursos 3D
 ### Estilos
-Em termos de estilos, os 
+Em termos de estilos, você vai encontrar vários. Estilos realistas, estilos de desenho animado, estilos retrô. O que vai delimitar o seu estilo visual em um jogo 3D são algumas coisas: os modelos, as texturas, os _shaders_ e iluminação. Em termos simples, os modelos são os diversos objetos 3D que compõem seus personagens, mapas, objetos, etc. E as texturas são as imagens que "pintam" estes modelos. 
 
-- Blender
-- Gimp
+O design visual de jogos 3D é um processo muito mais complexo do que jogos 3D, e pouco vale a nós entrar neste mérito. 
 
+### Ferramentas
+Para criação de recursos visuais 3D, você precisará de um programa de modelagem, um programa para criar as texturas e, às vezes, um programa para misturar estes dois.
 
+- Blender (Programa de modelagem, animação 3D, criação de textuas, entre outros, completamente grátis, melhor opção para um desenvolvedor indie)
+- Gimp (aplicativo gráfico grátis que pode ser utilizado na criação de texturas)
+- Maya
+- Listar outros 
+
+A melhor opção para um desenvolvedor _indie_ sempre será o Blender. A não ser que ele já tenha uma assinatura em algum dos outros aplicativos de modelagem mais robustos. Blender têm uma curva de aprendizado bem alta, mas assim que dominado, é uma ferramenta incrível para a criação de modelos e até texturas, além de animação, UV unwrapping, _sculpting_, entre diversas outras opções.
+
+O Gimp eu sugiro como uma alternativa gráfica grátis para a criação de texturas, _skyboxes_, etc. 
 
 ## Conclusão
+Neste capítulo, eu cito diversas opções que desenvolvedores _indie_ podem usar para a criação dos diversos recursos visuais que serão necessários em seus jogos. Não entro em questões de teoria da arte, de cores, e diversos outros casos. Até porque isso terá melhor decidido pelo próprio artista da equipe.
 
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo10.md), falamos sobre música e efeitos sonoros.
