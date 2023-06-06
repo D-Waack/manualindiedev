@@ -22,7 +22,7 @@ No geral, para jogos 2D você vai encontrar alguns formatos diferentes:
 
 Para cada formato, os estilos também podem variar consideravelmente. Isso depende do artista. Geralmente, jogos _indie_ costumam seguir com o caminho da _pixel art_. Entretanto, existem vários jogos _indie_ que são criados para resoluções maiores. Arte de vetor é mais incomum, mas você pode encontrá-la em certos jogos do _Newgrounds_.
 
-O estilo de arte para seu jogo deve seguir a preferência do time. _Pixel art_ e arte normal são 2 habilidades diferentes (apesar de que saber uma contribui para enteder a outra). Pixel art costuma ser mais simples, porque você tem um limite de pixels com os quais trabalhar, tornando mais simples o trabalho do artista. Entretanto, de certa forma é mais difícil, porque você tem que passar todo o detalhe que deseja em uma quantidade bem limitada de pixels.
+O estilo de arte para seu jogo deve seguir a preferência do time. _Pixel art_ e arte normal são 2 habilidades diferentes (apesar de que saber uma contribui para enteder a outra). Pixel art costuma ser mais simples, porque você tem um limite de pixels com os quais trabalhar, tornando mais "fácil" o trabalho do artista. Entretanto, de certa forma é mais difícil, porque você tem que passar todo o detalhe que deseja em uma quantidade bem limitada de pixels.
 
 Se você não tem experiência com arte, eu sugiro seguir com _pixel art_. Mas,novamente, siga com o estilo que melhor preferir.
 
@@ -40,18 +40,21 @@ O termo tile se refere a pequenos quadrantes gráficos que aparecem em jogos ant
 
 - Plano de Fundo
 
-Plano de fundo, pode ter scrolling paralaxo, (...)
+O fundo da tela, atrás do cenário. Este pode ser estático, ter um _scrolling_ (arrastamento) simples ou pode ter scrolling paralaxo, um formato onde o plano de fundo tem diferentes camadas que se movem em velocidades diferentes para criar a ilusão de um horizonte mais realista (muito utilizado em jogos da era 16-bit).
 
 ### Ferramentas
 Para a criação de imagens 2D, existem diversas ferramentas. Enquanto você podia usar algo como o _Photoshop_ para criar qualquer tipo de gráfico, vamos listar algumas opções mais acessíveis.
 
-- Aseprite (pixel art, pago, melhor ferramenta para pixel)
+- Aseprite (pixel art, pago, uma das melhores ferramentas para criação de pixel art)
 - Paint.net (pixel art e arte normal)
 - Gimp (pixel art e arte normal)
-- Ferramentas online
-- listar outras
+- Ferramentas online diversas
+- Listar outras
 
 ## Recursos 3D
+### Estilos
+Em termos de estilos, os 
+
 - Blender
 - Gimp
 
