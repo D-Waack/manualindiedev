@@ -8,6 +8,21 @@
 Pouco adianta criar recursos como _sprites_, modelos e temas musicais se você não souber como incluí-los em seu jogo. Esse capítulo vai discutir um pouco sobre técnicas para incluí-los e o que fazer com cada um deles.
 
 ## Recursos Visuais
+Recursos visuais são extremamente importantes, mas também vêm em várias formas diferentes. Aqui, é importante fazer uma distinção entre recursos 2D, 3D e outros diversos formatos.
+
+### Recursos 2D - Planos e camadas
+
+### Recursos 2D - Sprites e camada principal
+
+### Recursos 2D - Planos de fundo e camadas secundárias
+
+### Recursos 2D - Efeitos e shaders
+
+### Recursos 3D - Modelos e texturas
+
+### Recursos 3D - Skyboxes, iluminação, efeitos e shaders
+
+### Recursos Gerais - HUDs e interfaces
 
 ## Recursos Sonoros
 Recursos sonoros são mais simples para inclusão do que os visuais, mas requerem alguns cuidados únicos.
