@@ -33,6 +33,8 @@ Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introdu
 
 * [Capítulo 11: Integrando Recursos Audiovisuais](Capitulos/capitulo11.md) - Como fazer a integração harmoniosa dos diversos recursos audiovisuais e o jogo em si, passo depende muito do ambiente
 
-* [Capítulo 12: Versões Beta, Finalizando Builds](Capitulos/capitulo12.md) - Otimização, polishing, finalização, testes finais
+* [Capítulo 12: Level/World Design e Balancing](Capitulos/capitulo12.md) - Design para fases/mapas/mundos, planejamento de curvas de dificuldade
 
-* [Capítulo 13: Publicação](Capitulos/capitulo13.md) - Lojas de publicação de jogos, *pitching* para publicadoras, ~~marketing?~~
+* [Capítulo 13: Versões Beta, Finalizando Builds](Capitulos/capitulo13.md) - Otimização, polishing, finalização, testes finais
+
+* [Capítulo 14: Publicação](Capitulos/capitulo14.md) - Lojas de publicação de jogos, *pitching* para publicadoras, ~~marketing?~~
