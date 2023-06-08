@@ -1,16 +1,21 @@
+# Capítulo 13: Versões Beta, Finalizando Builds, Otimização, Polishing
+"A vós que labutas em vão. Sois tolo. Sois tolo. Sois tolo." - Inscrição gravada na pedra no corredor sem fim, "_La Mulana_" (2006)
 
-# Capítulo 13: Publicação
-"-" - , "_?_" (???)
-
-![Capítulo 13 capa](../Arquivos/Imagens/capa_13.jpg '.')
+![Capítulo 13 capa](../Arquivos/Imagens/capa_13.png 'To the one who toils for naught. Thou art foolish. Thou art foolish. Thou art foolish.')
 
 ## Introdução
-Seu jogo está "pronto", ou a um ponto onde você acha que já está bom para publicá-lo. Seu próximo passo será distribuí-lo de alguma forma.
+Se você já implementou todos os sistemas principais de seu jogo, seu _backlog_ não contém mudanças muito grandes, e você já consegue ver o seu jogo praticamente pronto. Podemos prosseguir com as versões beta.
 
-## Diferentes Opções
+Aqui, seu jogo está praticamente pronto, mas ainda restam algumas pontas para fechar.
 
-## Monetização
+## Consertando Bugs Finais
 
-## Pós-produção (_Patches_, consertando problemas pós-lançamento)
+## Otimização
+
+## Mais _Playtesting_
+
+## _Polishing_
+
+## Preparação para o Lançamento
 
 ## Conclusão
