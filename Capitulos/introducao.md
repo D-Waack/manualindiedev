@@ -8,13 +8,19 @@
 
 Enquanto todos estes são ótimas fontes de aprendizado, não se deve esquecer de um detalhe: Você não vai realmente aprender a fazer um jogo até o momento em que colocar essa teoria na prática. A melhor maneira de começar a sua jornada de criação de jogos é "aprender fazendo", com uma boa base de instruções para que você (e sua equipe) não se perca(m) no caminho.
 
+![](../Arquivos/Imagens/00_04.png 'Por Que Tutoriais de Game Dev Vão Arruinar Sua Vida')
+
 Existem vários outros manuais, artigos, guias e livros que propõem esta mesma ideia. Porém, estes costumam ser focados em um gênero de jogos específico, ou atrelados completamente a um ambiente de desenvolvimento, ou simples/vagos demais. Além disso, enquanto os livros e artigos acadêmicos sobre o assunto costumam ter uma boa base em teorias de _design_, engenharia de _software_ e padrões de desenvolvimento, a maioria dos outros materiais costumam faltar nesse aspecto. Por outro lado, muitos dos livros e artigos exigem entendimento teórico, e um grande investimento de tempo para compreender seu conteúdo, enquanto os demais formatos exigem um investimento menor, e costumam ser mais práticos.
 
-Minha intenção com esse manual é oferecer um conteúdo diferente, tentando ao máximo casar a praticidade e simplicidade dos guias informais com a base teórica encontrada nos livros e artigos. Minha esperança é que ao final da leitura você seja capaz de planejar e executar o projeto da criação de um jogo em qualquer gênero ou ambiente. 
+Os resultados destes tipos de conteúdo vão variar desde uma infinidade de conhecimento teórico inútil que você nunca conseguirá aplicar, até um projeto de jogo copiado de alguém que nada tem a ver com a _sua_ ideia. Ou até um monte de código que você não tem a menor ideia de como utilizar.
+
+Minha intenção com esse manual é oferecer um conteúdo diferente, tentando ao máximo casar a praticidade e simplicidade dos guias informais com a base teórica encontrada nos livros e artigos. Minha esperança é que ao final da leitura você seja capaz de planejar e executar o projeto da criação de um jogo em _qualquer_ gênero ou ambiente. 
 
 O manual é direcionado principalmente a desenvolvedores e programadores, mas pode ser usado por qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador. Sejam eles 3D ou 2D. Vou assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
 
-Não pense por um momento que o processo de criação de um jogo será simples, rápido ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas. 
+Não pense por um momento que o processo de criação de um jogo será simples, rápido ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas. Para que a sua história não seja igual a de tantos desenvolvedores _indie_ que ficam famosos do pior jeito.
+
+![](../Arquivos/Imagens/00_05.png 'Yandere Dev Nunca Vai Terminar o Yandere Simulator')
 
 Talvez você já tenha tentado criar um jogo e falhado algumas vezes, ou talvez seja a sua primeira tentativa. A experiência ajuda, mas o fator mais importante é que tenha o empenho e ânimo para levar seu projeto do zero ao sucesso. Eu mesmo passei pela experiência de falhar em vários projetos até aperfeiçoar uma maneira ideal para a construção de jogos que funcionava para mim, com o apoio da Engenharia de Software, de muito estudo, da opinião de outros desenvolvedores, e empenho de sobra.
 
@@ -29,7 +35,7 @@ Lembre-se, os responsáveis pelo seu projeto são você e seu time. Enquanto des
 <br>
 <br>
 
-## Conteúdo do Manual:
+## Sobre o Conteúdo do Manual:
 Um detalhe importante sobre o conteúdo deste manual é que ele está muito preocupado com *o que* você vai fazer, e não tanto com *como* você vai fazê-lo.  
 
 Como assim?  
@@ -46,7 +52,7 @@ A pergunta fundamental que exemplifica o foco desse manual é a seguinte:
 ![Jogo - Game Dev Tycoon](../Arquivos/Imagens/00_01.png 'Game Dev Tycoon')
 <sup><sub> Imagem de jogo "Game Dev Tycoon"</sup></sub>
 
-Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo (e como eu termino)?" É com esse tipo de pergunta muito mais fundamental que as pessoas costumam encontrar problemas.  
+Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo (e como eu termino)?" É com esse tipo de pergunta muito mais fundamental que muitos costumam encontrar problemas.  
 
 Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvimento, e vou exemplificar com um projeto de jogo de plataforma 2D e um *topdown shooter* 3D, é importante entender que o meu objetivo não é explicar especificamente como criar um *tipo* de jogo, mas sim descrever um processo de desenvolvimento e organização que servirá para qualquer jogo.
 
@@ -54,9 +60,9 @@ Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvime
 
 ## Detalhes Importantes:
 Antes de entrar no manual em si, alguns detalhes podem te interessar.  
-O *approach* sugerido nesse manual vai se ramificar dependendo de alguns fatores. Toda vez que isso for relevante, apontarei o fato. Entretanto, é importante que você os tenha em mente desde já.  
+A abordagem sugerida nesse manual vai se ramificar dependendo de alguns fatores. Toda vez que isso for relevante, apontarei o fato. Entretanto, é importante que você os tenha em mente desde já.  
 
-Esses fatores são:
+Estes fatores são:
 
 1. Se você trabalha em equipe ou sozinho:
 
@@ -74,7 +80,7 @@ Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo peque
 
 2. Quais competências estão disponíveis na equipe:
 
-A criação de um jogo requer várias competências. Neste manual, eu as dividi em alguns tópicos diferentes: *Design*, Programação e Lógica, Arte (conceitual, de fundo, 2D, 3D, de interface, etc.), Modelagem, Animação, Música (*BGM* e *sound design*), *Playtesting*. Se você trabalha em grupo, existe também um papel de supervisão e organização.  
+A criação de um jogo requer várias competências. Neste manual, eu as dividi em alguns tópicos diferentes: *Design* (de mecânicas, de _level_/mundo), Programação e Lógica, Arte (conceitual, de fundo, 2D, 3D, de interface, etc.), Modelagem, Animação, Música (*BGM* e *sound design*), *Playtesting*. Se você trabalha em grupo, existe também um papel de supervisão e organização.  
 Para certos projetos, algumas dessas competências são irrelevantes. Ainda para outros projetos, algumas serão mais importantes que as outras. 
 
 Por exemplo, modelagem não é necessária em jogos 2D. 
