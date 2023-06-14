@@ -12,7 +12,7 @@ Geralmente, definimos o ciclo de vida para o desenvolvimento de um jogo da segui
 
 Seguindo esta classificação, você teria passado pela etapa de pré-produção. A pré-produção na indústria como um todo geralmente é um processo mais formal do que o que descrevi aqui. Isso não é um problema. Em muitos casos, um pequeno protótipo é projetado também durante a pré-produção. Decidi incluir isto na etapa de produção, por questões de simplicidade.
 
-A partir de agora, você e sua equipe entrarão no que eu chamo de ciclos de desenvolvimento. Outros vão chamá-los de _sprints_. Você pode usar um nome diferente também se preferir. O nome em si pouco importa. Essa nomenclatura é emprestada do Scrum, um _framework_ para a criação de projetos de _software_. 
+A partir de agora, você e sua equipe entrarão no que eu chamo de ciclos de desenvolvimento. Outros vão chamá-los de _sprints_. Você pode usar um nome diferente também se preferir. O que importa é o conceito e execução. Essa nomenclatura é emprestada do Scrum, um _framework_ para a criação de projetos de _software_. 
 
 Não vamos nos apegar muito à estrutura do Scrum em si. E tudo indica que o padrão na indústria é utilizar uma espécie de Scrum adaptado ao contexto de jogos. O que interessa para o nosso caso é a organização, reflexão, o próprio ciclo de trabalho, e como ele será avaliado. A princípio, o que você vai definir é simples:
 
@@ -29,7 +29,7 @@ Uma ótima coisa quando trabalhando em grupo é que várias pessoas podem trabal
 
 Por exemplo, se sua equipe tem 2 programadores, ambos podem facilmente trabalhar em diferentes aspectos de seu jogo. Digamos, um trabalha no movimento do personagem e o outro trabalha no funcionamento dos menus principais. Da mesma forma, se a equipe tem 2 artistas, um pode trabalhar no _design_ de um personagem, enquanto o outro trabalha em fundos, ou em outro personagem. O mesmo se aplica a músicos, _level designers_, e a lista segue.
 
-No entanto, o trabalho do programador e do artista não seguem o mesmo ritmo. E, em certos casos, um depende de um resultado do outro. Por exemplo, implementar uma certa ação como puxar uma alvanca no jogo _Tomb Raider_ precisaria que os animadores tivessem completado a animação de puxar a alavanca. Esses animadores precisaram esperar que os modeladores tivessem completado o modelo de Lara Croft. E esses modeladores precisaram usar a _concept art_ do time de arte para criar o modelo e suas texturas.
+No entanto, os trabalhos do programador e do artista não seguem o mesmo ritmo. E, em certos casos, um depende de um resultado do outro. Por exemplo, implementar uma certa ação como puxar uma alvanca no jogo _Tomb Raider_ precisaria que os animadores tivessem completado a animação de puxar a alavanca. Esses animadores precisaram esperar que os modeladores tivessem completado o modelo de Lara Croft. E esses modeladores precisaram usar a _concept art_ do time de arte para criar o modelo e suas texturas.
 
 (TODO -> baixar um dos tomb raiders e gravar um gif de Lara puxando a alavanca)
 
@@ -57,7 +57,7 @@ Você e sua equipe (ou apenas você) discutirão quais aspectos do jogo serão m
 
 Na teoria, um líder competente seria capaz de dirigir o jogo sozinho, sem que as diferentes competências dialoguem entre si. Por exemplo, o time de modelagem e CG não precisa saber o que o time de implementação anda fazendo. Entretanto, para projetos _indie_ isso se mostra não só difícil, mas uma opção ruim.
 
-Quanto mais diálogo houver entre os integrantes, mais eles podem contribuir um com os outros, e apoiarem-se entre si. O líder deve estimular diálogo entre os membros de forma que todos saibam o progresso entre eles, e não haja surpresas mais a frente.
+Quanto mais diálogo houver entre os integrantes, mais eles podem contribuir uns com os outros, e apoiarem-se entre si. O líder deve estimular diálogo entre os membros de forma que todos saibam o progresso entre eles, e não haja surpresas mais a frente.
 
 A delimitação do ciclo pode ser feita através de uma reunião pessoal, uma chamada de vídeo, ou mensagens de texto. É preferível que possam se comunicar por voz, pois isso ajuda a fluir a discussão. Isso deve ser decidido logo no início do ciclo, ou no final do anterior.
 
@@ -65,7 +65,7 @@ Lembrando sempre que a opinião que deve pesar mais para cada aspecto é a dos e
 
 Outra coisa importante é manter em mente o ritmo de trabalho de cada pessoa. Alguns membros vão ter mais tempo e terminar seu trabalho antes de outros, outros vão ter imprevistos e gerar atrasos. Como você vai lidar com estes aspectos fica ao critério seu e de sua equipe. Se vai dar mais trabalho para um para agilizar o processo, ou se vai pedir que um membro complemente onde outro faltar. Não existe uma resposta certa, isso apenas deve ser considerado durante o desenvolvimento.
 
-Durante essa discussão, podem surgir ideias que não serão executadas durante este ciclo, ou sugestões que ainda não precisam ser consideradas. **Anote-as** na _wishlist_ do seu GDD.
+Durante a discussão sobre as tarefas, podem surgir ideias que não serão executadas durante este ciclo, ou sugestões que ainda não precisam ser consideradas. **Anote-as** na _wishlist_ do seu GDD.
 
 Além disso, você vai decidir o que será feito durante o ciclo em si. **Anote isso também**, em um documento separado do GDD. Uma simples lista deve servir. Por questões de simplicidade, vamos chamar este documento de _backlog_.
 
@@ -128,9 +128,9 @@ Após uma reflexão sobre o resultado do ciclo anterior, geralmente se inicia o 
 
 ### 4. Testando resultados
 
-Após o fechamento de um ciclo, você pode ou não ter um produto executável. Geralmente, esse tipo de protótipo leva um pouco de tempo para sair do chão na etapa de produção, mas depois é facilmente construído por cima do que já existe (_build_) a cada ciclo (_alfa_, _beta_).
+Após o fechamento de um ciclo, você pode ou não ter um produto executável. Geralmente, esse tipo de protótipo leva um pouco de tempo para sair do chão na etapa de produção, mas depois é facilmente construído por cima do que já existe (_builds_) a cada ciclo (versões _alfa_ e _beta_).
 
-Para o desenvolvimento de jogos, testar estes protótipos é extremamente importante para encontrar _bugs_, problemas e verificar se está ficando da maneira desejada. A isso chamamos de _playtesting_. Certas equipes podem ter um membro específico apenas para fazer isso. Em outras, os próprios membros da equipe testam o que foi feito. Outras ainda buscam terceiros para testar cada _build_.
+Para o desenvolvimento de jogos, testar estes protótipos é extremamente importante para encontrar _bugs_, problemas e verificar se o jogo está funcionando da maneira desejada. A isso chamamos de _playtesting_. Certas equipes podem ter um membro específico apenas para fazer isso. Em outras, os próprios membros da equipe testam o que foi feito. Outras ainda buscam terceiros para testar cada _build_.
 
 Quando estes testes serão feitos vai depender da sua organização. Em certos casos, pode ser interessante testar um módulo criado ao final do ciclo, durante a avaliação. Assim, aprimorá-lo já entra como parte do próximo ciclo. Em outros casos, pode-se iniciar o trabalho em outro módulo, e testes do anterior podem ser feitos durante o próximo ciclo. 
 
