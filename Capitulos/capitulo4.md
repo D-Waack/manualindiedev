@@ -38,6 +38,8 @@ A intenção do protótipo 0 não é criar uma representação do seu jogo, é c
 
 Dessa forma, o seu primeiro passo é definir as mecânicas principais do seu jogo e implementá-las de maneira simples.
 
+## Destilando sua Ideia
+
 ## Protótipo 0 - Exemplo 1
 Na maioria dos casos, começamos qualquer projeto criando uma pasta para ele. Na minha _engine_ de escolha, isso pode ser feito no próprio editor. Aqui, vou descrever os passos para minha _engine_ de escolha, Godot. Mas independente do ambiente que escolher, você terá de seguir passos similares.
 
