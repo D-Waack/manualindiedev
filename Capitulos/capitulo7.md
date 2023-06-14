@@ -70,4 +70,4 @@ Entendendo os erros, problemas e coisas que não funcioname como deveriam, você
 ## Conclusão
 Ao final desse capítulo, esperamos que você tenha certo entendimento quanto ao processo de _playtesting_ e porque ele é importante.
 
-No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo8.md)https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo8.md, vou falar um pouco sobre enredos e narrativas em jogos.
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo8.md), vou falar um pouco sobre enredos e narrativas em jogos.
