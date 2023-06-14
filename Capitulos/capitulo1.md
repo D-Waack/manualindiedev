@@ -38,7 +38,7 @@ Eu criei um template bem simples que costumo usar para a proposta inicial do jog
 - [Versão Word](/Arquivos/modelo_GDDv1.2.docx) 
 - [Versão LibreOffice](/Arquivos/modelo_GDDv1.2.odt)
 
-Se procura por inspiração, vários exemplos notáveis de GDDs podem ser encontrados no seguinte repositório no Github: [Awesome GDDs](https://github.com/Roobyx/awesome-game-design). Note que a maioria destes vão ser muito maiores e mais complexos do que a especificação do seu projeto. Isso é esperado. Outra coisa interessante é que, se você observar, vários desses documentos são bem diferentes do que o jogo final se tornou. Isso também pode acontecer com o seu projeto, e pode ser algo bom ou ruim.
+Se procura por inspiração, vários exemplos notáveis de GDDs podem ser encontrados no seguinte repositório no Github: [Awesome GDDs](https://github.com/Roobyx/awesome-game-design). Note que a maioria destes vão ser muito maiores e mais complexos do que a especificação do seu projeto. Isso é esperado, pois são projetos muito maiores que o escopo comum para um jogo _indie_. Outra coisa interessante é que, se você observar, vários desses documentos são bem diferentes do que o jogo final se tornou. Isso também pode acontecer com o seu projeto, e pode ser algo bom ou ruim.
 
 Enquanto eu deixei várias notas no modelo do documento, achei relevante falar brevemente sobre cada campo aqui. Você pode encontrar o GDD inicial para os 2 projetos desenvolvidos em conjunto com o manual nos seguintes links: 
 - [Sleepy Runner](https://github.com/D-Waack/sleepy-runner-godot4/blob/main/Docs/Sleepy_GDDv1.0.pdf)
