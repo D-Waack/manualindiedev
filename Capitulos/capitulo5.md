@@ -26,7 +26,7 @@ Porém, um detalhe importante é que a grande maioria do conteúdo de TI é escr
 
 Hoje em dia também temos ferramentas de inteligência artificial como o _ChatGPT_ que podem oferecer essas informações de maneira mais fácil (com certa margem de erro).
 
-É importante que você entenda o que quer fazer antes de começar a pesquisa. Isso virá com o tempo e experiência, mas quanto melhor você descrever o que procura, mais fácil fica encontrar o que quer que seja. No início, suas pesquisas serão mais generalizadas, mas quanto mais você entender do assunto, melhores serão suas pesquisas. 
+É importante que você entenda o que quer fazer antes de começar a pesquisa. Isso virá com o tempo e experiência, mas quanto melhor você descrever o que procura, mais fácil fica encontrar o que quer que seja. No início, suas pesquisas serão mais generalizadas, mas quanto mais você entender do assunto, mais sofisticadas elas serão. 
 
 ### Macro vs Micro
 
@@ -34,15 +34,15 @@ O tipo de resposta que você vai encontrar depende do tipo de pesquisa que você
 
 Se você procurar algo como "Como criar um jogo similar a _Fire Emblem_ em Unity", você pode encontrar exatamente o que procura, como também pode não encontrar nada. Entretanto, se você dividir sua pesquisa em pedaços menores, talvez você comece a encontrar resultados mais interessantes. Por exemplo, para um mapa de Fire Emblem, você pesquisaria "como criar um mapa _grid_ em Unity", e então "como criar pathfinding em uma _grid_ em Unity". Esse tipo de informação é muito mais fácil de encontrar.
 
-Eventualmente, suas pesquisas ficarão mais precisas ainda. No exemplo anterior, eu não procuraria por como criar o _pathfinding_, eu simplesmente buscaria um modelo do algoritmo A* para implementá-lo diretamente. Se o exemplo fosse feito em Godot, nem isso eu procuraria, pois já o implementei vezes o suficiente que eu posso lembrá-lo de cabeça ou buscar um dos meus projetos antigos.
+Eventualmente, suas pesquisas ficarão mais precisas ainda. No exemplo anterior, eu não procuraria por como criar o _pathfinding_, eu simplesmente buscaria um modelo do algoritmo A* para implementá-lo diretamente. Se o exemplo fosse feito em Godot, nem isso eu procuraria, pois já o implementei vezes o suficiente que eu posso lembrá-lo de cabeça ou buscar o código em um dos meus projetos antigos.
 
 O que leva a uma questão interessante:
 
 ## O que fazer com os resultados
 
-Você conseguiu achar um resultado para sua pesquisa, mas ele se trata de um monte de texto imcompreensível em algum fórum de dúvida ou _blogpost_. 
+Você conseguiu achar um resultado para sua pesquisa, mas ele se trata de um monte de texto incompreensível (código) em algum fórum de dúvida, ou _blogpost_, ou output do Chat GPT. 
 
-Você pode simplesmente copiá-lo e colá-lo na sua _engine_, mas você vai notar rapidamente que isso não funciona. Nomes de variáveis, funções, lógica. Nada disso vai bater com o que você tinha anteriormente, e isso é normal. Afinal, foi outra pessoa que escreveu o código.
+Você pode simplesmente copiá-lo e colá-lo na sua _engine_, mas você vai notar rapidamente que isso não funciona. Nomes de variáveis, funções, lógica. Nada disso vai bater com o que você tinha anteriormente, e isso é normal. Afinal, foi outra pessoa (ou IA) que escreveu o código.
 
 O que você tem que fazer com o resultado encontrado é entendê-lo e adaptá-lo para o seu projeto. Na prática, você só precisaria adaptá-lo, mas isso pode ser tão simples quanto mudar o nome de uma variável, ou pode ser um trabalho extremamente complexo, e é por isso que entender o código é tão importante. Além disso, entender o código também agrega ao seu aprendizado.
 
@@ -57,11 +57,11 @@ O passo a passo que eu sigo para entender qualquer código costuma ser:
 
 São passos simples, mas não pense que esse processo é sempre fácil. Você sempre vai se encontrar quebrando a cabeça tentando entender certa lógica e ligando os pontos aos poucos. Não se preocupe, isso é parte do aprendizado. Em certos casos, eu procuro a documentação antes de testar. Em outros, eu simplesmente testo sem procurar a documentação. Isso não é um processo rígido.
 
-Às vezes, você pode ter que pesquisar separadamente o que certa linha ou função faz. Isso acontece se tiver uma documentação deficiente. Outras vezes, você terá que procurar outro resultado porque o que encontrou não é o que esperava. Nesse caso, não se desespere. Continue procurando. Existe uma solução para quase todos os problemas.
+Às vezes, você pode ter que pesquisar separadamente o que certa linha ou função faz. Isso acontece se tiver uma documentação deficiente, ou complexa demais. Outras vezes, você terá que procurar outro resultado porque o que encontrou não é o que esperava. Nesse caso, não se desespere. Continue procurando. Existe uma solução para quase todos os problemas. (E para os outros existem gambiarras.)
 
 Lembre-se sempre: na maioria dos casos, copiar e colar código sem entendê-lo é uma prática ruim e vai atrapalhar o seu projeto.
 
-Existem casos em que isso não será um problema, por exemplo, se você instalar um módulo ou _plugin_ ao seu projeto, e este funciona de maneira separada do código para o seu jogo. Ou algo como um módulo Ruby no seu projeto de RPG Maker VX Ace. Nesses casos, você já chega com um "bloco" pronto para seu uso, e só será necessário entender seu código se quiser mudar como o módulo funciona.
+Existem casos em que isso não será um problema, por exemplo, se você instalar um módulo ou _plugin_ ao seu projeto, e este funciona de maneira separada ao código para o seu jogo. Ou algo como um módulo Ruby no seu projeto de RPG Maker VX Ace. Nesses casos, você já chega com um "bloco" pronto para seu uso, e só será necessário entender seu código se quiser mudar como o módulo funciona.
 
 De qualquer forma, entendendo o código e incorporando-o no seu projeto, você resolveu o problema que pesquisou. Mas nem sempre as coisas vão ser tão fáceis.
 
@@ -77,7 +77,7 @@ Nestes casos, você tem algumas opções:
 
 Revisar a pesquisa sempre é preferível. Talvez mudar alguma palavra chave te ajude a encontrar exatamente seu problema. Isso ocorre comigo inúmeras vezes. Mas já encontrei casos onde eu não conseguia encontrar de forma alguma.
 
-A próxima opção é ler a documentação. Toda _engine_ vai ter uma documentação, mas nem todas vão ter a mesma qualidade. Engines como Unreal, Unity e Godot tem ótimas documentações, e isso ajuda muito no desenvolvimento. Fazer uma pesquisa na documentação pode ser a solução para sua dúvida, mas lembre-se que a linguagem utilizada nesses casos costuma ser bem técnica.
+A próxima opção é ler a documentação. Toda _engine_ vai ter uma documentação, mas nem todas vão ter a mesma qualidade. Engines como Unreal, Unity e Godot têm ótimas documentações, e isso ajuda muito no desenvolvimento. Fazer uma pesquisa na documentação pode ser a solução para sua dúvida, mas lembre-se que a linguagem utilizada nesses materiais costuma ser bem técnica.
 
 Quando nenhum desses funciona, sua próxima opção deve ser perguntar a alguém. Existem muitas comunidades de desenvolvedores em plataformas como o _Discord_, onde pessoas podem discutir ideias e tirar dúvidas. Procure uma ligada a sua _engine_, quem sabe você até encontre alguém disposto a ajudar no seu projeto.
 
@@ -91,7 +91,7 @@ Esse tipo de fórum é onde você deve ir quando não consegue achar uma soluç�
 
 Geralmente, o fórum vai ter uma seção em algum lugar te oferecendo sugestões e regras para como criar seus posts e como incluir _tags_ neles, ou em qual subfórum ele deve ficar. É importante ler essas regras de post antes de fazer qualquer pergunta, mas aqui eu deixo algumas orientações sobre seus posts:
 
-- Seja claro, focado e objetivo: Você não precisa explicar seu jogo inteiro no seu post. Alguns detalhes podem ser sempre relevantes como se o seu projeto é 3D ou 2D, e qual a versão da _engine_ que você está usando, mas, na maioria dos casos, você só deve incluir detalhes que se aplicam diretamente ao problema em questão. Se o meu problema é na aceleração do meu personagem, pouco importa como o meu mapa é criado.
+- Seja claro, focado e objetivo: Você não precisa explicar seu jogo inteiro no seu post. Alguns detalhes podem ser sempre relevantes como se o seu projeto é 3D ou 2D, e qual a versão da _engine_ que você está usando, mas, na maioria dos casos, você só deve incluir detalhes que se aplicam diretamente ao problema em questão. Se o meu problema é na aceleração do meu personagem, pouco importa como o meu mapa é gerado.
 - Simples é melhor: Uma explicação _muito_ elaborada sobre o seu caso pode fazer com que pessoas o ignorem, infelizmente. Tente ser simples, incluindo apenas detalhes importantes. Caso alguém fique na dúvida, eles vão pedir para que elabore sobre o problema, mostre código ou mande uma versão do seu projeto para que eles possam olhá-la (**muito cuidado** com isso, tente evitar disponibilizar seu projeto completo caso não queira que ele seja roubado. A maioria das pessoas nesses fóruns são de boa índole, mas apenas um usuário mal intencionado pode causar grande estrago).
 - Mostre evidências: nesse contexto, uma imagem não equivale a mil palavras, mas ajuda bastante a entender seu problema.
 - Engaje: Ajude-os a ajudá-lo. Responda as perguntas que fizerem, tente contribuir.
@@ -103,16 +103,16 @@ Outro caso que você inevitavelmente vai encontrar são erros no seu código.
 
 Erros podem ser coisas simples, como uma vírgula faltando, ou algo muito mais complexo que destrói todo o seu sistema de iluminação que você descobre por acidente um mês depois. Por esse motivo, é sempre bom testar o seu código com frequência e diagnosticar os erros antes que eles fiquem complicados demais para análise.
 
-No geral, quando um erro de execução é encontrado, o próprio console da _engine_ vai te oferecer uma mensagem sobre ele. Eles podem ser erros de sintaxe, erros de variáveis, de parâmetros, de lógica, entre outros. E, geralmente, serão resolvidos com mudanças no seu código. A mensagem de erro vai ser o seu melhor amigo nestes casos, pois ela vai apontar em qual linha o erro ocorreu, e porque ele ocorreu.
+No geral, quando um erro de execução é encontrado, o próprio console da _engine_ vai te oferecer uma mensagem sobre ele. Eles podem ser erros de sintaxe, erros de variáveis, de parâmetros, de lógica, entre outros. E, geralmente, serão resolvidos com mudanças no seu código. A mensagem de erro vai ser o seu melhor amigo nestes casos, pois ela vai apontar em qual script, e qual linha o erro ocorreu, e porque ele ocorreu.
 
 Certas vezes, o erro vai ser algo óbvio e basta consertar o código na linha especificada. Outras vezes, você não vai entender o motivo do erro. Nesses casos, seguir o mesmo processo de pesquisa explicado anteriomente vai servir.
 
 ## Execução Inesperada
-Você implementou algo e o console não apontou um "erro", mas o jogo não funciona do jeito que esperava.
+Às vezes, você vai implementar algo e o console não vai apontar um "erro" explícito, mas o jogo não funcionará do jeito que você esperava.
 
-Esse tipo de erro é muito comum. E o motivo geralmente é que existe algum erro na sua lógica. Por exemplo, algo que você deixou passar, uma variável que você confundiu e atribuiu o valor errado. Esse tipo de coisa.
+Esse tipo de erro é muito comum. E o motivo geralmente é que existe algum erro na sua lógica. Muitas vezes por algo que você deixou passar, uma variável que você confundiu e atribuiu o valor errado. Por exemplo, você percebe que seu personagem jogável está se movendo lento demais, e eventualmente descobre que estava atribuindo ao personagem _Direção + Velocidade_ em vez de _Direção * Velocidade_. Isso não vai causar nenhum erro no console, e a execução vai seguir normalmente, mas o jogo ainda não está funcionando da maneira esperada.
 
-Às vezes, o erro vai estar em um lugar óbvio. Outras vezes, nem tanto. Nesses casos, o método mais eficiente costuma seguir todo o caminho lógico de trás para frente até encontrar algum tipo de valor inconsistente. Isso não é tão simples de explicar, mas basicamente, tente imprimir no console todos os valores que podem influenciar a execução inesperada, ou crie "checkpoints" na execução, pois se "até aqui ocorreu como esperado", então você sabe que o erro veio depois.
+Às vezes, o erro vai estar em um lugar óbvio. Outras vezes, nem tanto. Nesses casos, o método mais eficiente costuma seguir todo o caminho lógico de trás para frente até encontrar algum tipo de valor inconsistente. Isso não é tão simples de explicar, mas basicamente, tente imprimir no console todos os valores que podem influenciar a execução inesperada, ou crie "checkpoints" na execução. A lógica é que se "até aqui os valores estão conforme esperado", então você sabe que o erro veio num momento mais adiante da execução.
 
 Esses erros costumam ser bem simples, mas também estressantes. Mantenha a calma e continue procurando, e teste com frequência. Quanto mais cedo você encontrar estes erros, mais fácil será resolvê-los.
 
