@@ -5,33 +5,41 @@
 ![Capítulo 6 capa](../Arquivos/Imagens/capa_06.jpg 'The right man in the wrong place can make all the difference in the world.')
 
 ## Introdução
+_Este capítulo é direcionado para a equipe após a criação do protótipo 0._
+
 Se você chegou aqui inteiro, isso é um ótimo sinal. A criação do protótipo 0 é um dos passos mais difíceis para um iniciante. Mas não se engane, a maior parte do trabalho virá nessa etapa de agora.
 
-Você criou seu protótipo 0 e resolveu vários problemas no caminho. Provavelmente, o que você tem agora não é o ideal, mas já tem uma breve noção de como funcionará o seu jogo. Do que tem que ser mudado, do que tem que ser adicionado, e de que ainda há muito trabalho pela frente.
+Você criou seu protótipo 0 e resolveu vários problemas no caminho. Provavelmente, o que você tem agora não é o ideal, mas já tem uma breve noção de como funcionará o seu jogo. Uma noção do que tem que ser mudado, do que tem que ser adicionado, e de que ainda há muito trabalho pela frente.
 
 O mais importante é: Você consegue ver o seu jogo nesse protótipo? Consegue olhar para ele e reconhecer a base, mantendo em mente o que falta para completar sua ideia original? Se sua resposta é não, talvez valha a pena você voltar à fase do protótipo e trabalhar melhor nele. E se sua resposta é sim, está pronto para continuar o desenvolvimento.
 
-Chegou a hora de envolver toda a sua equipe por inteiro no processo. Se você trabalha sozinho, seu ritmo não vai mudar muito, apenas o foco. Seu objetivo vai seguir o mesmo: completar todos/a maioria das funções e mecânicas de seu jogo **antes** para depois seguir com os outros aspectos como música, arte, e outros quando tiver avançado melhor. 
+Chegou a hora de envolver toda a sua equipe por inteiro no processo. 
 
-Isto é mais adequado se o seu caso é como o meu, onde minha competência principal é lógica e programação, e as outras habilidades necessárias eu aprendi no caminho. Caso você seja um artista ou músico, trabalhar diretamente no que você domina melhor também é válido. Mas não se esqueça, você não terá um jogo se negligenciar o aspecto da programação/lógica.
+Se você trabalha sozinho, seu ritmo não vai mudar muito, apenas o foco. Seu objetivo segue de forma similar ao protótipo 0: completar todos/a maioria das funções e mecânicas de seu jogo **primeiro**, e depois seguir com os outros aspectos como música, arte, e outros quando tiver avançado melhor. Não leve isso como uma lei. Caso você deseje ver o seu modelo/sprite na tela, ou precise criar um mapa para testar suas mecânicas, ou gostaria de criar uma música para verificar o tom do jogo, ou precise criar algum outro artefato em qualquer momento, sinta-se livre para fazê-lo.
 
-Para um grupo, cada membro deve seguir com o processo de acordo com o que se mostrar necessário. Sua ideia já deve ter amadurecido, e o retrabalho sobre o qual eu avisei nos primeiros capítulos não é tão provável (mas ainda possível).
+Este foco nas mecânicas vem da minha experiência, pois minha competência principal é relacionada a lógica e programação, e as outras habilidades necessárias eu aprendi no caminho. Caso você seja um artista ou músico, trabalhar diretamente no que você domina melhor também é válido. Mas não se esqueça, você **não** terá um jogo se negligenciar o aspecto da programação/lógica. 
 
-Lembro a vocês que o foco desse manual é principalmente para desenvolvedores e programadores, mas incluí capítulos voltados para várias das outras competências. Sugiro aos integrantes da equipe que leiam estes capítulos a partir de agora. Caso você esteja trabalhando sozinho, sinta-se livre para seguir com eles quando estiver pronto. Lembrando que estas são as sugestões de um desenvolvedor que não tem um _background_ de arte, música, _design_, etc. Se você já trabalha com um destes itens e conhece métodos e _workflows_ melhores que os meus, sinta-se livre para segui-los.
+Para um grupo, cada membro deve seguir com o processo de acordo com o que se mostrar necessário. Sua ideia já deve ter amadurecido, e o retrabalho sobre o qual eu avisei nos primeiros capítulos não é tão provável (mas ainda possível). Dessa forma, esse é um bom momento para começar a trabalhar em versões aprimoradas de imagens de fundo, modelos, ou músicas. 
+
+Lembro a vocês que o foco desse manual é principalmente para desenvolvedores e programadores, mas incluí capítulos voltados para várias das outras competências. Sugiro aos integrantes da equipe que leiam estes capítulos a partir de agora. Caso você esteja trabalhando sozinho, sinta-se livre para seguir com eles quando estiver pronto. 
+
+Lembrando também que estas são as sugestões de um desenvolvedor que não tem um _background_ de arte, música, _design_, etc. Se você já trabalha com um destes itens e conhece métodos e _workflows_ melhores que os meus, sinta-se livre para segui-los.
 
 Links para os capítulos:
 
-- [Level Design]
 - [Enredos/Narrativa](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo8.md)
 - [Playtesting](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md)
 - [Arte/Modelagem](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo9.md)
 - [Música/Sound Design](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo10.md)
+- [Level Design](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo12.md)
+
+### O Próximo Passo
 
 De qualquer forma, agora é a hora de montar o seu jogo em si. Não se trata mais de um protótipo. Ao final da _build_ alfa você já deverá ter basicamente todos os blocos que juntos formarão o seu jogo final. A alfa, entretanto, não é a versão mais acabada do jogo.
 
-Para a versão Alfa, o seu foco é similar ao foco da versão protótipo, mas mais espalhado. Para todos os sistemas de seu jogo, a intenção é que você se preocupe em deixá-los "bom o suficiente". Idealmente, você já trabalharia o suficiente para que cada sistema esteja completamente pronto, mas o foco em **apenas** ser bom o suficiente é para que você não fique completamente preso a um único sistema por um tempo indeterminado.
+Para a versão Alfa, o seu foco é similar ao foco da versão protótipo, mas mais espalhado. Para todos os sistemas de seu jogo, a intenção é que você se preocupe em deixá-los "bons o suficiente". Idealmente, você já trabalharia o suficiente para que cada sistema esteja completamente pronto, mas o foco em **apenas** ser bom o suficiente é para que você não fique completamente preso a um único sistema por um tempo indeterminado.
 
-Em termos simples: cada sistema desenvolvido deve ser criado em um ciclo e testado. Se ao final do ciclo ele estiver bom o suficiente, você deve seguir para outro, e deixar o aprimoramento do sistema anterior para a _beta_. Caso este sistema **não** esteja bom o suficiente, é interessante mantê-lo para o próximo ciclo, mas você pode começar a trabalhar em outros também, lembrando de voltar ao incompleto eventualmente.
+Em termos simples: cada sistema planejado deve ser trabalhado em um ciclo e testado. Se ao final do ciclo ele estiver bom o suficiente, você deve seguir para outro, e deixar o aprimoramento do sistema anterior para a _beta_. Caso este sistema **não** esteja bom o suficiente, é interessante mantê-lo para o próximo ciclo, mas você pode começar a trabalhar em outros também, lembrando que terá de voltar ao incompleto eventualmente.
 
 Se tiverem mais de um programador na equipe, é possível que trabalhem em 2 sistemas diferentes ao mesmo tempo. Isso pode agilizar o processo, mas lembre-se sempre de que eles devem comunicar e entender o que o outro tem feito, mesmo que superficialmente. Porque todos os sistemas **vão interagir** de alguma forma.
 
