@@ -8,7 +8,7 @@
 
 Após documentar o seu projeto, o próximo passo seria começá-lo. Mas para fazer isso, você deve decidir _como_. 
 
-Existem inúmeros ambientes, linguagens, formatos e plataformas nos quais você pode desenvolver um jogo.
+Existem inúmeros ambientes, linguagens, formatos e plataformas por meio dos quais você pode desenvolver um jogo.
 
 E você deve escolher entre eles.
 
@@ -22,11 +22,11 @@ Sua escolha entre _Frameworks_ e _Engines_ vai depender de vários fatores. Para
 
 Todo jogo é basicamente um conjunto de sistemas diferentes, sendo executados ao mesmo tempo e interagindo entre si. 
 
-Por exemplo, quando eu clico no executável de _Minecraft_, aparece uma tela de menu principal (visual); ao mesmo tempo, uma música agradável começa a tocar (áudio); e se eu mexer o meu mouse e clicar em um botão, a tela vai reagir e fazer alguma coisa (_input_); se eu clicar em _multiplayer_, o jogo vai se conectar a internet e tentar se comunicar com um servidor (_networking_); se eu clicar em novo mundo, ele vai criar um (geração de mapas); e ao final, meu personagem será livre para interagir com esse mundo, onde várias coisas funcionam como o mundo real (simulação de mundo e física).
+Por exemplo, quando eu clico no executável de _Minecraft_, aparece uma tela de menu principal (visual); ao mesmo tempo, uma música agradável começa a tocar (áudio); e se eu mexer o meu mouse e clicar em um botão, a tela vai reagir e fazer alguma coisa (_input_); se eu clicar em _multiplayer_, o jogo vai se conectar à internet e tentar se comunicar com um servidor (_networking_); se eu clicar em novo mundo, ele vai criar um (geração de mapas); e ao final, meu personagem será livre para interagir com esse mundo, onde várias coisas funcionam como o mundo real (simulação de mundo e física).
 
 ![Menu Principal do Minecraft](../Arquivos/Imagens/02_03.png 'Minecraft title screen.')
 
-Tudo isso acontece simultâneamente e de maneira harmoniosa, mas no plano de fundo, vários processos diferentes são executados ao mesmo tempo para garantir que tudo aconteça na ordem e maneira correta.
+Tudo isso acontece simultâneamente e de maneira harmoniosa, mas no plano de fundo, vários processos e cálculos diferentes são executados "ao mesmo tempo" para garantir que tudo aconteça na ordem e maneira correta.
 
 No contexto de desenvolvimento, cada uma dessas tarefas (_networking_, input, _display_ visual, gerenciamento de música, etc.) costuma ser executada pelo que chamamos de uma "biblioteca" (_library_). Uma biblioteca para redes geralmente vai conter diversas funções necessárias para conectar diferentes computadores em um único jogo, enquanto uma biblioteca gráfica vai conter diferentes funções para mostrar coisas em sua tela. Estas bibliotecas geralmente vêm como código no formato de arquivos DLL, por exemplo em _Javascript_ ou _C++_. Alguns exemplos: FMOD (áudio), RakNet (_networking_), Box2D (física 2D), Assimp (importação de modelos 3D), entre várias outras.
 
