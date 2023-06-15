@@ -42,7 +42,7 @@ Colisões para objetos costumam ser _retângulos_ simples que englobam o objeto 
 [Ilustrando colisões nos dois estilos]
 
 ### Recursos 2D - Colisões: camadas de personagens
-As camadas de personagens são as mais simples. Geralmente ficam no topo, como a camada mais aparente (com exceção de casos onde existem objetos que devem aparecer à frente destes). Em termos de colisões, costumamos seguir com o mesmo formato para objetos diversos. A colisão é um retângulo que engloba o personagem completamente. 
+As camadas de personagens são as mais simples. Geralmente, sprites de personagens ficam no topo, como a camada mais aparente (com exceção de casos onde existem objetos que devem aparecer à frente destes). Em termos de colisões, costumamos seguir com o mesmo formato para objetos diversos. A colisão é um retângulo que engloba o personagem completamente. 
 
 Em outros casos, um formato circular ou de cápsula pode ser bom também. Isso costuma ser útil para jogos _topdown_, onde o formato arredondado impede que o personagem interaja de maneira estranha com cantos (existem outros meios de evitar essa estranheza). Para jogos _sidescroller_ retângulos costumam ser o melhor formato para personagens que interagem com o chão.
 
@@ -64,13 +64,46 @@ No geral, hitboxes e hurtboxes vão ser projetadas caso a caso. Por exemplo, em 
 Em um jogo como _Castlevania_, a hitbox do jogador é composta somente da arma do personagem (um chicote, ou uma espada, ou um projétil). Enquanto a hurtbox do jogador é sempre a mesma, composta de seu corpo inteiro.
 
 ### Recursos 2D - Planos de fundo e camadas secundárias
-Enquanto não existe preocupação de colisões para planos de fundo em 2D, existem alguns detalhes interessantes. Isso se aplica principalmente a jogos do estilo _sidescroller_. Jogos _topdown_ em sua maioria são do estilo não contêm planos de fundo complexos.
+Enquanto não existe preocupação de colisões para planos de fundo em 2D, existem alguns detalhes interessantes. Isso se aplica principalmente a jogos do estilo _sidescroller_. Jogos _topdown_ em sua maioria não contêm planos de fundo complexos.
 
-### Recursos 2D - Efeitos e shaders
+Em muitos casos, jogos _sidescroller_ vão ter fundos de paisagens distantes. Neles, existe uma técnica de arrasto do fundo chamada _parallax scrolling_. Esta técnica consiste de fazer com que, junto ao movimento da câmera, diferentes camadas do plano de fundo se arrastem em velocidades diferentes, de maneira a dar a impressão de um movimento mais realista.
+
+Algumas _engines_ oferecem isso por padrão, em outras, esse cálculo deve ser feito manualmente.
+
+### Recursos 2D - Animações
+O tratamento de animações pode vir de várias formas. Para um _tile_ animado (por exemplo de um rio) que funciona sozinho, simplesmente soltar um _gif_ no seu projeto pode ser a solução perfeita. 
+
+Para personagens, inimigos, objetos animados e etc., você precisará atrelar essas animações às ações do personagem de alguma forma através de um script. Para _sprites_, o método mais comum é criar um _spritesheet_, um arquivo de imagem com a sequência de todas as variações do sprite igualmente espeçadas. Estas variações se tornam os frames da animação.
+
+Geralmente, _engines_ vão oferecer algum recurso que permita que você crie animações e as inicie/pare pelo código, como é o caso do "AnimationPlayer" no Godot. Para _frameworks_, é mais comum que você tenha que ditar os frames da animação e o _timing_ manualmente. De qualquer forma, a animação de personagens vai ser sempre um comando atrelado a alguma ação ou verbo (correr, pular, cair, parar, atacar, etc.). Além destes, existem também as animações _idle_, que são animações executadas enquanto nenhuma ação é tomada.
+
+### Recursos 2D/3D - Efeitos: partículas e shaders
+Além de _sprites_, _tiles_ e outros recursos que podem ser criados manualmente, temos opções de diversos efeitos para melhorar o visual dos jogos.
+
+Estes costumam ser criados/calculados em tempo de execução, shaders e partículas. Partículas são pequenas texturas ou objetos geométricos que são emitidos a partir de um ou vários pontos para dar a impressão de algum fenômeno como fumaça, fogo, eletricidade, etc. Shaders funcionam como "filtros" que alteram os pixels disponíveis na tela em tempo real, podendo mudar completamente a impressão de toda a tela, ou de um pedaço dela. 
+
+[Exemplo de partículas]
+
+[Exemplo de shaders]
+
+Enquanto partículas são objetos visuais reais, e shaders são apenas alterações calculadas pela GPU, ambos requerem uma certa capacidade de processamento maior do que meros objetos como sprites em tela.
 
 ### Recursos 3D - Modelos e texturas
+Quando se tratando de objetos 3D, atrelá-los ao seu jogo é uma ação mais "simples" do que o trabalho com elementos 2D. Primeiramente, a maioria das _engines_ vai permitir que importe seu modelo diretamente com a textura sem dificuldade alguma. Algumas vão exigir um formato específico, mas estes são sempre formatos de fácil exportação a partir de programas de modelagem. Algumas engines vão exigir um trabalho extra da ligar sua textura manualmente ao modelo, mas isso também costuma ser automatizado. 
+
+É preferível já exportar o modelo pronto com as texturas necessárias, pois isso costuma evitar problemas do lado da _engine_. Estes problemas no geral envolvem mapeamento incorreto da textura e, enquanto isso pode ser consertado na própria engine, é mais fácil fazer uma única exportação completa.
+
+### Recursos 3D - Modelos e colisões
+Da mesma forma que é necessário criar uma colisão para personagens e objetos em jogos 2D, também costuma ser necessário criar colisões para objetos 3D. Em teremos de hitboxes e hurtboxes, as regras que se aplicam para os objetos 2D também se aplicam aqui. Ter uma hitbox menor no seu player, e uma maior nos inimigos costuma ser uma boa solução.
+
+Agora, em termos puramente de colisão de objetos, o costume para personagens e modelos é um pouco mais complexo. Geralmente, as _engines_ vão permitir que você crie um objeto de colisão completamente igual ao modelo. Porém, modelos geralmente têm geometria complexa e de difícil cálculo, e fazer isso para todos os modelos em seu jogo é um ótimo jeito deixar a execução bem lenta. É claro, isso depende também da quantidade de objetos, se eles são atualizados ou não, e o processamento do computador. 
+
+Entretanto, no geral é preferível utilizar primitivas para as colisões de objetos diversos (especialmente os que se movem), a não ser que o formato do objeto seja importante para a execução do jogo de alguma forma. Por exemplo, as montanhas no _Breath of the Wild_ precisam ter suas colisões bem certinhas porque o personagem vai escalá-las e interagir com elas bem de perto.
+
+Para personagens jogáveis e inimigos, costumamos usar o formato de uma cápsula para suas colisões, pois é o formato que melhor interage com diferenças de altitude, rampas e afins.
 
 ### Recursos 3D - Skyboxes, iluminação, efeitos e shaders
+
 
 ### Recursos Gerais - HUDs e interfaces
 
