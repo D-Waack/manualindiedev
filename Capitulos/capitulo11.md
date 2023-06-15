@@ -103,9 +103,18 @@ Entretanto, no geral é preferível utilizar primitivas para as colisões de obj
 Para personagens jogáveis e inimigos, costumamos usar o formato de uma cápsula para suas colisões, pois é o formato que melhor interage com diferenças de altitude, rampas e afins.
 
 ### Recursos 3D - Skyboxes, iluminação, efeitos e shaders
+A preocupação com fundos e camadas distintas não existe exatamente para jogos 3D. Até porque todos os seus objetos existirão no espaço, como na vida real. Se você quiser que montanhas existam no horizonte, você pode modelá-las (preferivelmente uma versão low poly). Seu "plano de fundo" será na verdade uma _skybox_, que é basicamente um plano de fundo para ambientes 3D, envolvendo as fronteiras do mapa carregado.
 
+Visualmente, sua cena será montada pelos objetos que incluir nelas. Porém, alguns outros objetos podem ajudar a melhorar o formato do seu ambiente, como luzes criadas na _engine_, causando efeitos de iluminação diversos. Além disso, _shaders_ e partículas também existem em jogos 3D e podem ser usados das mesmas maneiras.
 
 ### Recursos Gerais - HUDs e interfaces
+A sigla HUD (heads up interface) se refere ao pedaço da interface/tela que fica entre o mundo simulado e o jogador. Geralmente, mostra informações essenciais para os jogadores como barras de vida, contagem de vidas, munição, itens coletados, tempo restante, e quaisquer outros detalhes que o desenvolvedor julga importantes para o jogador.
+
+A implementação de um HUD é simples, basta incluir uma camada visual mais externa a todo o resto do jogo. Claro, é necessário tomar cuidado para que a informação do HUD não obstrua a visão do jogador. Por esse motivo, HUDs geralmente se limitam ao topo e fundo da tela. De forma que não atrapalham o jogo, mas ainda exibem as informações necessárias para o jogador.
+
+Em certos casos, é interessante encontrar outros jeitos de mostrar informação ao jogador, como fiz no meu projeto _Vortex Tautology_, onde a vida do personagem é demonstrada pela cor/presença do escudo. Ou em um jogo como Dead Space, onde a energia do personagem é exibida como o líquido no tubo em suas costas. Esse tipo de detalhe sempre é apreciado quando feito da maneira correta.
+
+Em termos de interfaces gerais, como menus e inventários, simplesmente montá-los como uma tela interativa com o mouse é o suficiente. Na maioria dos casos, também é interessante adicionar certa redundância a comandos interativos em menus, como setas de teclado para escolher opções, várias teclas para confirmação, usabilidade de controle, etc. Sempre lembrando de ter bom senso, pouco ainda ter opções diversas para um jogo de celular com o qual o jogador vai interagir apenas por toque.
 
 ## Recursos Sonoros
 Recursos sonoros são mais simples para inclusão do que os visuais, mas requerem alguns cuidados únicos.
