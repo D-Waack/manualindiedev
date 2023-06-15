@@ -19,6 +19,7 @@ No geral, eu costumo começar pelos problemas que _parecem_ mais simples, e cost
 
 ## Otimização
 
+## Usabilidade
 
 ## Mais _Playtesting_
 Testar o seu jogo a cada mudança na beta se torna cada vez mais importante. Ao desenvolvedor, testar as mudanças imediatamente é importante. Aos outros _playtesters_, o processo habitual pode seguir normalmente, talvez com algumas notas do que foi mudado e consertado para que eles possam testar se problemas encontrados anteriormente permanecem de alguma forma.
