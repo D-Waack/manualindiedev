@@ -67,11 +67,12 @@ Estes fatores são:
 1. Se você trabalha em equipe ou sozinho:
 
 Isso é muito importante para o seu ritmo e organização de trabalho. Um grupo trabalha melhor do que um indivíduo. E quanto mais gente no seu time, maior pode ser a escala e complexidade do seu projeto. Porém, sozinho você terá liberdade criativa maior do que em um grupo.  
-Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros. Ter um grupo pequeno e empenhado aumenta suas chances de sucesso.
-Entretanto, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, com o apoio ocasional de terceiros, principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas. Talvez te interesse evitar isso.
+Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros. 
 
-No contexto *indie*, um grupo pequeno (talvez um de 3-5 pessoas) provavelmente oferece o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento dos membros.  
-Esse manual vai, no geral, assumir que você esteja sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
+Ter um grupo pequeno e empenhado aumenta suas chances de sucesso. Entretanto, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, com o apoio ocasional de terceiros principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas sozinho. Talvez te interesse evitar isso.
+
+No contexto *indie*, um grupo pequeno (um de 3-5 pessoas) provavelmente oferecerá o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento dos membros.  
+Esse manual vai, no geral, assumir que você esteja trabalhando sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
 
 ![Jogo - Pikmin](../Arquivos/Imagens/00_02.jpg 'Game Dev Tycoon')
 <sup><sub> Imagem de animação de Pikmin trabalhando em conjunto, da série de jogos "Pikmin"</sup></sub>
