@@ -4,7 +4,7 @@
 O texto a seguir é um manual para desenvolvimento de jogos indie, ou seja, jogos criados em um contexto amador, de maneira independente. O foco desse material é principalmente prático, com um pouco de teoria quando se mostrar necessário. Durante o decorrer do manual, dois projetos de jogos serão criados, e o código fonte deles pode ser visualizado e baixado nas páginas do github a seguir: 
 
 - [Sleepy Runner (mobile)](https://github.com/D-Waack/sleepy-runner-godot4)
-- [Top Down Shooter](https://github.com/D-Waack/vortex-tautology-demo)
+- [Top Down Shooter - Vortex Tautology](https://github.com/D-Waack/vortex-tautology-demo)
 
 Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introducao.md). Caso contrário, siga o índice abaixo.
 
@@ -19,22 +19,22 @@ Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introdu
 
 * [Capítulo 4: O Primeiro Ciclo - Rumo ao Protótipo 0](Capitulos/capitulo4.md) - Sprint inicial, decidindo os detalhes mais importantes para a primeira fase, práticas de programação importantes
 
-* [Capítulo 5: Lidando com Problemas](Capitulos/capitulo5.md) - Problemas que podem surgir durante os sprints, como evitá-los e resolvê-los, como fazer uma pesquisa técnica, como fazer um post em um fórum de dúvidas
+* [Capítulo 5: Lidando com Problemas Diversos](Capitulos/capitulo5.md) - Problemas que podem surgir durante os sprints, como evitá-los e resolvê-los, como fazer uma pesquisa técnica, como fazer um post em um fórum de dúvidas
 
 * [Capítulo 6: Versões Alfa](Capitulos/capitulo6.md) - Revisitando o _design_, construindo o jogo em si
 
 * [Capítulo 7: Playtesting e Feedback](Capitulos/capitulo7.md) - Builds de teste, formas de capturar playtesting, como interpretar feedback, como planejar resoluções
 
-* [Capítulo 8: Enredos e Narrativas](Capitulos/capitulo8.md)
+* [Capítulo 8: Enredos e Narrativas](Capitulos/capitulo8.md) - Como enredos são apresentados em jogos
 
 * [Capítulo 9: Arte, Modelos, Visual](Capitulos/capitulo9.md) - Diferentes opções para criação de recursos visuais
 
-* [Capítulo 10: Música e Sound Design](Capitulos/capitulo10.md) - Diferentes opções para criação de efeitos sonoros e músicas
+* [Capítulo 10: Música e Efeitos Sonoros](Capitulos/capitulo10.md) - Diferentes opções para criação de efeitos sonoros e músicas de fundo
 
-* [Capítulo 11: Integrando Recursos Audiovisuais](Capitulos/capitulo11.md) - Como fazer a integração harmoniosa dos diversos recursos audiovisuais e o jogo em si, passo depende muito do ambiente
+* [Capítulo 11: Integrando Recursos Audiovisuais](Capitulos/capitulo11.md) - Como fazer a integração dos diversos recursos audiovisuais ao jogo em si
 
-* [Capítulo 12: Level/World Design e Balancing](Capitulos/capitulo12.md) - Design para fases/mapas/mundos, planejamento de curvas de dificuldade
+* [Capítulo 12: Level/World Design & Balancing](Capitulos/capitulo12.md) - Design para fases/mapas/mundos, planejamento de curvas de dificuldade
 
-* [Capítulo 13: Versões Beta, Finalizando Builds](Capitulos/capitulo13.md) - Otimização, polishing, finalização, testes finais
+* [Capítulo 13: Versões Beta, Finalizando Builds, Polishing](Capitulos/capitulo13.md) - Otimização, polishing, finalização, testes finais
 
-* [Capítulo 14: Publicação](Capitulos/capitulo14.md) - Lojas de publicação de jogos, *pitching* para publicadoras, ~~marketing?~~
+* [Capítulo 14: Publicação](Capitulos/capitulo14.md) - Opções para publicação de jogos
