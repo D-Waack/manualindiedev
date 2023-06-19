@@ -1,12 +1,12 @@
 
 # Capítulo 2: Preparação
-"Um homem escolhe, um escravo obedece." - Andrew Ryan, "Bioshock" (2007)
+"Um homem escolhe, um escravo obedece." - Andrew Ryan, _Bioshock_ (2007)
 
 ![Capítulo 2 capa](../Arquivos/Imagens/capa_02.jpg 'A man chooses, a slave obeys.')
 
 ## Introdução
 
-Após documentar o seu projeto, o próximo passo seria começá-lo. Mas para fazer isso, você deve decidir _como_. 
+Após documentar o seu projeto, o próximo passo seria começar a criá-lo. Mas para fazer isso, você deve decidir _como_. 
 
 Existem inúmeros ambientes, linguagens, formatos e plataformas por meio dos quais você pode desenvolver um jogo.
 
@@ -22,7 +22,7 @@ Sua escolha entre _Frameworks_ e _Engines_ vai depender de vários fatores. Para
 
 Todo jogo é basicamente um conjunto de sistemas diferentes, sendo executados ao mesmo tempo e interagindo entre si. 
 
-Por exemplo, quando eu clico no executável de _Minecraft_, aparece uma tela de menu principal (visual); ao mesmo tempo, uma música agradável começa a tocar (áudio); e se eu mexer o meu mouse e clicar em um botão, a tela vai reagir e fazer alguma coisa (_input_); se eu clicar em _multiplayer_, o jogo vai se conectar à internet e tentar se comunicar com um servidor (_networking_); se eu clicar em novo mundo, ele vai criar um (geração de mapas); e ao final, meu personagem será livre para interagir com esse mundo, onde várias coisas funcionam como o mundo real (simulação de mundo e física).
+Por exemplo, quando eu clico no executável do _Minecraft_, aparece uma tela de menu principal (visual); ao mesmo tempo, uma música agradável começa a tocar (áudio); e se eu mexer o meu mouse e clicar em um botão, a tela vai reagir e fazer alguma coisa (_input_); se eu clicar em _multiplayer_, o jogo vai se conectar à internet e tentar se comunicar com um servidor (_networking_); se eu clicar em novo mundo, ele vai criar um (geração de mapas); e ao final, meu personagem será livre para interagir com esse mundo, onde várias coisas funcionam como o mundo real (simulação de mundo e física).
 
 ![Menu Principal do Minecraft](../Arquivos/Imagens/02_03.png 'Minecraft title screen.')
 
@@ -40,7 +40,7 @@ Partindo de _frameworks_, quando subimos um pouco mais o nível de sofisticaçã
 
 ![Interface do Unity](../Arquivos/Imagens/02_07.jpg 'Unity Interface.')
 
-_Engines_ facilitam muito o processo de desenvolvimento. Algumas oferecem a possibilidade de criar jogos sem programação alguma, mas programação ainda é uma necessidade na grande maioria delas. No geral, a maior diferença entre _engines_ e _frameworks_ está no editor de mapas, e no visualizador de cenas. Porém, existem vários casos onde essa diferença não é tão acentuada.
+_Engines_ facilitam muito o processo de desenvolvimento. Algumas oferecem a possibilidade de criar jogos sem programação alguma (programação ainda é uma necessidade na grande maioria delas). No geral, a maior diferença entre _engines_ e _frameworks_ está no editor de mapas, e no visualizador de cenas. Porém, existem vários casos onde essa diferença não é tão acentuada.
 
 Como eu comentei antes, a melhor escolha para um desenvolvedor _indie_ costuma ser uma _engine_. Por questões de facilidade de uso e praticidade. Mesmo que não seja minha recomendação, sinta-se livre para pegar um _framework_ se este for o seu desejo. O manual vai assumir que você está usando uma _engine_, mas as tarefas para desenvolvimento serão as mesmas.
 
@@ -55,7 +55,7 @@ Caso você se depare com uma necessidade que sua _engine_ não consegue suprir, 
 - criar sua prórpia "_engine_" a partir de um _framework_;
 - criar sua própria "_engine_" do zero.
 
-A última possibilidade, criar uma _engine_ a partir do nada, é algo que eu desaprovo completamente para o contexto _indie_. Essencialmente, você estaria perdendo um tempo enorme reinventando a roda e provavelmente chegaria a resultados inferiores do que se tivesse apenas utilizado uma _engine_ pronta. É claro, é um ótimo jeito de aprender programação para jogos a fundo. Caso seu objetivo seja a criação de uma _engine_ do zero, então vá em frente, mas provavelmente levará um bom tempo até que o manual que está lendo agora seja de utilidade para você.
+A última possibilidade, criar uma _engine_ a partir do nada, é algo que eu desaprovo completamente para o contexto _indie_. Essencialmente, você estaria perdendo um tempo enorme reinventando a roda e provavelmente chegaria a resultados inferiores aos que alcançaria se tivesse apenas utilizado uma _engine_ pronta. É claro, é um ótimo jeito de aprender programação para jogos a fundo. Caso seu objetivo seja a criação de uma _engine_ do zero, então vá em frente, mas provavelmente levará um bom tempo até que este manual seja de utilidade para você.
 
 Na indústria como um todo, você vai perceber que muitos desenvolvedores AAA vão fazer seus jogos em uma _engine_ já estabelecida, ou criar uma nova. Por exemplo, "Fortnite", um jogo bem popular atualmente, desenvolvido pela empresa _Epic Games_, foi criado usando a _engine_ Unreal. Enquanto "Resident Evil Village", um jogo que eu tenho jogado atualmente, foi desenvolvido pela empresa _Capcom_, usando sua própria _engine_ "RE ENGINE".
 
@@ -94,11 +94,11 @@ Entretanto, caso você não tenha um programador em sua equipe, a questão se to
 - Escolher alguém da equipe para aprender programação;
 - Recrutar um programador para a equipe.
 
-Pessoalmente, acredito que ter uma pessoa familiar com programação em sua equipe é importante. Isso é porque programação permite uma flexibilidade e usabilidade maior do que as alternativas. É claro, isso também exige mais conhecimento e treino. Aprender programação não é algo trivial, mas existe uma infinidade de cursos e material _online_ grátis cujo objetivo é te ensinar exatamente isso. Caso esteja disposto, é uma boa opção. Caso decida recrutar um programador, seja um novo membro ou uma pessoa contratada, lembre-se dos pros e cons de trabalhar com mais uma pessoa na equipe.
+Pessoalmente, acredito que ter uma pessoa familiar com programação em sua equipe é importante. Isso é porque programação permite uma flexibilidade e usabilidade maior do que as alternativas. É claro, isso também exige mais conhecimento e treino. Aprender programação não é algo trivial, mas existe uma infinidade de cursos e materiais _online_ grátis cujo objetivo é te ensinar exatamente isso. Caso esteja disposto, é uma boa opção. Caso decida recrutar um programador, seja um novo membro ou uma pessoa contratada, lembre-se dos pros e cons de trabalhar com mais uma pessoa na equipe.
 
 Entretanto, a escolha continua sendo sua, algumas opções de _engines_ que permitem criação de jogos sem uso de programação são: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
 
-![Interface do GDevelop](../Arquivos/Imagens/02_10.jpg 'GDevelop Interface.')
+![Interface do GDevelop](../Arquivos/Imagens/02_10.png 'GDevelop Interface.')
 
 ### Fator 2: Plataforma Alvo
 
@@ -112,7 +112,7 @@ Certas _engines_ vão servir apenas para jogos 2D ou 3D, enquanto várias delas 
 
 Dependendo do gênero do seu jogo, você pode querer usar uma _engine_ específica voltada para ele. A maioria das _engines_ são feitas para usos gerais, e vão conseguir criar qualquer tipo de jogo, mas uma pode ser melhor do que a outra em determinada tarefa, e isso você deve considerar. 
 
-Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. Por exemplo, a série de _engines_ _RPG Maker_ vêm com todo o formato necessário para criação de um jogo no estilo de JRPGs antigos como os _Final Fantasy I-V_, _Dragon Quest_, etc... A _engine_ _Renpy_ é ótima para criar jogos no estilo _Visual Novel_, entre outros exemplos.
+Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. Por exemplo, a série de _engines_ _RPG Maker_ vêm com todo o formato necessário para criação de um jogo no estilo de JRPGs antigos como os _Final Fantasy I-VI_, _Dragon Quest_, etc... A _engine_ _Renpy_ é ótima para criar jogos no estilo _Visual Novel_, entre outros exemplos.
 
 É sempre possível criar o mesmo estilo de jogo em outras _engines_ gerais, mas se o seu objetivo é criar algo específico, talvez seja mais fácil usar uma _engine_ especializada.
 
@@ -124,9 +124,9 @@ Outro fator muito importante é a disponibilidade de recursos e materiais para a
 
 Como assim?
 
-Muitas vezes o desenvolvedor de seu jogo vai ficar sem saber como implementar determinada ideia. Nesse caso, uma simples pesquisa no Google pode ser a solução para esse problema. Isto é, se a _engine_ for popular e tiver fóruns de dúvidas, tutoriais e afins. Não é esperado que você encontre isso para _engines_ novas e obscuras, o que vai implicar em mais tempo lendo documentações ou fazendo posts em fóruns.
+Muitas vezes o desenvolvedor de um jogo vai ficar sem saber como implementar determinada ideia. Nesse caso, uma simples pesquisa no Google pode ser a solução para esse problema. Isto é, se a _engine_ for popular e tiver fóruns de dúvidas, tutoriais e afins. Não é esperado que você encontre isso para _engines_ novas e obscuras, o que vai implicar em mais tempo lendo documentações ou fazendo posts em fóruns.
 
-Para _engines_ populares como _Unity_, por exemplo, é muito mais fácil encontrar uma solução para o seu problema imediatamente, e adaptá-la para seu projeto se torna muito mais rápido e prático.
+Para _engines_ populares como _Unity_ e _Godot_, por exemplo, é muito mais fácil encontrar uma solução para o seu problema imediatamente, e adaptá-la para seu projeto se torna muito mais rápido e prático.
 
 ![Godot Tutorials](../Arquivos/Imagens/02_13.png 'Godot Tutorials')
 
@@ -134,7 +134,7 @@ Para _engines_ populares como _Unity_, por exemplo, é muito mais fácil encontr
 
 Mesmo com todos esses fatores em mente, às vezes continua sendo difícil encontrar a _engine_ perfeita. Então eu deixarei minhas próprias recomendações aqui:
 
-Se não deseja programar, as opções acima são a solução: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
+Se não deseja programar, as opções que citei anteriormente são boas: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
 
 Se o seu jogo é 3D, Unity ou Unreal são as opções mais completas. (Um adendo, acredito que criar um complexo jogo 3D em um contexto _indie_ seja uma má ideia).
 
