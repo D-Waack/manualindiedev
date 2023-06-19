@@ -10,11 +10,11 @@ Se tudo deu certo durante o [capítulo interior](https://github.com/D-Waack/manu
 
 Geralmente, definimos o ciclo de vida para o desenvolvimento de um jogo da seguinte forma: **Pré-Produção** -> **Produção (Alfa)** -> **Produção (Beta)** -> **Produto Final**
 
-Seguindo esta classificação, você teria passado pela etapa de pré-produção. A pré-produção na indústria como um todo geralmente é um processo mais formal do que o que descrevi aqui. Isso não é um problema. Em muitos casos, um pequeno protótipo é projetado também durante a pré-produção. Decidi incluir isto na etapa de produção, por questões de simplicidade.
+Seguindo esta classificação, você teria passado pela etapa de pré-produção. A pré-produção na indústria como um todo geralmente é um processo mais formal do que o que descrevi aqui. Isso não será um problema. Em muitos casos, um pequeno protótipo é projetado também durante a pré-produção. Decidi incluir isto na etapa de produção, por questões de simplicidade.
 
 A partir de agora, você e sua equipe entrarão no que eu chamo de ciclos de desenvolvimento. Outros vão chamá-los de _sprints_. Você pode usar um nome diferente também se preferir. O que importa é o conceito e execução. Essa nomenclatura é emprestada do Scrum, um _framework_ para a criação de projetos de _software_. 
 
-Não vamos nos apegar muito à estrutura do Scrum em si. E tudo indica que o padrão na indústria é utilizar uma espécie de Scrum adaptado ao contexto de jogos. O que interessa para o nosso caso é a organização, reflexão, o próprio ciclo de trabalho, e como ele será avaliado. A princípio, o que você vai definir é simples:
+Não vamos nos apegar muito à estrutura do Scrum em si. E a maioria das fontes sugere que o padrão na indústria é utilizar uma espécie de Scrum adaptado ao contexto de jogos. O que interessa para o nosso caso é a organização, reflexão, o próprio ciclo de trabalho, e como ele será avaliado. A princípio, o que você vai definir é simples:
 
 - A divisão das tarefas;
 - O ritmo de trabalho.
@@ -31,9 +31,9 @@ Por exemplo, se sua equipe tem 2 programadores, ambos podem facilmente trabalhar
 
 No entanto, os trabalhos do programador e do artista não seguem o mesmo ritmo. E, em certos casos, um depende de um resultado do outro. Por exemplo, implementar uma certa ação como puxar uma alvanca no jogo _Tomb Raider_ precisaria que os animadores tivessem completado a animação de puxar a alavanca. Esses animadores precisaram esperar que os modeladores tivessem completado o modelo de Lara Croft. E esses modeladores precisaram usar a _concept art_ do time de arte para criar o modelo e suas texturas.
 
-(TODO -> baixar um dos tomb raiders e gravar um gif de Lara puxando a alavanca)
-
 ![Lara Croft Alavanca](../Arquivos/Imagens/03_01.jpg 'Lara Croft e a alavanca')
+
+(Isso é apenas um exemplo ilustrativo. Na prática, é possível que os desenvolvedores implementem todas as funções relacionadas à alavanca antes que as animações sejam efetuadas, e voltem para incluí-las mais à frente no desenvolvimento.)
 
 O trabalho do gerente do time é certificar-se de que um membro não vai atrasar o outro, e tentar evitar retrabalhos ao máximo possível. Quanto menor o seu time, mais fácil é organizar isso, mas isso também quer dizer um ritmo de trabalho menor.
 
@@ -43,19 +43,19 @@ Os ciclos de desenvolvimento estarão atrelados a um **período de tempo** espec
 
 A ideia por trás do Scrum é de dividir o seu projeto em partes menores, cada uma sendo implementada em um período delimitado pela equipe (geralmente de 2-4 semanas). Dessa forma, o processo de produção fica mais simples e organizado. Por exemplo, eu não "trabalho no jogo", mas sim "termino o sistema de dano e _knockback_". 
 
-Isso implica em algumas coisas para você e sua equipe: Vocês terão metas a cumprir (onde podem ter sucesso ou não); terão metas a decidir; devem refletir sobre o resultado encontrado ao final de cada ciclo.
+Isso implica em algumas coisas para você e sua equipe: Vocês terão metas a cumprir (onde podem ter sucesso ou não); terão metas a decidir; e devem refletir sobre o resultado encontrado ao final de cada ciclo.
 
-Existe flexibilidade no tamanho destes ciclos, e quanto é feito em cada um. E isso é importante que decidam. Pessoalmente, para projetos pequenos eu costumo trabalhar com ciclos de 1 semana. Talvez para você seja melhor 2 semanas. Para o contexto _indie_, eu não recomendo nada muito maior que isso a não ser que sua equipe não tenha muito tempo para trabalhar no projeto. No geral, é melhor termos ciclos com tempos menores, mesmo que as metas para estes ciclos sejam mais simples.
+Existe flexibilidade no tamanho destes ciclos, e quanto é feito em cada um. Isso é importante que decidam. Pessoalmente, para projetos pequenos eu costumo trabalhar com ciclos de 1 semana. Talvez para você seja melhor 2 semanas. Para o contexto _indie_, eu não recomendo nada muito maior que isso a não ser que sua equipe não tenha muito tempo para trabalhar no projeto. 
 
 ## O Ciclo
 
-Entendendo o conceito de ciclo, resta executá-los. Os passos são simples:
+Entendendo o conceito de ciclo, resta executá-los. Os passos são simples: Planejar o ciclo, executá-lo, concluí-lo, testar os resultados.
 
 ### 1. Planejar o ciclo
 
 Você e sua equipe (ou apenas você) discutirão quais aspectos do jogo serão mais importantes/interessantes criar por ora. Membros diferentes podem trabalhar em frentes diferentes ao mesmo tempo. 
 
-Na teoria, um líder competente seria capaz de dirigir o jogo sozinho, sem que as diferentes competências dialoguem entre si. Por exemplo, o time de modelagem e CG não precisa saber o que o time de implementação anda fazendo. Entretanto, para projetos _indie_ isso se mostra não só difícil, mas uma opção ruim.
+Na teoria, um líder competente seria capaz de dirigir o jogo sozinho, sem que as diferentes competências dialogassem entre si. Por exemplo, o time de modelagem e CG não precisa saber o que o time de implementação anda fazendo. Entretanto, para projetos _indie_ isso se mostra não só difícil, mas uma opção ruim.
 
 Quanto mais diálogo houver entre os integrantes, mais eles podem contribuir uns com os outros, e apoiarem-se entre si. O líder deve estimular diálogo entre os membros de forma que todos saibam o progresso entre eles, e não haja surpresas mais a frente.
 
@@ -65,13 +65,15 @@ Lembrando sempre que a opinião que deve pesar mais para cada aspecto é a dos e
 
 Outra coisa importante é manter em mente o ritmo de trabalho de cada pessoa. Alguns membros vão ter mais tempo e terminar seu trabalho antes de outros, outros vão ter imprevistos e gerar atrasos. Como você vai lidar com estes aspectos fica ao critério seu e de sua equipe. Se vai dar mais trabalho para um para agilizar o processo, ou se vai pedir que um membro complemente onde outro faltar. Não existe uma resposta certa, isso apenas deve ser considerado durante o desenvolvimento.
 
+Caso você trabalhe sozinho, discutir consigo mesmo é uma opção, mas debater essas ideias com amigos que também se interessam por jogos é uma ótima opção. Talvez não para discutir minúcias do desenvolvimento, mas trocar ideias com outras pessoas sempre é proveitoso para organização de suas ideias.
+
 Durante a discussão sobre as tarefas, podem surgir ideias que não serão executadas durante este ciclo, ou sugestões que ainda não precisam ser consideradas. **Anote-as** na _wishlist_ do seu GDD.
 
-Além disso, você vai decidir o que será feito durante o ciclo em si. **Anote isso também**, em um documento separado do GDD. Uma simples lista deve servir. Por questões de simplicidade, vamos chamar este documento de _backlog_.
+Além disso, você vai decidir o que será feito durante o ciclo em si. **Anote isso também**, em um documento separado do GDD. Uma simples lista deve servir. Para essa lista, vamos usar outro termo emprestado, o _backlog_.
 
 ### 1.1 Sobre as Metas
 
-Se você delimitar um trabalho muito complexo para um tempo muito curto, o mesmo provavelmente não será terminado. Isso é normal e esperado, mas gera certo estresse para a sua equipe. Dessa forma, ficam algumas dicas para delimitar os seus ciclos:
+Se você delimitar um trabalho muito complexo para um tempo muito curto, o mesmo provavelmente não será terminado. Isso é normal e esperado, mas pode gerar certo estresse para a sua equipe. Dessa forma, ficam algumas dicas para delimitar os seus ciclos:
 
 - Objetivos específicos
 
@@ -79,7 +81,7 @@ Se você delimitar um trabalho muito complexo para um tempo muito curto, o mesmo
  
 - Objetivos simples
 
- Você não precisa descrever o ciclo inteiro em uma única palavra. Pode dividi-lo em pedaços menores. Por exemplo, "sistema de física" pode ser dividido em "movimento e colisão", e movimento pode ser dividido em "input, velocidade, gravidade". Isso fica a preferência de cada um, e muitas vezes a melhor opção depende do caso, mas dividir o trabalho em pedaços menores costuma ser mais fácil. Além disso, caso não consigam desenvolver todos os detalhes durante o ciclo, o trabalho que já foi feito fica bem claro.
+ Você não precisa descrever o ciclo inteiro em uma única palavra. Pode dividi-lo em pedaços menores. Por exemplo, "sistema de física" pode ser dividido em "movimento e colisão", e movimento pode ser dividido em "input, velocidade, gravidade". Velocidade ainda pode ser dividido em "aceleração e fricção". Onde vocês vão parar de dividir fica a preferência de cada um, e muitas vezes a melhor opção depende do caso, mas dividir o trabalho em pedaços menores costuma ser mais fácil. Além disso, caso não consigam desenvolver todos os detalhes durante o ciclo, o trabalho que já foi feito e o que falta fica mais claro.
  
 - Quando na dúvida, objetivos gerais, mas não vagos
 
@@ -99,7 +101,7 @@ Instruções específicas de como melhor executar cada ciclo virão em seus resp
 
 ### 3. Concluir o ciclo
 
-Ao final do tempo delimitado, você deve juntar sua equipe novamente (ou falar com cada um a parte) para discutir o que foi feito durante o mesmo. Aqui encontramos um binário. O trabalho delimitado foi feito ou não.
+Ao final do tempo delimitado, você deve juntar sua equipe novamente (ou falar com cada um a parte) para discutir o que foi feito durante o mesmo. Aqui poderíamos considerar um binário: o trabalho delimitado foi feito ou não. Mas é mais proveitoso entender o que aconteceu para que o trabalho fosse feito ou não do que focar somente no resultado em si. 
 
 Para o futuro do seu projeto, a avaliação desse trabalho importa tanto quanto a execução dele. Se o trabalho não foi feito, vale analisar algumas questões:
 
@@ -107,13 +109,13 @@ Para o futuro do seu projeto, a avaliação desse trabalho importa tanto quanto 
 - O tempo alocado foi muito curto para essa tarefa?
 - Houve alguma dificuldade para a realização do trabalho? (Bem comum)
 
-Entender as respostas a perguntas como essas é fundamental para adaptar o melhorar o ritmo de trabalho. Às vezes, realmente houve um problema. Em outros casos, os membros de sua equipe simplesmente não quiseram trabalhar. E isso é algo com o qual você terá que lidar às vezes.
+Entender as respostas a perguntas como essas é fundamental para adaptar e melhorar o ritmo de trabalho. Às vezes, realmente houve um problema. Em outros casos, os membros de sua equipe simplesmente não quiseram trabalhar. E isso é algo com o qual você terá que lidar às vezes.
 
 Caso o trabalho tenha sido feito todo com sucesso, algumas outras perguntas podem ser relevantes:
 
 - O trabalho delimitado foi pouco?
 - O que contribuiu para que o trabalho fluísse tão bem?
-- Existe algum jeito de melhorar?
+- O que pode ser feito para melhorar o fluxo?
 
 Novamente, essas perguntas e outras podem ajudar a aprimorar o processo para o próximo ciclo.
 
