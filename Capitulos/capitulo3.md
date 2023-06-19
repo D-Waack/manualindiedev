@@ -8,7 +8,7 @@
 
 Se tudo deu certo durante o [capítulo interior](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo2.md), você escolheu qual será sua _engine_ e já tem certa noção de como organizará seus arquivos. Nesse caso, você já está pronto para começar o desenvolvimento de seu jogo.
 
-Geralmente, definimos o ciclo de vida para o desenvolvimento de um jogo da seguinte forma: **Pré-Produção** -> **Produção** -> **Alfa** -> **Beta** -> **Produto Final**
+Geralmente, definimos o ciclo de vida para o desenvolvimento de um jogo da seguinte forma: **Pré-Produção** -> **Produção (Alfa)** -> **Produção (Beta)** -> **Produto Final**
 
 Seguindo esta classificação, você teria passado pela etapa de pré-produção. A pré-produção na indústria como um todo geralmente é um processo mais formal do que o que descrevi aqui. Isso não é um problema. Em muitos casos, um pequeno protótipo é projetado também durante a pré-produção. Decidi incluir isto na etapa de produção, por questões de simplicidade.
 
