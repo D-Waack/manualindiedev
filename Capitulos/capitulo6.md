@@ -15,7 +15,7 @@ O mais importante é: Você consegue ver o seu jogo nesse protótipo? Consegue o
 
 Chegou a hora de envolver toda a sua equipe por inteiro no processo. 
 
-Se você trabalha sozinho, seu ritmo não vai mudar muito, apenas o foco. Seu objetivo segue de forma similar ao protótipo 0: completar todos/a maioria das funções e mecânicas de seu jogo **primeiro**, e depois seguir com os outros aspectos como música, arte, e outros quando tiver avançado melhor. Não leve isso como uma lei. Caso você deseje ver o seu modelo/sprite na tela, ou precise criar um mapa para testar suas mecânicas, ou gostaria de criar uma música para verificar o tom do jogo, ou precise criar algum outro artefato em qualquer momento, sinta-se livre para fazê-lo.
+Se você trabalha sozinho, seu ritmo não vai mudar muito, apenas o foco. Seu objetivo segue de forma similar ao protótipo 0: completar todos/a maioria das funções e mecânicas de seu jogo **primeiro**, e depois seguir com os outros aspectos como música, arte, e outros quando tiver avançado melhor. Mas não leve isso como uma lei. Caso você deseje ver o seu modelo/sprite na tela, ou precise criar um mapa para testar suas mecânicas, ou gostaria de criar uma música para verificar o tom do jogo, ou precise criar algum outro artefato em qualquer momento, sinta-se livre para fazê-lo.
 
 Este foco nas mecânicas vem da minha experiência, pois minha competência principal é relacionada a lógica e programação, e as outras habilidades necessárias eu aprendi no caminho. Caso você seja um artista ou músico, trabalhar diretamente no que você domina melhor também é válido. Mas não se esqueça, você **não** terá um jogo se negligenciar o aspecto da programação/lógica. 
 
@@ -53,26 +53,26 @@ Quando for seguir com este processo, interessa a leitura do capítulo a seguir:
 ## Primeiros passos
 Costumo recomendar como primeiro passo que faça uma revisão de seu protótipo 0, e siga com a expansão do projeto a partir dele. Quando fazendo o protótipo 0, a maior preocupação é ter um sistema funcionando para testar sua idiea. Agora, você vai precisar aprimorá-lo para que sirva como base do seu projeto inteiro.
 
-Para isso, minha sugestão é que volte por todos os seus _scripts_ e configurações para certificar-se de que está seguindo as boas práticas que vou listar a seguir. Quando a essas práticas, algumas se referem diretamente a programação, e outras se referem ao gerenciamento do projeto em si.
+Para isso, minha sugestão é que volte por todos os seus _scripts_ e configurações para certificar-se de que está seguindo as boas práticas de programação que vou listar a seguir. Além dessas, vou citar algumas práticas que se referem ao gerenciamento do projeto em si.
 
-Além disso, cabe revisar o _design_ e fazer uma formalizar melhor uma atualização de seu GDD a cada ciclo.
+Junto com a revisão do protótipo, é interessante revisar também o _design_ e atualizar seu GDD não somente após essa revisão, mas também a cada novo ciclo.
 
 ### Boas Práticas - Gerenciamento do projeto
 - Usar alguma forma de controle de versões
 
-Admito que raramente foi necessário a mim voltar a uma versão anterior de meu projeto. Mas quando eu precisei, ter um controle de versões me poupou horas de estresse e trabalho. Além da possibilidade de retornar a versões anteriores, isso também auxilia na organização de seu projeto, e serve como um _backup_ caso algo aconteça. Eu costumo usar o Git/Github para fazer isso, mas você pode usar a ferramenta que preferir.
+Admito que raramente tive a necessidade de voltar a uma versão anterior de meu projeto. Mas quando eu precisei, ter um controle de versões me poupou horas de estresse e trabalho. Além da possibilidade de retornar a versões anteriores, isso também auxilia na organização de seu projeto, e serve como um _backup_ caso algo aconteça. Eu costumo usar o Git/Github para fazer isso, mas você pode usar a ferramenta que preferir.
 
 - Manter sua lista de tarefas atualizada
 
-A "lista de tarefas" é literalmente uma lista com coisas que você tem que fazer/aprimorar no seu projeto. Eu usei o termo _backlog_ emprestado do Scrum como minha lista de tarefas. Na prática, esses conceitos não são exatamente iguais, mas para o contexto em que estamos, vão servir como a mesma coisa. 
+A "lista de tarefas" é literalmente uma lista com coisas que você tem que fazer/aprimorar no seu projeto. Eu usei o termo _backlog_ emprestado do Scrum como minha lista de tarefas. Na teoria, esses conceitos não são exatamente iguais, mas para o contexto em que estamos, vão servir como a mesma coisa. 
 
-Minha política é de que **sempre** que eu penso em algo que deve ser feito, eu o anoto na minha lista de tarefas. Sugiro que você faça o mesmo. Se não, é muito provável que você esquecerá.
+Minha política é de que **sempre** que eu penso em algo que deve ser feito, eu o anoto na minha lista de tarefas. Sugiro que você faça o mesmo. Se não, é muito provável que você esquecerá de algo importante.
 
-Para muitos projetos, essa lista começa a ficar cada vez maior. Por isso, é interessante separar as tarefas em alguns tópicos diferentes. Alguns exemplos de tópicos que costumo utilizar são: _Sistemas_ (sistemas completos que ainda não implementei), _Bugs_ (algum funcionamento inesperado que deve ser concertado), _Ajustes_ (funcionamento é similar ao esperado, mas ainda não está perfeito).
+Para muitos projetos, essa lista começa a ficar cada vez maior com o passar do tempo. Por isso, é interessante separar as tarefas em alguns tópicos diferentes. Alguns exemplos de tópicos que costumo utilizar são: _Sistemas_ (sistemas completos que ainda não implementei), _Bugs_ (algum funcionamento inesperado que deve ser concertado), _Ajustes_ (funcionamento é similar ao esperado, mas ainda não está perfeito).
 
 - Usar alguma ferramenta de organização
 
-Similar ao tópico anterior, utilizar uma ferramenta como o Trello ou JIRA pode ser interessante também. Especialmente se você trabalha em equipe. Trabalhando solo, eu geralmente me limito à minha lista manual, mas as interfaces destes programas podem ajudar a organizar seu trabalho de maneira mais eficiente também. Sugiro pelo menos dar uma olhada no Trello.
+Similar ao tópico anterior, utilizar uma ferramenta como o Trello ou JIRA pode ser interessante também. Especialmente se você trabalha em equipe. Trabalhando solo, eu geralmente me limito à minha lista manual, mas as interfaces destes programas podem ajudar a organizar seu trabalho de maneira mais eficiente também. 
 
 ### Boas Práticas - Programação
 - 
