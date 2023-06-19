@@ -33,7 +33,9 @@ Não existe um padrão exato para como o GDD deve ser criado. E se você procura
 
 O seu GDD pode estar em qualquer lugar entre um documento simples de 3 ou 4 páginas, até um enorme documento descrevendo cada detalhe do funcionamento de seu jogo como a [_Doom Bible_](https://5years.doomworld.com/doombible/doombible.pdf) (GDD do jogo Doom de 1993). Como o seu projeto acabou de começar, meu conselho é seguir a primeira opção. Porém, durante o desenvolvimento do seu projeto, é esperado que o documento cresça consideravalmente, então sinta-se à vontade para colocar quanto detalhe achar interessante no futuro.
 
-![Doom Bible](../Arquivos/Imagens/01_01.png 'Doom Bible')
+<p align="center">
+<img src="../Arquivos/Imagens/01_01.png"  width="30%" height="45%">
+<p align="center">
 
 Eu criei um template bem simples que costumo usar para a proposta inicial do jogo, e vou usá-lo aqui para exemplificar um preenchimento inicial. Se desejar usá-lo: 
 - [Versão Word](/Arquivos/modelo_GDDv1.2.docx) 
