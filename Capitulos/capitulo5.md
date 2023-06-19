@@ -1,6 +1,6 @@
 
 # Capítulo 5: Lidando com Problemas Diversos
-"Você se encontrou com um destino terrível, não foi?" - Vendedor de Máscaras Alegre, "The Legend of Zelda - Majora's Mask" (2000)
+"Você se encontrou com um destino terrível, não foi?" - Vendedor de Máscaras Alegre, _The Legend of Zelda - Majora's Mask_ (2000)
 
 ![Capítulo 5 capa](../Arquivos/Imagens/capa_05.jpg 'A man chooses, a slave obeys.')
 
@@ -14,9 +14,13 @@ Neste capítulo, eu discuto como abordar os problemas mais comuns encontrados no
 
 ## Não sei criar/implementar X
 
-O primeiro passo quando não se sabe fazer alguma coisa é pensar. Hoje em dia, pensar é uma habilidade um pouco desvalorizada. E é claro, como toda habilidade, ela exige experiência e prática. Dessa forma, se você não tem certa quantidade de experiência, pensar _nunca_ será o suficiente. O pensar é complementado pelo conhecimento. Em outras palavras, quanto mais você sabe, mais fácil será resolver o problema meramente por pensar. Da mesma forma, até você adquirir este conhecimento, você precisa buscar outros meios.
+O primeiro passo quando não se sabe fazer alguma coisa é pensar. Pensar é uma habilidade, e como toda habilidade, ela exige experiência e prática. Dessa forma, se você não tem certa quantidade de experiência, pensar _nunca_ será o suficiente. O pensar é complementado pelo conhecimento. Em outras palavras, quanto mais você sabe, mais fácil será resolver o problema meramente por pensar. 
 
-Quais seriam estes meios? 
+Esse conhecimento toma forma como entendimento de conceitos de programação, estruturas de dados, gerenciamento de diferentes tipos de arquivos, _loops_ de jogo; bem como conhecimento da engine ou framework com o qual você está trabalhando.
+
+Porém, até você adquirir este conhecimento, você precisa buscar outros meios.
+
+O principal meio entre esses será:
 
 ### A Pesquisa
 
@@ -24,11 +28,13 @@ Isso pode parecer estranho, mas uma das maiores habilidades que todo programador
 
 Porém, um detalhe importante é que a grande maioria do conteúdo de TI é escrito _em inglês_. Enquanto você pode procurar seu caso em português (e certas vezes você vai encontrar os resultados desejados mais facilmente pela menor quantidade), utilizar o inglês vai se mostrar necessário na maioria dos casos. Se você não tem entendimento ou fluência no inglês, passar sua pesquisa por um tradutor como _DeepL_ ou mesmo o _Google Tradutor_ pode ser o suficiente, mas entenda que você também terá que traduzir as páginas, pois estarão em inglês.
 
-Hoje em dia também temos ferramentas de inteligência artificial como o _ChatGPT_ que podem oferecer essas informações de maneira mais fácil (com certa margem de erro).
+Essa opção surgiu ao público durante a escrita deste manual, mas agora também temos ferramentas de inteligência artificial como o _ChatGPT_ que podem oferecer essas informações de maneira mais fácil (com certa margem de erro).
 
 É importante que você entenda o que quer fazer antes de começar a pesquisa. Isso virá com o tempo e experiência, mas quanto melhor você descrever o que procura, mais fácil fica encontrar o que quer que seja. No início, suas pesquisas serão mais generalizadas, mas quanto mais você entender do assunto, mais sofisticadas elas serão. 
 
-### Macro vs Micro
+Conseguir _entender_ o que você precisa às vezes é tão importante quanto a implementação de sua ideia.
+
+- Macro vs Micro
 
 O tipo de resposta que você vai encontrar depende do tipo de pesquisa que você vai fazer.
 
@@ -51,7 +57,7 @@ O que você tem que fazer com o resultado encontrado é entendê-lo e adaptá-lo
 Se você é um iniciante na linguagem, entender o código não vai ser tão simples. Conhecer o formato da linguagem é muito importante. Mas isso pode ser aprendido diretamente na prática.
 
 O passo a passo que eu sigo para entender qualquer código costuma ser:
-- Ler o código, linha por linha (se eu já entendo do assunto, torna-se apenas uma questão de ler e lembrar o que cada linha faz) 
+- Ler o código, linha por linha (se eu já entendo do assunto, torna-se apenas uma questão de ler e lembrar/reconhecer o que cada linha faz) 
 - Testar o código, linha por linha (escrever o código por pedaços e testar o que ele faz na prática gera entendimento imediato do funcionamento de cada linha)
 - Procurar funções desconhecidas na documentação (geralmente, a documentação da _engine_ vai explicar exatamente o que cada função faz)
 
@@ -61,13 +67,13 @@ São passos simples, mas não pense que esse processo é sempre fácil. Você se
 
 Lembre-se sempre: na maioria dos casos, copiar e colar código sem entendê-lo é uma prática ruim e vai atrapalhar o seu projeto.
 
-Existem casos em que isso não será um problema, por exemplo, se você instalar um módulo ou _plugin_ ao seu projeto, e este funciona de maneira separada ao código para o seu jogo. Ou algo como um módulo Ruby no seu projeto de RPG Maker VX Ace. Nesses casos, você já chega com um "bloco" pronto para seu uso, e só será necessário entender seu código se quiser mudar como o módulo funciona.
+Existem casos em que isso não será um problema, por exemplo, se você instalar um módulo ou _plugin_ ao seu projeto, e este funciona de maneira separada ao código para o seu jogo. Por exemplo, um módulo Ruby no seu projeto de RPG Maker VX Ace. Nesses casos, você já chega com um "bloco" pronto para uso, e só será necessário entender seu código se quiser mudar como esse módulo funciona.
 
-De qualquer forma, entendendo o código e incorporando-o no seu projeto, você resolveu o problema que pesquisou. Mas nem sempre as coisas vão ser tão fáceis.
+De qualquer forma, entendendo o código e incorporando-o ao seu projeto, você resolverá o problema pelo qual pesquisou. Mas nem sempre as coisas vão ser tão fáceis.
 
 ## Não encontrei como implementar X
 
-Se a sua pesquisa não gerar frutos, existe a possibilidade de que você está pesquisando mal, e existe a possibilidade de que o conteúdo que você procura simplesmente não existe publicamente.
+Se a sua pesquisa não gerar frutos, ou se a IA gera um resultado sem sentido, existe a possibilidade de que você está pesquisando mal, e existe a possibilidade de que o conteúdo que você procura simplesmente não existe publicamente.
 
 Nestes casos, você tem algumas opções:
 - Revisar a pesquisa;
@@ -75,7 +81,7 @@ Nestes casos, você tem algumas opções:
 - Procurar uma comunidade de desenvolvedores;
 - Criar um post de dúvida.
 
-Revisar a pesquisa sempre é preferível. Talvez mudar alguma palavra chave te ajude a encontrar exatamente seu problema. Isso ocorre comigo inúmeras vezes. Mas já encontrei casos onde eu não conseguia encontrar de forma alguma.
+Revisar a pesquisa sempre é preferível. Talvez mudar alguma palavra chave te ajude a encontrar exatamente a solução ao seu problema. Isso ocorreu comigo inúmeras vezes. Mas já encontrei casos onde eu não conseguia encontrar uma referência de forma alguma.
 
 A próxima opção é ler a documentação. Toda _engine_ vai ter uma documentação, mas nem todas vão ter a mesma qualidade. Engines como Unreal, Unity e Godot têm ótimas documentações, e isso ajuda muito no desenvolvimento. Fazer uma pesquisa na documentação pode ser a solução para sua dúvida, mas lembre-se que a linguagem utilizada nesses materiais costuma ser bem técnica.
 
@@ -91,7 +97,7 @@ Esse tipo de fórum é onde você deve ir quando não consegue achar uma soluç�
 
 Geralmente, o fórum vai ter uma seção em algum lugar te oferecendo sugestões e regras para como criar seus posts e como incluir _tags_ neles, ou em qual subfórum ele deve ficar. É importante ler essas regras de post antes de fazer qualquer pergunta, mas aqui eu deixo algumas orientações sobre seus posts:
 
-- Seja claro, focado e objetivo: Você não precisa explicar seu jogo inteiro no seu post. Alguns detalhes podem ser sempre relevantes como se o seu projeto é 3D ou 2D, e qual a versão da _engine_ que você está usando, mas, na maioria dos casos, você só deve incluir detalhes que se aplicam diretamente ao problema em questão. Se o meu problema é na aceleração do meu personagem, pouco importa como o meu mapa é gerado.
+- Seja claro, focado e objetivo: Você não precisa explicar seu jogo inteiro no seu post. Alguns detalhes podem ser sempre relevantes como se o seu projeto é 3D ou 2D, e qual versão da _engine_ você está usando, mas, na maioria dos casos, você só deve incluir detalhes que se aplicam diretamente ao problema em questão. Se o meu problema é na aceleração do meu personagem, pouco importa como o meu mapa é gerado.
 - Simples é melhor: Uma explicação _muito_ elaborada sobre o seu caso pode fazer com que pessoas o ignorem, infelizmente. Tente ser simples, incluindo apenas detalhes importantes. Caso alguém fique na dúvida, eles vão pedir para que elabore sobre o problema, mostre código ou mande uma versão do seu projeto para que eles possam olhá-la (**muito cuidado** com isso, tente evitar disponibilizar seu projeto completo caso não queira que ele seja roubado. A maioria das pessoas nesses fóruns são de boa índole, mas apenas um usuário mal intencionado pode causar grande estrago).
 - Mostre evidências: nesse contexto, uma imagem não equivale a mil palavras, mas ajuda bastante a entender seu problema.
 - Engaje: Ajude-os a ajudá-lo. Responda as perguntas que fizerem, tente contribuir.
@@ -101,7 +107,7 @@ O maior problema com questões em fóruns é que nada garante que sua pergunta s
 ## Erros no código
 Outro caso que você inevitavelmente vai encontrar são erros no seu código. 
 
-Erros podem ser coisas simples, como uma vírgula faltando, ou algo muito mais complexo que destrói todo o seu sistema de iluminação que você descobre por acidente um mês depois. Por esse motivo, é sempre bom testar o seu código com frequência e diagnosticar os erros antes que eles fiquem complicados demais para análise.
+Erros podem ser coisas simples, como uma vírgula faltando, ou algo muito mais complexo que destrói todo o seu sistema de iluminação e que você descobre por acidente um mês depois (nem me pergunte). Por esse motivo, é sempre bom testar o seu código com frequência e diagnosticar os erros antes que eles fiquem complicados demais para análise.
 
 No geral, quando um erro de execução é encontrado, o próprio console da _engine_ vai te oferecer uma mensagem sobre ele. Eles podem ser erros de sintaxe, erros de variáveis, de parâmetros, de lógica, entre outros. E, geralmente, serão resolvidos com mudanças no seu código. A mensagem de erro vai ser o seu melhor amigo nestes casos, pois ela vai apontar em qual script, e qual linha o erro ocorreu, e porque ele ocorreu.
 
@@ -114,17 +120,17 @@ Esse tipo de erro é muito comum. E o motivo geralmente é que existe algum erro
 
 Às vezes, o erro vai estar em um lugar óbvio. Outras vezes, nem tanto. Nesses casos, o método mais eficiente costuma seguir todo o caminho lógico de trás para frente até encontrar algum tipo de valor inconsistente. Isso não é tão simples de explicar, mas basicamente, tente imprimir no console todos os valores que podem influenciar a execução inesperada, ou crie "checkpoints" na execução. A lógica é que se "até aqui os valores estão conforme esperado", então você sabe que o erro veio num momento mais adiante da execução.
 
-Esses erros costumam ser bem simples, mas também estressantes. Mantenha a calma e continue procurando, e teste com frequência. Quanto mais cedo você encontrar estes erros, mais fácil será resolvê-los.
+Esses erros costumam ser bem simples, mas também estressantes. Mantenha a calma, continue procurando, e teste com frequência. Quanto mais cedo você encontrar estes erros, mais fácil será resolvê-los.
 
-## Alguns erros específicos !!TODO
+## Erros recorrentes
 
-Aqui eu detalho alguns problemas comuns que você pode encontrar como iniciante. 
+Algumas vezes você encontrará certos problemas padrão. Por exemplo, se o seu jogo está lento, geralmente isso indica que você está fazendo muitas operações ao mesmo tempo, ou que falhou em parar alguma execução. Para estes casos, tente fazer condições abrangentes, por exemplo usar "> 2" em vez de "= 3" para certo índice, mesmo sabendo que o valor máximo sempre será 3. Tente também evitar criar ou deletar muitos objetos ao mesmo tempo (considere usar _object pooling_). Além disso, evite utilizar funções recursivas, a não ser que tenha certeza que elas sempre se limitarão a poucas recursões.
 
-- Execução lenta
-- Personagem/camera não se move
-- outros?
+Certas vezes você notará que o jogo não reage ao seu input. Nesse caso, certifique-se de que está configurando o _input_ para as opções corretamente dentro da engine ou framework.
+
+Cito estes por serem problemas que enocntrava com frequência quando iniciante. Sempre certifique-se de que a sintaxe que escreveu está correta, e de que está usando as variáveis certas, e você vai evitar mais algumas centenas de erros diferentes.
 
 ## Conclusão
-Neste capítulo descrevemos um _workflow_ para lidar com situações adversas durante um ciclo de desenvolvimento. Esse é um tipo de coisa com a qual você deve estar acostumado lidar, pois não vão ser poucas às vezes em que precisará procurar por uma solução.
+Neste capítulo descrevemos um _workflow_ para lidar com situações adversas durante um ciclo de desenvolvimento. É importante que todo desenvolvedor tenha um plano concreto para lidar com estas situações, pois não vão ser poucas às vezes em que se depararão com elas.
 
 No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo6.md), vamos falar sobre o passo seguinte ao protótipo 0, o início do desenvolvimento das versões _alfa_.
