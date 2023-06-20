@@ -10,17 +10,17 @@ A maioria dos jogos tenta simular uma espécie de mundo ou ambiente onde as cois
 ## Formatos de Levels
 O formato de seus mapas sempre será ditado pelo gênero/estilo do seu jogo. Mapas 3D costumam oferecer ambientes mais realistas, no sentido de que podem construir realmente o ambiente que querem representar. Enquanto mapas 2D oferecem uma representação ou aproximação desse ambiente. Eu posso modelar um quarto para um jogo 3D, enquanto em um jogo 2D eu teria que sacrificar uma dessas dimensões, seja o eixo de profundidade (mapas sidescroller) ou altura (mapas topdown). 
 
-![3D Real, Spyro the Dragon - Reiginited Trilogy](../Arquivos/Imagens/12_01.jpg '3D Real, Spyro the Dragon - Reiginited Trilogy')
+![3D Real, Spyro the Dragon - Reiginited Trilogy](../Arquivos/Imagens/12_01.png '3D Real, Spyro the Dragon - Reiginited Trilogy')
 
-![2D Sidescroller Quarto](../Arquivos/Imagens/12_01.jpg '2D Sidescroller Quarto')
+![2D Sidescroller Quarto](../Arquivos/Imagens/12_02.png '2D Sidescroller Quarto')
 
-![2D Topdown Hotline Miami](../Arquivos/Imagens/12_01.jpg '2D Sidescroller Quarto')
+![2D Topdown Hotline Miami](../Arquivos/Imagens/12_03.png '2D Sidescroller Quarto')
 
 Em certos casos, jogos 2D podem passar a ideia de um mundo tridimensional usando certos efeitos e ilusões, como é o caso com _Super Mario Kart_, muitos jogos do estilo topdown oblíquo como _Chrono Trigger_, e jogos isométricos como _Hades_ conseguem passar a ideia de um mundo 3D mesmo entre 2 dimensões. Alguns jogos ainda misturam os dois, como _Final Fantasy: Tactics_ com um mapa 3D e _sprites_ 2D.
 
 ![3D Fake, Super Mario Kart](../Arquivos/Imagens/12_05.jpg '3D Fake, Super Mario Kart')
 
-![Topdown Oblíquo, Chrono Trigger](../Arquivos/Imagens/12_04.jpg '3D Fake, Super Mario Kart')
+![Topdown Oblíquo, Chrono Trigger](../Arquivos/Imagens/12_04.png '3D Fake, Super Mario Kart')
 
 ![3D Fake, Hades](../Arquivos/Imagens/12_06.jpg '3D Fake, Hades')
 
