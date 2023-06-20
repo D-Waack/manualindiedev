@@ -163,4 +163,4 @@ Estes são os principais cuidados que você deve tomar com os sons de seu jogo. 
 ## Conclusão
 Neste capítulo discutimos diversas formas como artefatos audiovisuais podem ser integrados a um jogo, e vários cuidados que devem ser tomados durante esse processo.
 
-No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo12.md)https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo12.md, falarei um pouco sobre _level_ e _world design_.
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo12.md), falarei um pouco sobre _level_ e _world design_.
