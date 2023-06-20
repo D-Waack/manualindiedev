@@ -1,8 +1,8 @@
 
 # Capítulo 9: Arte, Modelos, Visual
-"Nenhum preço tão alto." - Rei Pálido, "_Hollow Knight_" (2017)
+"Pesaroso seja o coração, Penitente cheio de clemência" - Tirso, "_Blasphemous_" (2019)
 
-![Capítulo 9 capa](../Arquivos/Imagens/capa_09.jpg 'No cost too great.')
+![Capítulo 9 capa](../Arquivos/Imagens/capa_10.jpg 'Sorrowful be the heart, Penitent One full of clemency.')
 
 ## Introdução
 Recursos visuais vêm em vários formatos diferentes. _Sprites_, modelos 3D, texturas, etc. 
