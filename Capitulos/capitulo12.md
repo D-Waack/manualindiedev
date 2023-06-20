@@ -14,7 +14,7 @@ O formato de seus mapas sempre será ditado pelo gênero/estilo do seu jogo. Map
 
 ![2D Sidescroller Quarto](../Arquivos/Imagens/12_02.png '2D Sidescroller Quarto')
 
-![2D Topdown Hotline Miami](../Arquivos/Imagens/12_03.png '2D Sidescroller Quarto')
+![2D Topdown Hotline Miami](../Arquivos/Imagens/12_03.jpg '2D Topdown Hotline Miami')
 
 Em certos casos, jogos 2D podem passar a ideia de um mundo tridimensional usando certos efeitos e ilusões, como é o caso com _Super Mario Kart_, muitos jogos do estilo topdown oblíquo como _Chrono Trigger_, e jogos isométricos como _Hades_ conseguem passar a ideia de um mundo 3D mesmo entre 2 dimensões. Alguns jogos ainda misturam os dois, como _Final Fantasy: Tactics_ com um mapa 3D e _sprites_ 2D.
 
