@@ -1,8 +1,8 @@
 
 # Capítulo 10: Música e Efeitos Sonoros
-"Pesaroso seja o coração, Penitente cheio de clemência" - Tirso, "_Blasphemous_" (2019)
+"Nenhum preço tão alto." - Rei Pálido, "_Hollow Knight_" (2017)
 
-![Capítulo 10 capa](../Arquivos/Imagens/capa_10.jpg 'Sorrowful be the heart, Penitent One full of clemency.')
+![Capítulo 9 capa](../Arquivos/Imagens/capa_09.jpg 'No cost too great.')
 
 ## Introdução
 Se você já jogou algo sem a música ou os efeitos sonoros, você sabe a diferença enorme que os sons fazem. Esse é outro ponto artístico sobre o qual eu só posso opinar como desenvolvedor. Se houver alguém com experiência musical no seu grupo, o melhor a fazer é seguir o que decidirem, mas deixo aqui alguns recursos que provavelmente podem te ajudar.
