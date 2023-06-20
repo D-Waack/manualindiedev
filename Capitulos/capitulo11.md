@@ -88,9 +88,9 @@ Além de _sprites_, _tiles_ e outros recursos que podem ser criados manualmente,
 
 Estes costumam ser criados/calculados em tempo de execução, shaders e partículas. Partículas são pequenas texturas ou objetos geométricos que são emitidos a partir de um ou vários pontos para dar a impressão de algum fenômeno como fumaça, fogo, eletricidade, etc. Shaders funcionam como "filtros" que alteram os pixels disponíveis na tela em tempo real, podendo mudar completamente a impressão de toda a tela, ou de um pedaço dela, criando efeitos visuais diversos. 
 
-![Exemplos Partículas](../Arquivos/Imagens/11_05.png 'Exemplos Partículas')
+![Exemplos Partículas](../Arquivos/Imagens/11_05.jpg 'Exemplos Partículas')
 
-![Exemplos Shaders](../Arquivos/Imagens/11_06.png 'Exemplos Shaders')
+![Exemplos Shaders](../Arquivos/Imagens/11_06.jpg 'Exemplos Shaders')
 
 Enquanto partículas são objetos visuais reais, e shaders são apenas alterações calculadas pela GPU, ambos requerem uma certa capacidade de processamento maior do que meros objetos como sprites em tela.
 
@@ -120,7 +120,7 @@ A implementação de um HUD é simples, basta incluir uma camada visual bidimens
 
 Em certos casos, é interessante encontrar outros jeitos de mostrar informação ao jogador, como fiz no meu projeto _Vortex Tautology_, onde a vida do personagem é demonstrada pela cor/presença do escudo. Ou em um jogo como Dead Space, onde informações importantes são demonstradas no próprio personagem jogável e objetos no próprio jogo. Esse tipo de detalhe sempre é apreciado quando feito da maneira correta.
 
-![Display de informações em Dead Space](../Arquivos/Imagens/11_06.png 'Display de informações em Dead Space')
+![Display de informações em Dead Space](../Arquivos/Imagens/11_07.png 'Display de informações em Dead Space')
 
 Em termos de interfaces gerais, como menus e inventários, simplesmente montá-los como uma tela interativa com o mouse é o suficiente. Na maioria dos casos, também é interessante adicionar certa redundância a comandos interativos em menus, como setas de teclado para escolher opções, várias teclas para confirmação, usabilidade de controle, etc. Sempre lembrando de ter bom senso, pouco ainda ter opções diversas para um jogo de celular com o qual o jogador vai interagir apenas por toque.
 
