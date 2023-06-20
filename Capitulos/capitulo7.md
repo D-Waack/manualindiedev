@@ -11,9 +11,9 @@ Então por que precisa testar?
 
 Porque você é cego. Ou melhor dizendo, porque você não tem uma visão completa do seu jogo. _Playtesters_ também não têm. Na verdade, eles entendem seu jogo menos que você (ao menos a princípio). Mas, sendo pessoas diferentes, com experiências e inclinações diferentes, eles **vão** agir de forma diferente. E encontrar possibilidades no seu jogo que você não conseguia sequer imaginar.
 
-Quando você olhar para uma versão e falar "está pronta" pela primeira vez, você pode ter (quase) absoluta certeza de que ela ainda não está pronta. E você pode testar por si e encontrar de fato alguns problemas, mas os _playtesters_ são o melhor caminho para encontrar _bugs_ e acontecimentos inesperados. Ou soluções em que você não havia pensado. Ou interações que você sequer sabia que podiam acontecer.
+Quando você olhar para uma versão e falar "está pronta" pela primeira vez, você pode ter (quase) absoluta certeza de que ela ainda não está pronta. E você pode testar por si e encontrar de fato alguns problemas, mas os _playtesters_ são o melhor caminho para encontrar _bugs_ e acontecimentos inesperados. Ou interações que você sequer sabia que podiam acontecer. E até soluções em que você não havia pensado. 
 
-Isso pode ser por vários motivos, mas no geral é simplesmente porque seu _playtester_ joga diferente de você. Por exemplo, em um dos meus projetos, eu havia incluído uma caixa de colisão no fundo de cada fase para que se o jogador encostasse nela, ele perderia imediatamente. (Ou seja, um buraco sem fundo). Entretanto, eu havia incluído uma condição em meu jogo onde caixas de colisão **não** interagiam com o personagem quando o mesmo havia sido atingido nos últimos 1.4 segundos. O resultado era que quando o meu _playtester_ levava dano de um inimigo e caía em um buraco **antes** que esse tempo acabasse, ele não morria, e não conseguia voltar, causando com que  personagem caísse eternamente. (Obviamente, isso não deveria acontecer). Nesse caso, eu era **cego** para esse problema. Porque eu já estava tão acostumado com o jogo que eu sequer levava dano no inimigo em questão, e nunca me deparei com essa situação. Felizmente, meu _playtester_ encontrou o problema e eu pude consertá-lo. 
+Isso pode ser por vários motivos, mas no geral é simplesmente porque seu _playtester_ pensa e joga diferente de você. Por exemplo, em um dos meus projetos, eu havia incluído uma caixa de colisão no fundo de cada fase para que se o jogador encostasse nela, ele perderia imediatamente. (Ou seja, um buraco sem fundo). Entretanto, eu havia incluído uma condição em meu jogo onde caixas de colisão **não** interagiam com o personagem quando o mesmo havia sido atingido nos últimos 1.4 segundos. O resultado era que quando o meu _playtester_ levava dano de um inimigo e caía em um buraco **antes** que esse tempo acabasse, ele não morria, e não conseguia voltar, causando com que  personagem caísse eternamente. (Obviamente, isso não deveria acontecer). Nesse caso, eu era **cego** para esse problema. Porque eu já estava tão acostumado com o jogo que eu sequer levava dano no inimigo em questão, e nunca me deparei com essa situação. Felizmente, meu _playtester_ encontrou o problema e eu pude consertá-lo. 
 
 Esse tipo de situação é muito mais comum do que parece. E é por isso que o papel do _playtester_ é tão importante.
 
@@ -40,7 +40,7 @@ Enquanto não existem regras para como criar uma _build_ para testes, alguns det
 
 - Não inclua todo o conteúdo disponível numa build de testes:
 
-Em certos casos, é possível usar certas técnicas para desconstruir o executável de seu jogo, dando acesso a todo o código e arquivos disponíveis na criação da _build_ para o jogador. Enquanto isso não é um problema com uma pessoa em que você confia, pode ser ruim para _betas_ abertas ao público e casos similares.
+Em certos casos, é possível usar certas técnicas para desconstruir o executável de seu jogo, dando acesso aos arquivos disponíveis na criação da _build_ para o jogador. Enquanto isso não é um problema com uma pessoa em que você confia, pode ser ruim para _betas_ abertas ao público e casos similares.
 
 - Crie uma interface simples:
 
@@ -51,23 +51,29 @@ Caso ainda não tenha criado um menu final para o seu jogo, deixe um menu rudime
 Se estiver disponibilizando uma nova versão a alguém que já testou a versão antiga, inclua notas de problemas que foram consertados e mudanças que foram feitas. Interessa ao seu _playtester_ conferir o que mudou, e se o que consertou realmente funciona da maneira correta agora.
 
 ## Interpretando e Integrando _Feedback_
-Os diferentes meios como o _feedback_ pode chegar vão resultar em diferentes métodos para interpretá-los e considerá-los.
+Os diferentes meios como o _feedback_ pode chegar vão resultar em diferentes métodos para interpretá-los e considerá-los. Além disso, esse _feedback_ pode apontar diversas coisas como: erros e _bugs_ na execução, deficiências no _design_, dificuldade inadequada, entre vários outros detalhes. 
 
-Para o caso de **textos**, não há muito o que fazer além de lê-los e tentar entender o problema ou sugestão. Certas vezes o texto incluído não vai ser o suficiente para entender e reproduzir o problema, certas vezes o texto estará bem claro, mas você simplesmente não conseguirá reproduzir o caso. Esse tipo de coisa acontece. Às vezes, diferentes programas rodando juntos ao executável do jogo, ou problemas específicos do sistema operacional, ou problemas diversos podem causar diferenças de execução entre duas máquinas.
+### Erros e _bugs_
+
+Para o caso de **textos**, não há muito o que fazer além de lê-los e tentar entender o problema ou sugestão. Nem sempre isso será o suficiente para entender e reproduzir o problema. E certas vezes o texto estará bem claro, mas você simplesmente não conseguirá reproduzir o caso. Isso pode acontecer. Particularidades do sistema operacional, execução simultânea a outros programas, problemas físicos e outros casos diversos podem causar diferenças de execução entre duas máquinas, criando erros que não podem ser facilmente reproduzidos.
 
 De qualquer forma, conseguir entender e reproduzir algum problema é o primeiro passo para encontrar o que está causando-o. E se você chegou até aqui neste manual, provavelmente já tem uma boa ideia de como prosseguir com isso.
 
-Para o caso de **vídeo e áudio**, ou somente vídeo, você pode ver diretamente o que causou o erro em tempo real. Você pode tentar seguir os passos diretamente, ou pode usar o próprio vídeo para seguir com sua análise. Da mesma forma, você pode se ver incapaz de reproduzir o problema, mas para estes casos é muito mais fácil entender a situação.
+Para o caso de **vídeo e áudio**, ou somente vídeo, você pode ver diretamente o que causou o erro em tempo real, e pode tentar seguir os passos diretamente, ou usar o próprio vídeo para seguir com sua análise. Da mesma forma, você pode se ver incapaz de reproduzir o problema, mas nestes casos é muito mais fácil entender a situação.
 
-Nesses casos, é interessante ver onde o seu jogador encontra dificuldades, se ele entendeu o que deveria ser feito, se é necessário fazer algum ajuste para facilitar o entendimento e _gameplay_.
+### Feedback geral
 
-Existe ainda outro caso, vamos chamá-los de **entrevistas**. Após o processo de _playtesting_, você pode conduzir uma entrevista diretamente com o jogador, perguntando sobre a experiência, problemas encontrados, o que gostou e o que não gostou, etc. Esse tipo de entrevista pode ser muito útil, mas tome sempre cuidado para não mudar sua visão do jogo para acatar aos desejos de _cada_ _playtester_.
+Feedback positivo/negativo em formatos de texto também pode ser considerado. Apesar de se tratar de um _feedback_ baseado em opinião, uma _review_ sensível pode ser muito útil para o processo de análise do jogo.
+
+Para o caso de vídeos, é interessante ver onde o seu jogador encontra dificuldades, se ele entendeu o que deveria ser feito, se o _design_ da fase apresenta as informações necessárias, se será preciso fazer algum ajuste para facilitar o entendimento e _gameplay_.
+
+Existe ainda a possibilidade de conduzir **entrevistas** com os _playtesters_. Após o processo de _playtesting_, você pode conduzir uma entrevista diretamente com o jogador, perguntando sobre a experiência, problemas encontrados, o que gostou e o que não gostou, etc. Esse tipo de entrevista pode ser muito útil, mas tome sempre cuidado para não mudar sua visão do jogo para acatar aos desejos de _cada_ _playtester_.
 
 Lembre-se sempre, não há como agradar a todos.
 
-Entendendo os erros, problemas e coisas que não funcioname como deveriam, você deve decidir como irá lidar com eles. Se vai incluir suas soluções no próximo ciclo de desenvolvimento, ou se vai deixar no _backlog_ para tentar resolvê-los mais tarde. Ambas são opções, mas lembre-se sempre da listar os problemas.
+Entendendo os erros, problemas e coisas que não funcioname como deveriam, você deve decidir como irá lidar com eles. Se vai incluir suas soluções no próximo ciclo de desenvolvimento, ou se vai deixar no _backlog_ para tentar resolvê-los mais tarde. Ambas são opções, mas lembre-se sempre de anotar todos os problemas que merecem sua atenção.
 
 ## Conclusão
-Ao final desse capítulo, esperamos que você tenha certo entendimento quanto ao processo de _playtesting_ e porque ele é importante.
+Ao final desse capítulo, esperamos que você tenha certo entendimento quanto a como seguir com o processo de _playtesting_, e de sua importância para o desenvolvimento de jogos.
 
 No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo8.md), vou falar um pouco sobre enredos e narrativas em jogos.
