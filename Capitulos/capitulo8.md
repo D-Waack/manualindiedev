@@ -58,7 +58,7 @@ Um antigo exemplo claro que temos disso é em Super Metroid (1994). Em uma _cuts
 
 Isso é muito utilizado em jogos até hoje. Como as dúzias de pistas por todo o mundo em _Dark Souls_, ou uma pilha de corpos do outro lado de um portão guardado por fortes guerreiros em _Hollow Knight_.
 
-[Exemplo Dark Souls](../Arquivos/Imagens/08_09.jpg 'Exemplo de Dark Souls')
+![Exemplo Dark Souls](../Arquivos/Imagens/08_09.jpg 'Exemplo de Dark Souls')
 
 ![Exemplo de hollow knight](../Arquivos/Imagens/08_08.jpg 'Exemplo de Super Metroid')
 
