@@ -8,6 +8,9 @@ Se você já implementou todos os sistemas principais de seu jogo, seu _backlog_
 
 Caso ainda tenha alguns sitemas simples para implementar, o processo pode seguir da mesma forma que a _alfa_. Entretanto, seu foco aqui vai ser dividido também em outras tarefas. Essas tarefas envolvem finalizar todo o trabalho que você deixou para trás nas outras etapas. Seu jogo pode estar próximo de sua versão final, mas ainda restam algumas pontas para atar.
 
+## Finalizando sistemas da alfa
+Parte do seu trabalho terá de ser voltar por tudo o que você fez e aprimorar cada sitema para que fique de acordo com o planejado. O "bom o suficiente" já não é mais bom o suficiente, agora seu objetivo é fazer com que estes sistemas fiquem **prontos**. Antes de considerar um sistema _terminado_ um sistema, entretanto, interessa passar pelos diversos aspectos que descrevo no decorrer deste capítulo.
+
 ## Consertando Bugs Finais
 A não ser que você estivesse focando em fechá-los antes, você deverá ter uma bela lista de várias coisas que não estão funcionando exatamente do jeito certo ao final da alfa. Agora é a hora de dar uma passada final por todos estes e deixar o seu jogo funcionando certinho.
 
