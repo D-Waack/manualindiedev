@@ -76,6 +76,7 @@ Similar ao tópico anterior, utilizar uma ferramenta como o Trello ou JIRA pode 
 
 ### Boas Práticas - Programação para jogos
 - Use comentários e nomenclatura intuitiva
+
 Sempre inclua comentários quando implementando algo não trivial. Não é necessário incluir um comentário para TODA linha de código, mas é importante incluí-los em trechos de entendimento complexo e certas funcionalidades. Em certos casos, para nomes de variáveis também interessa incluí-los.
 
 Outro detalhe importante é a nomenclatura de suas variáveis e funções. Você é livre para dar o nome que quiser a estes, mas é sempre preferível que esse nome seja claro sobre a função deste objeto. Mesmo um nome simples pode aumentar imensamente a legibilidade de seu código.
@@ -83,41 +84,51 @@ Outro detalhe importante é a nomenclatura de suas variáveis e funções. Você
 Esses cuidados não são apenas para outros desenvolvedores que vão trabalhar no mesmo projeto, mas também para o desenvolvedor que escreveu o código. Certos projetos podem levar meses e até anos para serem finalizados, e a maioria das pessoas não tem a memória boa o suficiente para lembrar cada script de um projeto por meses.
 
 - Separe códigos com objetivos diferentes
+
 Organizar o seu código em trechos diferentes vai te ajudar toda vez que você tiver que fazer uma adição ou consertar algum erro. Estes trechos devem estar atrelados a função que o código implementa. Por exemplo, o código de animação do meu personagem não deve estar junto ao código de movimento do meu personagem, por mais que estas duas funções estejam relacionadas.
 
 Isso gera maior complexidade na hora de criar e organizar o código e as condições, mas vale pela organização. Geralmente, eu faço essa separação por meio de funções. No _loop_ principal do meu jogo, uma função é responsável pelo código de movimento, outra pelas animações, outra para capturar _inputs_ diversos, etc.
 
 - Não crie funções/métodos demais
+
 Um erro que eu cometia muito era querer dividir **todos** os subprocessos dos subprocessos de meu jogo em suas próprias funções separadas. Isso deixava o código do _loop_ principal de cada _script_ bem limpo, mas também causava que o resto do _script_ ficasse uma bagunça com uma dúzia de funções curtas.
 
 Nesse sentido, é importante ter bom senso. Funções são úteis para reutilização e organização, mas não as use como "gavetas" para qualquer trecho de código ao qual você _pode_ dar um nome separado. Se desejar, incluir um breve comentário para cada trecho é mais legível e organizado.
 
 - Use tempo _delta_
+
 Fazer _updates_ de posições e valores a cada _frame_ vai causar com que a velocidade de objetos em seu jogo fique dependente da velocidade da máquina, causando inconsistência nessas velocidades para máquinas mais velozes ou mais lentas. Usar o tempo _delta_ permite que você mantenha uma velocidade de _gameplay_ consistente  mesmo que o tempo de execução mude.
 
 - Remova recursos inutilizados
+
 Isso é algo com o qual eu também peco, pois gosto de incluir diversos _sprites_ e modelos de testes em meus projetos. É importante deletar recursos que não estão sendo utilizados para que não criem dificuldade para navegação do seu projeto, e não inflem o tempo de _build_ do seu jogo desnecessariamente.
 
 É claro, tirá-los do projeto vai impedir que data-miners encontrem os recursos aleatórios e especulem sobre versões antigas do jogo.
 
 - Use _switch cases_ em vez de _else, if_
+
 O formato do _switch_ é muito mais fácil de ler, modificar e expandir do que uma longa sequência de _ifs_. Se você sabe que só terá duas condições, ou se está usando algum padrão com _returns_ diversos, _ifs_ são perfeitamente aceitáveis, mas uma enorme sequência de _elses_ inevitavelmente se tornará um pesadelo de organização.
 
 - Use máquinas de estado
+
 Máquinas de estado são _ótimas_ para desenvolvimento de jogos. Em muitos casos, você terá uma mesma entidade ou objeto com diversos possíveis modos onde sua execução deverá funcionar de maneira diferente. Usar uma máquina de estados é o jeito mais simples para implementar esse tipo de variabilidade.
 
 - Cuidado com variáveis globais e de _script_
+
 Enquanto variáveis globais e de _script_ são extremamente úteis, deve-se sempre tomar cuidado quando atribuindo diferentes valores a elas. É comum encontrar comportamentos inesperados diversos porque a variável foi mudada de uma maneira que não havia sido considerada. 
 
 - Não procure por _strings_ ou IDs
+
 Comparações de _strings_ ou IDs de objetos devem ser evitadas, tanto em termos de performance quanto em termos de organização. Usar comparações por classes para identificar instâncias e filtrar objetos é preferível. Isso, porém, exige que haja a orientação a objetos de alguma forma no seu ambiente de desenvolvimento.
 
 - Não exagere com _Singletons_ e variáveis globais
+
 _Singletons_ são ótimos pelo fato de que podem ser acessados em qualquer _script_ no seu projeto. Gerenciadores de diversas funções universais e variáveis que devem comunicar entre cenas diferentes são bons usos para _singletons_, mas vão causar maior complexidade na análise do seu código, além de certo custo na memória. Em casos onde o sistema não é universal, é preferível usar classes e funções estáticas.
 
 No geral, é preferível evitar o uso de variáveis e funções globais o máximo o possível, pois geram dependências e complexidade no código que são em muitos casos desnecessárias. Porém, são úteis para muitos casos.
 
-- Não inclua objetos/entidades demais 
+- Não inclua objetos/entidades demais
+
 Encher a sua tela de objetos diversos é um ótimo jeito de destruir a performance do seu jogo. Alguns gêneros de jogos, entretanto, precisam que hajam inúmeros objetos em tela, mas isso gerará maior trabalho de otimização mais a frente.
 
 ## Revisitando o _Design_
