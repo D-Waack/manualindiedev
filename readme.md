@@ -23,7 +23,7 @@ Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introdu
 
 * [Capítulo 6: Versões Alfa](Capitulos/capitulo6.md) - Revisitando o _design_, construindo o jogo em si
 
-* [Capítulo 7: _Playtesting_ e Feedback](Capitulos/capitulo7.md) - Builds de teste, formas de capturar _playtesting_, como interpretar feedback, como planejar resoluções
+* [Capítulo 7: _Playtesting_ e _Feedback_](Capitulos/capitulo7.md) - _Builds_ de teste, formas de capturar _playtesting_, como interpretar _feedback_, como planejar resoluções
 
 * [Capítulo 8: Enredos e Narrativas](Capitulos/capitulo8.md) - Como enredos são apresentados em jogos
 
@@ -35,6 +35,6 @@ Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introdu
 
 * [Capítulo 12: Level/World Design & Balancing](Capitulos/capitulo12.md) - Design para fases/mapas/mundos, planejamento de curvas de dificuldade
 
-* [Capítulo 13: Versões Beta, Finalizando Builds, Polishing](Capitulos/capitulo13.md) - Otimização, polishing, finalização, testes finais
+* [Capítulo 13: Versões Beta, Finalizando _Builds_, _Polishing_](Capitulos/capitulo13.md) - Otimização, _polishing_, finalização, testes finais
 
 * [Capítulo 14: Publicação](Capitulos/capitulo14.md) - Opções para publicação de jogos
