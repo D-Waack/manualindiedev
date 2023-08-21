@@ -1,14 +1,14 @@
 
 # Manual de Desenvolvimento Indie
 
-O texto a seguir é um manual para desenvolvimento de jogos indie, ou seja, jogos criados em um contexto amador, de maneira independente. O foco desse material é principalmente prático, com um pouco de teoria quando se mostrar necessário. Durante o decorrer do manual, dois projetos de jogos serão criados, e o código fonte deles pode ser visualizado e baixado nas páginas do github a seguir: 
+O texto a seguir é um manual para desenvolvimento de jogos indie, ou seja, jogos criados em um contexto amador, de maneira independente. O foco desse material é principalmente prático, com um pouco de teoria quando se mostrar necessário. Durante o decorrer do manual, dois projetos de jogos serão criados, e o código-fonte deles pode ser visualizado e baixado nas páginas do Github a seguir: 
 
 - [Sleepy Runner (mobile)](https://github.com/D-Waack/sleepy-runner-godot4)
 - [Top Down Shooter - Vortex Tautology](https://github.com/D-Waack/vortex-tautology-demo)
 
 Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introducao.md). Caso contrário, siga o índice abaixo.
 
-## Indice:
+## Índice:
 * [Introdução](Capitulos/introducao.md) - Introdução do manual, considerações iniciais, detalhes importantes sobre o conteúdo 
 
 * [Capítulo 1: Design Inicial](Capitulos/capitulo1.md) - Importância do Design, Conceitos Preliminares, GDDs
@@ -23,7 +23,7 @@ Se é a sua primeira vez aqui, peço que leia a [Introdução](Capitulos/introdu
 
 * [Capítulo 6: Versões Alfa](Capitulos/capitulo6.md) - Revisitando o _design_, construindo o jogo em si
 
-* [Capítulo 7: Playtesting e Feedback](Capitulos/capitulo7.md) - Builds de teste, formas de capturar playtesting, como interpretar feedback, como planejar resoluções
+* [Capítulo 7: _Playtesting_ e Feedback](Capitulos/capitulo7.md) - Builds de teste, formas de capturar _playtesting_, como interpretar feedback, como planejar resoluções
 
 * [Capítulo 8: Enredos e Narrativas](Capitulos/capitulo8.md) - Como enredos são apresentados em jogos
 
