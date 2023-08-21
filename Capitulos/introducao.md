@@ -9,10 +9,11 @@
 Enquanto todos estes são ótimas fontes de aprendizado, não se deve esquecer de um detalhe: Você não vai realmente aprender a fazer um jogo até o momento em que colocar essa teoria na prática. A melhor maneira de começar a sua jornada de criação de jogos é "aprender fazendo", com uma boa base de instruções para que você (e sua equipe) não se perca(m) no caminho.
 
 ![](../Arquivos/Imagens/00_04.png 'Por Que Tutoriais de Game Dev Vão Arruinar Sua Vida')
+<sup><sub> Informações de Vídeo "Por que tutoriais de desenvolvimento vão arruinar sua vida". Publicado em 2022. Disponível em: https://www.youtube.com/watch?v=M1StS3t8cD4t=313s </sup></sub>
 
 Existem vários outros manuais, artigos, guias e livros que propõem esta mesma ideia. Porém, estes costumam ser focados em um gênero de jogos específico, ou atrelados completamente a um ambiente de desenvolvimento, ou simples/vagos demais. Além disso, enquanto os livros e artigos acadêmicos sobre o assunto costumam ter uma boa base em teorias de _design_, engenharia de _software_ e padrões de desenvolvimento, a maioria dos outros materiais costumam faltar nesse aspecto. Por outro lado, muitos dos livros e artigos exigem entendimento teórico, e um grande investimento de tempo para compreender seu conteúdo, enquanto os demais formatos exigem um investimento menor, e costumam ser mais práticos.
 
-Os resultados destes tipos de conteúdo vão variar desde uma infinidade de conhecimento teórico inútil que você nunca conseguirá aplicar, até um projeto de jogo copiado de alguém que nada tem a ver com a _sua_ ideia. Ou até um monte de código que você não tem a menor ideia de como utilizar.
+Os resultados destes tipos de conteúdo vão variar desde uma infinidade de conhecimento teórico inútil que você nunca conseguirá aplicar, até um projeto de jogo copiado de alguém que nada tem a ver com a _sua_ ideia. Ou ainda um monte de código que você não tem a menor ideia de como utilizar.
 
 Minha intenção com esse manual é oferecer um conteúdo diferente, tentando ao máximo casar a praticidade e simplicidade dos guias informais com a base teórica encontrada nos livros e artigos. Minha esperança é que ao final da leitura você seja capaz de planejar e executar o projeto da criação de um jogo em _qualquer_ gênero ou ambiente. 
 
@@ -21,6 +22,7 @@ O manual é direcionado principalmente a desenvolvedores e programadores, mas po
 Não pense por um momento que o processo de criação de um jogo será simples, rápido ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas. Para que a sua história não seja igual a de tantos desenvolvedores _indie_ que ficam famosos do pior jeito.
 
 ![](../Arquivos/Imagens/00_05.png 'Yandere Dev Nunca Vai Terminar o Yandere Simulator')
+
 
 Talvez você já tenha tentado criar um jogo e falhado algumas vezes, ou talvez seja a sua primeira tentativa. A experiência ajuda, mas o fator mais importante é que tenha o empenho e ânimo para levar seu projeto do zero ao sucesso. Eu mesmo passei pela experiência de falhar em vários projetos até aperfeiçoar uma maneira ideal para a construção de jogos que funcionava para mim, com o apoio da Engenharia de Software, de muito estudo, da opinião de outros desenvolvedores, e empenho de sobra.
 
