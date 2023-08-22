@@ -16,19 +16,19 @@ Eu pretendo te ajudar com essa escolha. Mas, ao final do dia, isso será decidid
 
 ![Engines](../Arquivos/Imagens/02_04.jpg 'Engines')
 
-## Frameworks e Engines
+## _Frameworks_ e _Engines_
 
 Sua escolha entre _Frameworks_ e _Engines_ vai depender de vários fatores. Para a maioria dos desenvolvedores _indie_, uma _engine_ é a escolha ideal, principalmente para quem deseja criar um jogo sem programar. Porém, é interessante entender um pouco sobre o tópico, porque isso vai influenciar sua escolha.
 
-Todo jogo é basicamente um conjunto de sistemas diferentes, sendo executados ao mesmo tempo e interagindo entre si. 
+Todo jogo é basicamente um conjunto de sistemas diferentes, sendo executados ao mesmo tempo, e interagindo entre si. 
 
 Por exemplo, quando eu clico no executável do _Minecraft_, aparece uma tela de menu principal (visual); ao mesmo tempo, uma música agradável começa a tocar (áudio); e se eu mexer o meu mouse e clicar em um botão, a tela vai reagir e fazer alguma coisa (_input_); se eu clicar em _multiplayer_, o jogo vai se conectar à internet e tentar se comunicar com um servidor (_networking_); se eu clicar em novo mundo, ele vai criar um (geração de mapas); e ao final, meu personagem será livre para interagir com esse mundo, onde várias coisas funcionam como o mundo real (simulação de mundo e física).
 
 ![Menu Principal do Minecraft](../Arquivos/Imagens/02_03.png 'Minecraft title screen.')
 
-Tudo isso acontece simultâneamente e de maneira harmoniosa, mas no plano de fundo, vários processos e cálculos diferentes são executados "ao mesmo tempo" para garantir que tudo aconteça na ordem e maneira correta.
+Tudo isso acontece simultaneamente e de maneira harmoniosa, mas no plano de fundo, vários processos e cálculos diferentes são executados "ao mesmo tempo" para garantir que tudo aconteça na ordem e maneira correta.
 
-No contexto de desenvolvimento, cada uma dessas tarefas (_networking_, input, _display_ visual, gerenciamento de música, etc.) costuma ser executada pelo que chamamos de uma "biblioteca" (_library_). Uma biblioteca para redes geralmente vai conter diversas funções necessárias para conectar diferentes computadores em um único jogo, enquanto uma biblioteca gráfica vai conter diferentes funções para mostrar coisas em sua tela. Estas bibliotecas geralmente vêm como código no formato de arquivos DLL, por exemplo em _Javascript_ ou _C++_. Alguns exemplos: FMOD (áudio), RakNet (_networking_), Box2D (física 2D), Assimp (importação de modelos 3D), entre várias outras.
+No contexto de desenvolvimento, cada uma dessas tarefas (_networking_, input, _display_ visual, gerenciamento de música, etc.) costuma ser executada pelo que chamamos de uma "biblioteca" (_library_). Uma biblioteca para redes geralmente vai conter diversas funções necessárias para conectar diferentes computadores em um único jogo, enquanto uma biblioteca gráfica vai conter diferentes funções para mostrar coisas em sua tela. Estas bibliotecas geralmente vêm como código no formato de arquivos DLL, por exemplo, em _Javascript_ ou _C++_. Alguns exemplos: FMOD (áudio), RakNet (_networking_), Box2D (física 2D), Assimp (importação de modelos 3D), entre várias outras.
 
 ![Página do FMOD](../Arquivos/Imagens/02_05.png 'FMOD Homepage.')
 
@@ -36,7 +36,7 @@ Como cada biblioteca só se preocupa com uma tarefa, você não pode criar um jo
 
 ![Página do Phaser](../Arquivos/Imagens/02_06.png 'Phaser Homepage.')
 
-Partindo de _frameworks_, quando subimos um pouco mais o nível de sofisticação e facilidade de uso, chegamos às _Game Engines_ (motores de jogos). Estas oferecem o mesmo conjunto de bibliotecas para gráficos, áudio, memória, _networking_, física, etc., além de diversas outras ferramentas úteis no desenvolvimento. Diferente dos _frameworks_, _Engines_ costumam ser ambientes completos, com uma interface gráfica amigável acoplada de um editor de mapas/fases onde se pode visualizar e modificar o jogo em tempo real.
+Partindo de _frameworks_, quando subimos um pouco mais o nível de sofisticação e facilidade de uso, chegamos às _Game Engines_ (motores de jogos). Estas oferecem o mesmo conjunto de bibliotecas para gráficos, áudio, memória, _networking_, física, etc., além de diversas outras ferramentas úteis no desenvolvimento. Diferente dos _frameworks_, _engines_ costumam ser ambientes completos, com uma interface gráfica amigável acoplada de um editor de mapas/fases onde se pode visualizar e modificar o jogo em tempo real.
 
 ![Interface do Unity](../Arquivos/Imagens/02_07.jpg 'Unity Interface.')
 
@@ -44,15 +44,15 @@ _Engines_ facilitam muito o processo de desenvolvimento. Algumas oferecem a poss
 
 Como eu comentei antes, a melhor escolha para um desenvolvedor _indie_ costuma ser uma _engine_. Por questões de facilidade de uso e praticidade. Mesmo que não seja minha recomendação, sinta-se livre para pegar um _framework_ se este for o seu desejo. O manual vai assumir que você está usando uma _engine_, mas as tarefas para desenvolvimento serão as mesmas.
 
-Na verdade, nem sempre uma _engine_ será a escolha ideal para se o projeto. O fato de que a _engine_ já deixa vários componentes prontos para uso pode significar que há pouca flexibilidade para fazer algo além do que foi projetado por seu criador. Algumas _engines_ como Godot vão permitir que edite seu código fonte, e várias delas permitem a criação de _plugins_ para complementar onde faltam, mas nenhuma dessas soluções é simples de programar. Lembre-se sempre: **Você sacrifica flexibilidade em busca de maior praticidade.**
+Na verdade, nem sempre uma _engine_ será a escolha ideal para se o projeto. O fato de que a _engine_ já deixa vários componentes prontos para uso pode significar que há pouca flexibilidade para fazer algo além do que foi projetado por seu criador. Algumas _engines_ como Godot vão permitir que edite seu código-fonte, e várias delas permitem a criação de _plugins_ para complementar onde faltam, mas nenhuma dessas soluções é simples de programar. Lembre-se sempre: **você sacrifica flexibilidade em busca de maior praticidade.**
 
 Na grande maioria dos casos, uma _engine_ vai oferecer exatamente o que você precisa para a criação de seu jogo. Talvez não _qualquer_ engine, e isso é algo que discutimos mais a frente neste capítulo. Mas é muito provável que exista uma ótima _engine_ para a criação do seu projeto. 
 
 Caso você se depare com uma necessidade que sua _engine_ não consegue suprir, existem as seguintes possibilidades: 
-- tentar forçar que a _engine_ faça o que deseja (através de um plugin, ou uma gambiarra, talvez);
+- tentar forçar que a _engine_ faça o que deseja (por meio de um plugin, ou uma gambiarra, talvez);
 - usar uma _engine_ diferente;
 - usar um _framework_;
-- criar sua prórpia "_engine_" a partir de um _framework_;
+- criar sua própria "_engine_" a partir de um _framework_;
 - criar sua própria "_engine_" do zero.
 
 A última possibilidade, criar uma _engine_ a partir do nada, é algo que eu desaprovo completamente para o contexto _indie_. Essencialmente, você estaria perdendo um tempo enorme reinventando a roda e provavelmente chegaria a resultados inferiores aos que alcançaria se tivesse apenas utilizado uma _engine_ pronta. É claro, é um ótimo jeito de aprender programação para jogos a fundo. Caso seu objetivo seja a criação de uma _engine_ do zero, então vá em frente, mas provavelmente levará um bom tempo até que este manual seja de utilidade para você.
