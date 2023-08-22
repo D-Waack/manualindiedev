@@ -32,6 +32,7 @@ Por exemplo, se sua equipe tem 2 programadores, ambos podem facilmente trabalhar
 No entanto, os trabalhos do programador e do artista não seguem o mesmo ritmo. E, em certos casos, um depende de um resultado do outro. Por exemplo, implementar uma certa ação como puxar uma alavanca no jogo _Tomb Raider_ precisaria que os animadores tivessem completado a animação de puxar a alavanca. Esses animadores precisaram esperar que os modeladores tivessem completado o modelo de Lara Croft. E esses modeladores precisaram usar a _concept art_ do time de arte para criar o modelo e suas texturas.
 
 ![Lara Croft Alavanca](../Arquivos/Imagens/03_01.jpg 'Lara Croft e a alavanca')
+<sup><sub> Lara Croft e Alavanca - Tomb Raider 1 (Core Design (1996)) </sup></sub>
 
 (Isso é apenas um exemplo ilustrativo. Na prática, é possível que os desenvolvedores implementem todas as funções relacionadas à alavanca antes que as animações sejam criadas, e voltem para incluí-las mais adiante no desenvolvimento.)
 
