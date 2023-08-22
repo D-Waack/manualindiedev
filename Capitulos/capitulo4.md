@@ -114,7 +114,7 @@ Agora, posso começar a criar o mapa, no outro canto da janela, opções de edi�
 
 ![Tileset 3](../Arquivos/Imagens/04_16.png 'Tileset 3')
 
-Agora, eu posso clicar em uma tile qualquer e desenhar o meu mapa como quiser.
+Agora, eu posso clicar em um _tile_ qualquer e desenhar o meu mapa como quiser.
 
 ![Desenhando Mapa](../Arquivos/Imagens/04_17.png 'Desenhando Mapa')
 
@@ -198,7 +198,7 @@ Agora, o personagem cai até encontrar o chão. E é possível controlá-lo com 
 
 ![Gif, Movimento básico](../Arquivos/Imagens/04_39.gif "Movimento básico")
 
-Contudo, já temos os primeiros passo para o protótipo 0. Uma cena de testes, um personagem jogável, e um plano de ação. Antes de prosseguirmos, vamos entender o código que já temos.
+Contudo, já temos os primeiros passos para o protótipo 0. Uma cena de testes, um personagem jogável, e um plano de ação. Antes de prosseguirmos, vamos entender o código que já temos.
 
 ### Desmistificando o código
 Para alguém que acabou de começar sua jornada de desenvolvimento, isso pode parecer mágica. Mas não há mágica alguma em códigos, são apenas conjuntos de instruções, e entendendo as instruções você entenderá o funcionamento do código. Então, vamos observar o _script_ do jogador que temos até agora.
@@ -241,13 +241,13 @@ Após o cálculo do movimento vertical, é calculado o movimento horizontal. A l
 
 Em seguida, na linha 23, é verificado se essa direção é diferente de 0. Caso seja, o valor X de _velocity_ é alterado para que o personagem se mova na direção correta. Caso contrário, a velocidade do personagem é diminuída até chegar a 0 através da linha 26.
 
-Por fim, move_and_slide é executado para que essas mudanças calculadas sejam atualizadas. Esse processo inteiro ocorre a cada frame, ou seja, em torno de 60 vezes por segundo.
+Por fim, move_and_slide é executado para que essas mudanças calculadas sejam atualizadas. Esse processo inteiro ocorre a cada frame, ou seja, geralmente em torno de 60 vezes por segundo.
 
 Quebrando o código assim, linha por linha, fica muito mais fácil entender como ele funciona, e seguir com mudanças necessárias.
 
 ### Próximos Passos
 
-Eu tenho um código para um personagem jogável de um plataforma. Mas isso não é o jogo que eu tinha planejado. Eu devo adaptar o código para seguir da forma que eu desejo. Primeiramente, isso se trata de um endless runner, então a princípio, meu personagem deveria correr sozinho.
+Eu tenho um código para um personagem jogável de um plataforma. Mas isso não é o jogo que eu tinha planejado. Eu devo adaptar o código para seguir da forma que eu desejo. Primeiramente, isso se trata de um _auto runner_, então, a princípio, meu personagem deveria correr sozinho.
 
 Meu primeiro passo foi virar o personagem para que encare a direção onde ele andará. Em seguida, mudei o código da seguinte maneira:
 
@@ -280,7 +280,7 @@ Meu objetivo é fazer a seguinte ação: Ao clicar em algum pedaço do mapa, eu 
 
 Felizmente, isso é tudo bem simples de fazer. A primeira coisa que eu checo em minha função _process_ é se houve um clique do mouse. Para isso, eu uso o singleton _Input_. Um singleton, no contexto da _engine_ Godot, se refere a qualquer _script_ que pode ser invocado em qualquer outro _script_ durante a execução do jogo. Ou seja, um _script_ de acesso universal que fica carregado na memória o tempo todo.
 
-_Input_, como o nome sugere, é um singleton que captura qualquer input feito pelo jogador, seja através de um controle, mouse. teclado, ou qualquer outro método de _input_ reconhecido pela _engine_. Daí vem nossa primeira linha, uma condicional. Caso o botão esquerdo do mouse seja clicado, faremos algo:
+_Input_, como o nome sugere, é um singleton que captura qualquer input feito pelo jogador, seja através de um controle, mouse, teclado, ou qualquer outro método de _input_ reconhecido pela _engine_. Daí vem nossa primeira linha, uma condicional. Caso o botão esquerdo do mouse seja clicado, faremos algo:
 
 ![Código Mapa 2](../Arquivos/Imagens/04_50.png 'Código Mapa 2')
 
@@ -470,7 +470,7 @@ No Player, a função kill simplesmente desativa seu processo físico, e emite u
 
 Minha intenção é que, após o jogador morrer, o jogo imediatamente volte ao estado em que estava antes que isso acontecesse. Ou seja, que o mapa permaneça da maneira que estava para que o jogador possa testar uma iteração nova a partir da anterior. Dessa forma, não faz sentido reiniciar a cena inteira, pois as posições dos objetos seriam resetadas. O que preciso fazer é retornar apenas o jogador (e quaisquer coletáveis) para a posição original deles, e voltar ao estado de edição da fase.
 
-Para isso, incluí uma variável que salva a posição do jogador configurada no editor do mapa. Além disso, uma função que retorna o personagem para o lugar original. Não incluirei a câmera, porque provavelmente o ponto de interesse de edição para o jogador será onde ele morreu. Além disso, incluirei um marcador de mortes mais a frente no desenvolvimento. Também mudei o funcionamento da função _block_grabbing_ para levar uma condição _true_ or _false_, para que eu possa reativá-los quando necessário.
+Para isso, incluí uma variável que salva a posição inicial do jogador configurada no editor do mapa. Além disso, uma função que retorna o personagem para o lugar original. Não incluirei a câmera, porque provavelmente o ponto de interesse de edição para o jogador será onde ele morreu. Além disso, incluirei um marcador de mortes mais a frente no desenvolvimento. Também mudei o funcionamento da função _block_grabbing_ para levar uma condição _true_ or _false_, para que eu possa reativá-los quando necessário.
 
 ![Salvando posição do Player](../Arquivos/Imagens/04_93.png 'Salvando posição do Player')
 
@@ -502,7 +502,7 @@ O objetivo de seu protótipo 0 é testar sua ideia de forma mais concreta do que
 
 Ao final desse capítulo, espero que tenha uma certa ideia de como planejar e executar a criação de seu protótipo 0. Isso não deve ser algo muito formal, e eu não me preocupei muito com boas práticas ou com um processo tão organizado. Meu único objetivo era completar uma simples versão jogável de minha ideia, e o seu deve ser similar a isso.
 
-É claro, isso também se deve ao fato de que o meu é um projeto simples. Se o seu objetivo é criar um MMO RPG, ou um jogo com dúzias de menus, cálculos e opções diferentes, o seu protótipo 0 seria um projeto maior. Mas tente sempre focar apenas nos aspectos fundamentais. Se é um jogo de carta, preocupe-se com fazer os cálculos funcionarem e os objetos interagirem, não em como as cartas se encaixam na tela, ou nos efeitos. Da mesma forma, se o seu RPG tem foco em combate, tem montar uma versão simples desse combate. Etc...
+É claro, isso também se deve ao fato de que o meu é um projeto simples. Se o seu objetivo é criar um MMO RPG, ou um jogo com dúzias de menus, cálculos e opções diferentes, o seu protótipo 0 seria um projeto maior. Mas tente sempre focar apenas nos aspectos fundamentais. Se é um jogo de carta, preocupe-se com fazer os cálculos funcionarem e os objetos interagirem, não em como as cartas se encaixam na tela, ou nos efeitos. Da mesma forma, se o seu RPG tem foco em combate, tem montar uma versão simples desse combate. Etc.
 
 O trabalho de criar esse protótipo inicial não é trivial. E esse é um passo muito importante. Se o seu time é inexperiente, ele vai naturalmente encontrar problemas e dúvidas durante o processo. 
 
