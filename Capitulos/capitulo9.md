@@ -23,7 +23,7 @@ Para cada formato, os estilos também podem variar consideravelmente. Isso depen
 
 O estilo de arte para seu jogo deve seguir a preferência do time. _Pixel art_ e arte digital são 2 habilidades diferentes (apesar de que saber uma contribui para enteder a outra). Pixel art costuma ser mais simples, porque você tem um limite de pixels com os quais trabalhar, tornando mais "fácil" o trabalho do artista. Entretanto, de certa forma é mais difícil, porque você tem que passar todo o detalhe que deseja em uma quantidade bem limitada de pixels.
 
-Se você não tem experiência com arte, eu sugiro seguir com _pixel art_. Mas,novamente, siga com o estilo que melhor preferir.
+Se você não tem experiência com arte, eu sugiro seguir com _pixel art_. Mas, novamente, siga com o estilo que melhor preferir.
 
 ### Objetos
 No contexto 2D, nós temos alguns termos que vão aparecer em muitos jogos. 
@@ -37,7 +37,7 @@ O termo tile se refere a pequenos quadrantes gráficos que aparecem em jogos ant
 
 - Plano de Fundo
 
-O fundo da tela, atrás do cenário. Este pode ser estático, ter um _scrolling_ (arrastamento) simples ou pode ter scrolling paralaxo, um formato onde o plano de fundo tem diferentes camadas que se movem em velocidades diferentes para criar a ilusão de um horizonte mais realista (muito utilizado em jogos da era 16-bit).
+O fundo da tela, atrás do cenário. Este pode ser estático, ter um _scrolling_ (arrastamento) simples ou pode ter _scrolling parallax_, um formato onde o plano de fundo tem diferentes camadas que se movem em velocidades diferentes para criar a ilusão de um horizonte mais realista (muito utilizado em jogos da era 16-bit).
 
 ### Ferramentas e links
 Para a criação de imagens e arte 2D, existem diversas ferramentas. Enquanto você podia usar algo como o _Photoshop_ para criar qualquer tipo de gráfico, vamos listar algumas opções mais acessíveis.
