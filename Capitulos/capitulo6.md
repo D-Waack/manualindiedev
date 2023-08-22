@@ -23,21 +23,21 @@ Para um grupo, cada membro deve seguir com o processo de acordo com o que se mos
 
 Lembro a vocês que o foco desse manual é principalmente para desenvolvedores e programadores, mas incluí capítulos voltados para várias das outras competências. Sugiro aos integrantes da equipe que leiam estes capítulos a partir de agora, e avaliem se os métodos e recursos que ofereço vão ser proveitosos, ou se preferem seguir de outra forma. Caso você esteja trabalhando sozinho, sinta-se livre para seguir com eles quando estiver pronto. 
 
-Lembrando também que estas são as sugestões de um desenvolvedor que não tem um _background_ de arte, música, _design_, etc. Se você já trabalha com um destes itens e conhece métodos e _workflows_ melhores que os meus, sinta-se livre para segui-los.
+Lembrando também que estas são as sugestões de um desenvolvedor que não tem um _background_ de arte, música, _design_, etc. Se você já trabalha com um destes itens e conhece métodos e _workflows_ melhores que os que citei, sinta-se livre para segui-los.
 
 Links para os capítulos:
 
-- [Enredos/Narrativa](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo8.md)
-- [Playtesting](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md)
-- [Arte/Modelagem](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo9.md)
-- [Música/Sound Design](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo10.md)
-- [Level Design](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo12.md)
+- [Enredos/Narrativa - Capítulo 8](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo8.md)
+- [Playtesting - Capítlo 7](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md)
+- [Arte/Modelagem - Capítulo 9](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo9.md)
+- [Música/_Sound Design_ - Capítulo 10](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo10.md)
+- [_Level Design_ - Capítulo 12](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo12.md)
 
 ### Daqui para frente
 
 De qualquer forma, agora é a hora de montar o seu jogo em si. Não se trata mais de um protótipo. Ao final da _build_ alfa você já deverá ter basicamente todos ou quase todos os blocos que juntos formarão o seu jogo final. A alfa, entretanto, não é a versão mais acabada do jogo.
 
-Para a versão Alfa, o seu foco é similar ao foco da versão protótipo, mas mais espalhado. Você vai listar todos os sistemas de seu jogo, e vai tentar dividir o desenvolvimento destes em tarefas menores e mais fáceis de executar. Para cada sistemas, a intenção é que você se preocupe em deixá-los "bons o suficiente". Idealmente, você já trabalharia o bastante para que cada sistema esteja completamente pronto, mas o foco em **apenas** ser bom o suficiente é para que você não fique completamente preso a um único sistema por um tempo indeterminado.
+Para a versão Alfa, o seu foco é similar ao foco da versão protótipo, mas mais espalhado. Você vai listar todos os sistemas de seu jogo, e vai tentar dividir o desenvolvimento destes em tarefas menores e mais fáceis de executar. Para cada sistema, a intenção é que você se preocupe em deixá-lo "bom o suficiente". Idealmente, você já trabalharia o bastante para que cada sistema esteja completamente pronto, mas o foco em **apenas** ser bom o suficiente é para que você não fique completamente preso a um único sistema por um tempo indeterminado.
 
 Em termos simples: cada sistema planejado deve ser trabalhado em um ciclo e testado. Se ao final do ciclo ele estiver bom o suficiente, você pode seguir para outro, e deixar o aprimoramento do sistema anterior para a _beta_. Caso este sistema **não** esteja bom o suficiente, é interessante mantê-lo para o próximo ciclo, mas você também pode começar a trabalhar em outros, lembrando que terá de voltar ao incompleto eventualmente.
 
@@ -48,7 +48,7 @@ Para aqueles que trabalham em grupo, ou desenvolvedores _solo_ impacientes que j
 
 Quando for seguir com este processo, interessa a leitura do capítulo a seguir:
 
-- [Integrando Diferentes Aspectos](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo11.md)
+- [Integrando Diferentes Aspectos - Capítulo 11](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo11.md)
 
 ## Primeiros passos
 Costumo recomendar como primeiro passo que faça uma revisão de seu protótipo 0, e siga com a expansão do projeto a partir dele. Quando fazendo o protótipo 0, a maior preocupação é ter um sistema funcionando para testar sua idiea. Agora, você vai precisar aprimorá-lo para que sirva como base do seu projeto inteiro.
@@ -103,7 +103,7 @@ Fazer _updates_ de posições e valores a cada _frame_ vai causar com que a velo
 
 Isso é algo com o qual eu também peco, pois gosto de incluir diversos _sprites_ e modelos de testes em meus projetos. É importante deletar recursos que não estão sendo utilizados para que não criem dificuldade para navegação do seu projeto, e não inflem o tempo de _build_ do seu jogo desnecessariamente.
 
-É claro, tirá-los do projeto vai impedir que data-miners encontrem os recursos aleatórios e especulem sobre versões antigas do jogo.
+É claro, tirá-los do projeto vai impedir que data-miners encontrem os recursos aleatórios e especulem sobre versões antigas do jogo, o que pode ser interessante.
 
 - Use _switch cases_ em vez de _else, if_
 
@@ -148,7 +148,7 @@ Eu sempre começo com os diferentes aspectos do **jogo** em si. Em outras palavr
 Em certos casos isso vai envolver algum dos outros aspectos. Por exemplo, acho difícil você criar um RPG sem trabalhar nos diversos menus de inventário e equipamento, _crafting_, ou o que for. Porém, mesmo para um caso assim, eu trabalharia primeiro na matemática, no movimento, etc.
 
 No geral, eu costumo seguir o seguinte _workflow_: 
-1. Trabalhar no personagem jogável (inclui movimento, física, etc.);
+1. Trabalhar no personagem jogável (incluir movimento, física, etc.);
 2. Trabalhar em objetos e entidades que interagem com o personagem jogável;
 3. Trabalhar no resto.
 
@@ -204,7 +204,7 @@ Aqui eu descrevo os passos que tomei para desenvolvimento das diferentes versõe
 - 13: adicionei _sprite_ final e animações para o _player_, adicionei funcionalidade à cena de seleção de fases, além de ajustes menores
 - 14: adicionei cena de ícone de fase para a tela de seleção, adicionei fontes e texturas para o menu principal, além de fazer ajustes para animar o _player_ nesta tela
 - 15: adicionei um _singleton_ responsável pelo sistema de _save/load_, adicionei funcionamento de _load_ quando o jogo é iniciado, adicionei funcionamento à cena de seleção de fases para que receba as informações do _save_
-- 16: fiz diversos ajustes na tela de seleção de fases e incluí a função para salvamento das informações após o jogador completar uma fase, removi prints diversos de _debug_ e fiz outros ajustes menores
+- 16: fiz diversos ajustes na tela de seleção de fases e incluí a função para salvamento das informações após o jogador completar uma fase, removi funções print diversas de _debug_ e fiz outros ajustes menores
 - 17: fiz um ajuste para o primeiro mapa, reorganizei as pastas e criei um novo mapa para testes, além de fazer alguns ajustes na cena de seleção de fases
 - 18: adicionei ao personagem jogável o arco e flecha, ajustei o _script_ do player para conter uma máquina de estados para uso do arco e flecha, adicionei funcionalidade da flecha e fiz diversos ajustes de colisão
 - 19: adicionei novo obstáculo, paredes que só desaparecem após um cristal ser quebrado por uma flecha, ajustei mapas para teste e adicionei _sprites_ inimigos
@@ -212,7 +212,7 @@ Aqui eu descrevo os passos que tomei para desenvolvimento das diferentes versõe
 - 21: fiz um update para o cálculo dos _rankings_ ao final de cada fase, mudei o funcionamento do marcador de morte para mostrar apenas a morte mais recente, fiz com que itens coletados fossem resetados após uma morte sem que a fase inteira fosse resetada
 - 22: adicionei um novo botão à cena de seleção de fases, e ajustei o funcionamento dela com os rankings
 
-Para este projeto, eu estava fazendo ciclos bem curtos para terminá-lo rapidamente, mas creio que o processo e a priorização que citei anteriormente ficam evidentes no decorrer dos itens no desenvolvimento. Primeiramente eu revisei o código do protótipo 0, e em seguida fiz mudanças no funcionamento das plataformas, até que este ficasse bom o suficiente. Em seguida, passei a adicionar outros objetos importantes ao _gameplay_ como obstáculos e coletáveis, bem como uma informação de _ranking_ com os itens coletados no painel de vitória das fases, incluindo elementos gráficos quando julguei importante para visualização nos testes. Então, voltei ao _script_ do personagem jogável para finalizar algumas das mecânicas que restavam (estas mecânicas dependiam do desenvolvimento dos coletáveis e plataformas, por isso vieram depois de trabalhar nestes aspectos). 
+Para este projeto, eu estava fazendo ciclos bem curtos para terminá-lo rapidamente, mas creio que o processo e a priorização que citei anteriormente ficam evidentes no decorrer dos itens que descrevi acima. Primeiramente eu revisei o código do protótipo 0, e em seguida fiz mudanças no funcionamento das plataformas, até que este ficasse bom o suficiente. Em seguida, passei a adicionar outros objetos importantes ao _gameplay_ como obstáculos e coletáveis, bem como uma informação de _ranking_ com os itens coletados no painel de vitória das fases, incluindo elementos gráficos quando julguei importante para visualização nos testes. Então, voltei ao _script_ do personagem jogável para finalizar algumas das mecânicas que restavam (estas mecânicas dependiam do desenvolvimento dos coletáveis e plataformas, por isso vieram depois de trabalhar nestes aspectos). 
 
 Trabalhei então no resto da tela do que havia planjeado para o _gameplay_, com os botões de ações, a adição de um marcador de mortes, e o funcionamento para controle de itens coletados durante a fase (este não foi terminado por ora). Comecei a trabalhar no sistema de save/load e no menu principal, mas isso se tornou complexo, e voltei ao _player_ para incluir seu sprite e animações. Agora julguei ser uma boa hora de trabalhar nas outras cenas que não a do _gameplay_, seleção de fases e menu principal, adicionando uma nova fonte e texturas quando necessário. Como o sistema de save/load estava ligado ao menu principal, voltei a trabalhar nele até que ficasse bom o suficiente.
 
@@ -221,4 +221,4 @@ Atualizei mais uma vez a tela de seleção de fases, para que fizesse uso das no
 ## Conclusão
 Ao final deste capítulo, espero que você tenha uma ideia geral de como conduzir o desenvolvimento das versões alfa, e de algumas das melhores práticas de programação para manter em mente durante o desenvolvimento. 
 
-Antes de completá-las, sugiro que dê uma lida nos capítulos seguintes pertinentes aos diferentes aspectos de desenvolvimento que não envolvem programação. Especialmente o [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md), sobre _playtesting_. Nele, falamos mais sobre criação de builds, testes e _debugging_.
+Durante o desenvolvimento, sugiro que dê uma lida nos capítulos seguintes pertinentes aos diferentes aspectos de desenvolvimento que não envolvem programação. Especialmente o [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md), sobre _playtesting_. Nele, falamos mais sobre criação de builds, testes e _debugging_.
