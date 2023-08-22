@@ -21,6 +21,7 @@ Musescore: grátis, simples, mas com muitas opções, mais fácil de aprender pa
 Pessoalmente, eu usava muito o Musescore 3. Hoje existe uma nova versão, Musescore 4, a qual eu ainda não aprendi a usar bem, e parece ainda ter alguns _bugs_. Mas são basicamente o mesmo _software_. A melhor vantagem do Musescore é que você pode exportar suas partituras diretamente como um arquivo musical completamente livre para uso, sem preocupação com direitos autorais.
 
 ![Musescore Interface](../Arquivos/Imagens/10_01.png 'Musescore Interface')
+<sup><sub> Interface do Musescore </sup></sub>
 
 - Produção musical:
 Existem programas muito mais adequados para produção musical em si. Geralmente, os chamamos de DAWs (Digital Audio Workstations). Estes são muito mais robustos que os programas de notação, oferecendo a possibilidade de ajuste manual de notas, importação de plugins de instrumentos, automatização e controle de ritmos, controle avançado de volumes, aplicação de efeitos diversos, entre várias outras funções. Porém, você provavelmente deve imaginar que isso é uma solução muito mais cara.
@@ -28,6 +29,7 @@ Existem programas muito mais adequados para produção musical em si. Geralmente
 O DAW considerado por muitos o melhor da indústria, _FL Studio_, tem sua versão mais simples custando 100 dólares. E a versão mais completa custa um total de 500 dólares. Se você não se interessa em produção de música, esse é um preço muito caro para pagar em um _software_ que só usará de vez em quando. Porém, é um preço bom para a licença vitalícia de um DAW profissional.
 
 ![Flstudio Interface](../Arquivos/Imagens/10_02.png 'Flstudio Interface')
+<sup><sub> Interface do FLStudio </sup></sub>
 
 É claro, existem alternativas grátis para DAWs também. As que eu conheço melhor são o _LMMS_ e o _Cakewalk_. Enquanto ambos são funcionais, o _cakewalk_ é o mais fácil de usar e completo entre os dois. Entretanto, ele contém mais _bugs_. Recomendaria o _cakewalk_ caso queira uma alternativa grátis ao FL Studio. Inclusive, foi o que eu usei junto ao musescore para os projetos desenvolvidos durante a criação deste manual.
 
@@ -61,10 +63,12 @@ O meu processo para efeitos sonoros costuma ser bem diferente do que uso para cr
 Baixando estes sons, na maior parte dos casos eu os edito no aplicativo _Audacity_. Nele, posso cortar o áudio para apenas o trecho que desejo utilizar no jogo, e posso adicionar alguns efeitos para melhorá-los também. Como mudar o tom do áudio, ou deixá-lo mais acelerado, invertê-lo, entre outros.
 
 ![Audacity Interface](../Arquivos/Imagens/10_03.png 'Audacity Interface')
+<sup><sub> Interface do Audacity </sup></sub>
 
 Alguns programas como o _Chiptone_ vão permitir a criação de efeitos sonoros. Em outros casos, você pode gravar seus próprios efeitos, como é feito por produtores musicais, mas isso é algo com o qual eu tenho pouca experiência para opinar. 
 
 ![Chiptone Interface](../Arquivos/Imagens/10_04.png 'Chiptone Interface')
+<sup><sub> Interface do Chiptone </sup></sub>
 
 De qualquer forma, uma vez criados os efeitos, é sempre bom testá-los no contexto do jogo, e iterar até encontrar um som ideal para a ação que está tentando criar.
 
