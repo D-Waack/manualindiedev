@@ -19,24 +19,30 @@ Histórias em jogos costumam vir em diferentes formatos. Os principais são este
 Se você procurar um jogo antigo o suficiente, você vai encontrar a narrativa inteira confiada a uma breve seção no manual em papel que vinha junto com o jogo.
 
 ![Manual Super Mario Bros. 3](../Arquivos/Imagens/08_01.jpg 'Manual Super Mario Bros. 3')
+<sup><sub> História no manual de Super Mario Bros. 3 (Nintendo (1988)) </sup></sub>
 
 Isso era perfeito para jogos simples, mas para jogos maiores, que queriam contar histórias mais complexas que evoluiam ao decorrer do jogo, isso não era exatamente uma opção. A solução mais primitiva que os desenvolvedores utilizavam para isso eram as _caixas de diálogo_.
 
 Nas primeiras gerações de jogos, o método mais viável para transmitir informação era puro texto, já que arquivos de áudio tomariam espaço demais para os meios de armazenamento utilizados na época. Jogos como _Final Fantasy_ e _The Legend of Zelda_, que davam importância para sua narrativa, utilizavam caixas de diálogo para contar suas histórias. Estas poderiam expressar falas dos personagens, informações importantes ou narrações.
 
 ![Caixa de Diálogo - Final Fantasy](../Arquivos/Imagens/08_02.png 'Caixa de Diálogo - Final Fantasy')
+<sup><sub> Caixa de diálogo - Final Fantasy V (Square (1992)) </sup></sub>
 
 ![Caixa de Diálogo - The Legend of Zelda A Link to the Past](../Arquivos/Imagens/08_03.jpg 'Caixa de Diálogo - The Legend of Zelda A Link to the Past')
+<sup><sub> Caixa de diálogo - The Legend of Zelda - A Link to the Past (Nintendo (1991)) </sup></sub>
 
 Hoje em dia, mais de 30 anos depois, este método de _storytelling_ ainda é usado em jogos, mesmo que as limitações do passado não existam mais. Alguns destes as usam para emular estilos antigos de jogos, outros porque o desenvolvedor não tem os recursos para pagar dubladores, outros ainda simplesmente por escolha artística. 
 
 ![Caixa de Diálogo - Stardew Valley](../Arquivos/Imagens/08_04.png 'Caixa de Diálogo - Stardew Valley')
+<sup><sub> Caixa de diálogo - Stardew Valley (CONCERNEDAPE (2018)) </sup></sub>
 
 ![Botw - Caixa de diálogo](../Arquivos/Imagens/08_05.jpg 'Caixa de Diálogo - Breath of the Wild')
+<sup><sub> Caixa de diálogo - The Legend of Zelda - Breath of the Wild (Nintendo (2017)) </sup></sub>
 
 Atualmente é muito comum encontrar um híbrido entre caixas de diálogo e dublagem. E jogos do gênero _Visual Novel_ são em sua maioria simples sequências gigantescas de caixas de diálogo com ocasionais escolhas. 
 
 ![Exemplo VN - Steins;Gate](../Arquivos/Imagens/08_06.jpg 'Exemplo VN - Steins;Gate')
+<sup><sub> Exemplo de VN - Steins;Gate (Nitroplus (2009)) </sup></sub>
 
 Além desses casos, caixas de diálogo ainda são usadas mesmo em jogos "completamente dublados" para transmitir diferentes informações como tutoriais e mensagens encontradas no ambiente.
 
@@ -55,12 +61,15 @@ Esse tipo de _storytelling_ pode ser usado para apoiar outros formatos, ou como 
 Um antigo exemplo claro que temos disso é em Super Metroid (1994). Em uma _cutscene_ você aprende que a personagem controlável, Samus, recebeu um sinal de SOS dos cientistas aos quais ela acabou de entregar o último espécime de uma perigosa criatura alienígena. Ao retornar ao laboratório e explorá-lo, você se depara com uma sala cheia de corpos e um grande tubo quebrado. Fica a implicação de que algo de errado obviamente aconteceu, e que o espécime foi solto. Você naturalmente liga os pontos ao se deparar mais a frente com os piratas espaciais dos jogos anteriores. O jogo não precisa te explicar que houve um ataque, o próprio ambiente conta essa história.
 
 ![Exemplo de Super Metroid](../Arquivos/Imagens/08_07.jpg 'Exemplo de Super Metroid')
+<sup><sub> Exemplo de environmental storytelling - Super Metroid (Nintendo (1991)) </sup></sub>
 
 Isso é muito utilizado em jogos até hoje. Como as dúzias de pistas por todo o mundo em _Dark Souls_, ou uma pilha de corpos do outro lado de um portão guardado por fortes guerreiros em _Hollow Knight_.
 
 ![Exemplo Dark Souls](../Arquivos/Imagens/08_09.jpg 'Exemplo de Dark Souls')
+<sup><sub> Blight Town - Dark Souls (FromSoftware (2011)) </sup></sub>
 
 ![Exemplo de hollow knight](../Arquivos/Imagens/08_08.jpg 'Exemplo de Super Metroid')
+<sup><sub> Portão de Deepnest - Hollow Knight (Team Cherry (2017)) </sup></sub>
 
 Tratando-se do contexto _indie_, o principal método de _storytelling_ costuma ser caixas de diálogo e _envinronmental_. Hoje em dia, é mais fácil contratar dubladores que não são profissionais para dar voz ao seu jogo, mas utilizar apenas texto é completamente válido e bem comum. 
 
