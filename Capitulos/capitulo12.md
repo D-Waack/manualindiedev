@@ -52,7 +52,7 @@ Pessoalmente, gosto muito de usar a ferramenta [draw.io](https://www.drawio.com/
 
 Caso já tenha uma ideia geral de como será seu mapa, ferramentas como o [Tiled](https://www.mapeditor.org/) e o [LDtk](https://ldtk.io/) são ótimos para prototipar diferentes versões do mapa e importá-las direto na sua _engine_. Algumas _engines_ vão oferecer seus próprios editores de mapas também, mas não se deve contar com isso para qualquer _engine_.
 
-Prototipar mapas 3D é um processo um pouco mais complexo, não é possível montar um mapa simples com _tiles_. Para estes casos, trabalhar com primitivas e objetos 3D simples (sem texturas) no [Blender](https://www.blender.org/) é uma boa opção. Novamente, algumas _engines_ vão permitir que você crie objetos 3Ds simples e faça todo o processo de prototipação nela mesma, antes de montar os modelos para o mapa real.
+Prototipar mapas 3D é um processo um pouco mais complexo, não é possível montar um mapa simples com _tiles_. Para estes casos, trabalhar com primitivas e objetos 3D simples (sem texturas) no [Blender](https://www.blender.org/) é uma boa opção. Ou ainda criar uma planta 2D e partir dela para prototipação do mapa. Novamente, algumas _engines_ vão permitir que você crie objetos 3Ds simples e faça todo o processo de prototipação nela mesma, antes de montar os modelos para o mapa real.
 
 ## Conclusão
 Durante esse capítulo, discuto brevemente o mérito do _level design_ e algumas ferramentas que podem ser úteis para um desenvolvedor tentando projetar fases.
