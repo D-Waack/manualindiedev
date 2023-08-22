@@ -105,6 +105,7 @@ Outro exemplo, para um jogo musical ou de ritmo, o *sound design* e música gera
 Deemo tem uma arte bonita, mas ela não é particularmente detalhada ou feita para ser um ponto focal do jogo. Afinal, o aspecto de maior importância neste jogo é a música e som.
 
 Enquanto é preferível que o seu time contenha integrantes que cubram todas as competências necessárias para a criação do jogo, a falta delas não significa que o seu projeto não pode ser criado. Existem alternativas para todos os casos, como ambientes onde programação não é necessária, recursos audiovisuais grátis, ou até a possibilidade de contratar artistas, programadores e músicos para auxiliar no processo.  
+
 É claro, isso tudo depende da habilidade e orçamento do seu time. Porém, um dos objetivos deste manual é apresentar diversas opções, buscando sempre opções sem custo, ou o melhor equilíbrio entre preço baixo e qualidade do produto final.
 
 <br>
