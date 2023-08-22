@@ -16,7 +16,7 @@ Neste capítulo, eu discuto como abordar os problemas mais comuns encontrados no
 
 O primeiro passo quando não se sabe fazer alguma coisa é pensar. Pensar é uma habilidade, e como toda habilidade, ela exige experiência e prática. Dessa forma, se você não tem certa quantidade de experiência, pensar _nunca_ será o suficiente. O pensar é complementado pelo conhecimento. Em outras palavras, quanto mais você sabe, mais fácil será resolver o problema meramente por pensar. 
 
-Esse conhecimento toma forma como entendimento de conceitos de programação, estruturas de dados, gerenciamento de diferentes tipos de arquivos, _loops_ de jogo; bem como conhecimento da engine ou framework com o qual você está trabalhando.
+Esse conhecimento toma forma como entendimento de conceitos de programação, estruturas de dados, gerenciamento de diferentes tipos de arquivos, _loops_ de jogo; bem como conhecimento da _engine_ ou _framework_ com o qual você está trabalhando.
 
 Porém, até você adquirir este conhecimento, você precisa buscar outros meios.
 
@@ -46,7 +46,7 @@ O que leva a uma questão interessante:
 
 ## O que fazer com os resultados
 
-Você conseguiu achar um resultado para sua pesquisa, mas ele se trata de um monte de texto incompreensível (código) em algum fórum de dúvida, ou _blogpost_, ou output do Chat GPT. 
+Você conseguiu achar um resultado para sua pesquisa, mas ele se trata de um monte de texto incompreensível (código) em algum fórum de dúvida, ou _blogpost_, ou _output_ do Chat GPT. 
 
 Você pode simplesmente copiá-lo e colá-lo na sua _engine_, mas você vai notar rapidamente que isso não funciona. Nomes de variáveis, funções, lógica. Nada disso vai bater com o que você tinha anteriormente, e isso é normal. Afinal, foi outra pessoa (ou IA) que escreveu o código.
 
@@ -63,7 +63,7 @@ O passo a passo que eu sigo para entender qualquer código costuma ser:
 
 São passos simples, mas não pense que esse processo é sempre fácil. Você sempre vai se encontrar quebrando a cabeça tentando entender certa lógica e ligando os pontos aos poucos. Não se preocupe, isso é parte do aprendizado. Em certos casos, eu procuro a documentação antes de testar. Em outros, eu simplesmente testo sem procurar a documentação. Isso não é um processo rígido.
 
-Às vezes, você pode ter que pesquisar separadamente o que certa linha ou função faz. Isso acontece se tiver uma documentação deficiente, ou complexa demais. Outras vezes, você terá que procurar outro resultado porque o que encontrou não é o que esperava. Nesse caso, não se desespere. Continue procurando. Existe uma solução para quase todos os problemas. (E para os outros existem gambiarras.)
+Às vezes, você pode ter que pesquisar separadamente o que certa linha ou função faz. Isso acontece se tiver uma documentação deficiente, ou complexa demais. Outras vezes, você terá que procurar outro resultado porque o que encontrou não é o que esperava. Nesse caso, não se desespere. Continue procurando. Existe uma solução para quase todos os problemas. (E para os outros existem "gambiarras".)
 
 Lembre-se sempre: na maioria dos casos, copiar e colar código sem entendê-lo é uma prática ruim e vai atrapalhar o seu projeto.
 
@@ -124,11 +124,11 @@ Esses erros costumam ser bem simples, mas também estressantes. Mantenha a calma
 
 ## Erros recorrentes
 
-Algumas vezes você encontrará certos problemas padrão. Por exemplo, se o seu jogo está lento, geralmente isso indica que você está fazendo muitas operações ao mesmo tempo, ou que falhou em parar alguma execução. Para estes casos, tente fazer condições abrangentes, por exemplo usar "> 2" em vez de "= 3" para certo índice, mesmo sabendo que o valor máximo sempre será 3. Tente também evitar criar ou deletar muitos objetos ao mesmo tempo (considere usar _object pooling_). Além disso, evite utilizar funções recursivas, a não ser que tenha certeza que elas sempre se limitarão a poucas recursões.
+Algumas vezes você encontrará certos problemas padrão. Por exemplo, se o seu jogo está lento, geralmente isso indica que você está fazendo muitas operações ao mesmo tempo, ou que falhou em parar alguma execução. Para estes casos, tente fazer condições abrangentes, por exemplo usar "> 2" em vez de "= 3" para certo índice, mesmo sabendo que o valor máximo sempre será 3. Tente também evitar criar ou deletar muitos objetos ao mesmo tempo (considere usar _object pooling_). Além disso, evite utilizar funções recursivas, a não ser que tenha certeza que elas sempre se limitarão a poucas recursões. Mais sobre essas práticas em capítulos posteriores.
 
 Certas vezes você notará que o jogo não reage ao seu input. Nesse caso, certifique-se de que está configurando o _input_ para as opções corretamente dentro da engine ou framework.
 
-Cito estes por serem problemas que enocntrava com frequência quando iniciante. Sempre certifique-se de que a sintaxe que escreveu está correta, e de que está usando as variáveis certas, e você vai evitar mais algumas centenas de erros diferentes.
+Cito estes por serem problemas que enocntrava com frequência quando iniciante. Sempre certifique-se de que a sintaxe que escreveu está correta, e de que está usando as variáveis certas, e você vai evitar mais algumas centenas de erros similares.
 
 ## Conclusão
 Neste capítulo descrevemos um _workflow_ para lidar com situações adversas durante um ciclo de desenvolvimento. É importante que todo desenvolvedor tenha um plano concreto para lidar com estas situações, pois não vão ser poucas às vezes em que se depararão com elas.
