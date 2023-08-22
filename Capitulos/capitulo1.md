@@ -36,6 +36,7 @@ O seu GDD pode estar em qualquer lugar entre um documento simples de 3 ou 4 pág
 <p align="center">
 <img src="../Arquivos/Imagens/01_01.png"  width="30%" height="45%">
 <p align="center">
+  
 <sup><sub> Página principal da Doom Bible (Tom Hall (2018)) </sup></sub>
 
 Eu criei um modelo bem simples que costumo usar para a proposta inicial do jogo, e vou usá-lo aqui para exemplificar um preenchimento inicial. Se desejar usá-lo: 
