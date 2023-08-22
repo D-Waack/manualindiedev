@@ -15,6 +15,7 @@ E você deve escolher entre eles.
 Eu pretendo te ajudar com essa escolha. Mas, ao final do dia, isso será decidido por você (ou os desenvolvedores em sua equipe). E essa escolha vai mudar completamente como o desenvolvimento de seu jogo vai funcionar.
 
 ![Engines](../Arquivos/Imagens/02_04.jpg 'Engines')
+<sup><sub> Diferentes Engines </sup></sub>
 
 ## _Frameworks_ e _Engines_
 
@@ -25,20 +26,24 @@ Todo jogo é basicamente um conjunto de sistemas diferentes, sendo executados ao
 Por exemplo, quando eu clico no executável do _Minecraft_, aparece uma tela de menu principal (visual); ao mesmo tempo, uma música agradável começa a tocar (áudio); e se eu mexer o meu mouse e clicar em um botão, a tela vai reagir e fazer alguma coisa (_input_); se eu clicar em _multiplayer_, o jogo vai se conectar à internet e tentar se comunicar com um servidor (_networking_); se eu clicar em novo mundo, ele vai criar um (geração de mapas); e ao final, meu personagem será livre para interagir com esse mundo, onde várias coisas funcionam como o mundo real (simulação de mundo e física).
 
 ![Menu Principal do Minecraft](../Arquivos/Imagens/02_03.png 'Minecraft title screen.')
+<sup><sub> Menu principal do jogo Minecraft (Mojang Studios (2011)) </sup></sub>
 
 Tudo isso acontece simultaneamente e de maneira harmoniosa, mas no plano de fundo, vários processos e cálculos diferentes são executados "ao mesmo tempo" para garantir que tudo aconteça na ordem e maneira correta.
 
 No contexto de desenvolvimento, cada uma dessas tarefas (_networking_, input, _display_ visual, gerenciamento de música, etc.) costuma ser executada pelo que chamamos de uma "biblioteca" (_library_). Uma biblioteca para redes geralmente vai conter diversas funções necessárias para conectar diferentes computadores em um único jogo, enquanto uma biblioteca gráfica vai conter diferentes funções para mostrar coisas em sua tela. Estas bibliotecas geralmente vêm como código no formato de arquivos DLL, por exemplo, em _Javascript_ ou _C++_. Alguns exemplos: FMOD (áudio), RakNet (_networking_), Box2D (física 2D), Assimp (importação de modelos 3D), entre várias outras.
 
 ![Página do FMOD](../Arquivos/Imagens/02_05.png 'FMOD Homepage.')
+<sup><sub> Página principal do FMOD </sup></sub>
 
 Como cada biblioteca só se preocupa com uma tarefa, você não pode criar um jogo usando apenas uma. É aí que entram os _frameworks_. Um _framework_ já fez o trabalho de juntar diversas bibliotecas em uma coleção para uso unificado. Utilizando um _framework_, você não precisa se preocupar com a maioria dessas tarefas simples, e apenas resta usar essas diversas funções como os componentes do que formará seu jogo. Alguns exemplos de _frameworks_ para jogos incluem: SFML, Phaser, OGRE, LibGDX e MonoGame.
 
 ![Página do Phaser](../Arquivos/Imagens/02_06.png 'Phaser Homepage.')
+<sup><sub> Página principal do Phaser </sup></sub>
 
 Partindo de _frameworks_, quando subimos um pouco mais o nível de sofisticação e facilidade de uso, chegamos às _Game Engines_ (motores de jogos). Estas oferecem o mesmo conjunto de bibliotecas para gráficos, áudio, memória, _networking_, física, etc., além de diversas outras ferramentas úteis no desenvolvimento. Diferente dos _frameworks_, _engines_ costumam ser ambientes completos, com uma interface gráfica amigável acoplada de um editor de mapas/fases onde se pode visualizar e modificar o jogo em tempo real.
 
 ![Interface do Unity](../Arquivos/Imagens/02_07.jpg 'Unity Interface.')
+<sup><sub> Interface do Unity </sup></sub>
 
 _Engines_ facilitam muito o processo de desenvolvimento. Algumas oferecem a possibilidade de criar jogos sem programação alguma (programação ainda é uma necessidade na grande maioria delas). No geral, a maior diferença entre _engines_ e _frameworks_ está no editor de mapas, e no visualizador de cenas. Porém, existem vários casos onde essa diferença não é tão acentuada.
 
@@ -60,8 +65,10 @@ A última possibilidade, criar uma _engine_ a partir do nada, é algo que eu des
 Na indústria como um todo, você vai perceber que muitos desenvolvedores AAA vão fazer seus jogos em uma _engine_ já estabelecida, ou criar uma nova. Por exemplo, "Fortnite", um jogo bem popular atualmente, desenvolvido pela empresa _Epic Games_, foi criado usando a _engine_ Unreal. Enquanto "Resident Evil Village", um jogo que eu tenho jogado atualmente, foi desenvolvido pela empresa _Capcom_, usando sua própria _engine_ "RE ENGINE".
 
 ![Fornite](../Arquivos/Imagens/02_08.jpg 'Fortnite.')
+<sup><sub> Jogo Fortnite (Epic Games (2017)) </sup></sub>
 
 ![RE Village](../Arquivos/Imagens/02_09.jpg 'RE Village.')
+<sup><sub> Jogo Resident Evil Village (Capcom (2021)) </sup></sub>
 
 No contexto _indie_, _engines_ como Unity, Unreal, Godot, Game Maker, entre várias outras são a forma mais popular para desenvolvimento dos jogos.
 
@@ -99,12 +106,14 @@ Pessoalmente, acredito que ter uma pessoa familiar com programação em sua equi
 Entretanto, a escolha continua sendo sua, algumas opções de _engines_ que permitem criação de jogos sem uso de programação são: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
 
 ![Interface do GDevelop](../Arquivos/Imagens/02_10.png 'GDevelop Interface.')
+<sup><sub> Interface do GDevelop </sup></sub>
 
 ### Fator 2: Plataforma Alvo
 
 Um detalhe muito importante é para onde você deseja exportar o seu jogo. Certas _engines_ não podem exportar para _mobile_, outras não exportam muito bem para _Mac_ e _Linux_. Na hora de escolher sua _engine_, você deve procurar sobre a possibilidade de exportar para sua plataforma desejada.
 
 ![Consoles de Jogos](../Arquivos/Imagens/02_11.jpg 'Gaming Consoles')
+<sup><sub> Consoles de Jogos </sup></sub>
 
 ### Fator 3: Estilo do Jogo
 
@@ -117,6 +126,7 @@ Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. 
 É sempre possível criar o mesmo estilo de jogo em outras _engines_ gerais, mas se o seu objetivo é criar algo específico, talvez seja mais fácil usar uma _engine_ especializada.
 
 ![Interface do RPG Maker VX](../Arquivos/Imagens/02_12.png 'RPG MAKER VX interface')
+<sup><sub> Interface do RPG Maker VX (Enterbrain (2007)) </sup></sub>
 
 ### Fator 4: Recursos e Material
 
@@ -129,6 +139,7 @@ Muitas vezes o desenvolvedor de um jogo vai ficar sem saber como implementar det
 Para _engines_ populares como _Unity_ e _Godot_, por exemplo, é muito mais fácil encontrar uma solução para o seu problema imediatamente, e adaptá-la para seu projeto se torna muito mais rápido e prático.
 
 ![Godot Tutorials](../Arquivos/Imagens/02_13.png 'Godot Tutorials')
+<sup><sub> Página do Godot Tutorials </sup></sub>
 
 ### Sugestões:
 
@@ -165,12 +176,14 @@ Não existe um jeito "certo" de organizar seus arquivos. Mas existem jeitos melh
 Pessoalmente, eu costumava separá-los no seguinte formato, tentando seguir certa noção de orientação a objetos: **Entities**, **Managing**, **Persistent**, **Resources**, **UI** e **World**
 
 ![Arquivos 1](../Arquivos/Imagens/02_01.png 'Arquivos 1')
+<sup><sub> Arquivos, formato 1 </sup></sub>
 
 Esse formato é compreensível e útil, mas deixa muito a desejar. Os "recursos" eram todo o tipo de arquivo que não era um _script_. Ou seja, texturas, _sprites_, e música todos ficavam em uma mesma pasta, enquanto o resto ficava espalhado. É fácil imaginar a frustração de ter que passar por uma dúzia de pastas completamente separadas ao meu objeto para encontrar uma textura específcia toda vez que quero mudar seu visual.
 
 Percebendo que isso não era tão prático, mudei para um novo jeito de organizar as pastas:
 
 ![Arquivos 2](../Arquivos/Imagens/02_02.png 'Arquivos 2')
+<sup><sub> Arquivos, formato 2 </sup></sub>
 
 Objetos, seus _scripts_, modelos, texturas e sons ficam todos juntos na mesma pasta. Caso um artefato seja usado em mais de um objeto, o mesmo fica em uma pasta "_common_". Dessa forma, evito o problema que ocorria antes. É claro, dependendo do projeto, essa estrutura pode não ser ideal.
 
