@@ -9,12 +9,12 @@ Se você já implementou todos os sistemas principais de seu jogo, seu _backlog_
 Caso ainda tenha alguns sitemas simples para implementar, o processo pode seguir da mesma forma que a _alfa_. Entretanto, seu foco aqui vai ser dividido também em outras tarefas. Essas tarefas envolvem finalizar todo o trabalho que você deixou para trás nas outras etapas. Seu jogo pode estar próximo de sua versão final, mas ainda restam algumas pontas para atar.
 
 ## Finalizando sistemas da alfa
-Parte do seu trabalho terá de ser voltar por tudo o que você fez e aprimorar cada sitema para que fique de acordo com o planejado. O "bom o suficiente" já não é mais bom o suficiente, agora seu objetivo é fazer com que estes sistemas fiquem **prontos**. Antes de considerar um sistema _terminado_ um sistema, entretanto, interessa passar pelos diversos aspectos que descrevo no decorrer deste capítulo.
+Parte do seu trabalho terá de ser voltar por tudo o que você fez e aprimorar cada sitema para que fique de acordo com o planejado. O "bom o suficiente" já não é mais bom o suficiente, agora seu objetivo é fazer com que estes sistemas fiquem **prontos**. Antes de considerar um sistema _terminado_, entretanto, interessa passar pelos diversos aspectos que descrevo no decorrer deste capítulo.
 
 ## Consertando Bugs Finais
-A não ser que você estivesse focando em fechá-los antes, você deverá ter uma bela lista de várias coisas que não estão funcionando exatamente do jeito certo ao final da alfa. Agora é a hora de dar uma passada final por todos estes e deixar o seu jogo funcionando certinho.
+A não ser que você estivesse focando em consertá-los antes, você deverá ter uma bela lista de várias coisas que não estão funcionando exatamente do jeito certo ao final da alfa. Agora é a hora de dar uma passada final por todos estes e deixar o seu jogo funcionando certinho.
 
-A ordem com a qual você vai querer atacar estes _bugs_ pode ser importante. Às vezes, consertar um bug causa outro, às vezes, consertá-lo causa com que outros parem de acontecer. Se você souber que dois _bugs_ diferentes são parte do mesmo sistema, tente começar pelo mais "fundamental" entre os dois, e talvez você encontre uma surpresa agradável.
+A ordem pela qual você vai querer resolver estes _bugs_ pode ser importante. Às vezes, consertar um bug causa outro, às vezes, consertá-lo causa com que outros parem de acontecer. Se você souber que dois _bugs_ diferentes são parte do mesmo sistema, tente começar pelo mais "fundamental" entre os dois, e talvez você encontre uma surpresa agradável.
 
 Lembre-se sempre de continuar com o _playtesting_ normalmente após consertar algo, para que os desdobramentos de suas mudanças sejam encontrados o mais rápido o possível.
 
@@ -25,7 +25,7 @@ O processo de otimização envolve melhorar o seu código e outros aspectos do s
 
 Pode parecer um pouco tarde para introduzir um conceito tão importante quanto otimização no seu projeto, mas existe bons motivos para isso. 
 
-Primeiramente, se você **não** encontra lentidão no seu jogo, você **não** precisa gastar seu tempo com otimização. Obviamente, se você deseja que seu jogo rode em máquinas com performance pior do que a sua, vale a pena testar por lentidão em uma dessas máquina. O primeiro motivo é este: nem sempre a otimização se mostra necessária.
+Primeiramente, se você **não** encontra lentidão no seu jogo, você **não** precisa gastar seu tempo com otimização. Obviamente, se você deseja que seu jogo rode em máquinas com performance pior do que a sua, vale a pena testar por lentidão em uma dessas máquinas. O primeiro motivo é este: nem sempre a otimização se mostra necessária.
 
 Outro motivo é o fato de que otimização é um trabalho complexo, e dependendo de seu projeto vai causar uma boa perda de tempo. Perder tempo aprimorando um projeto quase pronto é muito mais proveitoso do que perder tempo em um projeto que acabou de começar. Ainda outro motivo é que uma boa parte da necessidade para otimização é causada por desrespeitar boas práticas, o que espero que sua equipe esteja evitando.
 
@@ -41,33 +41,37 @@ O processo que eu costumo seguir é o de criar uma cena de testes, e adicionar o
 
 Esse processo é bom para situações onde a mera presença de um objeto leva a lentidão, mas é simples tomar por regra de que quanto menos elementos houverem em uma cena, mais fácil será encontrar o elemento que está causando lentidão. E uma vez identificado o elemento causador da lentidão, é muito mais fácil buscar o problema e sua solução.
 
-Se o causador da lentidão for um único objeto, analise seu _script_. Tente encontrar alguma execução que parece ser mais complexa, remova partes e teste novamente pela lentidão, até que possa isolar o processo que está causando a lentidão. Uma vez isolado, tente entender o problema e procure formas mais eficientes de fazer a mesma coisa.
+Se este causador for um único objeto, analise seu _script_. Tente encontrar alguma execução que parece ser mais complexa, remova partes e teste novamente pela lentidão, até que possa isolar o processo que está causando o problema. Uma vez isolado, tente entender o motivo e procure formas mais eficientes de fazer a mesma coisa.
 
 ### Exemplos comuns
 Enquanto lentidão pode ser causada por inúmeros fatores, e depende da plataforma e máquina que executa o código, temos alguns casos universais que causam lentidão, tanto sozinhos quanto em conjunto:
 
 - Criação/destruição de objetos
+  
 A criação e destruição de objetos (inimigos, NPCs, projéteis, objetos de cenário) em tempo de execução é muito custosa, e uma grande causa de lentidão na execução de um jogo. O melhor jeito de evitar esse problema é utilizar a técnica chamada _Object Pooling_.
 
-Essa técnica consiste de inicializar/alocar as instâncias dos objetos que serão usados em uma cena todos em um único conjunto durante a inicialização dessa cena. Essas instância ficam desativadas e invisíveis até o momento que forem necessárias para a cena. O _script_ então pode simplesmente pegar um objeto desse conjunto e ativá-lo, e quando este não for mais necessário para a cena, pode desativá-lo e retorná-lo ao conjunto. Dessa forma, o custo da instância ocorre apenas durante o carregamento da cena.
+Essa técnica consiste de inicializar/alocar as instâncias dos objetos que serão usados em uma cena todos em um único conjunto durante a inicialização dessa cena. Essas instâncias ficam desativadas e invisíveis até o momento que forem necessárias para a cena. O _script_ então pode simplesmente pegar um objeto desse conjunto e ativá-lo, e quando este não for mais necessário para a cena, pode desativá-lo e retorná-lo ao conjunto. Dessa forma, o custo da instância ocorre apenas durante o carregamento da cena.
 
 Na maioria das _engines_, usar _Object Pooling_ pode melhorar bastante a performance do seu jogo, a não ser que seu projeto seja **bem** simples. Mesmo em _engines_ onde instanciar objetos não é tão custoso, como Godot, essa técnica ainda pode ser útil, por exemplo, ao pré-carregar objetos devido a um certo _bug_ do OpenGL que causa lentidão no primeiro carregamento de uma textura ou efeito.
 
 - Objetos/efeitos demais
+  
 Todos os _scripts_ executando ao mesmo tempo em seu jogo concorrem pelos mesmos recursos. Um objeto rodando uma execução complexa pode não fazer diferença nenhuma na performance, mas se você tiver 200 cópias desse mesmo objeto, isso pode mudar facilmente. O mesmo se aplica para partículas, _shaders_ e outros efeitos que exigem cálculo a todo frame.
 
 Nestes casos, você terá duas principais opções: simplificar o funcionamento destes objetos, ou diminuir a quantidade deles. Existem outras opções, mas estas seriam soluções complexas para um problema simples. Caso você _precise_ centenas de objetos em tela ao mesmo tempo, considere algumas outras formas de simplificar a execução destes, ou alguma espécie de execução condicional.
 
 - Operações e estruturas custosas
+  
 Nem todas as linhas de código são criadas iguais. Certas operações são extremamente custosas e vão arruinar a performance do seu jogo, especialmente se forem executadas a todo _frame_. Certos casos como funções recursivas, certas operações entre vetores, cálculos contantes vão causar lentidão.
 
-Nesses casos, é interessante limitar estas chamadas apenas para situações ocasionais, e evitar ao máximo fazer cálculos complexos com certas estruturas de dados. Eu mesmo cansei de me perguntar por que meu jogo estava travando enquanto tentava rodar um A* todo frame.
+Nesses casos, é interessante limitar estas chamadas apenas para situações ocasionais, e evitar ao máximo fazer cálculos complexos com certas estruturas de dados. Eu mesmo cansei de me perguntar por que meu jogo estava travando enquanto tentava rodar um A* para vários personagens todo frame.
 
-Outro tipo de operações que podem ser custosa são chamadas de certas funções de sua própria _engine_. Por exemplo, muitos processos físicos como colisões e _checks_ de colisão simultâneos podem causar lentidão. Nestes casos, pode interessar criar métodos alternativos para estas detecções que não dependem de chamadas da física da própria _engine_.
+Outro tipo de operações que podem ser custosas são chamadas de certas funções de sua própria _engine_. Por exemplo, muitos processos físicos como colisões e _checks_ de colisão simultâneos podem causar lentidão. Nestes casos, pode interessar criar métodos alternativos para estas detecções que não dependem de chamadas da física da própria _engine_.
   
 Uma forma de tentar evitar certos cálculos custosos contantes é utilizar uma _flag_ para atualização de certos elementos. Porém, isso só vale a pena se estes cálculos são mais custosos do que o _check_ para esta _flag_.
 
 - No geral...
+  
 A maioria das necessidades de otimização vão estar diretamente ligadas ao funcionamento da _engine_ ou _framework_ que você está utilizando. Sempre vale à pena fazer uma busca específica sobre as particularidades de seu ambiente de programação.
 
 ## Usabilidade
