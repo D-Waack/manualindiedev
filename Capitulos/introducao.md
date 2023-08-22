@@ -17,21 +17,23 @@ Os resultados destes tipos de conteúdo vão variar desde uma infinidade de conh
 
 Minha intenção com esse manual é oferecer um conteúdo diferente, tentando ao máximo casar a praticidade e simplicidade dos guias informais com a base teórica encontrada nos livros e artigos. Minha esperança é que ao final da leitura você seja capaz de planejar e executar o projeto da criação de um jogo em _qualquer_ gênero ou ambiente. 
 
-O manual é direcionado principalmente a desenvolvedores e programadores, mas pode ser usado por qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computador. Sejam eles 3D ou 2D. Vou assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
+O manual é direcionado principalmente a desenvolvedores e programadores, mas pode ser usado por qualquer pessoa buscando criar jogos em um contexto amador. Sejam jogos para celular, consoles ou computadores. Sejam eles 3D ou 2D. Vou assumir que você entende certos termos de informática, e não me preocuparei muito em explicar minúcias, salvo quando necessário para realização de uma tarefa prática.
 
 Não pense por um momento que o processo de criação de um jogo será simples, rápido ou fácil. Porém, meu objetivo é guiá-lo de maneira que ele seja mais eficiente o possível, evitando ao máximo atrasos, retrabalhos e outros problemas. Para que a sua história não seja igual a de tantos desenvolvedores _indie_ que ficam famosos do pior jeito.
 
 ![](../Arquivos/Imagens/00_05.png 'Yandere Dev Nunca Vai Terminar o Yandere Simulator')
+<sup><sub> Informações de Vídeo "Yandere Dev nunca terminará Yandere Simulator". Publicado em 2020.
+Disponível em: https://www.youtube.com/watch?v=G43G0B5gQpU </sup></sub> 
 
 
 Talvez você já tenha tentado criar um jogo e falhado algumas vezes, ou talvez seja a sua primeira tentativa. A experiência ajuda, mas o fator mais importante é que tenha o empenho e ânimo para levar seu projeto do zero ao sucesso. Eu mesmo passei pela experiência de falhar em vários projetos até aperfeiçoar uma maneira ideal para a construção de jogos que funcionava para mim, com o apoio da Engenharia de Software, de muito estudo, da opinião de outros desenvolvedores, e empenho de sobra.
 
-Obviamente, isso não quer dizer que o meu método vai funcionar para qualquer um. E eu não tenho a arrogância de dizer que você deve seguir os meus passos para alcançar o sucesso.  
-Enquanto eu ofereço orientações específicas, em vários momentos deste manual você vai encontrar instruções e prazos flexíveis, ou várias opções diferentes para executar uma única tarefa. Descrevo estas várias opções na esperança de que você possa adaptar ao máximo o projeto ao seu ritmo de trabalho, e da sua equipe.
+Obviamente, isso não quer dizer que o meu método vai funcionar para qualquer um. E eu não tenho a arrogância de dizer que você deve seguir os meus passos para alcançar o sucesso. Enquanto eu ofereço orientações específicas, em vários momentos deste manual você vai encontrar instruções e prazos flexíveis, ou várias opções diferentes para executar uma única tarefa. Descrevo estas várias opções na esperança de que você possa adaptar ao máximo o projeto ao seu ritmo de trabalho, e da sua equipe.
 
 Lembre-se, os responsáveis pelo seu projeto são você e seu time. Enquanto descrevo aqui uma sequência de orientações para que seu projeto siga em frente, todo o esforço e tempo gasto será seu/de vocês. Da mesma forma, o mérito do produto final será completamente seu e do seu time. Te desejo sucesso!
 
 ![Painel, Falling Dream Shards](https://img.itch.zone/aW1nLzEwNzg1OTQzLmdpZg==/original/s411yZ.gif "Falling Dream Shards - Daniel Waack")
+
 <sup><sub> Pixel art criada por mim para a _intro_ de um jogo. </sup></sub>
 
 <br>
@@ -56,7 +58,7 @@ A pergunta fundamental que exemplifica o foco desse manual é a seguinte:
 
 Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo (e como eu termino)?" É com esse tipo de pergunta muito mais fundamental que muitos costumam encontrar problemas.  
 
-Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvimento, e vou exemplificar com um projeto de jogo de plataforma 2D e um *topdown shooter* 3D, é importante entender que o meu objetivo não é explicar especificamente como criar um *tipo* de jogo, mas sim descrever um processo de desenvolvimento e organização que servirá para qualquer jogo.
+Enquanto eu ocasionalmente vou entrar no mérito de alguns tipos de desenvolvimento, e vou exemplificar com um projeto de jogo de plataforma 2D e um *top down shooter* 3D, é importante entender que o meu objetivo não é explicar especificamente como criar um *tipo* de jogo, mas sim descrever um processo de desenvolvimento e organização que servirá para qualquer jogo.
 
 <br>
 
@@ -89,6 +91,7 @@ Para certos projetos, algumas dessas competências são irrelevantes. Ainda para
 Por exemplo, modelagem não é necessária em jogos 2D. 
 
 ![Exemplo, Jogo 2D](https://www.ubuntufree.com/wp-content/uploads/2017/05/Hollow-Knight-Gameplay.jpg "Hollow Knight - Exemplo 2D")
+<sup><sub> Exemplo de jogo 2D, _Hollow Knight_. </sup></sub>
 
 Feito na *engine* híbrida Unity, **Hollow Knight** é um jogo 2D. Dessa forma, a arte é toda feita em planos 2D, e modelagem não foi necessária.
 
@@ -97,6 +100,7 @@ Feito na *engine* híbrida Unity, **Hollow Knight** é um jogo 2D. Dessa forma, 
 Outro exemplo, para um jogo musical ou de ritmo, o *sound design* e música geralmente serão mais importantes do que a arte.  
 
 ![Exemplo, Jogo de Ritmo](https://i.imgur.com/JOhEaHf.jpg "Deemo - Exemplo Ritmo")
+<sup><sub> Exemplo de jogo de ritmo, Deemo. </sup></sub>
 
 Deemo tem uma arte bonita, mas ela não é particularmente detalhada ou feita para ser um ponto focal do jogo. Afinal, o aspecto de maior importância neste jogo é a música e som.
 
