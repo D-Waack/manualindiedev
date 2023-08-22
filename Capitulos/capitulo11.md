@@ -11,7 +11,7 @@ Pouco adianta criar recursos como _sprites_, modelos e temas musicais se você n
 Recursos visuais vêm em vários formatos, e cada formato diferente vai influenciar no jeito que ele será integrado ao jogo.
 
 ### Recursos 2D - Planos e camadas
-Em grande parte, jogos 2D são visualmente compostos de várias camadas visuais diferentes, uma "por cima" da outra. Você pode criar um jogo 2D em uma única camada visual, mas perderia a oportunidade de criar diversos efeitos interessantes. Em um jogo _sidescroller_, isso pode vir como diferentes camadas de objetos, um plano de fundo, e a camada principal onde existem os personagens. Em um jogo _topdown_ ou isométrico, nem sempre encontramos camadas de fundo, mas ainda assim temos a camada do mapa e pelo menos mais uma principal para os objetos e personagens.
+Em grande parte, jogos 2D são visualmente compostos de várias camadas visuais diferentes, uma "por cima" da outra. Você pode criar um jogo 2D em uma única camada visual, mas perderia a oportunidade de criar diversos efeitos interessantes. Em um jogo _sidescroller_, isso pode vir como diferentes camadas de objetos, um plano de fundo, e a camada principal onde existem os personagens. Em um jogo _top down_ ou isométrico, nem sempre encontramos camadas de fundo, mas ainda assim temos a camada do mapa e pelo menos mais uma principal para os objetos e personagens.
 
 O formato técnico de como essas camadas são mostradas em tela pouco importa para o nosso contexto. O que importa é a ordem de renderização, e as colisões. Cabe ao desenvolvedor montar essa ordem na hora da criação da cena no jogo. Porém, isso é um processo bem intuitivo.
 
@@ -61,7 +61,7 @@ Hitboxes e Hurtboxes devem ser adaptadas ao contexto que se encontram. Geralment
 
 No Godot, eu costumo criar hitboxes e hurtboxes como nós do tipo Area2D, para que eles não interajam fisicamente com objetos do cenário, e apenas reajam a outras hitboxes e hurtboxes. Essa é uma abordagem interessante, caso seja possível executá-la no seu ambiente de escolha.
 
-No geral, hitboxes e hurtboxes vão ser projetadas caso a caso. Por exemplo, uma forma de implementar o jogo _Super Mario Bros_, poderia ser criar o Mario com uma hitbox somente no fundo de seus pés, enquanto o resto de seu corpo é uma hurtbox. Porém, quando o Mario coleta uma estrela, sua hurtbox é desativada e todo o seu corpo se torna uma hitbox. Da mesma forma, a hitbox dos inimigos é o corpo inteiro deles, e a hurtbox também.
+No geral, hitboxes e hurtboxes vão ser projetadas caso a caso. Por exemplo, uma forma de implementar o jogo _Super Mario Bros_ poderia ser criar o Mario com uma hitbox somente no fundo de seus pés, enquanto o resto de seu corpo é uma hurtbox. Porém, quando o Mario coleta uma estrela, sua hurtbox é desativada e todo o seu corpo se torna uma hitbox. Da mesma forma, a hitbox dos inimigos é o corpo inteiro deles, e a hurtbox também.
 
 Em um jogo como _Castlevania_, a hitbox do jogador é composta somente da arma do personagem (um chicote, uma espada, ou um projétil). Enquanto a hurtbox do jogador é sempre a mesma, composta de seu corpo inteiro.
 
@@ -114,15 +114,15 @@ A preocupação com fundos e camadas distintas não existe exatamente para jogos
 Visualmente, sua cena será montada pelos objetos que incluir nelas. Porém, alguns outros objetos podem ajudar a melhorar o formato do seu ambiente, como luzes criadas na _engine_, criando efeitos de iluminação diversos. Além disso, _shaders_ e partículas também existem em jogos 3D e podem ser usados com resultados melhores que suas versões 2D.
 
 ### Recursos Gerais - HUDs e interfaces
-A sigla HUD (heads up interface) se refere ao pedaço da interface/tela que fica entre o mundo simulado e o jogador. Geralmente, mostra informações essenciais para os jogadores como barras de vida, contagem de vidas, munição, itens coletados, tempo restante, e quaisquer outros detalhes que o desenvolvedor julga importantes para o jogador.
+A sigla HUD (_heads up display_) se refere ao pedaço da interface/tela que fica entre o mundo simulado e o jogador. Geralmente, mostra informações essenciais para os jogadores como barras de energia, contagem de vidas, munição, itens coletados, tempo restante, e quaisquer outros detalhes que o desenvolvedor julga importantes para o jogador.
 
 A implementação de um HUD é simples, basta incluir uma camada visual bidimensional mais externa a todo o resto do jogo. É necessário tomar cuidado para que a informação do HUD não obstrua a visão do jogador. Por esse motivo, HUDs geralmente se limitam ao topo e fundo da tela. De forma a não atrapalharem o jogo, mas ainda exibirem as informações necessárias para o jogador.
 
-Em certos casos, é interessante encontrar outros jeitos de mostrar informação ao jogador, como fiz no meu projeto _Vortex Tautology_, onde a vida do personagem é demonstrada pela cor/presença do escudo. Ou em um jogo como Dead Space, onde informações importantes são demonstradas no próprio personagem jogável e objetos no próprio jogo. Esse tipo de detalhe sempre é apreciado quando feito da maneira correta.
+Em certos casos, é interessante encontrar outros jeitos de mostrar informação ao jogador, como fiz no meu projeto _The Tautology Vortex_, onde a vida do personagem é demonstrada pela cor/presença do escudo. Ou em um jogo como Dead Space, onde informações importantes são demonstradas no próprio personagem jogável e objetos no próprio jogo. Esse tipo de detalhe sempre é apreciado quando feito da maneira correta.
 
 ![Display de informações em Dead Space](../Arquivos/Imagens/11_07.png 'Display de informações em Dead Space')
 
-Em termos de interfaces gerais, como menus e inventários, simplesmente montá-los como uma tela interativa com o mouse é o suficiente. Na maioria dos casos, também é interessante adicionar certa redundância a comandos interativos em menus, como setas de teclado para escolher opções, várias teclas para confirmação, usabilidade de controle, etc. Sempre lembrando de ter bom senso, pouco ainda ter opções diversas para um jogo de celular com o qual o jogador vai interagir apenas por toque.
+Em termos de interfaces gerais, como menus e inventários, simplesmente montá-los como uma tela interativa com o mouse é o suficiente. Na maioria dos casos, também é interessante adicionar certa redundância a comandos interativos em menus, como setas de teclado para escolher opções, várias teclas para confirmação, usabilidade de controle, etc. Sempre lembrando de ter bom senso, pouco ajuda ter opções diversas para um jogo de celular com o qual o jogador vai interagir apenas por toque.
 
 ## Recursos Sonoros
 Recursos sonoros são mais simples para inclusão do que os visuais, mas requerem alguns cuidados únicos.
@@ -148,7 +148,7 @@ Por exemplo, cada ação do personagem jogável chama o seu som correspondente (
 A maneira mais simples de fazer com que os efeitos sonoros façam sentido no contexto de um jogo é atrelá-los diretamente a essas ações e reações. Seja uma colisão, seja um input, seja uma animação de ação ou _idle_, esta execução pode estar responsável por chamar a execução do áudio.
 
 ### Canais de áudio
-Talvez você tenha um problema com diferentes ações afogando o sem de outras. Algumas _engines_ e ambientes vão te oferecer diferentes canais de áudio que podem acontecer simultaneamente. Separar diferentes tipos de sons para diferentes canais pode te ajudar a gerenciar volumes e quais áudios devem sobrepor os outros.
+Talvez você tenha um problema com diferentes ações afogando o som de outras. Algumas _engines_ e ambientes vão te oferecer diferentes canais de áudio que podem acontecer simultaneamente. Separar diferentes tipos de sons para diferentes canais pode te ajudar a gerenciar volumes e quais áudios devem sobrepor os outros.
 
 Por exemplo, a fala de um personagem deve ser mais alta que a música de fundo, para que os jogadores possam ouvi-lo. Da mesma forma, efeitos sonoros no geral devem ser mais altos que a BGM, já que sinalizam algo mais importante.
 
