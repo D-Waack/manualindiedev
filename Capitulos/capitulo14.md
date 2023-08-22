@@ -1,6 +1,6 @@
 # Capítulo 14: Publicação
 
-"O que é um homem? Uma miserável pilha de segredos." Dracula, _Castlevania: Symphony of the Night_ (
+"O que é um homem? Uma miserável pilha de segredos." Dracula, _Castlevania: Symphony of the Night_ (1997)
 
 ![Capítulo 14 capa](../Arquivos/Imagens/capa_14.jpg 'What is a man? A miserable little pile of secrets.')
 
