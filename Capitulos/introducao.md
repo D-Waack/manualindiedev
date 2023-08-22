@@ -1,12 +1,12 @@
 
 # Introdução:
 
-É um erro comum de pessoas que aspiram tornarem-se criadores de jogos se ocuparem com livros, vídeos de análise e *design*, gravações de GDCs (Game Development Conferences), comentários e entrevistas de desenvolvedores, entre várias outras categorias de vídeos educativos sobre jogos. Eu mesmo passo boa parte do meu tempo livre estudando estes diversos recursos online.
+É um erro comum de pessoas que aspiram tornarem-se criadores de jogos se ocuparem com livros, vídeos de análise e *design*, gravações de GDCs (_Game Development Conferences_), comentários e entrevistas de desenvolvedores, entre várias outras categorias de vídeos educativos sobre jogos. Eu mesmo passo boa parte do meu tempo livre estudando estes diversos recursos online.
 
 ![GDC - Workshop de Level Design: Projetando Celeste](https://i.imgur.com/IT5UV3h.jpg "GDC - Workshop de Level Design: Projetando Celeste")
 <sup><sub> Imagem de GDC: "Workshop de Level Design: Projetando Celeste", de Matt Thorson, desenvolvedor líder do jogo Celeste, apresentado em 2017 e publicado em 2018. Disponível em: https://www.youtube.com/watch?v=4RlpMhBKNr0 </sup></sub>
 
-Enquanto todos estes são ótimas fontes de aprendizado, não se deve esquecer de um detalhe: Você não vai realmente aprender a fazer um jogo até o momento em que colocar essa teoria na prática. A melhor maneira de começar a sua jornada de criação de jogos é "aprender fazendo", com uma boa base de instruções para que você (e sua equipe) não se perca(m) no caminho.
+Enquanto todos estes são ótimas fontes de aprendizado, não se deve esquecer de um detalhe: você não vai realmente aprender a fazer um jogo até o momento em que colocar essa teoria na prática. A melhor maneira de começar a sua jornada de criação de jogos é "aprender fazendo", com uma boa base de instruções para que você (e sua equipe) não se perca(m) no caminho.
 
 ![](../Arquivos/Imagens/00_04.png 'Por Que Tutoriais de Game Dev Vão Arruinar Sua Vida')
 <sup><sub> Informações de Vídeo "Por que tutoriais de desenvolvimento vão arruinar sua vida". Publicado em 2022. Disponível em: https://www.youtube.com/watch?v=M1StS3t8cD4t=313s </sup></sub>
@@ -43,8 +43,8 @@ Lembre-se, os responsáveis pelo seu projeto são você e seu time. Enquanto des
 Um detalhe importante sobre o conteúdo deste manual é que ele está muito preocupado com *o que* você vai fazer, e não tanto com *como* você vai fazê-lo.  
 
 Como assim?  
-Se eu sentasse e decidisse criar um tutorial para a construção de todos os possíveis algorítmos e funções de jogos, em todas as possíveis plataformas de desenvolvimento, eu ficaria aqui por duas vidas e não terminaria.  
-E eu não preciso fazer isso, pois já existem diversos recursos de todos os tipos que exploram estes méritos, e procurá-los será invevitvalmente parte do seu trabalho, ou de alguém na sua equipe. Como procurá-los, filtrá-los, entendê-los e usá-los será mais relevante para este manual.  
+Se eu sentasse e decidisse criar um tutorial para a construção de todos os possíveis algoritmos e funções de jogos, em todas as possíveis plataformas de desenvolvimento, eu ficaria aqui por duas vidas e não terminaria.  
+E eu não preciso fazer isso, pois já existem diversos recursos de todos os tipos que exploram estes méritos, e procurá-los será inevitavelmente parte do seu trabalho, ou de alguém na sua equipe. Como procurá-los, filtrá-los, entendê-los e usá-los será mais relevante para este manual.  
 A pergunta fundamental que exemplifica o foco desse manual é a seguinte:
 
 <br>
@@ -54,7 +54,7 @@ A pergunta fundamental que exemplifica o foco desse manual é a seguinte:
 <br>
 
 ![Jogo - Game Dev Tycoon](../Arquivos/Imagens/00_01.png 'Game Dev Tycoon')
-<sup><sub> Imagem de jogo "Game Dev Tycoon"</sup></sub>
+<sup><sub> Imagem de jogo "_Game Dev Tycoon_"</sup></sub>
 
 Em outras palavras: "Qual é a sequência de ações que devo tomar para a criação de um jogo?" Ou ainda, "Por onde eu começo (e como eu termino)?" É com esse tipo de pergunta muito mais fundamental que muitos costumam encontrar problemas.  
 
@@ -73,10 +73,10 @@ Estes fatores são:
 Isso é muito importante para o seu ritmo e organização de trabalho. Um grupo trabalha melhor do que um indivíduo. E quanto mais gente no seu time, maior pode ser a escala e complexidade do seu projeto. Porém, sozinho você terá liberdade criativa maior do que em um grupo.  
 Outras vantagens do desenvolvimento em grupo são poder trabalhar em diferentes frentes ao mesmo tempo, apoio entre os membros, maior facilidade em testes e discussões de melhorias, entre vários outros. 
 
-Ter um grupo pequeno e empenhado aumenta suas chances de sucesso. Entretanto, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, com o apoio ocasional de terceiros principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas sozinho. Talvez te interesse evitar isso.
+Ter um grupo pequeno e empenhado aumenta suas chances de sucesso. Entretanto, nem sempre o trabalho em grupo é uma opção. Eu mesmo trabalhei na maioria de meus projetos sozinho, por vários motivos, com o apoio ocasional de terceiros, principalmente para fins de testes. Mas isso causou diversas dificuldades no meu caminho, e eu tive que aprender a fazer o trabalho de várias pessoas sozinho. Talvez te interesse evitar isso.
 
 No contexto *indie*, um grupo pequeno (um de 3-5 pessoas) provavelmente oferecerá o melhor equilíbrio entre trabalho em equipe, poder de decisão e facilidade de gerenciamento dos membros.  
-Esse manual vai, no geral, assumir que você esteja trabalhando sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
+Esse manual vai, no geral, assumir que você esteja trabalhando sozinho ou em um grupo pequeno. Quando relevante, apontaremos diferenças entre o trabalho *solo* e o trabalho em equipe. Porém, as ideias e orientações descritas aqui podem ser aplicadas independente da quantidade de integrantes na equipe.
 
 ![Jogo - Pikmin](../Arquivos/Imagens/00_02.jpg 'Game Dev Tycoon')
 <sup><sub> Imagem de animação de Pikmin trabalhando em conjunto, da série de jogos "Pikmin"</sup></sub>
@@ -121,6 +121,6 @@ Durante o manual, haverá uma sequência de períodos onde a equipe deverá dese
 
 <br>
 
-Com todas estas considerações em mente, sem mais delongas, vamos ao conteúdo real do manual:
+Com estas considerações em mente, sem mais delongas, vamos ao conteúdo real do manual:
 
 [Capítulo 1: Design Inicial](capitulo1.md) 
