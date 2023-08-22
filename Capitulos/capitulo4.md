@@ -10,7 +10,7 @@
 
 O [capítulo anterior](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo3.md) ofereceu uma abordagem bem teórica sobre como funcionaria o ciclo de desenvolvimento, mas você provavelmente ainda tem várias dúvidas sobre o que fazer. De certa forma, o desenvolvimento é como um jogo de tabuleiro. Você pode ler as regras, mas só aprenderá realmente quando colocá-las na prática.
 
-E, nesse sentido, a prática será os primeiros ciclos de desenvolvimento. Existem várias formas de separar as etapas da produção dos jogos, mas aqui a dividiremos da seguinte forma: **Protótipo 0** -> **Alfa** -> **Beta** -> **Produto final**
+E, nesse sentido, a prática será os primeiros ciclos de desenvolvimento. Existem várias formas de separar as etapas da produção dos jogos, mas aqui a dividiremos da seguinte forma: **Protótipo 0** → **Alfa** → **Beta** → **Produto final**
 
 Se você joga, os termos _alfa_ e _beta_ não devem ser desconhecidos a você. Eles se referem a estados diferentes do desenvolvimento de um _software_. No contexto de jogos, isso é um pouco vago. Alguns vão definir a diferença entre _alfa_ e _beta_ como "um está bem incompleto e o outro está quase completo". Outros ainda vão dizer que versões beta são aquelas apresentáveis para a audiência, e que podem ser publicadas para teste.
 
@@ -28,7 +28,7 @@ A ideia por trás do Protótipo 0 é destilar o conceito de seu jogo a um ponto 
 
 O que isso quer dizer na prática?
 
-Sprites, modelos, música, mapas são todos desnecessários. Nada disso pertence ao protótipo 0. Na verdade, seu primeiro protótipo deve parecer muito mais como um jogo de _Atari_ do que um jogo moderno. Se fosse _Super Mario_, você poderia ter um quadrado correndo e pulando. Se fosse _Zelda_, talvez você teria um quadrado andando na tela e espetando inimigos (também quadrados) com um similar retângulo.
+_Sprites_, modelos, música, mapas são todos desnecessários. Nada disso pertence ao protótipo 0. Na verdade, seu primeiro protótipo deve parecer muito mais como um jogo de _Atari_ do que um jogo moderno. Se fosse _Super Mario_, você poderia ter um quadrado correndo e pulando. Se fosse _Zelda_, talvez você teria um quadrado andando na tela e espetando inimigos (também quadrados) com um similar retângulo.
 
 Esses exemplos são exageros, você não precisa se apegar ao minimalismo de tal maneira. Se você tem um artista no time, não precisa deixá-lo ocioso até o fim da criação deste protótipo, e se você já tem algo feito, não precisa evitar seu uso de propósito (apesar de ser uma opção). Se desejar ter algo visual em tela, pode interessar usar recursos grátis tirados, por exemplo, do site [Open Game Art](https://opengameart.org/). A intenção é apenas que você crie o protótipo para sentir sua ideia com as próprias mãos.
 
@@ -36,14 +36,14 @@ Dessa forma, se você trabalha sozinho, não se preocupe em criar nenhum artefat
 
 A intenção do protótipo 0 não é criar uma representação do seu jogo, é criar a base inicial dele. Como uma casa, você constrói uma fundação antes de começar a construir os cômodos. Se a fundação não estiver firme, a casa vai desmoronar.
 
-Dessa forma, o seu primeiro passo é definir as mecânicas principais do seu jogo e implementá-las de maneira simples.
+Assim, o seu primeiro passo é definir as mecânicas principais do seu jogo e implementá-las de maneira simples.
 
 ## Destilando sua Ideia
 Como esse "destilar" deve ser feito? O primeiro passo é entender quais são os elementos que definem o seu jogo em si, qual é a identidade de seu jogo. Para um jogo de plataforma, isso seria o movimento e física do personagem jogável. Para um jogo de luta, isso seria dois personagens com apenas um jogável, com os quais você pode testar várias ações provisórias e combos simples (sem preocupação inicial com vida e outros sistemas). Para um jogo de corrida, um único veículo provisório em uma pista de testes. Para um RPG, talvez o sistema de batalhas ou o sistema de movimento em um mapa (o que for mais relevante). Enfim, acho que ilustrei a ideia com estes exemplos.
 
-Caso haja alguma mecânica especial para o seu projeto, é interessante incluir pelo menos uma versão primitiva dela no seu protótipo também, como é o caso do meu protótipo que exemplifico abaixo.
+Caso haja alguma mecânica especial para o seu projeto, é interessante incluir pelo menos uma versão primitiva dela no seu protótipo também, como é o caso no meu protótipo que exemplifico abaixo.
 
-Quanto mais complexo o seu projeto for, mais complexo este protótipo terá de ser para que você consiga realmente incluir uma base completa para seu projeto. Nesse ponto, você está livre para seguir com seu projeto, mas se esta é sua primeira vez criando um jogo, sugiro diminuir a complexidade do seu projeto o máximo o possível, para evitar qualquer risco de que você e sua equipe não consigam completá-lo.
+Quanto mais complexo o seu projeto for, mais complexo este protótipo terá de ser para que você consiga realmente incluir uma base completa para seu projeto. Nesse ponto, você está livre para seguir com seu projeto, mas se esta é sua primeira vez criando um jogo, sugiro diminuir a complexidade do seu projeto tanto quanto possível, para evitar qualquer risco de que você e sua equipe não consigam completá-lo.
 
 Uma vez selecionada a(s) mecânica(s) principais para o seu projeto, o próximo passo real é dividir estas em pedaços menores, cada vez mais simples. Da mesma forma que exemplifiquei no capítulo anterior, todo elemento e sistema de um jogo pode ser dividido em elementos e sistemas menores (o sistema de física dividido em movimento e colisão, por exemplo). 
 
@@ -55,20 +55,26 @@ Caso você não tenha ideia de como fazer essas implementações, ou fique sem s
 Na maioria dos casos, começamos qualquer projeto criando uma pasta para ele. Na minha _engine_ de escolha, isso pode ser feito no próprio editor. Aqui, vou descrever os passos para minha _engine_ de escolha, Godot. Mas independente do ambiente que escolher, essa descrição do processo pode servir como referência para o seu.
 
 ![Criando Projeto](../Arquivos/Imagens/04_01.png 'Criando Projeto')
+<sup><sub> </sup></sub>
 
 Ao criar o projeto, somos apresentados ao menu principal da _engine_. Neste caso, já vemos o visualizador/editor de mapas imediatamente. Meu próximo passo sempre costuma ser criar as pastas de arquivos na estrutura que decidi anteriormente.
 
 ![Primeira Visão da Engine](../Arquivos/Imagens/04_02.png 'Primeira Visão da Engine')
+<sup><sub> </sup></sub>
 
 ![Pastas de Arquivos](../Arquivos/Imagens/04_03.png 'Pastas de Arquivos')
+<sup><sub> </sup></sub>
 
 Em seguida, eu passo por algumas configurações que serão relevantes para a construção do jogo. No momento, estou preocupado apenas com o **nome do projeto** e o **tamanho da tela**. O tamanho dela é importante decidir cedo no desenvolvimento, pois isso vai afetar o seu jogo. Principalmente para questões de _câmera_ e quanto cabe em sua tela. Nesse caso, como trata-se de um jogo para celulares, optei por um tamanho padrão de 1080x720, mas provavelmente vou mudá-lo mais a frente por se tratar de um jogo _pixel art_. Essa resolução não é estática, e será mudada para se adequar à tela do celular do jogador, mas para isso, devo incluir também a opção de _stretch_.
 
 ![Configurações](../Arquivos/Imagens/04_04.png 'Configurações')
+<sup><sub> </sup></sub>
 
 ![Configurações2](../Arquivos/Imagens/04_05.png 'Configurações 2')
+<sup><sub> </sup></sub>
 
 ![Configurações3](../Arquivos/Imagens/04_06.png 'Configurações 3')
+<sup><sub> </sup></sub>
 
 Após fazer essas mudanças, pressiono CONTROL + S para salvar meu projeto, e passo a trabalhar no protótipo em si.
 
@@ -81,16 +87,21 @@ No Godot, toda cena é uma estrutura de árvore. Estruturas de árvore são comp
 Aqui, para criar a primeira cena, eu escolho a opção "2D Scene", e em seguida eu dou um nome para esta cena. Para nomenclatura de cenas e nós, eu costumo usar o padrão CamelCase (palavras diferentes não são separadas por espaços, mas têm sua primeira letra em caixa alta). Eu faço isso para separar objetos instanciados de nomes de variáveis quando escrevo meus scripts. Mas você pode nomear suas cenas como preferir, ou como for o padrão em seu ambiente de desenvolvimento.
 
 ![Primeira Cena](../Arquivos/Imagens/04_07.png 'Primeira Cena')
+<sup><sub> </sup></sub>
 
 ![Primeira Cena 2](../Arquivos/Imagens/04_08.png 'Primeira Cena 2')
+<sup><sub> </sup></sub>
 
 Em seguida, eu adiciono os elementos que vou precisar para a criação desse primeiro mapa teste. Ou seja, adiciono nós filhos. No caso, um nó para o mapa em si (Tilemap), um nó para a câmera (Camera2D), e um nó que representará o personagem jogável (CharacterBody2D). Por experiência, eu já sei exatamente quais são os nós que precisarei para isso, mas é normal que você precise pesquisar nas primeiras vezes.
 
 ![Adicionando nós filhos](../Arquivos/Imagens/04_09.png 'Adicionando nós filhos')
+<sup><sub> </sup></sub>
 
 ![Procurando nós filhos](../Arquivos/Imagens/04_10.png 'Procurando nós filhos')
+<sup><sub> </sup></sub>
 
 ![Nós filhos](../Arquivos/Imagens/04_11.png 'Nós filhos')
+<sup><sub> </sup></sub>
 
 Ao final, temos uma cena TestMap com alguns nós filhos. Esses são os **blocos principais** para o meu protótipo 0. Um personagem jogável, um mapa com o qual ele poderá interagir, e uma câmera para acompanhar o personagem durante o jogo.
 
@@ -101,52 +112,66 @@ Para isso, criei um simples _tileset_ com 2 _tiles_ diferentes. Em jogos 2D, _ti
 Não é relevante me dar ao trabalho de criar um mapa finalizado para o protótipo 0. Criei um _tileset_ com 2 cores sólidas, cada um de 16x16 pixels. Por questões de facilidade de divisão da tela e padronização de tamanhos, costumamos usar múltiplos de 16 para os tamanhos de _tiles_ (e.g. 16, 32, 64, 128, e, raramente, 8). Esse print é da ferramenta _Aseprite_, que uso para criar pixel art:
 
 ![Tileset Básico](../Arquivos/Imagens/04_12.png 'Tileset Básico')
+<sup><sub> </sup></sub>
 
 Em seguida, adicionei o tileset aos arquivos do meu projeto. Nesse caso, junto ao arquivo do mapa. No Godot, é possível fazer isso arrastando o arquivo para dentro do editor. Também é possível encontrar a pasta no seu explorador de arquivos e adiconá-lo manualmente.
 
 ![Adicionando arquivo ao editor](../Arquivos/Imagens/04_13.png 'Adicionando arquivo ao editor')
+<sup><sub> </sup></sub>
 
 Agora, posso começar a criar o mapa, no outro canto da janela, opções de edição do nó selecionado aparecem. No campo Tile Set, adiciono um novo recurso do tipo _tileset_, e clico nele, para que o editor de tileset apareça no canto inferior da tela. Arrastando o arquivo de imagem de meu tileset para este editor, a _engine_ já separa os tiles da maneira correta. (Isso acontece porque o tamanho padrão da _engine_ é 16x16 pixels. Caso meu tile tivesse um tamanho maior, seria necessário mudar essa configuração).
 
 ![Tileset](../Arquivos/Imagens/04_14.png 'Tileset')
+<sup><sub> </sup></sub>
 
 ![Tileset 2](../Arquivos/Imagens/04_15.png 'Tileset 2')
+<sup><sub> </sup></sub>
 
 ![Tileset 3](../Arquivos/Imagens/04_16.png 'Tileset 3')
+<sup><sub> </sup></sub>
 
 Agora, eu posso clicar em um _tile_ qualquer e desenhar o meu mapa como quiser.
 
 ![Desenhando Mapa](../Arquivos/Imagens/04_17.png 'Desenhando Mapa')
+<sup><sub> </sup></sub>
 
 Eu sabia que isso aconteceria, mas o tamanho que escolhi para minha tela é grande demais para o tamanho dos _tiles_. Isso é algo que vou ter que corrigir depois. Por enquanto, anotarei isso no meu documento de _backlog_.
 
 Se eu executar essa cena do jeito que está, vou encontrar o mapa que desenhei, mas nada acontece. O próximo é incluir algum tipo de interação. E o melhor jeito de seguir com isso é criar o jogador. 
 
 ![Cena em execução](../Arquivos/Imagens/04_18.png 'Cena em execução')
+<sup><sub> </sup></sub>
 
 Um detalhe interessante sobre a estrutura de árvores, é que nós filhos podem ter seus próprios nós filhos. Talvez você tenha reparado que o nó do meu personagem tem um triângulo de aviso. Isso é porque nós do tipo "corpo" precisam de um formato de colisão para funcionarem normalmente. Nesse caso, basta incluir um nó de colisão como filho. 
 
 ![Incluir colisão](../Arquivos/Imagens/04_19.png 'Incluir colisão')
+<sup><sub> </sup></sub>
 
 Geralmente, quando existe alguma configuração faltante, o próprio editar vai me avisar. Aqui, ele reclama que é preciso incluir um formato para o nó de colisão, então eu o faço. Nesse caso, selecionei um simples formato de retângulo, que é provavelmente o que vou usar para o personagem de qualquer forma.
 
 ![Colisão 1](../Arquivos/Imagens/04_20.png 'Colisão 1')
+<sup><sub> </sup></sub>
 
 ![Colisão 2](../Arquivos/Imagens/04_21.png 'Colisão 2')
+<sup><sub> </sup></sub>
 
 Agora, tenho um "personagem" com colisão, mas ele não é visível durante a execução. Isso é porque ele não contém nenhum nó visual. Por isso, incluo um nó "Sprite 2D" como filho. Eu já tenho um sprite para o personagem, mas desenhei um provisório apenas por questões de ilustração. Da mesma forma, um quadrado sólido também serviria, mas tente fazer um quadrado de cor diferente do mapa para facilitar sua visualização.
 
 ![Sprite embaçado](../Arquivos/Imagens/04_22.png 'Sprite embaçado')
+<sup><sub> </sup></sub>
 
 Adicionado o arquivo ao editor, e incluído como textura do sprite, percebo um problema com o meu desenho. Ele aparece um tanto embaçado no editor. Isso é porque a _engine_ tenta "filtrar" as imagens adicionadas para melhorar sua visualização. E isso costuma ser algo bom, mas para resoluções muito baixas (como 16x16 pixels), isso não é desejável. Nesse caso, basta mudar a configuração de filtro, e o sprite aparece da forma desejada.
 
 ![Configuração de filtro](../Arquivos/Imagens/04_23.png 'Configuração de filtro')
+<sup><sub> </sup></sub>
 
 Se eu executar a cena agora, notamos que o personagem existe, mas ele não faz nada. Aqui, me incomodo novamente com a resolução e a diminuo novamente nas configurações do projeto. Agora, o tamanho da câmera é pequeno demais para mostrar o mapa que criei abaixo, porém mais importante é o fato de que o personagem permanece flutuando no ar.
 
 ![Flutuando](../Arquivos/Imagens/04_24.png 'Flutuando')
+<sup><sub> </sup></sub>
 
 ![Flutuando 2](../Arquivos/Imagens/04_25.png 'Flutuando 2')
+<sup><sub> </sup></sub>
 
 Para mudar isso, será necessário criar um _script_. Normalmente, _engines_ vão conter dois tipos de "corpos". Corpos 'rígidos' e 'cinemáticos'. Corpos rígidos têm sua física pré-programada, e são rígidos também no sentido de que o jeito que funcionam não é tão fácil de mudar. Corpos cinemáticos funcionam ao contrário, eles só funcionam se forem programados manualmente, mas é muito mais fácil mudá-los para que fiquem da maneira desejada. O corpo cinemático é mais adequado ao tipo de jogo que estou construindo.
 
@@ -155,48 +180,62 @@ Como mencionei antes, para dar funcionalidade a esse corpo será necessário inc
 Eu simplesmente salvo o nó do jogador como uma cena diferente, na minha pasta de Entities/Player, chamando-o de Player. Agora é possível clicar no botão de edição para abrir a cena do jogador. Eu também renomeio o nó pai dessa cena para "Player". Tanto a nova cena quanto o nó filho na cena do mapa.
 
 ![Salvando como cena](../Arquivos/Imagens/04_26.png 'Salvando como cena')
+<sup><sub> </sup></sub>
 
 ![Salvando como cena 2](../Arquivos/Imagens/04_27.png 'Salvando como cena 2')
+<sup><sub> </sup></sub>
 
 ![Botão de edição](../Arquivos/Imagens/04_28.png 'Botão de edição')
+<sup><sub> </sup></sub>
 
 ![Renomeando](../Arquivos/Imagens/04_29.png 'Renomeando')
+<sup><sub> </sup></sub>
 
 ![Renomeando 2](../Arquivos/Imagens/04_30.png 'Renomeando 2')
+<sup><sub> </sup></sub>
 
 Teria sido melhor renomear o nó antes de salvá-lo como filho, mas sinceramente eu esqueci de fazer isso. Felizmente, também é possível fazer essa mudança após salvar a cena. De qualquer forma, agora é mais simples adicionar um script a cena Player. Aproveitando a oportunidade, também levei o sprite do jogador para a mesma pasta onde salvei a cena do Player.
 
 ![Ajuste de arquivos](../Arquivos/Imagens/04_32.png 'Ajuste de arquivos')
+<sup><sub> </sup></sub>
 
 ![Incluindo Script](../Arquivos/Imagens/04_31.png 'Incluindo Script')
+<sup><sub> </sup></sub>
 
 Eu sempre salvo o script com o mesmo nome e na mesma pasta que a cena. (Isso só é possível porque o _script_ e a cena têm extensões diferentes). Uma adição interessante ao Godot 4 é a desse script padrão para o nó do tipo CharacterBody2D (corpo cinemático). 
 
 ![Nome do script](../Arquivos/Imagens/04_33.png 'Nome do script')
+<sup><sub> </sup></sub>
 
 ![Script padrão](../Arquivos/Imagens/04_34.png 'Script padrão')
+<sup><sub> </sup></sub>
 
 Esse script já inclui controle lateral, pulo e gravidade. Se eu fosse escrever um _script_ do zero para essa mesma funcionalidade, ele seria bem similar a esse. Porém, se eu rodar a cena de teste nesse exato momento, notarei que o meu jogador apenas cai. Isso é porque a câmera não está configurada para seguir o jogador.
 
 ![Gif, Player caindo](../Arquivos/Imagens/04_35.gif "Player Caindo")
+<sup><sub> </sup></sub>
 
 Existem vários jeitos de consertar isso. O mais simples é simplesmente colocar a câmera como um nó filho do jogador. Enquanto eu não pretendo usar isso na versão final do jogo (pois quero ter diferentes funcionalidades para a câmera em diferentes momentos), para motivos do protótipo, isso vai servir. Incluo agora também no backlog o item "Ajustar funcionamento da câmera".
 
 Na minha cena de teste, arrasto a câmera para que se torne nó filho do Player.
 
 ![Ajuste de câmera](../Arquivos/Imagens/04_36.png 'Ajuste de câmera')
+<sup><sub> </sup></sub>
 
 Agora, ao tentar executar a cena, a câmera segue o personagem como esperado, mas me deparo com outro problema. Eu não incluí colisão para o mapa que criei abaixo, e a gravidade faz com que o personagem caia diretamente através do chão.
 
 ![Gif, Player caindo 2](../Arquivos/Imagens/04_37.gif "Player Caindo 2")
+<sup><sub> </sup></sub>
 
 Para esse caso, eu ainda não lembrava como configurar colisões em Tilemaps para o Godot 4 (pois tenho mais experiência com a versão 3). Então tive que pesquisar sobre, e [este vídeo](https://www.youtube.com/watch?v=1Uk1yhGtnOo) me mostrou como fazê-lo. Segui os passos descritos, e incluí colisão para os dois tiles que eu usei no tileset.
 
 ![Ajuste de colisão](../Arquivos/Imagens/04_38.png 'Ajuste de colisão')
+<sup><sub> </sup></sub>
 
 Agora, o personagem cai até encontrar o chão. E é possível controlá-lo com as setas e a barra de espaço. O movimento não é muito bom, e o personagem não é animado, nem sequer vira para o lado onde está andando, porque nenhuma dessas funções foi programada. 
 
 ![Gif, Movimento básico](../Arquivos/Imagens/04_39.gif "Movimento básico")
+<sup><sub> </sup></sub>
 
 Contudo, já temos os primeiros passos para o protótipo 0. Uma cena de testes, um personagem jogável, e um plano de ação. Antes de prosseguirmos, vamos entender o código que já temos.
 
@@ -204,10 +243,12 @@ Contudo, já temos os primeiros passos para o protótipo 0. Uma cena de testes, 
 Para alguém que acabou de começar sua jornada de desenvolvimento, isso pode parecer mágica. Mas não há mágica alguma em códigos, são apenas conjuntos de instruções, e entendendo as instruções você entenderá o funcionamento do código. Então, vamos observar o _script_ do jogador que temos até agora.
 
 ![Código Player](../Arquivos/Imagens/04_40.png 'Script Player')
+<sup><sub> </sup></sub>
 
 Esse é um _script_ bem simples. Ele contém apenas uma função, e são apenas 29 linhas de código, incluindo linhas em branco.
 
 ![Linha 1](../Arquivos/Imagens/04_41.png 'Linha 1')
+<sup><sub> </sup></sub>
 
 A primeira linha é padrão na maioria dos scripts no Godot. "Extends" indica herança, que é um conceito de programação orientada a objetos. Em termos simples, quando um objeto herda de outro, ele recebe todos os atributos do objeto o qual ele herda. Nesse caso, nosso nó Player herda de CharacterBody2D. Ou seja, ele herda todos os atributos e funções da classe CharacterBody2D, e pode fazer coisas como andar pela tela e colidir com outros objetos. Sempre que você quiser entender qual é o tipo de objeto no Godot, você pode procurar por essa linha.
 
@@ -395,102 +436,128 @@ Agora, eu preciso fazer com que seja possível arrastá-los antes do jogo começ
 Criei uma simples textura para este botão e a incluí como a textura do nó relevante. Além disso, incluí a função _ready_ no _script_ do Player, para que seu processo físico seja desativado antes de iniciar a execução do jogo, e ele não se jogue da plataforma imediatamente.
 
 ![Script player stop](../Arquivos/Imagens/04_74.png 'Script player stop')
+<sup><sub> Ajuste em função _ready_ </sup></sub>
 
 Tratando-se dos objetos que devem ser arrastados, ativei a opção _pickable_ em suas abas de _Input_. Esta opção permite com que eles sejam clicáveis e arrastáveis. Por enquanto, porém, botão de _play_ não faz nada.
 
 ![Opção de arrasto](../Arquivos/Imagens/04_75.png 'Opção de arrasto')
+<sup><sub> Opção de arrasto </sup></sub>
 
 Antes de poder testar se o que eu fiz funcionou, percebo que não consigo ver os objetos, pois a câmera continua centrada no Player, e sequer posso mexê-lo. Por isso, passei a trabalhar na câmera. No próprio _script_ do mapa, na função _ready_, incluo um limite de fundo e de esquerda para a câmera. Esse limite impede que a câmera caia além do fundo da tela, ou vá além do início do mapa. 
 
 ![Câmera inadequada](../Arquivos/Imagens/04_76.png 'Câmera inadequada')
+<sup><sub> Câmera inadequada </sup></sub>
 
 Além disso, incluí no processo um update para que a posição da câmera seja sempre atualizada para a posição do Player (respeitando os limites configurados).
 
 ![Configurando câmera](../Arquivos/Imagens/04_77.png 'Configurando câmera')
+<sup><sub> Script da câmera </sup></sub>
 
 Ao tentar rodar isso, percebo que os objetos ainda não são arrastáveis. A opção _pickable_ não fez exatamente o que eu esperava. Sem problemas, a gente descobre um jeito. Dessa vez, encontrei uma forma de atualizar a posição do objeto. Nesse caso, tive que atrelar um _script_ diretamente ao objeto arrastável. 
 
 ![Script para objetos arrastáveis](../Arquivos/Imagens/04_78.png 'Script para objetos arrastáveis')
+<sup><sub> Script para objetos arrastáveis </sup></sub>
 
 Criei algumas cópias deles, e as incluí na tela. Agora sim conseguimos arrastar os objetos. Porém, permance um problema: Conseguimos arrastar objetos para dentro de outros. Terei que lidar com isso eventualmente.
 
 ![Gif, Objetos arrastáveis](../Arquivos/Imagens/04_79.gif "Gif, Objetos arrastáveis")
+<sup><sub> Objetos arrastáveis </sup></sub>
 
 Outra coisa que eu gostaria de poder arrastar é a câmera, como em um arrasto (_scroll_) de celular. Isso não é tão simples de implementar, pois não desejo que isso aconteça durante a execução do jogo em si, apenas na etapa de preparação da fase. Para isso, utilizarei um conceito muito importante para o desenvolvimento de jogos, o das máquinas de estado.
 
 Primeiramente, preciso decidir como isso vai funcionar. Minha intenção é que por padrão, arrastar o clique na tela causará com que ocorra o scroll da câmera. Por esse motivo, arrastar objetos deve tomar outro formato. A solução que pensei foi que, caso o jogador pressione/clique a posição do objeto por certo tempo, este irá entrar no modo de arrasto, e a câmera não mudará de posição. Mais a frente, interessa fazer um scroll seletivo da tela (por exemplo, quando o objeto está no canto).
 
 ![Máquina de estados](../Arquivos/Imagens/04_80.png 'Máquina de estados')
+<sup><sub> Máquina de estados </sup></sub>
 
 Dividi a execução da cena em três estados: Prepare, Select, Run. Prepare é o estado padrão, onde você pode fazer o scroll da tela e selecionar objetos. Select é o estado onde você está selecionando um objeto. E Run é o estado para iniciar a execução de cada fase. Mudei o processo para seguir com esses estados, e ali ele se refere a dois novos scripts. Um para a câmera, e outro para o container de objetos.
 
 Primeiramente, alterei o _script_ dos objetos para _apenas_ selecioná-los quando o jogador segura o clique por 0.15 segundos. Isso evita atrapalhar o jogador, selecionando um objeto quando ele deseja apenas fazer o _scroll_ da tela.
 
 ![Script de objetos arrastáveis novo](../Arquivos/Imagens/04_81.png 'Script de objetos arrastáveis novo')
+<sup><sub> Script de objetos arrastáveis </sup></sub>
 
 Se o jogador mover o toque antes do timer acabar, o objeto não é selecionado, e o _scroll_ normal da tela segue. Caso contrário, o objeto é selecionado e arrastado. Em seguida, adicionei um _script_ ao container de objetos. Este simplesmente verifica se algum dos objetos está selecionado. Caso haja algum, marca uma variável como verdadeiro. E caso contrário, esta é marcada como falso.
 
 ![Script de objetos arrastáveis novo](../Arquivos/Imagens/04_82.png 'Script de objetos arrastáveis novo')
+<sup><sub> Script de objetos arrastáveis novo </sup></sub>
 
 De volta em nosso _script_ com a máquina de estados. Nossa condição de mudança de estados é o _script_ acima. Quando algum objeto está selecionado, nosso estado é o de seleção. Caso contrário, vamos ao estado padrão de preparação. A condição para o estado de início ainda não existe.
 
 ![Máquina de estados 2](../Arquivos/Imagens/04_83.png 'Máquina de estados 2')
+<sup><sub> Máquina de estados 2 </sup></sub>
 
 Dependendo de qual for esse estado, permitimos ou não que a câmera seja arrastada com a variável _can_drag_ do script da câmera. 
 
 ![Máquina de estados 3](../Arquivos/Imagens/04_84.png 'Máquina de estados 3')
+<sup><sub> Máquina de estados 3 </sup></sub>
 
 E por fim, o _script_ da câmera é bem simples: Caso a variável _can_drag_ seja verdadeira, fazemos o scroll da tela para o lado onde ela for deslizada. O gif abaixo ilustra os resultados:
 
-![Máquina de estados 3](../Arquivos/Imagens/04_85.png 'Máquina de estados 3')
+![Camera Script](../Arquivos/Imagens/04_85.png 'Camera Script')
+<sup><sub> Script da câmera </sup></sub>
 
 ![Gif, Arrasto e Scroll](../Arquivos/Imagens/04_86.gif "Gif, Arrasto e Scroll")
+<sup><sub> Arrasto e scroll </sup></sub>
 
 Agora, resta trabalhar na execução em si. Incluí o botão de _play_ embaixo de um nó _CanvasLayer_, que faz que os objetos abaixo dele sempre estejam presentes na tela. Em seguida, conectei o sinal de clique do botão ao nó de controle principal, e esse ao nó pai do mapa. Ao clicar no botão, a cadeia de signals muda o estado no _script_ principal, e permite que o jogo se incie.
 
 Beleza, minha ideia funcionou. É claro, isso ainda não é um jogo. Temos algumas coisas a considerar: Problemas de colisão, um highlight para objetos selecionados, velocidade, _scroll_ da tela, condições de vitória e derrota. E, olhando melhor, percebo que ainda é possível arrastar os objetos durante a execução. Ainda falta bastante para termos um protótipo 0 completo. Mas já temos uma ideia de como esse jogo será.
 
 ![Execução completa](../Arquivos/Imagens/04_87.gif "Execução completa")
+<sup><sub> Execução do protótipo </sup></sub>
 
 Primeiramente, conserto o problema que mencionei acima, para que o jogador não possa arrastar objetos ou deslizar a tela durante a execução da fase. Além disso, incluí um _shader_ de contorno nos objetos quando selecionados, adaptado a partir [deste _shader_](https://godotshaders.com/shader/2d-outline-inline/). Lembrando-me de incluir a opção _local_to_scene_ para que o mesmo shader não se aplique a todas as cópias do mesmo objeto em tela.
 
 ![Condicionais de arrasto](../Arquivos/Imagens/04_89.png 'Condicionais de arrasto')
+<sup><sub> Condicionais para o arrasto </sup></sub>
 
 ![Shader de outline](../Arquivos/Imagens/04_88.png 'Shader de outline')
+<sup><sub> Shader de cotorno </sup></sub>
 
 Decidi incluir também uma condição de derrota, já que eu estou caindo várias vezes no buraco em meus testes, e tenho que resetar o jogo toda vez. No fundo do mapa, incluí um nó do tipo _Marker2D_, que eu nomeei BottomBoundary, e que basicamente marca uma posição. Além disso, incluí uma condição na função _process_, que roda uma função _kill_ do Player caso sua posição Y seja maior do que a posição Y do _Marker2D_.
 
 ![Marker2D](../Arquivos/Imagens/04_90.png 'Marker2D')
+<sup><sub> Configurando limites </sup></sub>
 
 ![Kill caso abaixo do marker](../Arquivos/Imagens/04_91.png 'Kill caso abaixo do marker')
+<sup><sub> Kill caso abaixo do fundo da tela </sup></sub>
 
 No Player, a função kill simplesmente desativa seu processo físico, e emite um signal que será reconhecido pelo _script_ do mapa. Você pode pensar que é redundante que o mapa invoque uma função que simplesmente irá emitir um signal para ele mesmo. Mas eu faço isso porque este não será o único meio pelo qual o Player morrerá, então este será interessante para outras situações.
 
 ![Função kill](../Arquivos/Imagens/04_92.png 'Função kill')
+<sup><sub> Função Kill </sup></sub>
 
 Minha intenção é que, após o jogador morrer, o jogo imediatamente volte ao estado em que estava antes que isso acontecesse. Ou seja, que o mapa permaneça da maneira que estava para que o jogador possa testar uma iteração nova a partir da anterior. Dessa forma, não faz sentido reiniciar a cena inteira, pois as posições dos objetos seriam resetadas. O que preciso fazer é retornar apenas o jogador (e quaisquer coletáveis) para a posição original deles, e voltar ao estado de edição da fase.
 
 Para isso, incluí uma variável que salva a posição inicial do jogador configurada no editor do mapa. Além disso, uma função que retorna o personagem para o lugar original. Não incluirei a câmera, porque provavelmente o ponto de interesse de edição para o jogador será onde ele morreu. Além disso, incluirei um marcador de mortes mais a frente no desenvolvimento. Também mudei o funcionamento da função _block_grabbing_ para levar uma condição _true_ or _false_, para que eu possa reativá-los quando necessário.
 
 ![Salvando posição do Player](../Arquivos/Imagens/04_93.png 'Salvando posição do Player')
+<sup><sub> Salvando posição incial </sup></sub>
 
 ![Soft reset](../Arquivos/Imagens/04_94.png 'Soft reset')
+<sup><sub> Função de reset </sup></sub>
 
 Pensando bem, talvez seja interessante fazer com que a câmera volte à posição inicial antes que o personagem passe a se mover. Também vou considerar usar um animador _tween_ para fazer isso mais adiante. Por agora, quero fazer com que objetos não consigam sobrepor um ao outro. E isso causou bastante trabalho e dificuldade, e ainda não está perfeito. Também fiz com que a câmera fizesse o scroll durante a seleção, o que foi bem simples. 
 
 Mais importante que qualquer coisa, falta algo fundamental para que isso se torne um jogo. Nós temos uma condição de derrota, mas não uma de vitória. Fiz um objeto para representar a vitória do jogador. Eu mudo o formato da fase e incluo o objeto _goal_. E dou ao meu player um nome de classe. Por fim, _Goal_ recebe um _script_ simples. Caso entre um corpo da classe Player, emita um signal de vitória.
 
 ![Novo Mapa](../Arquivos/Imagens/04_95.png 'Novo Mapa')
+<sup><sub> Novo mapa </sup></sub>
 
 ![Classe do Player](../Arquivos/Imagens/04_96.png 'Classe do Player')
+<sup><sub> Classe do Player </sup></sub>
 
 ![Goal script](../Arquivos/Imagens/04_97.png 'Goal script')
+<sup><sub> Script da bandeira </sup></sub>
 
 ![Tela de vitória](../Arquivos/Imagens/04_98.png 'Tela de vitória')
+<sup><sub> Função da tela de vitória </sup></sub>
 
 Ao final disso, quando meu Player encostar na bandeia _goal_, a função fará com que o novo painel (ColorRect) que adicionei apareça com a mensagem de vitória. Agora, podemos chamar isso de um jogo. Não é um jogo bom, e não é um jogo completo, mas é um jogo, como pode ver no gif abaixo:
 
 ![Protótipo 0](../Arquivos/Imagens/04_99.gif "Protótipo 0")
+<sup><sub> Protótipo 0 </sup></sub>
 
 E eu vou fechar meu protótipo 0 por aqui. Ainda há muita coisa para fazer, como o documento de _backlog_ indica. E isso é só o que eu pensei por agora. Mas o _core_ do jogo em si foi criado. A partir do capítulo da versão _alfa_, vou focar menos na execução da programação em si, e em boas práticas de programação geral. 
 
