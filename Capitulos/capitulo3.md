@@ -33,7 +33,7 @@ No entanto, os trabalhos do programador e do artista não seguem o mesmo ritmo. 
 
 ![Lara Croft Alavanca](../Arquivos/Imagens/03_01.jpg 'Lara Croft e a alavanca')
 
-(Isso é apenas um exemplo ilustrativo. Na prática, é possível que os desenvolvedores implementem todas as funções relacionadas à alavanca antes que as animações sejam efetuadas, e voltem para incluí-las mais à frente no desenvolvimento.)
+(Isso é apenas um exemplo ilustrativo. Na prática, é possível que os desenvolvedores implementem todas as funções relacionadas à alavanca antes que as animações sejam criadas, e voltem para incluí-las mais à frente no desenvolvimento.)
 
 O trabalho do gerente do time é certificar-se de que um membro não vai atrasar o outro, e tentar evitar retrabalhos ao máximo possível. Quanto menor o seu time, mais fácil é organizar isso, mas isso também quer dizer um ritmo de trabalho menor.
 
