@@ -69,6 +69,6 @@ Alguns programas como o _Chiptone_ vão permitir a criação de efeitos sonoros.
 De qualquer forma, uma vez criados os efeitos, é sempre bom testá-los no contexto do jogo, e iterar até encontrar um som ideal para a ação que está tentando criar.
 
 ## Conclusão
-Ao final desse capítulo, espero que tenha uma certa ideia de como prosseguir para a criação de músicas e efeitos sonoros para o seu jogo. A melhor opção ainda seria contratar ou recrutar um compositor competente para o seu jogo, mas as outras opções que listei serão úteis para uma equipe que não contém nenhum músico, o que não é algo tão incomum.
+Ao final desse capítulo, espero que tenha uma certa ideia de como prosseguir para a criação de músicas e efeitos sonoros para o seu jogo. A melhor opção ainda seria contratar ou recrutar um compositor competente para a sua equipe, mas as outras opções que listei serão úteis para uma equipe que não contém nenhum músico, o que não é algo tão incomum.
 
 No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo11.md), falarei mais sobre o processo de integração destes recursos áudiovisuais ao seu jogo.
