@@ -38,7 +38,7 @@ A maioria das _engines_ e ambientes de programação vai permitir que você crie
 
 Enquanto não existem regras para como criar uma _build_ para testes, alguns detalhes são importantes:
 
-- Não inclua todo o conteúdo disponível numa build de testes:
+- Não inclua todo o conteúdo disponível em uma build de testes:
 
 Em certos casos, é possível usar certas técnicas para desconstruir o executável de seu jogo, dando acesso aos arquivos disponíveis na criação da _build_ para o jogador. Enquanto isso não é um problema com uma pessoa em que você confia, pode ser ruim para _betas_ abertas ao público e casos similares.
 
@@ -46,9 +46,9 @@ Em certos casos, é possível usar certas técnicas para desconstruir o executá
 
 Caso ainda não tenha criado um menu final para o seu jogo, deixe um menu rudimentar para o acesso de seus _playtesters_. Pelo menos com uma opção de "Iniciar" e uma de "Sair".
 
-- Inclua notas caso necessário:
+- Inclua anotações caso necessário:
 
-Se estiver disponibilizando uma nova versão a alguém que já testou a versão antiga, inclua notas de problemas que foram consertados e mudanças que foram feitas. Interessa ao seu _playtester_ conferir o que mudou, e se o que consertou realmente funciona da maneira correta agora.
+Se estiver disponibilizando uma nova versão a alguém que já testou a versão antiga, inclua anotações de problemas que foram consertados e mudanças que foram feitas. Interessa ao seu _playtester_ conferir o que mudou, e se o que consertou realmente funciona da maneira correta agora.
 
 ## Interpretando e Integrando _Feedback_
 Os diferentes meios como o _feedback_ pode chegar vão resultar em diferentes métodos para interpretá-los e considerá-los. Além disso, esse _feedback_ pode apontar diversas coisas como: erros e _bugs_ na execução, deficiências no _design_, dificuldade inadequada, entre vários outros detalhes. 
