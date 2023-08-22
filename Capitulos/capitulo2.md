@@ -67,7 +67,7 @@ No contexto _indie_, _engines_ como Unity, Unreal, Godot, Game Maker, entre vár
 
 ## Escolhendo sua Engine
 
-A _engine_ ideal para o seu projeto pode não ser a _engine_ ideal para o meu projeto. E cabe ao desenvolvedor escolher o que encaixa melhor para seu jogo e para seu formato de trabalho. Por exemplo, enquanto eu acho Unreal uma ótima engine para desenvolvimento 3D, eu não a recomendaria para desenvolvimento 2D.
+A _engine_ ideal para o seu projeto pode não ser a _engine_ ideal para o meu projeto. E cabe ao desenvolvedor escolher o que encaixa melhor para seu jogo e para seu formato de trabalho. Por exemplo, enquanto eu acho Unreal uma ótima _engine_ para desenvolvimento 3D, eu não a recomendaria para desenvolvimento 2D.
 
 Entre _engines_, você vai encontrar diferenças diversas:
 - linguagens de programação usadas;
@@ -85,16 +85,16 @@ Enquanto eu não posso decidir por você, e acho bom que faça sua própria pesq
 
 ### Fator 1: Programar ou Não Programar (Eis a questão?)
 
-A programação é um detalhe que requer atenção, pois, na maioria dos casos, vai ser o aspecto mais importante do seu projeto. Cada _engine_ tem a sua prórpria abordagem para como as coisas devem ser programadas. Geralmente, isso é demonstrado em formas de linguagens diferentes. 
+A programação é um detalhe que requer atenção, pois, na maioria dos casos, vai ser o aspecto mais importante do seu projeto. Cada _engine_ tem a sua própria abordagem para como as coisas devem ser programadas. Geralmente, isso é demonstrado em formas de linguagens diferentes. 
 
-Para um programador experiente que entende de lógica, pular de uma linguagem para outra exige um pouco de estudo, mas não é uma mudança impossível. Seu programador pode ser familiar com uma linguagem como C++, e talvez seja interessante escolher uma _engine_ como Unity ou Unreal, onde é possível utilizá-la. Entretanto, caso escolham uma _engine_ com uma outra linguagem, é possível que o programador consiga se adaptar à nova linguagem (isso pode levar certo tempo, dependendo do conhecimento dele.)
+Para um programador experiente que entende de lógica, pular de uma linguagem para outra exige um pouco de estudo, mas não é uma mudança impossível. Seu programador pode ser familiar com uma linguagem como C++, e talvez seja interessante escolher uma _engine_ como Unity ou Unreal, onde é possível utilizá-la. Entretanto, caso escolham uma _engine_ com outra linguagem, é possível que o programador consiga se adaptar à nova linguagem (isso pode levar certo tempo, dependendo do conhecimento dele.)
 
 Entretanto, caso você não tenha um programador em sua equipe, a questão se torna um pouco mais complexa. Neste caso, você teria algumas opções:
 - Utilizar uma _engine_ que não exige programação;
 - Escolher alguém da equipe para aprender programação;
 - Recrutar um programador para a equipe.
 
-Pessoalmente, acredito que ter uma pessoa familiar com programação em sua equipe é importante. Isso é porque programação permite uma flexibilidade e usabilidade maior do que as alternativas. É claro, isso também exige mais conhecimento e treino. Aprender programação não é algo trivial, mas existe uma infinidade de cursos e materiais _online_ grátis cujo objetivo é te ensinar exatamente isso. Caso esteja disposto, é uma boa opção. Caso decida recrutar um programador, seja um novo membro ou uma pessoa contratada, lembre-se dos pros e cons de trabalhar com mais uma pessoa na equipe.
+Pessoalmente, acredito que ter uma pessoa familiar com programação em sua equipe é importante. Isso é porque programação permite uma flexibilidade e usabilidade maior do que as alternativas. É claro, isso também exige mais conhecimento e treino. Aprender programação não é algo trivial, mas existe uma infinidade de cursos e materiais _online_ grátis cujo objetivo é te ensinar exatamente isso. Caso esteja disposto, é uma boa opção. Caso decida recrutar um programador, seja um novo membro ou uma pessoa contratada, lembre-se dos prós e contras de trabalhar com mais uma pessoa na equipe.
 
 Entretanto, a escolha continua sendo sua, algumas opções de _engines_ que permitem criação de jogos sem uso de programação são: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
 
@@ -112,7 +112,7 @@ Certas _engines_ vão servir apenas para jogos 2D ou 3D, enquanto várias delas 
 
 Dependendo do gênero do seu jogo, você pode querer usar uma _engine_ específica voltada para ele. A maioria das _engines_ são feitas para usos gerais, e vão conseguir criar qualquer tipo de jogo, mas uma pode ser melhor do que a outra em determinada tarefa, e isso você deve considerar. 
 
-Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. Por exemplo, a série de _engines_ _RPG Maker_ vêm com todo o formato necessário para criação de um jogo no estilo de JRPGs antigos como os _Final Fantasy I-VI_, _Dragon Quest_, etc... A _engine_ _Renpy_ é ótima para criar jogos no estilo _Visual Novel_, entre outros exemplos.
+Em alguns casos, temos _engines_ feitas especificamente para um estilo de jogo. Por exemplo, a série de _engines_ _RPG Maker_ vêm com todo o formato necessário para criação de um jogo no estilo de JRPGs antigos como os _Final Fantasy I-VI_, _Dragon Quest_, etc. A _engine_ _Renpy_ é ótima para criar jogos no estilo _Visual Novel_, entre outros exemplos.
 
 É sempre possível criar o mesmo estilo de jogo em outras _engines_ gerais, mas se o seu objetivo é criar algo específico, talvez seja mais fácil usar uma _engine_ especializada.
 
@@ -156,7 +156,7 @@ Com uma _engine_ em mente, outro detalhe importante é como organizará seus arq
 
 Muitas coisas em seu projeto serão arquivos. Por exemplo, imagens de fundo, _sprites_ de personagens, modelos 3D e suas texturas, músicas e sons diversos, mapas, _scripts_. Todos estes arquivos estarão dentro da pasta de seu projeto. E eles são os principais responsáveis pelo "peso" dos jogos que você baixa.
 
-Algumas _engines_ vão tirar essa opção das suas mãos, seguindo sua própria estrutura de arquivos, e cabe a você colocá-los no lugar certo. Entretanto, na maioria dos casos a estrutura de arquivos fica completamente a critério do desenvolvedor.
+Algumas _engines_ vão tirar essa opção das suas mãos, seguindo sua própria estrutura de arquivos, e cabe a você colocá-los no lugar certo. Entretanto, geralmente a estrutura de arquivos fica completamente a critério do desenvolvedor.
 
 Para a manutenção de seu projeto é importante ter em mente como organizá-los. Pois quanto mais complexo ele ficar, mais difícil vai ser encontrar seus arquivos. Saber exatamente onde encontrar cada arquivo se torna indispensável à medida que os mesmos vão se amontoando na pasta de seu jogo.
 
@@ -166,15 +166,15 @@ Pessoalmente, eu costumava separá-los no seguinte formato, tentando seguir cert
 
 ![Arquivos 1](../Arquivos/Imagens/02_01.png 'Arquivos 1')
 
-Esse formato é compreensível e útil, mas deixa muito a desejar. Os "recursos" eram todo o tipo de arquivo que não era um _script_. Ou seja, texturas, _sprites_, e música todos ficavam em uma mesma pasta, enquanto todo o resto ficava espalhado. É fácil imaginar a frustração de ter que passar por uma dúzia de pastas completamente separadas ao meu objeto para encontrar uma textura específcia toda vez que quero mudar seu visual.
+Esse formato é compreensível e útil, mas deixa muito a desejar. Os "recursos" eram todo o tipo de arquivo que não era um _script_. Ou seja, texturas, _sprites_, e música todos ficavam em uma mesma pasta, enquanto o resto ficava espalhado. É fácil imaginar a frustração de ter que passar por uma dúzia de pastas completamente separadas ao meu objeto para encontrar uma textura específcia toda vez que quero mudar seu visual.
 
 Percebendo que isso não era tão prático, mudei para um novo jeito de organizar as pastas:
 
 ![Arquivos 2](../Arquivos/Imagens/02_02.png 'Arquivos 2')
 
-Objetos, seus _scripts_, modelos, texturas e sons ficam todos juntos na mesma pasta. Caso um artefato seja usado em mais de um objeto, o mesmo fica em uma pasta "common". Dessa forma, evito o problema que ocorria antes. É claro, dependendo do projeto, essa estrutura pode não ser ideal.
+Objetos, seus _scripts_, modelos, texturas e sons ficam todos juntos na mesma pasta. Caso um artefato seja usado em mais de um objeto, o mesmo fica em uma pasta "_common_". Dessa forma, evito o problema que ocorria antes. É claro, dependendo do projeto, essa estrutura pode não ser ideal.
 
-Minha sugestão fica para o formato que uso atualmente, mas sinta-se livre para usar sua própria estrutura. Apenas lembre-se de mantê-la consistente e organizada sempre, para evitar futuros transtornos. Anote-o em algum lugar, mesmo no GDD se quiser.
+Minha sugestão fica para o formato que uso atualmente, mas sinta-se livre para usar sua própria estrutura. Apenas se lembre de mantê-la consistente e organizada sempre, para evitar futuros transtornos. Anote-o em algum lugar, mesmo no GDD se quiser.
 
 ## Conclusão
 Ao final desse capítulo, você deveria ter um entendimento básico sobre as diferentes opções para desenvolvimento de jogos. Idealmente, também já teria alguma ideia de qual _engine_ ou _framework_ usará para seu projeto. Além disso, esperamos que tenha decidido como organizar seus arquivos, ou já esteja considerando qual estrutura funcionará melhor para sua organização.
