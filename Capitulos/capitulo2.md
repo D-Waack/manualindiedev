@@ -136,7 +136,7 @@ Mesmo com todos esses fatores em mente, às vezes continua sendo difícil encont
 
 Se não deseja programar, as opções que citei anteriormente são boas: **Gdevelop**, **Game Maker Studio 2**, **Unity Visual**, **Scratch**, **Soba**.
 
-Se o seu jogo é 3D, Unity ou Unreal são as opções mais completas. (Um adendo, acredito que criar um complexo jogo 3D em um contexto _indie_ seja uma má ideia).
+Se o seu jogo é 3D, Unity ou Unreal são as opções mais completas. (Um adendo, acredito que criar um complexo jogo 3D em um contexto _indie_ seja uma má ideia, a não ser que você já tenha certa experiência).
 
 Se o seu jogo é um RPG 2D ou uma visual novel, talvez te interessem _engines_ como RPG Maker, ou Renpy.
 
