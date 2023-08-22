@@ -25,9 +25,9 @@ Estes problemas devem ser evitados para que o risco de cancelmaneto seja o menor
 
 Além de ser um ótimo jeito de organizar e documentar suas ideias, manter um documento assim pode ser útil caso entre um novo membro na sua equipe (e ele precise entender o projeto para trabalhar nele), ou se precisar demonstrar suas ideias para um possível investidor, ou em uma campanha de _crowdfunding_. Dessa forma, o documento deve conter a quantidade de detalhes que será relevante ao leitor. Em vários casos também é interessante que inclua detalhes sobre o que será necessário na construção do jogo.
 
-Entramos então no mérito do **design**. Você pode pensar no design como um planejamento, uma idealização, ou como uma especificação. Geralmente, no contexto de desenvolvimento de jogos, nós chamamos o documento de design pelo nome criativo "Game Design Document" (Documento de Design de Jogo).
+Entramos então no mérito do **design**. Você pode pensar no design como um planejamento, uma idealização, ou como uma especificação. Geralmente, no contexto de desenvolvimento de jogos, nós chamamos o documento de design pelo nome criativo "_Game Design Document_" (Documento de Design de Jogo).
 
-## Game Design Document (GDD)
+## _Game Design Document_ (GDD)
 
 Não existe um padrão exato para como o GDD deve ser criado. E se você procurar online, você vai encontrar dúzias de padrões e modelos/templates diferentes. Na hora de delimitar o formato do seu documento, é importante considerar quem o verá e quanto tempo você quer passar detalhando-o. Pessoalmente, eu tento ser curto e objetivo nos meus, tentando passar o máximo de informação no menor espaço possível.
 
@@ -45,7 +45,7 @@ Se procura por inspiração, vários exemplos notáveis de GDDs podem ser encont
 
 Enquanto eu deixei várias notas no modelo do documento, achei relevante falar brevemente sobre cada campo aqui. Você pode encontrar o GDD inicial para os 2 projetos desenvolvidos em conjunto com o manual nos seguintes links: 
 - [Sleepy Runner](https://github.com/D-Waack/sleepy-runner-godot4/blob/main/Docs/Sleepy_GDDv1.0.pdf)
-- [Topdown Space Shooter](https://github.com/D-Waack/vortex-tautology-demo/blob/main/Docs/VortexTautology_GDDv1.0.pdf)
+- [Top down Space Shooter](https://github.com/D-Waack/vortex-tautology-demo/blob/main/Docs/VortexTautology_GDDv1.0.pdf)
 
 ### Conceito
 A primeiro seção, "Conceito", tem o objetivo de explicar a ideia por trás do jogo de maneira simples e sucinta.  
@@ -57,10 +57,10 @@ O "público alvo" é autoexplicativo. Para qual público este jogo é criado? Ou
 
 ### Detalhes Técnicos
 A segunda seção, "Detalhes Técnicos" se refere a vários aspectos que serão importantes durante a construção do jogo. Caso não saiba como responder um, não se preocupe, isso ficará melhor definido conforme seu projeto evoluir.  
-A "plataforma" é, como o nome sugere, a plataforma onde seu jogo será executado. Podem ser computadores, celulares, navegadores, consoles de jogos, entre outros. E qualquer combinação destes. Lembre-se que fazer uma versão para um ambiente diferente (port) pode não ser um processo tão simples. Certas ferramentas e motores vão facilitar muito esse processo, para outros casos será impossível, e você terá que refazer seu projeto em outro ambiente. O mesmo pode acontecer entre diferentes sistemas operacionais de computador. A plataforma em que deseja que seu jogo rode deve influenciar a escolha do ambiente de desenvolvimento.  
-As "tecnologias" estão intimamente relacionadas ao tópico anterior. Nós entraremos no mérito de como preencher esse tópico no capítulo seguinte. Porém, basicamente, se referem a o que você vai usar para criar o seu jogo. Por exemplo, _engines_ (motores) como Unity, Unreal e Godot, ou _frameworks_ como Spritekit, Phaser e Starling. Talvez algo mais específico como RPG Maker, ou algo mais fácil de usar como o Game Maker. Qual linguagem será usada? Talvez javascript ou C++? Ou quem sabe usará uma ferramenta em que não há necessidade de programar em uma linguagem? Novamente, será mais interessante preencher isto no próximo capítulo, a não ser que já tenha alguma preferência. 
+A "plataforma" é, como o nome sugere, a plataforma onde seu jogo será executado. Podem ser computadores, celulares, navegadores, consoles de jogos, entre outros. E qualquer combinação destes. Lembre-se que fazer uma versão para um ambiente diferente (port) pode não ser um processo tão simples. Certas ferramentas e motores vão facilitar muito esse processo, para outros casos isso será impossível, e você terá que refazer seu projeto em outro ambiente. O mesmo pode acontecer entre diferentes sistemas operacionais de computadores. A plataforma em que deseja que seu jogo rode deve influenciar a escolha do ambiente de desenvolvimento.  
+As "tecnologias" estão intimamente relacionadas ao tópico anterior. Nós entraremos no mérito de como preencher esse tópico no capítulo seguinte. Porém, basicamente, se referem a o que você vai usar para criar o seu jogo. Por exemplo, _engines_ (motores) como Unity, Unreal e Godot, ou _frameworks_ como Spritekit, Phaser e Starling. Talvez algo mais específico como RPG Maker, ou algo mais fácil de usar como o Game Maker. Qual linguagem será usada? Talvez javascript ou C++? Ou quem sabe usará uma ferramenta em que não há necessidade de programar em uma linguagem? Novamente, será mais interessante preencher isto no próximo capítulo, a não ser que já tenha alguma preferência.  
 A "interação" se refere às interfaces com as quais o seu jogador vai interagir com o jogo em si. Seja através de _touchscreen_, controles, mouses/teclados ou algum outro tipo de dispositivo de _input_. Também vale incluir situações especiais como controle por movimento/giroscópio. No caso de controles de console, é interessante incluir se existe vibração e outras reações do controle também.  
-A "monetização" se refere a como você pretende ganhar dinheiro com o jogo. Se pretende vendê-lo como um jogo separado. Ou se será free 2 play com microstransações para diferentes personagens, cosméticos, etc. Quem sabe seu jogo é completamente grátis e não pretende ganhar dinheiro algum com ele? Qualquer que seja sua ideia, aqui é o lugar onde pode incluí-la. 
+A "monetização" se refere a como você pretende ganhar dinheiro com o jogo. Se pretende vendê-lo como um jogo separado. Ou se será free 2 play com microstransações para diferentes personagens, cosméticos, etc. Quem sabe seu jogo é completamente grátis e não pretende ganhar dinheiro algum com ele? Qualquer que seja sua ideia, aqui é o lugar onde pode incluí-la.  
 As "ferramentas de desenvolvimento" são uma lista de ferramentas que serão utilizadas para a criação de recursos diversos como música, arte, modelos 3D, mapas, entre vários outros.
 
 ### Detalhes Conceituais
