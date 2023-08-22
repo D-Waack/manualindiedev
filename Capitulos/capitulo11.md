@@ -38,10 +38,12 @@ Objetos como pilares, árvores, alavancas, ou qualquer objeto de cenário vêm p
 Para jogos no estilo _topdown_, objetos de cenário sempre terão colisões. Porém, estes jogos tentam criar uma ilusão de 3D, e é interessante que contenham colisões somente na sua "base". Ou seja, o topo destes objetos costumam não conter colisões. Nesses casos, é interessante tentar criar um objeto em uma camada _acima_ do jogador (mais à frente), para que o mesmo não apareça no topo deste erroneamente.
 
 ![Exemplos Colisão Topdown](../Arquivos/Imagens/11_01.png 'Exemplos Colisão Topdown')
+<sup><sub> Exemplos de Colisões Topdown (marcadas em vermelho) - The Legend of Zelda - A Link to the Past (Nintendo (1991)) </sup></sub>
 
 Colisões para objetos costumam ser _retângulos_ simples que englobam o objeto completamente. Para objetos redondos, talvez um círculo seja mais adequado. Para grande parte dos jogos, colisões simples assim costumam ser o mais adequado. Manter colisões com formatos primitivos também simplifica os cálculos de física, permitindo com que seu jogo execute melhor. Porém, em certos casos, colisões primitivas não vão ser boas o suficiente, e criar um polígono manualmente se mostra necessário. Tente evitar isso ao máximo, mas lembre-se que é uma opção.
 
 ![Exemplos Colisão Sidescroller](../Arquivos/Imagens/11_02.png 'Exemplos Colisão Sidescroller')
+<sup><sub> Exemplos de Colisões Sidescroller (marcadas em vermelho) - Super Mario World (Nintendo(1990)) </sup></sub>
 
 ### Recursos 2D - Colisões: camadas de personagens
 As camadas de personagens são as mais simples. Geralmente, sprites de personagens ficam no topo, como a camada mais aparente (com exceção de casos onde existem objetos que devem aparecer à frente destes). Em termos de colisões, costumamos seguir com o mesmo formato para objetos diversos. A colisão é um retângulo que engloba o personagem completa ou parcialmente. 
@@ -54,6 +56,7 @@ Geralmente é esperado que, para personagens, a colisão os englobe completa, ou
 Um outro detalhe importante para personagens são as colisões de dano (ou o que chamamos de hitboxes e hurtboxes). Costumamos assumir que a área de dano de um personagem é a mesma que colide com o ambiente. Enquanto isso é verdade em alguns casos, na maioria deles não é.
 
 ![Exemplo Hitbox Touhou](../Arquivos/Imagens/11_03.png 'Exemplo Hitbox Touhou')
+<sup><sub> Exemplo de hitbox em Touhou 7 - Perfect Cherry Blossom (Team Shanghai Alice (2003)), hitbox de Reimu é apenas um pequeno círculo no centro do seu sprite. </sup></sub>
 
 Uma _hitbox_ se refere a essa área de colisão responsável por registrar _dano_. Em alguns casos, o termo _hurtbox_ é usado para se referir a uma área responsável por **receber** dano, e _hitbox_ apenas para a área responsável por **realizar** dano. Eu usarei esses termos por questões de simplicidade, mas geralmente _hitbox_ se refere a ambos.
 
@@ -80,6 +83,7 @@ Para um _tile_ animado (por exemplo de um rio) que funciona sozinho, simplesment
 Para personagens, inimigos, objetos animados, etc., você precisará atrelar essas animações às ações do personagem de alguma forma através de um script. Para _sprites_, o método mais comum é criar um _spritesheet_, um arquivo de imagem com a sequência de todas as variações do sprite igualmente espeçadas. Estas variações se tornam os frames da animação.
 
 ![Exemplo Spritesheet Momodora](../Arquivos/Imagens/11_04.png 'Exemplo Spritesheet Momodora')
+<sup><sub> Exemplo - Spritesheet de Momodora: Reverie Under the Moonlight (Bombservice (2016)) </sup></sub>
 
 Geralmente, _engines_ vão oferecer algum recurso que permita que você crie animações e as inicie/pare pelo código, como é o caso do "AnimationPlayer" no Godot. Para _frameworks_, é mais comum que você tenha que ditar os frames da animação e o _timing_ manualmente. De qualquer forma, a animação de personagens vai ser sempre um comando atrelado a alguma ação ou verbo (correr, pular, cair, parar, atacar, etc.). Além destes, existem também as animações _idle_, que são animações executadas enquanto nenhuma ação é tomada.
 
@@ -89,8 +93,10 @@ Além de _sprites_, _tiles_ e outros recursos que podem ser criados manualmente,
 Estes costumam ser criados/calculados em tempo de execução, shaders e partículas. Partículas são pequenas texturas ou objetos geométricos que são emitidos a partir de um ou vários pontos para dar a impressão de algum fenômeno como fumaça, fogo, eletricidade, etc. Shaders funcionam como "filtros" que alteram os pixels disponíveis na tela em tempo real, podendo mudar completamente a impressão de toda a tela, ou de um pedaço dela, criando efeitos visuais diversos. 
 
 ![Exemplos Partículas](../Arquivos/Imagens/11_05.jpg 'Exemplos Partículas')
+<sup><sub> Exemplos de partículas </sup></sub>
 
 ![Exemplos Shaders](../Arquivos/Imagens/11_06.jpg 'Exemplos Shaders')
+<sup><sub> Exemplos de _shaders_ </sup></sub>
 
 Enquanto partículas são objetos visuais reais, e shaders são apenas alterações calculadas pela GPU, ambos requerem uma certa capacidade de processamento maior do que meros objetos como sprites em tela.
 
@@ -121,6 +127,7 @@ A implementação de um HUD é simples, basta incluir uma camada visual bidimens
 Em certos casos, é interessante encontrar outros jeitos de mostrar informação ao jogador, como fiz no meu projeto _The Tautology Vortex_, onde a vida do personagem é demonstrada pela cor/presença do escudo. Ou em um jogo como Dead Space, onde informações importantes são demonstradas no próprio personagem jogável e objetos no próprio jogo. Esse tipo de detalhe sempre é apreciado quando feito da maneira correta.
 
 ![Display de informações em Dead Space](../Arquivos/Imagens/11_07.png 'Display de informações em Dead Space')
+<sup><sub> Display de informações em Dead Space (EA Redwood Shores (2008)) </sup></sub>
 
 Em termos de interfaces gerais, como menus e inventários, simplesmente montá-los como uma tela interativa com o mouse é o suficiente. Na maioria dos casos, também é interessante adicionar certa redundância a comandos interativos em menus, como setas de teclado para escolher opções, várias teclas para confirmação, usabilidade de controle, etc. Sempre lembrando de ter bom senso, pouco ajuda ter opções diversas para um jogo de celular com o qual o jogador vai interagir apenas por toque.
 
