@@ -394,12 +394,15 @@ Agora, posso pegar este signal que criei no meu Player e usá-lo no meu mapa pri
 Por fim, eu incluo uma última alteração no código do meu mapa. Nas linhas 13 e 14, caso o meu mouse esteja na área delimitada pelo Area2D, o jogador não conseguirá incluir blocos novos nessa posição, pois o comando retorna, interrompendo a execução da função neste frame. Isso não acontece para o caso de deleção. Ou seja, o jogador consegue destruir blocos próximos a ele, mas não consegue criar novos.
 
 ![Signals 7](../Arquivos/Imagens/04_68.png 'Signals 7')
+<sup><sub>  </sup></sub>
 
 ![Execução pós mudança](../Arquivos/Imagens/04_69.gif "Execução pós mudança")
+<sup><sub> Nova execução </sup></sub>
 
 Agora é possível notar que eu exagerei um pouco no tamanho da minha área, principalmente para baixo, e eu mudei o tamanho da área mais a frente para que não inclua o espaço logo abaixo do personagem. De qualquer forma, a deleção e bloqueio pela área estão funcionando normalmente. 
 
 ![Ajuste de área](../Arquivos/Imagens/04_70.png "Ajuste de área")
+<sup><sub> Ajuste de área </sup></sub>
 
 Após fazer tudo isso, eu subi o progresso para o _github_, para salvar essa versão em algum outro lugar.
 
@@ -424,14 +427,17 @@ Imediatamente eu me ponho a trabalhar nesta segunda versão do meu protótipo. P
 Além disso, no mapa original, mudei a posição de meu Player para que ele comece a execução caindo. Um detalhe importante sobre essa nova ideia é de que, a princípio, mais do mapa deve estar visível a todo o tempo. Por isso, aumentei a resolução da tela novamente. Também adicionei um novo nó à cena de meu mapa, e o renomeei para "Objects". Este nó vai servir como um _container_ para todos os objetos que incluirei em cada fase.
 
 ![Ajustes Mapa](../Arquivos/Imagens/04_71.png 'Ajustes Mapa')
+<sup><sub> Ajustes no mapa </sup></sub>
 
 Por agora, criei estes objetos como instâncias do _StaticBody2D_, usando a imagem de meu _tileset_ como textura para eles. Estes objetos também são corpos como os rígidos e cinemáticos, mas eles são estáticos, e não são feitos para serem movidos em conjunto com atualizações de _frames_ de física. Estes serão os objetos de teste. 
 
 ![Novos objetos](../Arquivos/Imagens/04_72.png 'Novos objetos')
+<sup><sub> Novos objetos </sup></sub>
 
 Agora, eu preciso fazer com que seja possível arrastá-los antes do jogo começar. Além disso, preciso fazer com que o jogador **não** comece a andar antes que eu permita que isso aconteça. Para isso, incluirei um botão de _play_ no canto da tela. Até que esse botão seja pressionado, meu jogador permanecerá desativado. Para isso, incluí um nó _Control_, que servirá como _container_ para nós de interface, e um _TextureButton_, que será o botão de _play_ ao qual me referi.
 
 ![Nós de controle](../Arquivos/Imagens/04_73.png 'Nós de controle')
+<sup><sub> Nós de controle </sup></sub>  
 
 Criei uma simples textura para este botão e a incluí como a textura do nó relevante. Além disso, incluí a função _ready_ no _script_ do Player, para que seu processo físico seja desativado antes de iniciar a execução do jogo, e ele não se jogue da plataforma imediatamente.
 
