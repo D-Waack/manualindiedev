@@ -8,7 +8,7 @@
 
 Se tudo deu certo durante o [capítulo interior](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo2.md), você escolheu qual será sua _engine_ e já tem certa noção de como organizará seus arquivos. Nesse caso, você já está pronto para começar o desenvolvimento de seu jogo.
 
-Geralmente, definimos o ciclo de vida para o desenvolvimento de um jogo da seguinte forma: **Pré-Produção** -> **Produção (Alfa)** -> **Produção (Beta)** -> **Produto Final**
+Geralmente, definimos o ciclo de vida para o desenvolvimento de um jogo da seguinte forma: **Pré-Produção** → **Produção (Alfa)** → **Produção (Beta)** → **Produto Final**
 
 Seguindo esta classificação, você teria passado pela etapa de pré-produção. A pré-produção na indústria como um todo geralmente é um processo mais formal do que o que descrevi aqui. Isso não será um problema. Em muitos casos, um pequeno protótipo é projetado também durante a pré-produção. Decidi incluir isto na etapa de produção, por questões de simplicidade.
 
@@ -23,17 +23,17 @@ Vamos falar um pouco melhor destes em seguida.
 
 ### Divisão de tarefas 
 
-Se seu projeto é solo, decidir isso vai ser bem fácil. Torna-se apenas uma questão de prioridades. E, para essse caso, existe um caminho ideal que vou discutir mais a frente. Porém, se você trabalha em um grupo, as coisas ficam um pouco mais complexas.
+Se seu projeto é solo, decidir isso vai ser bem fácil. Torna-se apenas uma questão de prioridades. E, para esse caso, existe um caminho ideal que vou discutir mais a frente. Porém, se você trabalha em um grupo, as coisas ficam um pouco mais complexas.
 
 Uma ótima coisa quando trabalhando em grupo é que várias pessoas podem trabalhar em diferentes frentes ao mesmo tempo. Porém, isso vai gerar maior trabalho organizacional, porque nem todas as competências devem ser desenvolvidas no mesmo ritmo.
 
 Por exemplo, se sua equipe tem 2 programadores, ambos podem facilmente trabalhar em diferentes aspectos de seu jogo. Digamos, um trabalha no movimento do personagem e o outro trabalha no funcionamento dos menus principais. Da mesma forma, se a equipe tem 2 artistas, um pode trabalhar no _design_ de um personagem, enquanto o outro trabalha em fundos, ou em outro personagem. O mesmo se aplica a músicos, _level designers_, e a lista segue.
 
-No entanto, os trabalhos do programador e do artista não seguem o mesmo ritmo. E, em certos casos, um depende de um resultado do outro. Por exemplo, implementar uma certa ação como puxar uma alvanca no jogo _Tomb Raider_ precisaria que os animadores tivessem completado a animação de puxar a alavanca. Esses animadores precisaram esperar que os modeladores tivessem completado o modelo de Lara Croft. E esses modeladores precisaram usar a _concept art_ do time de arte para criar o modelo e suas texturas.
+No entanto, os trabalhos do programador e do artista não seguem o mesmo ritmo. E, em certos casos, um depende de um resultado do outro. Por exemplo, implementar uma certa ação como puxar uma alavanca no jogo _Tomb Raider_ precisaria que os animadores tivessem completado a animação de puxar a alavanca. Esses animadores precisaram esperar que os modeladores tivessem completado o modelo de Lara Croft. E esses modeladores precisaram usar a _concept art_ do time de arte para criar o modelo e suas texturas.
 
 ![Lara Croft Alavanca](../Arquivos/Imagens/03_01.jpg 'Lara Croft e a alavanca')
 
-(Isso é apenas um exemplo ilustrativo. Na prática, é possível que os desenvolvedores implementem todas as funções relacionadas à alavanca antes que as animações sejam criadas, e voltem para incluí-las mais à frente no desenvolvimento.)
+(Isso é apenas um exemplo ilustrativo. Na prática, é possível que os desenvolvedores implementem todas as funções relacionadas à alavanca antes que as animações sejam criadas, e voltem para incluí-las mais adiante no desenvolvimento.)
 
 O trabalho do gerente do time é certificar-se de que um membro não vai atrasar o outro, e tentar evitar retrabalhos ao máximo possível. Quanto menor o seu time, mais fácil é organizar isso, mas isso também quer dizer um ritmo de trabalho menor.
 
@@ -41,11 +41,11 @@ O trabalho do gerente do time é certificar-se de que um membro não vai atrasar
 
 Os ciclos de desenvolvimento estarão atrelados a um **período de tempo** específico.
 
-A ideia por trás do Scrum é de dividir o seu projeto em partes menores, cada uma sendo implementada em um período delimitado pela equipe (geralmente de 2-4 semanas). Dessa forma, o processo de produção fica mais simples e organizado. Por exemplo, eu não "trabalho no jogo", mas sim "termino o sistema de dano e _knockback_". 
+A ideia por trás do Scrum é de dividir o seu projeto em partes menores, cada uma implementada em um período delimitado pela equipe (geralmente de 2-4 semanas). Dessa forma, o processo de produção fica mais simples e organizado. Por exemplo, eu não "trabalho no jogo", mas sim "termino o sistema de dano e _knockback_". 
 
-Isso implica em algumas coisas para você e sua equipe: Vocês terão metas a cumprir (onde podem ter sucesso ou não); terão metas a decidir; e devem refletir sobre o resultado encontrado ao final de cada ciclo.
+Isso implica em algumas coisas para você e sua equipe: vocês terão metas a cumprir (onde podem ter sucesso ou não); terão metas a decidir; e devem refletir sobre o resultado encontrado ao final de cada ciclo.
 
-Existe flexibilidade no tamanho destes ciclos, e quanto é feito em cada um. Isso é importante que decidam. Pessoalmente, para projetos pequenos eu costumo trabalhar com ciclos de 1 semana. Talvez para você seja melhor 2 semanas. Para o contexto _indie_, eu não recomendo nada muito maior que isso a não ser que sua equipe não tenha muito tempo para trabalhar no projeto. 
+Existe flexibilidade no tamanho destes ciclos, e quanto é feito em cada um. Isso é importante que decidam. Pessoalmente, para projetos pequenos eu costumo trabalhar com ciclos de 1 semana. Talvez para você seja melhor 2 semanas. Para o contexto _indie_, eu não recomendo nada muito maior que isso, a não ser que sua equipe não tenha muito tempo para trabalhar no projeto. 
 
 ## O Ciclo
 
@@ -59,7 +59,7 @@ Na teoria, um líder competente seria capaz de dirigir o jogo sozinho, sem que a
 
 Quanto mais diálogo houver entre os integrantes, mais eles podem contribuir uns com os outros, e apoiarem-se entre si. O líder deve estimular diálogo entre os membros de forma que todos saibam o progresso entre eles, e não haja surpresas mais a frente.
 
-A delimitação do ciclo pode ser feita através de uma reunião pessoal, uma chamada de vídeo, ou mensagens de texto. É preferível que possam se comunicar por voz, pois isso ajuda a fluir a discussão. Isso deve ser decidido logo no início do ciclo, ou no final do anterior.
+A delimitação do ciclo pode ser feita por meio de uma reunião pessoal, uma chamada de vídeo, ou mensagens de texto. É preferível que possam se comunicar por voz, pois isso ajuda a fluir a discussão. Isso deve ser decidido logo no início do ciclo, ou no final do anterior.
 
 Lembrando sempre que a opinião que deve pesar mais para cada aspecto é a dos especialistas para esse aspecto, mas que as opiniões do resto da equipe são de importância também. Enquanto, por exemplo, o programador pode não saber tanto de arte, seu _input_ sobre o processo pode ser muito útil para o artista. Isso também é importante porque mais a frente no projeto você terá de unir todos estes aspectos diferentes.
 
@@ -126,7 +126,7 @@ De qualquer forma, é esperado que pelo menos alguma coisa tenha sido feita com 
 
 Esses detalhes devem ser documentados e mantidos em mente na hora do planejamento do próximo ciclo. O que ficar para trás, e ideias que foram tidas durante o ciclo são documentadas no _backlog_.
 
-Após uma reflexão sobre o resultado do ciclo anterior, geralmente se inicia o próximo, mas existe uma outra etapa muito importante.
+Após uma reflexão sobre o resultado do ciclo anterior, geralmente se inicia o próximo, mas existe outra etapa muito importante.
 
 ### 4. Testando resultados
 
