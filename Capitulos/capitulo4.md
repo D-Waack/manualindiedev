@@ -55,26 +55,26 @@ Caso você não tenha ideia de como fazer essas implementações, ou fique sem s
 Na maioria dos casos, começamos qualquer projeto criando uma pasta para ele. Na minha _engine_ de escolha, isso pode ser feito no próprio editor. Aqui, vou descrever os passos para minha _engine_ de escolha, Godot. Mas independente do ambiente que escolher, essa descrição do processo pode servir como referência para o seu.
 
 ![Criando Projeto](../Arquivos/Imagens/04_01.png 'Criando Projeto')
-<sup><sub> </sup></sub>
+<sup><sub> Criando o projeto </sup></sub>
 
 Ao criar o projeto, somos apresentados ao menu principal da _engine_. Neste caso, já vemos o visualizador/editor de mapas imediatamente. Meu próximo passo sempre costuma ser criar as pastas de arquivos na estrutura que decidi anteriormente.
 
 ![Primeira Visão da Engine](../Arquivos/Imagens/04_02.png 'Primeira Visão da Engine')
-<sup><sub> </sup></sub>
+<sup><sub> Editor de cena e mapas </sup></sub>
 
 ![Pastas de Arquivos](../Arquivos/Imagens/04_03.png 'Pastas de Arquivos')
-<sup><sub> </sup></sub>
+<sup><sub> Explorador de arquivos </sup></sub>
 
-Em seguida, eu passo por algumas configurações que serão relevantes para a construção do jogo. No momento, estou preocupado apenas com o **nome do projeto** e o **tamanho da tela**. O tamanho dela é importante decidir cedo no desenvolvimento, pois isso vai afetar o seu jogo. Principalmente para questões de _câmera_ e quanto cabe em sua tela. Nesse caso, como trata-se de um jogo para celulares, optei por um tamanho padrão de 1080x720, mas provavelmente vou mudá-lo mais a frente por se tratar de um jogo _pixel art_. Essa resolução não é estática, e será mudada para se adequar à tela do celular do jogador, mas para isso, devo incluir também a opção de _stretch_.
+Em seguida, eu passo por algumas configurações que serão relevantes para a construção do jogo. No momento, estou preocupado apenas com o **nome do projeto** e o **tamanho da tela**. O tamanho dela é importante decidir cedo no desenvolvimento, pois isso vai afetar o seu jogo. Principalmente para questões de _câmera_ e quanto cabe em sua tela. Nesse caso, como se trata de um jogo para celulares, optei por um tamanho padrão de 1080x720, mas provavelmente vou mudá-lo mais a frente por se tratar de um jogo _pixel art_. Essa resolução não é estática, e será mudada para se adequar à tela do celular do jogador, mas para isso, devo incluir também a opção de _stretch_.
 
 ![Configurações](../Arquivos/Imagens/04_04.png 'Configurações')
-<sup><sub> </sup></sub>
+<sup><sub> Abrindo as configurações </sup></sub>
 
 ![Configurações2](../Arquivos/Imagens/04_05.png 'Configurações 2')
-<sup><sub> </sup></sub>
+<sup><sub> Configurações do projeto </sup></sub>
 
 ![Configurações3](../Arquivos/Imagens/04_06.png 'Configurações 3')
-<sup><sub> </sup></sub>
+<sup><sub> Configurações de janela </sup></sub>
 
 Após fazer essas mudanças, pressiono CONTROL + S para salvar meu projeto, e passo a trabalhar no protótipo em si.
 
@@ -84,24 +84,24 @@ Essas cenas executáveis são então compostas de vários elementos. Por exemplo
 
 No Godot, toda cena é uma estrutura de árvore. Estruturas de árvore são compostas de um nó pai e vários nós filhos. Aqui, estes nós filhos representam diferentes objetos de cada cena. Por exemplo, um personagem que se move na tela seria um _CharacterBody_ ou _CharacterBody2D_. O mapa pode ser composto de vários objetos estáticos _StaticBody3D_/_StaticBody2D_, ou de um _Tilemap_ (mapa formado por _tiles_/blocos).
 
-Aqui, para criar a primeira cena, eu escolho a opção "2D Scene", e em seguida eu dou um nome para esta cena. Para nomenclatura de cenas e nós, eu costumo usar o padrão CamelCase (palavras diferentes não são separadas por espaços, mas têm sua primeira letra em caixa alta). Eu faço isso para separar objetos instanciados de nomes de variáveis quando escrevo meus scripts. Mas você pode nomear suas cenas como preferir, ou como for o padrão em seu ambiente de desenvolvimento.
+Aqui, para criar a primeira cena, eu escolho a opção "2D Scene", e em seguida eu dou um nome para esta cena. Para nomenclatura de cenas e nós, eu costumo usar o padrão CamelCase (palavras diferentes não são separadas por espaços, mas têm sua primeira letra em caixa alta). Eu faço isso para separar objetos instanciados de nomes de variáveis quando escrevo meus _scripts_. Mas você pode nomear suas cenas como preferir, ou como for o padrão em seu ambiente de desenvolvimento.
 
 ![Primeira Cena](../Arquivos/Imagens/04_07.png 'Primeira Cena')
-<sup><sub> </sup></sub>
+<sup><sub> Visualizador de cena </sup></sub>
 
 ![Primeira Cena 2](../Arquivos/Imagens/04_08.png 'Primeira Cena 2')
-<sup><sub> </sup></sub>
+<sup><sub> Nó raiz da primeira cena </sup></sub>
 
-Em seguida, eu adiciono os elementos que vou precisar para a criação desse primeiro mapa teste. Ou seja, adiciono nós filhos. No caso, um nó para o mapa em si (Tilemap), um nó para a câmera (Camera2D), e um nó que representará o personagem jogável (CharacterBody2D). Por experiência, eu já sei exatamente quais são os nós que precisarei para isso, mas é normal que você precise pesquisar nas primeiras vezes.
+Em seguida, eu adiciono os elementos que vou precisar para a criação desse primeiro mapa teste. Ou seja, adiciono nós filhos. No caso, um nó para o mapa em si (_Tilemap_), um nó para a câmera (_Camera2D_), e um nó que representará o personagem jogável (_CharacterBody2D_). Por experiência, eu já sei exatamente quais são os nós que precisarei para isso, mas é normal que você precise pesquisar nas primeiras vezes.
 
 ![Adicionando nós filhos](../Arquivos/Imagens/04_09.png 'Adicionando nós filhos')
-<sup><sub> </sup></sub>
+<sup><sub> Adicionando nós filhos </sup></sub>
 
 ![Procurando nós filhos](../Arquivos/Imagens/04_10.png 'Procurando nós filhos')
-<sup><sub> </sup></sub>
+<sup><sub> Procurando o nó adequado </sup></sub>
 
 ![Nós filhos](../Arquivos/Imagens/04_11.png 'Nós filhos')
-<sup><sub> </sup></sub>
+<sup><sub> Novos nós filhos </sup></sub>
 
 Ao final, temos uma cena TestMap com alguns nós filhos. Esses são os **blocos principais** para o meu protótipo 0. Um personagem jogável, um mapa com o qual ele poderá interagir, e uma câmera para acompanhar o personagem durante o jogo.
 
@@ -109,15 +109,15 @@ Por enquanto, se executar essa cena, vou notar que ela não faz nada. Não há n
 
 Para isso, criei um simples _tileset_ com 2 _tiles_ diferentes. Em jogos 2D, _tilesets_ são imagens onde você cria diferentes "azulejos" que pode usar como blocos em suas fases. Esse tipo de construção era comumente usada em jogos até a quarta geração de consoles, por motivos de memória e simplicidade de montagem. Hoje em dia, ainda é usada em jogos justo pela simplicidade, ou para emular um estilo de jogo antigo.
 
-Não é relevante me dar ao trabalho de criar um mapa finalizado para o protótipo 0. Criei um _tileset_ com 2 cores sólidas, cada um de 16x16 pixels. Por questões de facilidade de divisão da tela e padronização de tamanhos, costumamos usar múltiplos de 16 para os tamanhos de _tiles_ (e.g. 16, 32, 64, 128, e, raramente, 8). Esse print é da ferramenta _Aseprite_, que uso para criar pixel art:
+Não é relevante me dar ao trabalho de criar um mapa finalizado para o protótipo 0. Criei um _tileset_ com 2 cores sólidas, cada um de 16x16 píxeis. Por questões de facilidade de divisão da tela e padronização de tamanhos, costumamos usar múltiplos de 16 para os tamanhos de _tiles_ (e.g. 16, 32, 64, 128, e, raramente, 8). Esse _print_ é da ferramenta _Aseprite_, que uso para criar _pixel art_:
 
 ![Tileset Básico](../Arquivos/Imagens/04_12.png 'Tileset Básico')
-<sup><sub> </sup></sub>
+<sup><sub> Criando um _tileset_ no Aseprite </sup></sub>
 
-Em seguida, adicionei o tileset aos arquivos do meu projeto. Nesse caso, junto ao arquivo do mapa. No Godot, é possível fazer isso arrastando o arquivo para dentro do editor. Também é possível encontrar a pasta no seu explorador de arquivos e adiconá-lo manualmente.
+Em seguida, adicionei o tileset aos arquivos do meu projeto. Nesse caso, junto ao arquivo do mapa. No Godot, é possível fazer isso arrastando o arquivo para dentro do editor. Também é possível encontrar a pasta no seu explorador de arquivos e adicioná-lo manualmente.
 
 ![Adicionando arquivo ao editor](../Arquivos/Imagens/04_13.png 'Adicionando arquivo ao editor')
-<sup><sub> </sup></sub>
+<sup><sub> Adicionando arquivo ao editor </sup></sub>
 
 Agora, posso começar a criar o mapa, no outro canto da janela, opções de edição do nó selecionado aparecem. No campo Tile Set, adiciono um novo recurso do tipo _tileset_, e clico nele, para que o editor de tileset apareça no canto inferior da tela. Arrastando o arquivo de imagem de meu tileset para este editor, a _engine_ já separa os tiles da maneira correta. (Isso acontece porque o tamanho padrão da _engine_ é 16x16 pixels. Caso meu tile tivesse um tamanho maior, seria necessário mudar essa configuração).
 
