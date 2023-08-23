@@ -7,8 +7,8 @@
 ## Introdução
 A maioria dos jogos tenta simular uma espécie de mundo ou ambiente onde as coisas acontecem. Esse mundo não precisa ser realista ou ter um formato específico, mas designers costumam usar algumas técnicas para manter seus mapas e mundos coerentes e divertidos. _Level desgin_ não é o meu forte, mas observando os jogos podemos tirar algumas conclusões.
 
-## Formatos de Levels
-O formato de seus mapas sempre será ditado pelo gênero/estilo do seu jogo. Mapas 3D costumam oferecer ambientes mais realistas, no sentido de que podem construir realmente o ambiente que querem representar. Enquanto mapas 2D oferecem uma representação ou aproximação desse ambiente. Eu posso modelar um quarto para um jogo 3D, enquanto em um jogo 2D eu teria que sacrificar uma dessas dimensões, seja o eixo de profundidade (mapas sidescroller) ou altura (mapas topdown). 
+## Formatos de _Levels_
+O formato de seus mapas sempre será ditado pelo gênero/estilo do seu jogo. Mapas 3D costumam oferecer ambientes mais realistas, no sentido de que podem construir realmente o ambiente que querem representar. Enquanto mapas 2D oferecem uma representação ou aproximação desse ambiente. Eu posso modelar um quarto para um jogo 3D, enquanto em um jogo 2D eu teria que sacrificar uma dessas dimensões, seja o eixo de profundidade (mapas _sidescroller_) ou altura (mapas _top down_). 
 
 ![3D Real, Spyro the Dragon - Reiginited Trilogy](../Arquivos/Imagens/12_01.png '3D Real, Spyro the Dragon - Reiginited Trilogy')
 <sup><sub>Exemplo de 3D real, Spyro the Dragon - Reignited Trilogy (Toys for Bob (2018))</sup></sub>
@@ -17,9 +17,9 @@ O formato de seus mapas sempre será ditado pelo gênero/estilo do seu jogo. Map
 <sup><sub>Exemplo de 2D, sidescroller, Narita Boy (Studio Koba (2021))</sup></sub>
 
 ![2D Topdown Hotline Miami](../Arquivos/Imagens/12_03.jpg '2D Topdown Hotline Miami')
-<sup><sub>Exemplo de 2D, top down - Hotline Miami (Dennaton Games (2012))</sup></sub>
+<sup><sub>Exemplo de 2D, _top down_ - Hotline Miami (Dennaton Games (2012))</sup></sub>
 
-Em certos casos, jogos 2D podem passar a ideia de um mundo tridimensional usando certos efeitos e ilusões, como é o caso com _Super Mario Kart_, muitos jogos do estilo topdown oblíquo como _Chrono Trigger_, e jogos isométricos como _Hades_ conseguem passar a ideia de um mundo 3D mesmo entre 2 dimensões. Alguns jogos ainda misturam os dois, como _Final Fantasy: Tactics_ com um mapa 3D e _sprites_ 2D.
+Em certos casos, jogos 2D podem passar a ideia de um mundo tridimensional usando certos efeitos e ilusões, como é o caso com _Super Mario Kart_, muitos jogos do estilo _top down_ oblíquo como _Chrono Trigger_, e jogos isométricos como _Hades_ conseguem passar a ideia de um mundo 3D mesmo entre 2 dimensões. Alguns jogos ainda misturam os dois, como _Final Fantasy: Tactics_ com um mapa 3D e _sprites_ 2D.
 
 ![3D Fake, Super Mario Kart](../Arquivos/Imagens/12_05.jpg '3D Fake, Super Mario Kart')
 <sup><sub>Exemplo de 3D falso - Super Mario Kart (Nintendo (1992))</sup></sub>
@@ -30,10 +30,10 @@ Em certos casos, jogos 2D podem passar a ideia de um mundo tridimensional usando
 ![3D Fake, Hades](../Arquivos/Imagens/12_06.jpg '3D Fake, Hades')
 <sup><sub>Exemplo de 2D isométrico - Hades (Supergiant Games (2020))</sup></sub>
 
-Deve ter ficado evidente que o estilo visual e o estilo de mapa estão intimamente ligados ao estilo do jogo em si. E por isso, você provavelmente já tem uma boa ideia de como irá montar seus mapas. Afinal, é muito difícil criar um jogo sem visualizar como seus mapas vão ser. Mas caso esteja na dúvida, procure jogos similares ao seu, tente entender os pros e cons de cada estilo de mapa, e como melhor encaixam para as mecânicas que deseja criar.
+Deve ter ficado evidente que o estilo visual e o estilo de mapa estão intimamente ligados ao estilo do jogo em si. E por isso, você provavelmente já tem uma boa ideia de como irá montar seus mapas. Afinal, é muito difícil criar um jogo sem visualizar como seus mapas vão ser. Mas caso esteja na dúvida, procure jogos similares ao seu, tente entender os prós e contras de cada estilo de mapa, e como melhor encaixam para as mecânicas que deseja criar.
 
-### Tipos de Level Design
-O design para o seu mapa vai depender completamente do tipo de jogo que você está construindo. Se o seu jogo é baseado em fases sequenciais como _Super Mario_, seu _design_ será um. E se ele é um _metroidvania_ como _Symphony of the Night_ ou _Super Metroid_, seu _design_ terá de ser completamente diferente. Os tipos de _level design_ são inúmeros. Seja qual for o gênero principal do seu jogo, desde puzzles, plataformas, shooters, etc., o _design_ para seus mapas será influenciado por ele.
+### Tipos de _Level_ Design
+O design para o seu mapa vai depender completamente do tipo de jogo que você está construindo. Se o seu jogo é baseado em fases sequenciais como _Super Mario_, seu _design_ será um. E se ele é um _metroidvania_ como _Symphony of the Night_ ou _Super Metroid_, seu _design_ terá de ser completamente diferente. Os tipos de _level design_ são inúmeros. Seja qual for o gênero principal do seu jogo, desde puzzles, plataformas, _shooters_, etc., o _design_ para seus mapas será influenciado por ele.
 
 Por causa disso, o melhor jeito de entender o tipo de _level design_ que você procura é procurar diferentes jogos do mesmo gênero. Mesmo dentro de um gênero, é comum encontrar certa variedade, e você não precisa se prender às convenções de um gênero para criar seus mapas. Mas tente sempre entender o que funciona, e por que esses _designs_ funcionam, antes de começar a tentar subverter os estilos de mapas.
 
