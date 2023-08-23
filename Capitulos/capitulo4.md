@@ -194,7 +194,7 @@ Eu simplesmente salvo o nó do jogador como uma cena diferente, na minha pasta d
 ![Renomeando 2](../Arquivos/Imagens/04_30.png 'Renomeando 2')
 <sup><sub> Renomeando o nó na cena do mapa </sup></sub>
 
-Teria sido melhor renomear o nó antes de salvá-lo como filho, mas sinceramente eu esqueci de fazer isso. Felizmente, também é possível fazer essa mudança após salvar a cena. De qualquer forma, agora é mais simples adicionar um _script_ a cena _Player_. Aproveitando a oportunidade, também levei o _sprite_ do jogador para a mesma pasta onde salvei a cena do Player.
+Teria sido melhor renomear o nó antes de salvá-lo como filho, mas sinceramente eu esqueci de fazer isso. Felizmente, também é possível fazer essa mudança após salvar a cena. De qualquer forma, agora é mais simples adicionar um _script_ a cena _Player_. Aproveitando a oportunidade, também levei o _sprite_ do jogador para a mesma pasta onde salvei a cena do _Player_.
 
 ![Ajuste de arquivos](../Arquivos/Imagens/04_32.png 'Ajuste de arquivos')
 <sup><sub> Ajustando arquivos e pastas </sup></sub>
@@ -250,12 +250,12 @@ Esse é um _script_ bem simples. Ele contém apenas uma função, e são apenas 
 ![Linha 1](../Arquivos/Imagens/04_41.png 'Linha 1')
 <sup><sub> _Script Player_ Linha 1 </sup></sub>
 
-A primeira linha é padrão na maioria dos scripts no Godot. "Extends" indica herança, que é um conceito de programação orientada a objetos. Em termos simples, quando um objeto herda de outro, ele recebe todos os atributos do objeto o qual ele herda. Nesse caso, nosso nó _Player_ herda de CharacterBody2D. Ou seja, ele herda todos os atributos e funções da classe CharacterBody2D, e pode fazer coisas como andar pela tela e colidir com outros objetos. Sempre que você quiser entender qual é o tipo de objeto no Godot, você pode procurar por essa linha.
+A primeira linha é padrão na maioria dos _scripts_ no Godot. "_Extends_" indica herança, que é um conceito de programação orientada a objetos. Em termos simples, quando um objeto herda de outro, ele recebe todos os atributos do objeto o qual ele herda. Nesse caso, nosso nó _Player_ herda de CharacterBody2D. Ou seja, ele herda todos os atributos e funções da classe CharacterBody2D, e pode fazer coisas como andar pela tela e colidir com outros objetos. Sempre que você quiser entender qual é o tipo de objeto no Godot, você pode procurar por essa linha.
 
 ![Linhas 4-8](../Arquivos/Imagens/04_42.png 'Linhas 4-8')
 <sup><sub> _Script Player_ Linha 4-8 </sup></sub>
 
-As linhas 4-8 são declarações de constantes e variáveis. Velocidade e velocidade de pulo **não mudarão** durante a execução do jogo, então declará-las como _constant_ é melhor (tanto em termos de organização quanto para a execução do jogo). Quanto ao que significam, SPEED é a velocidade com que o jogador anda horizontalmente, e JUMP_VELOCITY é a força com que o jogador pula quando o botão de pulo é pressionado. Além disso, temos a variável gravity, que herda um valor nas configurações, para que haja sincronia entre ela e corpos rígidos. No meu caso, eu não pretendo usar corpos rígidos por enquanto, mas posso decidir usá-los adiante, então vou manter essa linha assim.
+As linhas 4-8 são declarações de constantes e variáveis. Velocidade e velocidade de pulo **não mudarão** durante a execução do jogo, então declará-las como _constant_ é melhor (tanto em termos de organização quanto para a execução do jogo). Quanto ao que significam, SPEED é a velocidade com que o jogador anda horizontalmente, e JUMP_VELOCITY é a força com que o jogador pula quando o botão de pulo é pressionado. Além disso, temos a variável _gravity_, que herda um valor nas configurações, para que haja sincronia entre ela e corpos rígidos. No meu caso, eu não pretendo usar corpos rígidos por enquanto, mas posso decidir usá-los adiante, então vou manter essa linha assim.
 
 Você pode editar estes valores e perceber como eles afetam o personagem. Diminuindo a gravidade, por exemplo, o personagem leva mais tempo para cair. E aumentando a velocidade, ele anda mais rápido através da tela.
 
@@ -267,17 +267,17 @@ Você pode editar estes valores e perceber como eles afetam o personagem. Diminu
 
 O próximo bloco de código é uma função. Funções são blocos de código que podem ser executados quando chamados em outras partes do código. No Godot, além de poder criar suas próprias funções, encontramos algumas funções comuns para quase todos os tipos de objetos. Estas são:
 
-- Funções de inicialização: funções como _\_ready()_ e _\_init()_ são ótimas para incluir configurações importantes na hora que o seu nó entra em ação. Ambas rodam uma única vez em condições específicas. Ready roda quando o objeto é criado em uma cena, e init quando é instanciado como um objeto.
-- Funções de execução: funções como _\_physics_process()_ e _\_process()_ rodam todo frame (geralmente, 60 vezes por segundo), e são as funções de código primárias para seus objetos. A maioria das ações, checks e mudanças são feitas nestas funções. É importante lembrar que muitos objetos ativos ao mesmo tempo com muitas instruções nessas funções vão causar com que a execução do seu jogo fique lenta.
-- Funções _trigger_: Estas funções ficam separadas da execução dos processos, mas rodam como resposta a algum acontecimento. Geralmente, elas estão atreladas a signals (sinais), e vão rodar quando as condições necessárias forem verdadeiras. Por exemplo, quando o personagem jogável colidir com um espinho, um sinal vai indicar que ele rode a função que diminui seus pontos de vida por 1.
+- Funções de inicialização: funções como _\_ready()_ e _\_init()_ são ótimas para incluir configurações importantes na hora que o seu nó entra em ação. Ambas rodam uma única vez em condições específicas. _Ready_ roda quando o objeto é criado em uma cena, e _init_ quando é instanciado como um objeto.
+- Funções de execução: funções como _\_physics_process()_ e _\_process()_ rodam todo _frame_ (geralmente, 60 vezes por segundo), e são as funções de código primárias para seus objetos. A maioria das ações, _checks_ e mudanças são feitas nestas funções. É importante lembrar que muitos objetos ativos ao mesmo tempo, com muitas instruções nessas funções, vão causar com que a execução do seu jogo fique lenta.
+- Funções _trigger_: Estas funções ficam separadas da execução dos processos, mas rodam como resposta a algum acontecimento. Geralmente, elas estão atreladas a _signals_(sinais), e vão rodar quando as condições necessárias forem verdadeiras. Por exemplo, quando o personagem jogável colidir com um espinho, um sinal vai indicar que ele rode a função que diminui seus pontos de vida por 1.
 
-Para objetos submetidos a física como corpos, fazemos seu código por padrão na função _physics_process_, pois ela é a mais adequada para as operações deles. Ela recebe a variável _delta_, que indica o tempo entre a renderização do frame anterior e o atual. Esse delta é usado para que o tempo de execução de certas ações seja o mesmo, independente do tempo de execução do computador. Nesse caso, o _delta_ vai permitir que o movimento do jogador não seja afetado por lentidão ou rapidez do computador.
+Para objetos submetidos a física como corpos, fazemos seu código por padrão na função _physics_process_, pois ela é a mais adequada para as operações deles. Ela recebe a variável _delta_, que indica o tempo entre a renderização do _frame_ anterior e o atual. Esse delta é usado para que o tempo de execução de certas ações seja o mesmo, independente do tempo de execução do computador. Nesse caso, o _delta_ vai permitir que o movimento do jogador não seja afetado por lentidão ou rapidez do computador.
 
 A linha 13 verifica se o jogador está no chão (_is_on_floor_). Caso não esteja, gravidade é aplicada na linha 14. Essa gravidade é aplicada diretamente ao valor Y da posição do jogador. Isso demonstra outro aspecto do funcionamento da _engine_. Todos os objetos em tela tem uma **posição**, representada por um vetor com 2 valores, uma posição X e uma posição Y (para objetos 2D, os 3D também têm uma posição Z). Mover estes objetos é simplesmente uma questão de mudar o valor X,Y dessas posições. 
 
-Para movimento de objetos físicos, Godot utiliza a função _move_and_slide_. Essa função usa uma variável velocity (velocidade) e a aplica na posição do corpo que a invocou. Dessa forma, para movimentar um personagem em Godot 4, basta calcular sua velocidade, atribuí-la à variável velocity e rodar a função _move_and_slide_, como é feito na linha 28.
+Para movimento de objetos físicos, Godot utiliza a função _move_and_slide_. Essa função usa uma variável _velocity_ (velocidade) e a aplica na posição do corpo que a invocou. Dessa forma, para movimentar um personagem em Godot 4, basta calcular sua velocidade, atribuí-la à variável _velocity_ e rodar a função _move_and_slide_, como é feito na linha 28.
 
-Para o caso da gravidade, o movimento vai para baixo (Y positivo), logo, gravidade * delta é aplicado para o corpo a cada frame quando não estiver tocando o chão.
+Para o caso da gravidade, o movimento vai para baixo (Y positivo), logo, gravidade * delta é aplicado para o corpo a cada _frame_ quando não estiver tocando o chão.
 
 Na linha 17, temos uma verificação de _input_. Caso pressione a tecla "ui_accept" (que se refere, por padrão, às teclas Enter e Barra de Espaço), e o personagem esteja no chão (pois ele não pode pular no ar), a velocidade Y é igualada a JUMP_VELOCITY, que é um valor negativo, causando com que o personagem mova-se para cima (Y negativo).
 
@@ -303,7 +303,7 @@ Com essa mudança, o personagem não mais reage ao _input_ de direção do tecla
 ![Pós Mudança](../Arquivos/Imagens/04_46.gif "Pós Mudança")
 <sup><sub> _Player_ se move sozinho </sup></sub>
 
-Okay, a situação evoluiu um pouco, mas temos outro problema, o personagem continua tentando avançar para dentro da parede. Geralmente, em jogos desse estilo, encontrar um obstáculo significa o fim dessa jogada, ou esse tipo de obstáculo não existe. Para o caso do meu jogo, minha intenção é ter fases menores e mais fechadas, então precisarei de outro tipo de solução. 
+OK, a situação evoluiu um pouco, mas temos outro problema, o personagem continua tentando avançar para dentro da parede. Geralmente, em jogos desse estilo, encontrar um obstáculo significa o fim dessa jogada, ou esse tipo de obstáculo não existe. Para o caso do meu jogo, minha intenção é ter fases menores e mais fechadas, então precisarei de outro tipo de solução. 
 
 A solução que pensei é que o personagem irá trocar de direção quando encostar em obstáculo que impede seu avanço. Para isso, fiz com que o personagem trocasse de direção toda vez que encontrar uma parede.
 
@@ -315,26 +315,26 @@ A solução que pensei é que o personagem irá trocar de direção quando encos
 
 Quanto ao botão de pulo, decidi mantê-lo por enquanto. Talvez eu faça pulos automáticos mais a frente no projeto, mas, por enquanto, usar a barra de espaço é o suficiente. Fiz também algumas mudanças ao mapa para testar o movimento.
 
-Meu próximo passo foi tentar concretizar minha ideia de construir plataformas no mapa durante a execução do jogo. Para isso, criei um _script_ na cena do mapa em si, em vez da cena do Player. Dessa vez, essa não veio pronta para eu adaptar.
+Meu próximo passo foi tentar concretizar minha ideia de construir plataformas no mapa durante a execução do jogo. Para isso, criei um _script_ na cena do mapa em si, em vez da cena do _Player_. Dessa vez, essa não veio pronta para eu adaptar.
 
 ![Código Mapa](../Arquivos/Imagens/04_49.png 'Código Mapa')
 <sup><sub> Novo _script_ para o mapa </sup></sub>
 
-No _script padrão_, sempre temos duas funções: _ready_ e _process_. Eu poderia usar apenas uma, ambas ou nenhuma delas. Para este caso, não precisarei usar _ready_ por enquanto, mas process será importante. 
+No _script padrão_, sempre temos duas funções: _ready_ e _process_. Eu poderia usar apenas uma, ambas ou nenhuma delas. Para este caso, não precisarei usar _ready_ por enquanto, mas _process_ será importante. 
 
-Meu objetivo é fazer a seguinte ação: Ao clicar em algum pedaço do mapa, eu gostaria que fosse criado um _tile_ no lugar onde cliquei. Eu posso dividir essa ideia em alguns aspectos diferentes:
+Meu objetivo é fazer a seguinte ação: ao clicar em algum pedaço do mapa, eu gostaria que fosse criado um _tile_ no lugar onde cliquei. Eu posso dividir essa ideia em alguns aspectos diferentes:
 - Reconhecer o input de clique
 - Localizar a posição desse clique no mapa
 - Interagir com o _tilemap_ para criar um novo _tile_ nessa posição
 
-Felizmente, isso é tudo bem simples de fazer. A primeira coisa que eu checo em minha função _process_ é se houve um clique do mouse. Para isso, eu uso o singleton _Input_. Um singleton, no contexto da _engine_ Godot, se refere a qualquer _script_ que pode ser invocado em qualquer outro _script_ durante a execução do jogo. Ou seja, um _script_ de acesso universal que fica carregado na memória o tempo todo.
+Felizmente, isso é tudo bem simples de fazer. A primeira coisa que eu checo em minha função _process_ é se houve um clique do mouse. Para isso, eu uso o _singleton_ _Input_. Um _singleton_, no contexto da _engine_ Godot, se refere a qualquer _script_ que pode ser invocado em qualquer outro _script_ durante a execução do jogo. Ou seja, um _script_ de acesso universal que fica carregado na memória o tempo todo.
 
-_Input_, como o nome sugere, é um singleton que captura qualquer input feito pelo jogador, seja através de um controle, mouse, teclado, ou qualquer outro método de _input_ reconhecido pela _engine_. Daí vem nossa primeira linha, uma condicional. Caso o botão esquerdo do mouse seja clicado, faremos algo:
+_Input_, como o nome sugere, é um _singleton_ que captura qualquer input feito pelo jogador, seja através de um controle, mouse, teclado, ou qualquer outro método de _input_ reconhecido pela _engine_. Daí vem nossa primeira linha, uma condicional. Caso o botão esquerdo do mouse seja clicado, faremos algo:
 
 ![Código Mapa 2](../Arquivos/Imagens/04_50.png 'Código Mapa 2')
 <sup><sub> Condicional com _input_ </sup></sub>
 
-O que seria esse algo? O que eu descrevi acima. Primeiro, vamos descobrir a posição do ponteiro do mouse. Uma simples pesquisa no Google me retornou qual função deveria ser usada, _get_global_mouse_pos_.
+O que seria esse algo? O que descrevi acima. Primeiro, vamos descobrir a posição do ponteiro do mouse. Uma simples pesquisa no Google me retornou qual função deveria ser usada, _get_global_mouse_pos_.
 
 ![Pesquisa 1](../Arquivos/Imagens/04_51.png 'Pesquisa 1')
 <sup><sub> Pesquisa para posição do mouse </sup></sub>
@@ -359,7 +359,7 @@ Essas funções são as peças do quebra cabeça para montar o jogo que desejo t
 ![Código Mapa 3](../Arquivos/Imagens/04_56.png 'Código Mapa 3')
 <sup><sub> Adicionando funções ao código do mapa </sup></sub>
 
-Tendo feito isso tudo, o próximo passo é: Reconhecer se não há nenhum bloco na posição clicada, incluir um bloco caso não tenha nada. Nesse caso, as funções relevantes são _get_cell_source_id_, que retorna o ID do _tile_ nesta coordenada, e -1 caso não haja nada. E a função _set_cell_, que insere determinado _tile_ na coordenada indicada.
+Tendo feito isso tudo, o próximo passo é: reconhecer se não há nenhum bloco na posição clicada, incluir um bloco caso não tenha nada. Nesse caso, as funções relevantes são _get_cell_source_id_, que retorna o ID do _tile_ nesta coordenada, e -1 caso não haja nada. E a função _set_cell_, que insere determinado _tile_ na coordenada indicada.
 
 ![Documentação 3](../Arquivos/Imagens/04_54.png 'Documentação 3')
 <sup><sub> Função para encontrar o ID do _tile_ </sup></sub>
@@ -375,31 +375,31 @@ Essas duas são as últimas peças necessárias para criar o que eu tenho em men
 ![Protótipo Novamente](../Arquivos/Imagens/04_59.gif "Protótipo Novamente")
 <sup><sub> Resultado das adições ao protótipo </sup></sub>
 
-Se você deu uma olhada no gif acima, provavelmente notou um problema. É possível criar plataformas na mesma posição onde o personagem está, causando com que ele seja lançado para cima em alta velocidade. Não preciso dizer que isso não estava em minhas intenções. Outra coisa que eu notei foi o fato de que o personagem é rápido demais, o que dificulta o controle de onde você está incluindo blocos ou não. Por ora, decidi incluir também a opção de excluir blocos, apenas para teste.
+Se você deu uma olhada no _gif_ acima, provavelmente notou um problema. É possível criar plataformas na mesma posição onde o personagem está, causando com que ele seja lançado para cima em alta velocidade. Não preciso dizer que isso não estava em minhas intenções. Outra coisa que eu notei foi que o personagem é rápido demais, o que dificulta o controle de onde você está incluindo blocos ou não. Por ora, decidi incluir também a opção de excluir blocos, apenas para teste.
 
-A primeira coisa que fiz foi incluir ainda **outro** _tilemap_. Este outro _tilemap_ permite que eu construa um mapa que não pode ser deletado, mas que o que o jogador construir possa ser. Assim, não encontro o problema de o jogador destruir o mapa completamente (o que poderia ser interessante, mas não é minha intenção com esse jogo).
+A primeira coisa que fiz foi incluir ainda **outro** _tilemap_. Este outro _tilemap_ permite que eu construa um mapa que não pode ser deletado, mas que tudo aquilo que o jogador construir possa ser. Assim, não encontro o problema de o jogador destruir o mapa completamente (o que poderia ser interessante, mas não é minha intenção com esse jogo).
 
 ![Código Mapa 5](../Arquivos/Imagens/04_60.png 'Código Mapa 5')
 <sup><sub> Adicionando deleção de _tiles_ </sup></sub>
 
 Aqui, incluí também o _tilemap2_. Agora, a primeira verificação procura se existe um _tile_ nessa coordenada tanto para o _tilemap_ 1 quanto para o 2, e caso contrário o _tile_ é inserido no _tilemap2_. Em seguida, fiz um bloco de código similar ao anterior para o botão direito do mouse. Para o botão direito, se existe alguma coisa na coordenada clicada, esse _tile_ é deletado.
 
-Também fiz uma mudança ao código do Player. Nele incluí um nó de "Area2D". Este nó tem algumas propriedades especiais para detecção de vários objetos, inclusive, verificação se o mouse está dentro de sua área, o que será útil para mim. Minha intenção aqui é que eu **não** consiga criar novos _tiles_ se o mouse estiver muito próximo do jogador.
+Também fiz uma mudança ao código do _Player_. Nele incluí um nó de "Area2D". Este nó tem algumas propriedades especiais para detecção de vários objetos, inclusive, verificação se o mouse está dentro de sua área, o que será útil para mim. Minha intenção aqui é que eu **não** consiga criar novos _tiles_ se o mouse estiver muito próximo do jogador.
 
 ![Mudança ao Player](../Arquivos/Imagens/04_61.png 'Mudança ao Player')
 <sup><sub> Ajuste de colisões no _Player_ </sup></sub>
 
-Por isso, criei essa área em volta do Player. Além disso, incluí os sinais relevantes no código. No menu na direita, existe uma opção "Node", onde você pode ver os diferentes _signals_ que cada nó possui. Estes _signals_ são ativados em reação a diferentes condições. Nesse caso, selecionei as condições "Mouse entered" e "Mouse exited" para a área 2D. 
+Por isso, criei essa área em volta do _Player_. Além disso, incluí os sinais relevantes no código. No menu na direita, existe uma opção "Node", onde você pode ver os diferentes _signals_ que cada nó possui. Estes _signals_ são ativados em reação a diferentes condições. Nesse caso, selecionei as condições "Mouse entered" e "Mouse exited" para a área 2D. 
 
 ![Signals](../Arquivos/Imagens/04_62.png 'Signals')
 <sup><sub> _Signals_ </sup></sub>
 
-Ao clicar duas vezes em qualquer signal, o mesmo cria um nome e pede para selecionar a qual nó este sinal será conectado. Essa conexão apenas ocorre quando um nó contém um script. Aqui a minha intenção é conectá-lo ao próprio Player.
+Ao clicar duas vezes em qualquer _signal_, o mesmo cria um nome e pede para selecionar a qual nó este sinal será conectado. Essa conexão apenas ocorre quando um nó contém um script. Aqui a minha intenção é conectá-lo ao próprio _Player_.
 
 ![Signals 2](../Arquivos/Imagens/04_63.png 'Signals 2')
 <sup><sub> Conectando _signal_ </sup></sub>
 
-Neste exemplo, ele só pode ser conectado ao próprio Player. Porém, eu preciso que essa informação chegue ao _script_ do meu mapa. Eu poderia acessar o meu _Player_ através do _script_ do mapa. Mas, uma opção de melhor organização é emitir um novo sinal a partir do meu próprio Player. Esse sinal será criado manualmente, já que o sinal de Area2D não existe para um CharacterBody2D (que é o tipo do meu Player).
+Neste exemplo, ele só pode ser conectado ao próprio _Player_. Porém, eu preciso que essa informação chegue ao _script_ do meu mapa. Eu poderia acessar o meu _Player_ através do _script_ do mapa. Mas, uma opção de melhor organização é emitir um novo sinal a partir do meu próprio _Player_. Esse sinal será criado manualmente, já que o sinal de Area2D não existe para um CharacterBody2D (que é o tipo do meu _Player_).
 
 O primeiro passo é declarar o sinal no código. Em seguida, editar o código dos sinais abaixo para emiti-lo. Para cada um, emito o signal como _true_ ou _false_, para que eu possa usar o mesmo sinal para os dois casos.
 
@@ -425,7 +425,7 @@ Por fim, eu incluo uma última alteração no código do meu mapa. Nas linhas 13
 ![Execução pós mudança](../Arquivos/Imagens/04_69.gif "Execução pós mudança")
 <sup><sub> Execução após os ajustes </sup></sub>
 
-Agora é possível notar que eu exagerei um pouco no tamanho da minha área, principalmente para baixo, e eu mudei o tamanho da área mais a frente para que não inclua o espaço logo abaixo do personagem. De qualquer forma, a deleção e bloqueio pela área estão funcionando normalmente. 
+Agora é possível notar que eu exagerei um pouco no tamanho da minha área, principalmente para baixo, e eu mudei o tamanho da área mais a frente para não incluir o espaço logo abaixo do personagem. De qualquer forma, a deleção e bloqueio pela área estão funcionando normalmente. 
 
 ![Ajuste de área](../Arquivos/Imagens/04_70.png "Ajuste de área")
 <sup><sub> Ajuste de área </sup></sub>
@@ -434,9 +434,9 @@ Após fazer tudo isso, eu subi o progresso para o _github_, para salvar essa ver
 
 ### Um pequeno problema
 
-Ao continuar brincando com este protótipo, eu notei que ele não era muito o que eu tinha em mente. Enquanto eu consegui criar o que havia envisionado, isto não era muito divertido. 
+Ao continuar brincando com este protótipo, eu notei que ele não era muito o que eu tinha em mente. Enquanto eu consegui criar o que havia imaginado, isto não era muito divertido. 
 
-Talvez você desenvolva o seu projeto e consiga ver nele a semente para sua visão original do jogo. Neste caso, siga em frente. Porém, é mais provável que você se encontre na mesma situação que eu. As coisas não estão se realizando da forma que você esperava. Neste caso, vale a pena revisar o seu _design_ para o jogo, e melhorá-lo aos poucos para que a ideia que sua ideia se concretize da melhor forma possível.
+Talvez você desenvolva o seu projeto e consiga ver nele a semente para sua visão original do jogo. Neste caso, siga em frente. Porém, é provável que você se encontre na mesma situação que eu. As coisas não estão se realizando da forma que você esperava. Neste caso, vale a pena revisar o seu _design_ para o jogo, e melhorá-lo aos poucos para que a ideia que sua ideia se concretize da melhor forma possível.
 
 Após pensar muito sobre isso, e testar diferentes velocidades e ideias, cheguei à conclusão de mudar um pouco a ideia do jogo. Mas como minha ideia evoluiu?
 
@@ -444,11 +444,11 @@ A primeira coisa que fiz foi analisar outros jogos de plataforma. Não consegui 
 
 Minha intenção não é criar um jogo como _Mario Maker_, mas isso me deu uma ideia interessante. E se toda a edição da fase fosse feita _antes_ que ela começasse? Assim, você ainda é responsável por arranjar o mapa, mas também tem que navegá-lo, e o problema de ter que criar blocos mais rápido do que você pode raciocinar é resolvido. Porém, isso tira o foco no _gameplay_ rápido que eu queria inicialmente. Para manter esse _gameplay_, pensei em outro elemento interativo, o arco e flecha que meu personagem Sleepy costuma usar em outros jogos.
 
-Logo, o design revisado do meu jogo é o seguinte: Ao início de cada fase, você é apresentado uma fase com diversos objetos que podem ser rearranjados. Em um primeiro momento, você os rearranja da maneira que achar melhor. Em seguida, você terá um botão de _play_ que iniciará a execução da fase, onde você deve controlar os pulos e o arco e flecha de Sleepy para alcançar o final da fase.
+Logo, o design revisado do meu jogo é o seguinte: ao início de cada fase, você é apresentado uma fase com diversos objetos que podem ser rearranjados. Em um primeiro momento, você os rearranja da maneira que achar melhor. Em seguida, você terá um botão de _play_ que iniciará a execução da fase, onde você deve controlar os pulos e o arco e flecha de Sleepy para alcançar o final da fase.
 
 ### Protótipo 0 v2
 
-Imediatamente eu me ponho a trabalhar nesta segunda versão do meu protótipo. Primeiramente, após certificar-me que o meu backup estava disponível no _github_, desfiz todo o meu _script_ na cena do mapa. Para o meu Player, excluí a Area2D e as funções para os dois sinais, além do sinal que eu declarei. 
+Imediatamente eu me ponho a trabalhar nesta segunda versão do meu protótipo. Primeiramente, após certificar-me que o meu backup estava disponível no _github_, desfiz todo o meu _script_ na cena do mapa. Para o meu Player, excluí a Area2D e as funções para os dois sinais, além do sinal que declarei. 
 
 Além disso, no mapa original, mudei a posição de meu _Player_ para que ele comece a execução caindo. Um detalhe importante sobre essa nova ideia é de que, a princípio, mais do mapa deve estar visível a todo o tempo. Por isso, aumentei a resolução da tela novamente. Também adicionei um novo nó à cena de meu mapa, e o renomeei para "Objects". Este nó vai servir como um _container_ para todos os objetos que incluirei em cada fase.
 
@@ -532,7 +532,7 @@ E por fim, o _script_ da câmera é bem simples: Caso a variável _can_drag_ sej
 ![Gif, Arrasto e Scroll](../Arquivos/Imagens/04_86.gif "Gif, Arrasto e Scroll")
 <sup><sub> Arrasto e scroll </sup></sub>
 
-Agora, resta trabalhar na execução em si. Incluí o botão de _play_ embaixo de um nó _CanvasLayer_, que faz que os objetos abaixo dele sempre estejam presentes na tela. Em seguida, conectei o sinal de clique do botão ao nó de controle principal, e esse ao nó pai do mapa. Ao clicar no botão, a cadeia de signals muda o estado no _script_ principal, e permite que o jogo se incie.
+Agora, resta trabalhar na execução em si. Incluí o botão de _play_ embaixo de um nó _CanvasLayer_, que faz que os objetos abaixo dele sempre estejam presentes na tela. Em seguida, conectei o sinal de clique do botão ao nó de controle principal, e esse ao nó pai do mapa. Ao clicar no botão, a cadeia de _signals_muda o estado no _script_ principal, e permite que o jogo se incie.
 
 Beleza, minha ideia funcionou. É claro, isso ainda não é um jogo. Temos algumas coisas a considerar: Problemas de colisão, um highlight para objetos selecionados, velocidade, _scroll_ da tela, condições de vitória e derrota. E, olhando melhor, percebo que ainda é possível arrastar os objetos durante a execução. Ainda falta bastante para termos um protótipo 0 completo. Mas já temos uma ideia de como esse jogo será.
 
