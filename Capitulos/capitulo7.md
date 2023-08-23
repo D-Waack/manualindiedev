@@ -1,6 +1,6 @@
 
 # Capítulo 7: Playtesting e Feedback
-"Era estranho que Stanley ainda estivesse sentado no armário das vassouras. Ele nem sequer estava fazendo nada. Pelo menos se houvesse alguma coisa com que interagir ele estaria justificado de alguma forma." - Narrador, "_The Stanley Parable_" (2013)
+"Era estranho que Stanley ainda estivesse sentado no armário das vassouras. Ele nem sequer estava fazendo nada. Pelo menos se houvesse alguma coisa com que interagir, ele estaria justificado de alguma forma." - Narrador, "_The Stanley Parable_" (2013)
 
 ![Capítulo 7 capa](../Arquivos/Imagens/capa_07.png 'It was baffling that Stanley was still just sitting in the broom closet. He wasn\'t even doing anything, at least if there was something to interact with he\'d be justified in some way.')
 
@@ -13,7 +13,7 @@ Porque você é cego. Ou melhor dizendo, porque você não tem uma visão comple
 
 Quando você olhar para uma versão e falar "está pronta" pela primeira vez, você pode ter (quase) absoluta certeza de que ela ainda não está pronta. E você pode testar por si e encontrar de fato alguns problemas, mas os _playtesters_ são o melhor caminho para encontrar _bugs_ e acontecimentos inesperados. Ou interações que você sequer sabia que podiam acontecer. E até soluções em que você não havia pensado. 
 
-Isso pode ser por vários motivos, mas no geral é simplesmente porque seu _playtester_ pensa e joga diferente de você. Por exemplo, em um dos meus projetos, eu havia incluído uma caixa de colisão no fundo de cada fase para que se o jogador encostasse nela, ele perderia imediatamente. (Ou seja, um buraco sem fundo). Entretanto, eu havia incluído uma condição em meu jogo onde caixas de colisão **não** interagiam com o personagem quando o mesmo havia sido atingido nos últimos 1.4 segundos. O resultado era que quando o meu _playtester_ levava dano de um inimigo e caía em um buraco **antes** que esse tempo acabasse, ele não morria, e não conseguia voltar, causando com que  personagem caísse eternamente. (Obviamente, isso não deveria acontecer). Nesse caso, eu era **cego** para esse problema. Porque eu já estava tão acostumado com o jogo que eu sequer levava dano no inimigo em questão, e nunca me deparei com essa situação. Felizmente, meu _playtester_ encontrou o problema e eu pude consertá-lo. 
+Isso pode ser por vários motivos, mas no geral é simplesmente porque seu _playtester_ pensa e joga diferente de você. Por exemplo, em um dos meus projetos, eu havia incluído uma caixa de colisão no fundo de cada fase para que, se o jogador encostasse nela, ele perderia imediatamente. (Ou seja, um buraco sem fundo). Entretanto, eu havia incluído uma condição em meu jogo onde caixas de colisão **não** interagiam com o personagem quando o mesmo havia sido atingido nos últimos 1.4 segundos. O resultado era que quando o meu _playtester_ levava dano de um inimigo e caía em um buraco **antes** que esse tempo acabasse, ele não morria, e não conseguia voltar, causando com que  personagem caísse eternamente. (Obviamente, isso não deveria acontecer). Nesse caso, eu era **cego** para esse problema. Porque eu já estava tão acostumado com o jogo que eu sequer levava dano no inimigo em questão, e nunca me deparei com essa situação. Felizmente, meu _playtester_ encontrou o problema e eu pude consertá-lo. 
 
 Esse tipo de situação é muito mais comum do que parece. E é por isso que o papel do _playtester_ é tão importante.
 
@@ -22,18 +22,18 @@ Basicamente, você, sua equipe, e terceiros. Os testes que você fará virão na
 
 Isso é óbvio e natural. Você pede testar diferentes maneiras de interagir com cada objeto. Se for um botão que reage a peso, o que acontece se eu colocar um objeto em cima dele? E se (...)? Tente testar todas as possibilidades e interagir de todas as formas que conseguir pensar. Esse é o tipo de teste que as pessoas que criaram o jogo devem fazer.
 
-Um outro caso são outros membros de sua equipe. Estes vão ser menos informados sobre o funcionamento exato do seu jogo, mas eles podem ter uma vaga ideia de como ele _deveria_ funcionar. O que provavelmente vai resultar em interações similares, mas não completamente iguais as suas. Eles podem tomar ações inesperadas, e caso não o façam, você pode estimular que tentem. 
+Um outro caso são outros membros de sua equipe. Estes vão ser menos informados sobre o funcionamento exato do seu jogo, mas eles podem ter uma vaga ideia de como ele _deveria_ funcionar. O que provavelmente vai resultar em interações similares, mas não completamente iguais às suas. Eles podem tomar ações inesperadas, e caso não o façam, você pode estimular que tentem. 
 
-Por fim, os outros. Novamente, é importante que tome cuidado com _quem_ e _como_ você vai disponibilizar seu jogo para testes, para que não compartilhem seu jogo sem sua permissão. De qualquer forma, é normal esperar que a experiência desses jogadores vai ser consideravelmente diferente dos outros dois casos. É interessante que os _playtesters_ estejam relativamente familiares com o gênero de jogo, mas _input_ de jogadores não familiares pode ser valioso também.
+Por fim, os outros. Novamente, é importante que tome cuidado com _quem_ e _como_ você vai disponibilizar seu jogo para testes, para não compartilharem seu jogo sem sua permissão. De qualquer forma, é normal esperar que a experiência desses jogadores será consideravelmente diferente dos outros dois casos. É interessante que os _playtesters_ estejam relativamente familiares com o gênero de jogo, mas _input_ de jogadores não familiares pode ser valioso também.
 
 ## Como funciona o teste?
 Isso vai depender das condições. O ideal seria _observar_ e _gravar_ como o jogador interage e reage ao jogo.
 
 Não é interessante dar _input_ algum ao seu jogador sobre como interagir com o jogo, para que a experiência dele seja o mais pura o possível. Afinal, quando seu jogo for lançado, o seu jogador não terá um desenvolvedor ao lado para guiá-lo pelo jogo.
 
-É ideal que você tenha uma gravação da voz e da tela do seu _playtester_. Entretanto, isso nem sempre é possível. Enquanto menos confiável, é sempre possível esperar que seus _playtesters_ descrevam quaisquer problemas e inconsistências que encontrarem no jogo. Isso acontece muitas vezes com _betas_ abertas, onde jogadores podem contribuir com a caça por _bugs_ através de fóruns e formulários.
+É ideal que você tenha uma gravação da voz e da tela do seu _playtester_. Entretanto, isso nem sempre é possível. Enquanto menos confiável, é sempre possível esperar que seus _playtesters_ descrevam quaisquer problemas e inconsistências que encontrarem no jogo. Isso é comum em _betas_ abertas, onde jogadores podem contribuir com a caça por _bugs_ por meio de fóruns e formulários.
 
-## Builds de teste
+## _Builds_ de teste
 A maioria das _engines_ e ambientes de programação vai permitir que você crie uma versão executável do seu jogo. Você pode criar uma para distribuir entre diferentes jogadores.
 
 Enquanto não existem regras para como criar uma _build_ para testes, alguns detalhes são importantes:
@@ -71,7 +71,7 @@ Existe ainda a possibilidade de conduzir **entrevistas** com os _playtesters_. A
 
 Lembre-se sempre, não há como agradar a todos.
 
-Entendendo os erros, problemas e coisas que não funcioname como deveriam, você deve decidir como irá lidar com eles. Se vai incluir suas soluções no próximo ciclo de desenvolvimento, ou se vai deixar no _backlog_ para tentar resolvê-los mais tarde. Ambas são opções, mas lembre-se sempre de anotar todos os problemas que merecem sua atenção.
+Entendendo os erros, problemas e coisas que não funcionam como deveriam, você deve decidir como irá lidar com eles. Se vai incluir suas soluções no próximo ciclo de desenvolvimento, ou se vai deixar no _backlog_ para tentar resolvê-los mais tarde. Ambas são opções, mas lembre-se sempre de anotar todos os problemas que merecem sua atenção.
 
 ## Conclusão
 Ao final desse capítulo, esperamos que você tenha certo entendimento quanto a como seguir com o processo de _playtesting_, e de sua importância para o desenvolvimento de jogos.
