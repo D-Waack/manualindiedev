@@ -12,7 +12,7 @@ Se o seu projeto está completo, ou você tem uma versão apresentável, parabé
 ## Plataformas
 Atualmente, a maior parte dos jogos _indie_ são lançados apenas como downloads disponibilizados em lojas _online_. Enquanto é possível fazer o lançamento de mídia física para o seu jogo, isso geralmente vai precisar que passe o jogo pela aprovação de uma publicadora, e isso pode encarecer o seu jogo tanto para você quanto para os compradores.
 
-Muitas campanhas de _crodfunding_ para jogos _indie_ lançam o jogo com alguns bônus para aqueles que contribuiram mais para seus jogos. Estes podem incluir uma grande variedade de produtos e vantagens, mas isso também gerará um custo de produção e distribuição que chegará nas mãos do time de desenvolvimento. Estes comumente não são lançamentos físicos, mas servem como itens colecionáveis que podem interessar sua audiência.
+Muitas campanhas de _crodfunding_ para jogos _indie_ lançam o jogo com alguns bônus para aqueles que contribuíram mais para seus jogos. Estes podem incluir uma grande variedade de produtos e vantagens, mas isso também gerará um custo de produção e distribuição que chegará nas mãos do time de desenvolvimento. Estes comumente não são lançamentos físicos, mas servem como itens colecionáveis que podem interessar sua audiência.
 
 Em termos de plataformas, temos algumas possibilidades para distribuição de seus jogos: 
 - Lojas de jogos para computadores 
@@ -28,7 +28,7 @@ A _Epic_ e a _Steam_ são as maiores lojas digitais de jogos no momento, e ambas
 
 Porém, minha recomendação principal para desenvolvedores _indie_ é o lançamento na loja _Itch.io_. Esta loja permite que você publique o jogo, monte uma página, disponibilize versões executáveis direto no navegador, e os monetize da maneira que achar melhor, inclusive com 100% de lucro indo para você (o que nenhuma das outras opções que citei permite). 
 
-Lembre-se sempre: leia todas as regras da loja em que deseja publicar seu jogo. Certifique-se de que o seu jogo obedece as regras, e de que entende o que a loja vai tirar dos seus lucros e informações coletadas. Tome cuidado com impostos, (estas lojas são internacionais, e impostos funcionam de maneira diferente entre países). Insira suas informações bancárias ou algo como uma conta _Paypall_ para que possa receber caso seu jogo seja pago.
+Lembre-se sempre: leia todas as regras da loja em que deseja publicar seu jogo. Certifique-se de que o seu jogo obedece às regras, e de que entende o que a loja vai tirar dos seus lucros e informações coletadas. Tome cuidado com impostos, (estas lojas são internacionais, e impostos funcionam de maneira diferente entre países). Insira suas informações bancárias ou algo como uma conta _Paypall_ para que possa receber caso seu jogo seja pago.
 
 Lembre-se também de incluir um preço razoável ao seu jogo. Você não tem um estúdio profissional, e não tem reconhecimento de marca. Não faz sentido cobrar um preço de jogos AAA no seu jogo _indie_.
 
