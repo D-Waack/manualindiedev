@@ -114,95 +114,95 @@ Não é relevante me dar ao trabalho de criar um mapa finalizado para o protóti
 ![Tileset Básico](../Arquivos/Imagens/04_12.png 'Tileset Básico')
 <sup><sub> Criando um _tileset_ no Aseprite </sup></sub>
 
-Em seguida, adicionei o tileset aos arquivos do meu projeto. Nesse caso, junto ao arquivo do mapa. No Godot, é possível fazer isso arrastando o arquivo para dentro do editor. Também é possível encontrar a pasta no seu explorador de arquivos e adicioná-lo manualmente.
+Em seguida, adicionei o _tileset_ aos arquivos do meu projeto. Nesse caso, junto ao arquivo do mapa. No Godot, é possível fazer isso arrastando o arquivo para dentro do editor. Também é possível encontrar a pasta no seu explorador de arquivos e adicioná-lo manualmente.
 
 ![Adicionando arquivo ao editor](../Arquivos/Imagens/04_13.png 'Adicionando arquivo ao editor')
 <sup><sub> Adicionando arquivo ao editor </sup></sub>
 
-Agora, posso começar a criar o mapa, no outro canto da janela, opções de edição do nó selecionado aparecem. No campo Tile Set, adiciono um novo recurso do tipo _tileset_, e clico nele, para que o editor de tileset apareça no canto inferior da tela. Arrastando o arquivo de imagem de meu tileset para este editor, a _engine_ já separa os tiles da maneira correta. (Isso acontece porque o tamanho padrão da _engine_ é 16x16 pixels. Caso meu tile tivesse um tamanho maior, seria necessário mudar essa configuração).
+Agora, posso começar a criar o mapa, no outro canto da janela, opções de edição do nó selecionado aparecem. No campo Tile Set, adiciono um novo recurso do tipo _tileset_, e clico nele, para que o editor de _tileset_ apareça no canto inferior da tela. Arrastando o arquivo de imagem de meu _tileset_ para este editor, a _engine_ já separa os tiles da maneira correta. (Isso acontece porque o tamanho padrão da _engine_ é 16x16 píxeis. Caso meu _tile_ tivesse um tamanho maior, seria necessário mudar essa configuração).
 
 ![Tileset](../Arquivos/Imagens/04_14.png 'Tileset')
-<sup><sub> </sup></sub>
+<sup><sub> Configurando _tileset_ </sup></sub>
 
 ![Tileset 2](../Arquivos/Imagens/04_15.png 'Tileset 2')
-<sup><sub> </sup></sub>
+<sup><sub> Procurando o arquivo do _tileset_ </sup></sub>
 
 ![Tileset 3](../Arquivos/Imagens/04_16.png 'Tileset 3')
-<sup><sub> </sup></sub>
+<sup><sub> _Tileset_ configurado </sup></sub>
 
 Agora, eu posso clicar em um _tile_ qualquer e desenhar o meu mapa como quiser.
 
 ![Desenhando Mapa](../Arquivos/Imagens/04_17.png 'Desenhando Mapa')
-<sup><sub> </sup></sub>
+<sup><sub> Desenhando um mapa </sup></sub>
 
 Eu sabia que isso aconteceria, mas o tamanho que escolhi para minha tela é grande demais para o tamanho dos _tiles_. Isso é algo que vou ter que corrigir depois. Por enquanto, anotarei isso no meu documento de _backlog_.
 
-Se eu executar essa cena do jeito que está, vou encontrar o mapa que desenhei, mas nada acontece. O próximo é incluir algum tipo de interação. E o melhor jeito de seguir com isso é criar o jogador. 
+Se eu executar essa cena do jeito que está, vou encontrar o mapa que desenhei, mas nada acontece. O próximo passo é incluir algum tipo de interação. E o melhor jeito de seguir com isso é criar o jogador. 
 
 ![Cena em execução](../Arquivos/Imagens/04_18.png 'Cena em execução')
-<sup><sub> </sup></sub>
+<sup><sub> Cena estática </sup></sub>
 
 Um detalhe interessante sobre a estrutura de árvores, é que nós filhos podem ter seus próprios nós filhos. Talvez você tenha reparado que o nó do meu personagem tem um triângulo de aviso. Isso é porque nós do tipo "corpo" precisam de um formato de colisão para funcionarem normalmente. Nesse caso, basta incluir um nó de colisão como filho. 
 
 ![Incluir colisão](../Arquivos/Imagens/04_19.png 'Incluir colisão')
-<sup><sub> </sup></sub>
+<sup><sub> Incluindo um nó de colisão </sup></sub>
 
 Geralmente, quando existe alguma configuração faltante, o próprio editar vai me avisar. Aqui, ele reclama que é preciso incluir um formato para o nó de colisão, então eu o faço. Nesse caso, selecionei um simples formato de retângulo, que é provavelmente o que vou usar para o personagem de qualquer forma.
 
 ![Colisão 1](../Arquivos/Imagens/04_20.png 'Colisão 1')
-<sup><sub> </sup></sub>
+<sup><sub> Configurando nó de colisão </sup></sub>
 
 ![Colisão 2](../Arquivos/Imagens/04_21.png 'Colisão 2')
-<sup><sub> </sup></sub>
+<sup><sub> Colisão exibida no editor </sup></sub>
 
 Agora, tenho um "personagem" com colisão, mas ele não é visível durante a execução. Isso é porque ele não contém nenhum nó visual. Por isso, incluo um nó "Sprite 2D" como filho. Eu já tenho um sprite para o personagem, mas desenhei um provisório apenas por questões de ilustração. Da mesma forma, um quadrado sólido também serviria, mas tente fazer um quadrado de cor diferente do mapa para facilitar sua visualização.
 
 ![Sprite embaçado](../Arquivos/Imagens/04_22.png 'Sprite embaçado')
-<sup><sub> </sup></sub>
+<sup><sub> Sprite incluído aparece embaçado </sup></sub>
 
-Adicionado o arquivo ao editor, e incluído como textura do sprite, percebo um problema com o meu desenho. Ele aparece um tanto embaçado no editor. Isso é porque a _engine_ tenta "filtrar" as imagens adicionadas para melhorar sua visualização. E isso costuma ser algo bom, mas para resoluções muito baixas (como 16x16 pixels), isso não é desejável. Nesse caso, basta mudar a configuração de filtro, e o sprite aparece da forma desejada.
+Adicionado o arquivo ao editor, e incluído como textura do sprite, percebo um problema com o meu desenho. Ele aparece um tanto embaçado no editor. Isso é porque a _engine_ tenta "filtrar" as imagens adicionadas para melhorar sua visualização. E isso costuma ser algo bom, mas para resoluções muito baixas (como 16x16 píxeis), isso não é desejável. Nesse caso, basta mudar a configuração de filtro, e o sprite aparece da forma desejada.
 
 ![Configuração de filtro](../Arquivos/Imagens/04_23.png 'Configuração de filtro')
-<sup><sub> </sup></sub>
+<sup><sub> Ajuste de filtro para o _sprite_ </sup></sub>
 
 Se eu executar a cena agora, notamos que o personagem existe, mas ele não faz nada. Aqui, me incomodo novamente com a resolução e a diminuo novamente nas configurações do projeto. Agora, o tamanho da câmera é pequeno demais para mostrar o mapa que criei abaixo, porém mais importante é o fato de que o personagem permanece flutuando no ar.
 
 ![Flutuando](../Arquivos/Imagens/04_24.png 'Flutuando')
-<sup><sub> </sup></sub>
+<sup><sub> Personagem flutuando no mapa </sup></sub>
 
 ![Flutuando 2](../Arquivos/Imagens/04_25.png 'Flutuando 2')
-<sup><sub> </sup></sub>
+<sup><sub> Personagem flutuando no mapa 2 </sup></sub>
 
 Para mudar isso, será necessário criar um _script_. Normalmente, _engines_ vão conter dois tipos de "corpos". Corpos 'rígidos' e 'cinemáticos'. Corpos rígidos têm sua física pré-programada, e são rígidos também no sentido de que o jeito que funcionam não é tão fácil de mudar. Corpos cinemáticos funcionam ao contrário, eles só funcionam se forem programados manualmente, mas é muito mais fácil mudá-los para que fiquem da maneira desejada. O corpo cinemático é mais adequado ao tipo de jogo que estou construindo.
 
-Como mencionei antes, para dar funcionalidade a esse corpo será necessário incluir um script. Por ora, esse _script_ cuidará apenas de física e controle. Mas antes de fazer isso, é interessante tomar outro passo: Salvar o jogador como uma cena diferente. Isso é outra funcionalidade muito útil do Godot. Eu posso salvar qualquer nó e seus filhos como uma cena separada, e reutilizar essa cena como nó filho em qualquer outra cenas que precisar.
+Como mencionei antes, para dar funcionalidade a esse corpo será necessário incluir um _script_. Por ora, esse _script_ cuidará apenas de física e controle. Mas antes de fazer isso, é interessante tomar outro passo: salvar o jogador como uma cena diferente. Isso é outra funcionalidade muito útil do Godot. Eu posso salvar qualquer nó e seus filhos como uma cena separada, e reutilizar essa cena como nó filho em qualquer outra cena que precisar.
 
-Eu simplesmente salvo o nó do jogador como uma cena diferente, na minha pasta de Entities/Player, chamando-o de Player. Agora é possível clicar no botão de edição para abrir a cena do jogador. Eu também renomeio o nó pai dessa cena para "Player". Tanto a nova cena quanto o nó filho na cena do mapa.
+Eu simplesmente salvo o nó do jogador como uma cena diferente, na minha pasta de Entities/Player, chamando-o de _Player_. Agora é possível clicar no botão de edição para abrir a cena do jogador. Eu também renomeio o nó pai dessa cena para "Player". Tanto a nova cena quanto o nó filho na cena do mapa.
 
 ![Salvando como cena](../Arquivos/Imagens/04_26.png 'Salvando como cena')
-<sup><sub> </sup></sub>
+<sup><sub> Salvando nó como cena </sup></sub>
 
 ![Salvando como cena 2](../Arquivos/Imagens/04_27.png 'Salvando como cena 2')
-<sup><sub> </sup></sub>
+<sup><sub> Configurando o nome correto </sup></sub>
 
 ![Botão de edição](../Arquivos/Imagens/04_28.png 'Botão de edição')
-<sup><sub> </sup></sub>
+<sup><sub> Botão de edição da cena </sup></sub>
 
 ![Renomeando](../Arquivos/Imagens/04_29.png 'Renomeando')
-<sup><sub> </sup></sub>
+<sup><sub> Renomeando o nó raiz da cena </sup></sub>
 
 ![Renomeando 2](../Arquivos/Imagens/04_30.png 'Renomeando 2')
-<sup><sub> </sup></sub>
+<sup><sub> Renomeando o nó na cena do mapa </sup></sub>
 
-Teria sido melhor renomear o nó antes de salvá-lo como filho, mas sinceramente eu esqueci de fazer isso. Felizmente, também é possível fazer essa mudança após salvar a cena. De qualquer forma, agora é mais simples adicionar um script a cena Player. Aproveitando a oportunidade, também levei o sprite do jogador para a mesma pasta onde salvei a cena do Player.
+Teria sido melhor renomear o nó antes de salvá-lo como filho, mas sinceramente eu esqueci de fazer isso. Felizmente, também é possível fazer essa mudança após salvar a cena. De qualquer forma, agora é mais simples adicionar um _script_ a cena _Player_. Aproveitando a oportunidade, também levei o _sprite_ do jogador para a mesma pasta onde salvei a cena do Player.
 
 ![Ajuste de arquivos](../Arquivos/Imagens/04_32.png 'Ajuste de arquivos')
-<sup><sub> </sup></sub>
+<sup><sub> Ajustando arquivos e pastas </sup></sub>
 
 ![Incluindo Script](../Arquivos/Imagens/04_31.png 'Incluindo Script')
-<sup><sub> </sup></sub>
+<sup><sub> Incluindo _script_ </sup></sub>
 
-Eu sempre salvo o script com o mesmo nome e na mesma pasta que a cena. (Isso só é possível porque o _script_ e a cena têm extensões diferentes). Uma adição interessante ao Godot 4 é a desse script padrão para o nó do tipo CharacterBody2D (corpo cinemático). 
+Eu sempre salvo o _script_ com o mesmo nome e na mesma pasta que a cena. (Isso só é possível porque o _script_ e a cena têm extensões diferentes). Uma adição interessante ao Godot 4 é a desse _script_ padrão para o nó do tipo CharacterBody2D (corpo cinemático). 
 
 ![Nome do script](../Arquivos/Imagens/04_33.png 'Nome do script')
 <sup><sub> </sup></sub>
@@ -210,7 +210,7 @@ Eu sempre salvo o script com o mesmo nome e na mesma pasta que a cena. (Isso só
 ![Script padrão](../Arquivos/Imagens/04_34.png 'Script padrão')
 <sup><sub> </sup></sub>
 
-Esse script já inclui controle lateral, pulo e gravidade. Se eu fosse escrever um _script_ do zero para essa mesma funcionalidade, ele seria bem similar a esse. Porém, se eu rodar a cena de teste nesse exato momento, notarei que o meu jogador apenas cai. Isso é porque a câmera não está configurada para seguir o jogador.
+Esse _script_ já inclui controle lateral, pulo e gravidade. Se eu fosse escrever um _script_ do zero para essa mesma funcionalidade, ele seria bem similar a esse. Porém, se eu rodar a cena de teste nesse exato momento, notarei que o meu jogador apenas cai. Isso é porque a câmera não está configurada para seguir o jogador.
 
 ![Gif, Player caindo](../Arquivos/Imagens/04_35.gif "Player Caindo")
 <sup><sub> </sup></sub>
@@ -250,7 +250,7 @@ Esse é um _script_ bem simples. Ele contém apenas uma função, e são apenas 
 ![Linha 1](../Arquivos/Imagens/04_41.png 'Linha 1')
 <sup><sub> </sup></sub>
 
-A primeira linha é padrão na maioria dos scripts no Godot. "Extends" indica herança, que é um conceito de programação orientada a objetos. Em termos simples, quando um objeto herda de outro, ele recebe todos os atributos do objeto o qual ele herda. Nesse caso, nosso nó Player herda de CharacterBody2D. Ou seja, ele herda todos os atributos e funções da classe CharacterBody2D, e pode fazer coisas como andar pela tela e colidir com outros objetos. Sempre que você quiser entender qual é o tipo de objeto no Godot, você pode procurar por essa linha.
+A primeira linha é padrão na maioria dos scripts no Godot. "Extends" indica herança, que é um conceito de programação orientada a objetos. Em termos simples, quando um objeto herda de outro, ele recebe todos os atributos do objeto o qual ele herda. Nesse caso, nosso nó _Player_ herda de CharacterBody2D. Ou seja, ele herda todos os atributos e funções da classe CharacterBody2D, e pode fazer coisas como andar pela tela e colidir com outros objetos. Sempre que você quiser entender qual é o tipo de objeto no Godot, você pode procurar por essa linha.
 
 ![Linhas 4-8](../Arquivos/Imagens/04_42.png 'Linhas 4-8')
 
@@ -308,7 +308,7 @@ A solução que pensei é que o personagem irá trocar de direção quando encos
 
 Quanto ao botão de pulo, decidi mantê-lo por enquanto. Talvez eu faça pulos automáticos mais a frente no projeto, mas, por enquanto, usar a barra de espaço é o suficiente. Fiz também algumas mudanças ao mapa para testar o movimento.
 
-Meu próximo passo foi tentar concretizar minha ideia de construir plataformar no mapa durante a execução do jogo. Para isso, criei um script na cena do mapa em si, em vez da cena do Player. Dessa vez, essa não veio pronta para eu adaptar.
+Meu próximo passo foi tentar concretizar minha ideia de construir plataformar no mapa durante a execução do jogo. Para isso, criei um _script_ na cena do mapa em si, em vez da cena do Player. Dessa vez, essa não veio pronta para eu adaptar.
 
 ![Código Mapa](../Arquivos/Imagens/04_49.png 'Código Mapa')
 
@@ -341,7 +341,7 @@ A primeira função interessante é _local_to_map_. Ela retorna a posição em c
 
 ![Documentação 2](../Arquivos/Imagens/04_55.png 'Documentação 2')
 
-Essas funções são as peças do quebra cabeça para montar o jogo que desejo ter. Primeiramente, para usar funções do _tilemap_ eu preciso de acesso a ele. Em Godot 4, acessar um nó pelo script é simples, basta criar uma variável anotada como @onready, e apontar para seu nome na árvore com o símbolo $. Além disso, eu crio uma variável para salvar a posição do meu clique (mouse_position), e uma variável para salvar as coordenadas em posição local (tile_position).
+Essas funções são as peças do quebra cabeça para montar o jogo que desejo ter. Primeiramente, para usar funções do _tilemap_ eu preciso de acesso a ele. Em Godot 4, acessar um nó pelo _script_ é simples, basta criar uma variável anotada como @onready, e apontar para seu nome na árvore com o símbolo $. Além disso, eu crio uma variável para salvar a posição do meu clique (mouse_position), e uma variável para salvar as coordenadas em posição local (tile_position).
 
 ![Código Mapa 3](../Arquivos/Imagens/04_56.png 'Código Mapa 3')
 
@@ -377,7 +377,7 @@ Ao clicar duas vezes em qualquer signal, o mesmo cria um nome e pede para seleci
 
 ![Signals 2](../Arquivos/Imagens/04_63.png 'Signals 2')
 
-Neste exemplo, ele só pode ser conectado ao próprio Player. Porém, eu preciso que essa informação chegue ao script do meu mapa. Eu poderia acessar o meu Player através do script do mapa. Mas, uma opção de melhor organização é emitir um novo sinal a partir do meu próprio Player. Esse sinal será criado manualmente, já que o sinal de Area2D não existe para um CharacterBody2D (que é o tipo do meu Player).
+Neste exemplo, ele só pode ser conectado ao próprio Player. Porém, eu preciso que essa informação chegue ao _script_ do meu mapa. Eu poderia acessar o meu _Player_ através do _script_ do mapa. Mas, uma opção de melhor organização é emitir um novo sinal a partir do meu próprio Player. Esse sinal será criado manualmente, já que o sinal de Area2D não existe para um CharacterBody2D (que é o tipo do meu Player).
 
 O primeiro passo é declarar o sinal no código. Em seguida, editar o código dos sinais abaixo para emiti-lo. Para cada um, emito o signal como _true_ ou _false_, para que eu possa usar o mesmo sinal para os dois casos.
 
@@ -385,7 +385,7 @@ O primeiro passo é declarar o sinal no código. Em seguida, editar o código do
 
 ![Signals 4](../Arquivos/Imagens/04_65.png 'Signals 4')
 
-Agora, posso pegar este signal que criei no meu Player e usá-lo no meu mapa principal. Uma vez conectado, eu crio uma variável _mouse_on_player_ e a configuro como _false_. Agora, toda vez que o mouse entrar ou sair da Area2D do meu Player, essa emitirá um signal que causará com que o Player emita o signal com _true_ ou _false_, e esse valor será atribuído à variável _mouse_on_player_. 
+Agora, posso pegar este signal que criei no meu _Player_ e usá-lo no meu mapa principal. Uma vez conectado, eu crio uma variável _mouse_on_player_ e a configuro como _false_. Agora, toda vez que o mouse entrar ou sair da Area2D do meu Player, essa emitirá um signal que causará com que o _Player_ emita o signal com _true_ ou _false_, e esse valor será atribuído à variável _mouse_on_player_. 
 
 ![Signals 5](../Arquivos/Imagens/04_66.png 'Signals 5')
 
@@ -424,7 +424,7 @@ Logo, o design revisado do meu jogo é o seguinte: Ao início de cada fase, voc�
 
 Imediatamente eu me ponho a trabalhar nesta segunda versão do meu protótipo. Primeiramente, após certificar-me que o meu backup estava disponível no _github_, desfiz todo o meu _script_ na cena do mapa. Para o meu Player, excluí a Area2D e as funções para os dois sinais, além do sinal que eu declarei. 
 
-Além disso, no mapa original, mudei a posição de meu Player para que ele comece a execução caindo. Um detalhe importante sobre essa nova ideia é de que, a princípio, mais do mapa deve estar visível a todo o tempo. Por isso, aumentei a resolução da tela novamente. Também adicionei um novo nó à cena de meu mapa, e o renomeei para "Objects". Este nó vai servir como um _container_ para todos os objetos que incluirei em cada fase.
+Além disso, no mapa original, mudei a posição de meu _Player_ para que ele comece a execução caindo. Um detalhe importante sobre essa nova ideia é de que, a princípio, mais do mapa deve estar visível a todo o tempo. Por isso, aumentei a resolução da tela novamente. Também adicionei um novo nó à cena de meu mapa, e o renomeei para "Objects". Este nó vai servir como um _container_ para todos os objetos que incluirei em cada fase.
 
 ![Ajustes Mapa](../Arquivos/Imagens/04_71.png 'Ajustes Mapa')
 <sup><sub> Ajustes no mapa </sup></sub>
@@ -454,15 +454,15 @@ Antes de poder testar se o que eu fiz funcionou, percebo que não consigo ver os
 ![Câmera inadequada](../Arquivos/Imagens/04_76.png 'Câmera inadequada')
 <sup><sub> Câmera inadequada </sup></sub>
 
-Além disso, incluí no processo um update para que a posição da câmera seja sempre atualizada para a posição do Player (respeitando os limites configurados).
+Além disso, incluí no processo um update para que a posição da câmera seja sempre atualizada para a posição do _Player_ (respeitando os limites configurados).
 
 ![Configurando câmera](../Arquivos/Imagens/04_77.png 'Configurando câmera')
-<sup><sub> Script da câmera </sup></sub>
+<sup><sub> _Script_ da câmera </sup></sub>
 
 Ao tentar rodar isso, percebo que os objetos ainda não são arrastáveis. A opção _pickable_ não fez exatamente o que eu esperava. Sem problemas, a gente descobre um jeito. Dessa vez, encontrei uma forma de atualizar a posição do objeto. Nesse caso, tive que atrelar um _script_ diretamente ao objeto arrastável. 
 
 ![Script para objetos arrastáveis](../Arquivos/Imagens/04_78.png 'Script para objetos arrastáveis')
-<sup><sub> Script para objetos arrastáveis </sup></sub>
+<sup><sub> _Script_ para objetos arrastáveis </sup></sub>
 
 Criei algumas cópias deles, e as incluí na tela. Agora sim conseguimos arrastar os objetos. Porém, permance um problema: Conseguimos arrastar objetos para dentro de outros. Terei que lidar com isso eventualmente.
 
@@ -481,7 +481,7 @@ Dividi a execução da cena em três estados: Prepare, Select, Run. Prepare é o
 Primeiramente, alterei o _script_ dos objetos para _apenas_ selecioná-los quando o jogador segura o clique por 0.15 segundos. Isso evita atrapalhar o jogador, selecionando um objeto quando ele deseja apenas fazer o _scroll_ da tela.
 
 ![Script de objetos arrastáveis novo](../Arquivos/Imagens/04_81.png 'Script de objetos arrastáveis novo')
-<sup><sub> Script de objetos arrastáveis </sup></sub>
+<sup><sub> _Script_ de objetos arrastáveis </sup></sub>
 
 Se o jogador mover o toque antes do timer acabar, o objeto não é selecionado, e o _scroll_ normal da tela segue. Caso contrário, o objeto é selecionado e arrastado. Em seguida, adicionei um _script_ ao container de objetos. Este simplesmente verifica se algum dos objetos está selecionado. Caso haja algum, marca uma variável como verdadeiro. E caso contrário, esta é marcada como falso.
 
@@ -521,7 +521,7 @@ Primeiramente, conserto o problema que mencionei acima, para que o jogador não 
 ![Shader de outline](../Arquivos/Imagens/04_88.png 'Shader de outline')
 <sup><sub> Shader de cotorno </sup></sub>
 
-Decidi incluir também uma condição de derrota, já que eu estou caindo várias vezes no buraco em meus testes, e tenho que resetar o jogo toda vez. No fundo do mapa, incluí um nó do tipo _Marker2D_, que eu nomeei BottomBoundary, e que basicamente marca uma posição. Além disso, incluí uma condição na função _process_, que roda uma função _kill_ do Player caso sua posição Y seja maior do que a posição Y do _Marker2D_.
+Decidi incluir também uma condição de derrota, já que eu estou caindo várias vezes no buraco em meus testes, e tenho que resetar o jogo toda vez. No fundo do mapa, incluí um nó do tipo _Marker2D_, que eu nomeei BottomBoundary, e que basicamente marca uma posição. Além disso, incluí uma condição na função _process_, que roda uma função _kill_ do _Player_ caso sua posição Y seja maior do que a posição Y do _Marker2D_.
 
 ![Marker2D](../Arquivos/Imagens/04_90.png 'Marker2D')
 <sup><sub> Configurando limites </sup></sub>
@@ -529,7 +529,7 @@ Decidi incluir também uma condição de derrota, já que eu estou caindo vária
 ![Kill caso abaixo do marker](../Arquivos/Imagens/04_91.png 'Kill caso abaixo do marker')
 <sup><sub> Kill caso abaixo do fundo da tela </sup></sub>
 
-No Player, a função kill simplesmente desativa seu processo físico, e emite um signal que será reconhecido pelo _script_ do mapa. Você pode pensar que é redundante que o mapa invoque uma função que simplesmente irá emitir um signal para ele mesmo. Mas eu faço isso porque este não será o único meio pelo qual o Player morrerá, então este será interessante para outras situações.
+No Player, a função kill simplesmente desativa seu processo físico, e emite um signal que será reconhecido pelo _script_ do mapa. Você pode pensar que é redundante que o mapa invoque uma função que simplesmente irá emitir um signal para ele mesmo. Mas eu faço isso porque este não será o único meio pelo qual o _Player_ morrerá, então este será interessante para outras situações.
 
 ![Função kill](../Arquivos/Imagens/04_92.png 'Função kill')
 <sup><sub> Função Kill </sup></sub>
@@ -546,13 +546,13 @@ Para isso, incluí uma variável que salva a posição inicial do jogador config
 
 Pensando bem, talvez seja interessante fazer com que a câmera volte à posição inicial antes que o personagem passe a se mover. Também vou considerar usar um animador _tween_ para fazer isso mais adiante. Por agora, quero fazer com que objetos não consigam sobrepor um ao outro. E isso causou bastante trabalho e dificuldade, e ainda não está perfeito. Também fiz com que a câmera fizesse o scroll durante a seleção, o que foi bem simples. 
 
-Mais importante que qualquer coisa, falta algo fundamental para que isso se torne um jogo. Nós temos uma condição de derrota, mas não uma de vitória. Fiz um objeto para representar a vitória do jogador. Eu mudo o formato da fase e incluo o objeto _goal_. E dou ao meu player um nome de classe. Por fim, _Goal_ recebe um _script_ simples. Caso entre um corpo da classe Player, emita um signal de vitória.
+Mais importante que qualquer coisa, falta algo fundamental para que isso se torne um jogo. Nós temos uma condição de derrota, mas não uma de vitória. Fiz um objeto para representar a vitória do jogador. Eu mudo o formato da fase e incluo o objeto _goal_. E dou ao meu _Player_ um nome de classe. Por fim, _Goal_ recebe um _script_ simples. Caso entre um corpo da classe Player, emita um signal de vitória.
 
 ![Novo Mapa](../Arquivos/Imagens/04_95.png 'Novo Mapa')
 <sup><sub> Novo mapa </sup></sub>
 
 ![Classe do Player](../Arquivos/Imagens/04_96.png 'Classe do Player')
-<sup><sub> Classe do Player </sup></sub>
+<sup><sub> Classe do _Player_ </sup></sub>
 
 ![Goal script](../Arquivos/Imagens/04_97.png 'Goal script')
 <sup><sub> Script da bandeira </sup></sub>
@@ -560,7 +560,7 @@ Mais importante que qualquer coisa, falta algo fundamental para que isso se torn
 ![Tela de vitória](../Arquivos/Imagens/04_98.png 'Tela de vitória')
 <sup><sub> Função da tela de vitória </sup></sub>
 
-Ao final disso, quando meu Player encostar na bandeia _goal_, a função fará com que o novo painel (ColorRect) que adicionei apareça com a mensagem de vitória. Agora, podemos chamar isso de um jogo. Não é um jogo bom, e não é um jogo completo, mas é um jogo, como pode ver no gif abaixo:
+Ao final disso, quando meu _Player_ encostar na bandeia _goal_, a função fará com que o novo painel (ColorRect) que adicionei apareça com a mensagem de vitória. Agora, podemos chamar isso de um jogo. Não é um jogo bom, e não é um jogo completo, mas é um jogo, como pode ver no gif abaixo:
 
 ![Protótipo 0](../Arquivos/Imagens/04_99.gif "Protótipo 0")
 <sup><sub> Protótipo 0 </sup></sub>
