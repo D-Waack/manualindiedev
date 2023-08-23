@@ -24,18 +24,18 @@ Pessoalmente, eu usava muito o Musescore 3. Hoje existe uma nova versão, Musesc
 <sup><sub> Interface do Musescore </sup></sub>
 
 - Produção musical:
-Existem programas muito mais adequados para produção musical em si. Geralmente, os chamamos de DAWs (Digital Audio Workstations). Estes são muito mais robustos que os programas de notação, oferecendo a possibilidade de ajuste manual de notas, importação de plugins de instrumentos, automatização e controle de ritmos, controle avançado de volumes, aplicação de efeitos diversos, entre várias outras funções. Porém, você provavelmente deve imaginar que isso é uma solução muito mais cara.
+Existem programas muito mais adequados para produção musical em si. Geralmente, os chamamos de DAWs (_Digital Audio Workstations_). Estes são muito mais robustos que os programas de notação, oferecendo a possibilidade de ajuste manual de notas, importação de _plugins_ de instrumentos, automatização e controle de ritmos, controle avançado de volumes, aplicação de efeitos diversos, entre várias outras funções. Porém, você provavelmente deve imaginar que isso é uma solução muito mais cara.
 
 O DAW considerado por muitos o melhor da indústria, _FL Studio_, tem sua versão mais simples custando 100 dólares. E a versão mais completa custa um total de 500 dólares. Se você não se interessa em produção de música, esse é um preço muito caro para pagar em um _software_ que só usará de vez em quando. Porém, é um preço bom para a licença vitalícia de um DAW profissional.
 
 ![Flstudio Interface](../Arquivos/Imagens/10_02.png 'Flstudio Interface')
 <sup><sub> Interface do FLStudio </sup></sub>
 
-É claro, existem alternativas grátis para DAWs também. As que eu conheço melhor são o _LMMS_ e o _Cakewalk_. Enquanto ambos são funcionais, o _cakewalk_ é o mais fácil de usar e completo entre os dois. Entretanto, ele contém mais _bugs_. Recomendaria o _cakewalk_ caso queira uma alternativa grátis ao FL Studio. Inclusive, foi o que eu usei junto ao musescore para os projetos desenvolvidos durante a criação deste manual.
+É claro, existem alternativas grátis para DAWs também. As que eu conheço melhor são o _LMMS_ e o _Cakewalk_. Enquanto ambos são funcionais, o _cakewalk_ é o mais fácil de usar e completo entre os dois. Entretanto, ele contém mais _bugs_. Recomendaria o _cakewalk_ caso queira uma alternativa grátis ao FL Studio. Inclusive, foi o que usei junto ao Musescore para os projetos desenvolvidos durante a criação deste manual.
 
-Outra coisa que encarece a utilização de DAWs são os _plugins_. Uma DAW não tem tantos instrumentos por padrão quanto os programas de notação. Enquanto alguns vão oferecer alguns VSTs (plugins de instrumentos) e _samples_ que você pode usar, na maioria dos casos você terá que procurar plugins de instrumentos em outras fontes para utilizar em seu DAW. Alguns desses são grátis, outros são caríssimos.
+Outra coisa que encarece a utilização de DAWs são os _plugins_. Uma DAW não tem tantos instrumentos por padrão quanto os programas de notação. Enquanto alguns vão oferecer alguns VSTs (_plugins_ de instrumentos) e _samples_ que você pode usar, geralmente você terá que procurar _plugins_ de instrumentos em outras fontes para utilizar em seu DAW. Alguns desses são grátis, outros são caríssimos.
 
-Para plugins de instrumentos grátis, recomendo a orquestra [VSCO 2](https://www.audiopluginsforfree.com/versilian-studios-chamber-orchestra-2-community-edition-vsco-2-ce/). E você pode encontrar vários outros neste mesmo site, [Audio Plugins For Free](https://www.audiopluginsforfree.com/). Eu gosto de usar o plugin de um sintetizador _Roland JV 1080_ que comprei de alguém na internet. Porém, existem opções grátis para muitos instrumentos.
+Para _plugins_ de instrumentos grátis, recomendo a orquestra [VSCO 2](https://www.audiopluginsforfree.com/versilian-studios-chamber-orchestra-2-community-edition-vsco-2-ce/). E você pode encontrar vários outros neste mesmo site, [_Audio Plugins For Free_](https://www.audiopluginsforfree.com/). Eu gosto de usar o _plugin_ de um sintetizador _Roland JV 1080_ que comprei de alguém na internet. Porém, existem opções grátis para muitos instrumentos.
 
 - Recursos gratuitos:
 Também é possível utilizar músicas grátis, disponíveis pela internet. O site [freesound.org](https://freesound.org) é um ótimo lugar para encontrar arquivos de música liberados para uso. Caso vá seguir por esse caminho, tome cuidado com as permissões. Algumas músicas são permitidas apenas para uso em projetos não lucrativos, outras são liberadas apenas se você der credito ao criador original. (Procure por CC0 caso não queria se preocupar com isso.)
@@ -55,10 +55,10 @@ Caso bolar uma melodia não seja fácil, pense em uma progressão de acordes no 
 
 - Improvise
 
-Algumas das melhores melodias que eu criei foram só tentando coisas aleatórias. Talvez isso exija sorte ou algum conhecimento musical que eu não reconheço, mas improvisar sempre me ajudou em composições.
+Algumas das melhores melodias que criei foram só tentando coisas aleatórias. Talvez isso exija sorte ou algum conhecimento musical que eu não reconheço, mas improvisar sempre me ajudou em composições.
 
 ## Processo e Recursos para Efeitos Sonoros
-O meu processo para efeitos sonoros costuma ser bem diferente do que uso para criação de temas para música de fundo. Para estes, eu costumo partir de efeitos já criados, utilizando principalmente o site que mencionei antes, [FreeSound](https://freesound.org/). Geralmente, só procuro algumas palavras chaves relacionadas ao som que eu desejo encontrar (em inglês), e clico no filtro de "Creative Commons 0" para poder utilizá-lo em qualquer trabalho, comercial ou não lucrativo.
+O meu processo para efeitos sonoros costuma ser bem diferente do que uso para criação de temas para música de fundo. Para estes, eu costumo partir de efeitos já criados, utilizando principalmente o site que mencionei antes, [FreeSound](https://freesound.org/). Geralmente, só procuro algumas palavras-chave relacionadas ao som que eu desejo encontrar (em inglês), e clico no filtro de "Creative Commons 0" para poder utilizá-lo em qualquer trabalho, comercial ou não lucrativo.
 
 Baixando estes sons, na maior parte dos casos eu os edito no aplicativo _Audacity_. Nele, posso cortar o áudio para apenas o trecho que desejo utilizar no jogo, e posso adicionar alguns efeitos para melhorá-los também. Como mudar o tom do áudio, ou deixá-lo mais acelerado, invertê-lo, entre outros.
 
@@ -75,4 +75,4 @@ De qualquer forma, uma vez criados os efeitos, é sempre bom testá-los no conte
 ## Conclusão
 Ao final desse capítulo, espero que tenha uma certa ideia de como prosseguir para a criação de músicas e efeitos sonoros para o seu jogo. A melhor opção ainda seria contratar ou recrutar um compositor competente para a sua equipe, mas as outras opções que listei serão úteis para uma equipe que não contém nenhum músico, o que não é algo tão incomum.
 
-No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo11.md), falarei mais sobre o processo de integração destes recursos áudiovisuais ao seu jogo.
+No [próximo capítulo](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo11.md), falarei mais sobre o processo de integração destes recursos audiovisuais ao seu jogo.
