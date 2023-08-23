@@ -119,7 +119,7 @@ Em seguida, adicionei o _tileset_ aos arquivos do meu projeto. Nesse caso, junto
 ![Adicionando arquivo ao editor](../Arquivos/Imagens/04_13.png 'Adicionando arquivo ao editor')
 <sup><sub> Adicionando arquivo ao editor </sup></sub>
 
-Agora, posso começar a criar o mapa, no outro canto da janela, opções de edição do nó selecionado aparecem. No campo Tile Set, adiciono um novo recurso do tipo _tileset_, e clico nele, para que o editor de _tileset_ apareça no canto inferior da tela. Arrastando o arquivo de imagem de meu _tileset_ para este editor, a _engine_ já separa os tiles da maneira correta. (Isso acontece porque o tamanho padrão da _engine_ é 16x16 píxeis. Caso meu _tile_ tivesse um tamanho maior, seria necessário mudar essa configuração).
+Agora, posso começar a criar o mapa, no outro canto da janela, opções de edição do nó selecionado aparecem. No campo Tile Set, adiciono um novo recurso do tipo _tileset_, e clico nele, para que o editor de _tileset_ apareça no canto inferior da tela. Arrastando o arquivo de imagem de meu _tileset_ para este editor, a _engine_ já separa os _tiles_ da maneira correta. (Isso acontece porque o tamanho padrão da _engine_ é 16x16 píxeis. Caso meu _tile_ tivesse um tamanho maior, seria necessário mudar essa configuração).
 
 ![Tileset](../Arquivos/Imagens/04_14.png 'Tileset')
 <sup><sub> Configurando _tileset_ </sup></sub>
@@ -155,12 +155,12 @@ Geralmente, quando existe alguma configuração faltante, o próprio editar vai 
 ![Colisão 2](../Arquivos/Imagens/04_21.png 'Colisão 2')
 <sup><sub> Colisão exibida no editor </sup></sub>
 
-Agora, tenho um "personagem" com colisão, mas ele não é visível durante a execução. Isso é porque ele não contém nenhum nó visual. Por isso, incluo um nó "Sprite 2D" como filho. Eu já tenho um sprite para o personagem, mas desenhei um provisório apenas por questões de ilustração. Da mesma forma, um quadrado sólido também serviria, mas tente fazer um quadrado de cor diferente do mapa para facilitar sua visualização.
+Agora, tenho um "personagem" com colisão, mas ele não é visível durante a execução. Isso é porque ele não contém nenhum nó visual. Por isso, incluo um nó "Sprite 2D" como filho. Eu já tenho um _sprite_ para o personagem, mas desenhei um provisório apenas por questões de ilustração. Da mesma forma, um quadrado sólido também serviria, mas tente fazer um quadrado de cor diferente do mapa para facilitar sua visualização.
 
 ![Sprite embaçado](../Arquivos/Imagens/04_22.png 'Sprite embaçado')
-<sup><sub> Sprite incluído aparece embaçado </sup></sub>
+<sup><sub> _Sprite_ incluído aparece embaçado </sup></sub>
 
-Adicionado o arquivo ao editor, e incluído como textura do sprite, percebo um problema com o meu desenho. Ele aparece um tanto embaçado no editor. Isso é porque a _engine_ tenta "filtrar" as imagens adicionadas para melhorar sua visualização. E isso costuma ser algo bom, mas para resoluções muito baixas (como 16x16 píxeis), isso não é desejável. Nesse caso, basta mudar a configuração de filtro, e o sprite aparece da forma desejada.
+Adicionado o arquivo ao editor, e incluído como textura do sprite, percebo um problema com o meu desenho. Ele aparece um tanto embaçado no editor. Isso é porque a _engine_ tenta "filtrar" as imagens adicionadas para melhorar sua visualização. E isso costuma ser algo bom, mas para resoluções muito baixas (como 16x16 píxeis), isso não é desejável. Nesse caso, basta mudar a configuração de filtro, e o _sprite_ aparece da forma desejada.
 
 ![Configuração de filtro](../Arquivos/Imagens/04_23.png 'Configuração de filtro')
 <sup><sub> Ajuste de filtro para o _sprite_ </sup></sub>
@@ -205,37 +205,37 @@ Teria sido melhor renomear o nó antes de salvá-lo como filho, mas sinceramente
 Eu sempre salvo o _script_ com o mesmo nome e na mesma pasta que a cena. (Isso só é possível porque o _script_ e a cena têm extensões diferentes). Uma adição interessante ao Godot 4 é a desse _script_ padrão para o nó do tipo CharacterBody2D (corpo cinemático). 
 
 ![Nome do script](../Arquivos/Imagens/04_33.png 'Nome do script')
-<sup><sub> </sup></sub>
+<sup><sub> Menu de adição de _script_ </sup></sub>
 
 ![Script padrão](../Arquivos/Imagens/04_34.png 'Script padrão')
-<sup><sub> </sup></sub>
+<sup><sub> _Script_ padrão de corpo cinemático </sup></sub>
 
 Esse _script_ já inclui controle lateral, pulo e gravidade. Se eu fosse escrever um _script_ do zero para essa mesma funcionalidade, ele seria bem similar a esse. Porém, se eu rodar a cena de teste nesse exato momento, notarei que o meu jogador apenas cai. Isso é porque a câmera não está configurada para seguir o jogador.
 
 ![Gif, Player caindo](../Arquivos/Imagens/04_35.gif "Player Caindo")
-<sup><sub> </sup></sub>
+<sup><sub> Personagem cai </sup></sub>
 
 Existem vários jeitos de consertar isso. O mais simples é simplesmente colocar a câmera como um nó filho do jogador. Enquanto eu não pretendo usar isso na versão final do jogo (pois quero ter diferentes funcionalidades para a câmera em diferentes momentos), para motivos do protótipo, isso vai servir. Incluo agora também no backlog o item "Ajustar funcionamento da câmera".
 
-Na minha cena de teste, arrasto a câmera para que se torne nó filho do Player.
+Na minha cena de teste, arrasto a câmera para que se torne nó filho do _Player_.
 
 ![Ajuste de câmera](../Arquivos/Imagens/04_36.png 'Ajuste de câmera')
-<sup><sub> </sup></sub>
+<sup><sub> Ajuste de nós </sup></sub>
 
 Agora, ao tentar executar a cena, a câmera segue o personagem como esperado, mas me deparo com outro problema. Eu não incluí colisão para o mapa que criei abaixo, e a gravidade faz com que o personagem caia diretamente através do chão.
 
 ![Gif, Player caindo 2](../Arquivos/Imagens/04_37.gif "Player Caindo 2")
-<sup><sub> </sup></sub>
+<sup><sub> Caindo novamente </sup></sub>
 
-Para esse caso, eu ainda não lembrava como configurar colisões em Tilemaps para o Godot 4 (pois tenho mais experiência com a versão 3). Então tive que pesquisar sobre, e [este vídeo](https://www.youtube.com/watch?v=1Uk1yhGtnOo) me mostrou como fazê-lo. Segui os passos descritos, e incluí colisão para os dois tiles que eu usei no tileset.
+Para esse caso, eu ainda não lembrava como configurar colisões em _Tilemaps_ para o Godot 4 (pois tenho mais experiência com a versão 3). Então tive que pesquisar sobre, e [este vídeo](https://www.youtube.com/watch?v=1Uk1yhGtnOo) me mostrou como fazê-lo. Segui os passos descritos, e incluí colisão para os dois _tiles_ que usei no _tileset_.
 
 ![Ajuste de colisão](../Arquivos/Imagens/04_38.png 'Ajuste de colisão')
-<sup><sub> </sup></sub>
+<sup><sub> Ajuste de colisão  </sup></sub>
 
 Agora, o personagem cai até encontrar o chão. E é possível controlá-lo com as setas e a barra de espaço. O movimento não é muito bom, e o personagem não é animado, nem sequer vira para o lado onde está andando, porque nenhuma dessas funções foi programada. 
 
 ![Gif, Movimento básico](../Arquivos/Imagens/04_39.gif "Movimento básico")
-<sup><sub> </sup></sub>
+<sup><sub> Movimento básico do personagem </sup></sub>
 
 Contudo, já temos os primeiros passos para o protótipo 0. Uma cena de testes, um personagem jogável, e um plano de ação. Antes de prosseguirmos, vamos entender o código que já temos.
 
@@ -243,24 +243,27 @@ Contudo, já temos os primeiros passos para o protótipo 0. Uma cena de testes, 
 Para alguém que acabou de começar sua jornada de desenvolvimento, isso pode parecer mágica. Mas não há mágica alguma em códigos, são apenas conjuntos de instruções, e entendendo as instruções você entenderá o funcionamento do código. Então, vamos observar o _script_ do jogador que temos até agora.
 
 ![Código Player](../Arquivos/Imagens/04_40.png 'Script Player')
-<sup><sub> </sup></sub>
+<sup><sub> _Script_ do _Player_ </sup></sub>
 
 Esse é um _script_ bem simples. Ele contém apenas uma função, e são apenas 29 linhas de código, incluindo linhas em branco.
 
 ![Linha 1](../Arquivos/Imagens/04_41.png 'Linha 1')
-<sup><sub> </sup></sub>
+<sup><sub> _Script Player_ Linha 1 </sup></sub>
 
 A primeira linha é padrão na maioria dos scripts no Godot. "Extends" indica herança, que é um conceito de programação orientada a objetos. Em termos simples, quando um objeto herda de outro, ele recebe todos os atributos do objeto o qual ele herda. Nesse caso, nosso nó _Player_ herda de CharacterBody2D. Ou seja, ele herda todos os atributos e funções da classe CharacterBody2D, e pode fazer coisas como andar pela tela e colidir com outros objetos. Sempre que você quiser entender qual é o tipo de objeto no Godot, você pode procurar por essa linha.
 
 ![Linhas 4-8](../Arquivos/Imagens/04_42.png 'Linhas 4-8')
+<sup><sub> _Script Player_ Linha 4-8 </sup></sub>
 
 As linhas 4-8 são declarações de constantes e variáveis. Velocidade e velocidade de pulo **não mudarão** durante a execução do jogo, então declará-las como _constant_ é melhor (tanto em termos de organização quanto para a execução do jogo). Quanto ao que significam, SPEED é a velocidade com que o jogador anda horizontalmente, e JUMP_VELOCITY é a força com que o jogador pula quando o botão de pulo é pressionado. Além disso, temos a variável gravity, que herda um valor nas configurações, para que haja sincronia entre ela e corpos rígidos. No meu caso, eu não pretendo usar corpos rígidos por enquanto, mas posso decidir usá-los adiante, então vou manter essa linha assim.
 
 Você pode editar estes valores e perceber como eles afetam o personagem. Diminuindo a gravidade, por exemplo, o personagem leva mais tempo para cair. E aumentando a velocidade, ele anda mais rápido através da tela.
 
 ![Mudando configurações](../Arquivos/Imagens/04_43.png 'Mudando configurações')
+<sup><sub> Ajuste de configuração de gravidade </sup></sub>
 
 ![Linhas 11-28](../Arquivos/Imagens/04_44.png 'Linhas 11-28')
+<sup><sub> _Script Player_ Linha 11-28 </sup></sub>
 
 O próximo bloco de código é uma função. Funções são blocos de código que podem ser executados quando chamados em outras partes do código. No Godot, além de poder criar suas próprias funções, encontramos algumas funções comuns para quase todos os tipos de objetos. Estas são:
 
@@ -293,111 +296,134 @@ Eu tenho um código para um personagem jogável de um plataforma. Mas isso não 
 Meu primeiro passo foi virar o personagem para que encare a direção onde ele andará. Em seguida, mudei o código da seguinte maneira:
 
 ![Código Runner](../Arquivos/Imagens/04_45.png 'Código Runner')
+<sup><sub> Ajuste do código do personagem </sup></sub>
 
 Com essa mudança, o personagem não mais reage ao _input_ de direção do teclado, mas sempre segue em frente na direção para onde está olhando. Também incluí paredes nos cantos do mapa para que o personagem não caia no abismo.
 
 ![Pós Mudança](../Arquivos/Imagens/04_46.gif "Pós Mudança")
+<sup><sub> _Player_ se move sozinho </sup></sub>
 
 Okay, a situação evoluiu um pouco, mas temos outro problema, o personagem continua tentando avançar para dentro da parede. Geralmente, em jogos desse estilo, encontrar um obstáculo significa o fim dessa jogada, ou esse tipo de obstáculo não existe. Para o caso do meu jogo, minha intenção é ter fases menores e mais fechadas, então precisarei de outro tipo de solução. 
 
 A solução que pensei é que o personagem irá trocar de direção quando encostar em obstáculo que impede seu avanço. Para isso, fiz com que o personagem trocasse de direção toda vez que encontrar uma parede.
 
 ![Código Runner 2](../Arquivos/Imagens/04_48.png 'Código Runner 2')
+<sup><sub> Ajuste para colisões com paredes </sup></sub>
 
 ![Vai e volta](../Arquivos/Imagens/04_47.gif "Vai e volta")
+<sup><sub> Funcionamento após o ajuste </sup></sub>
 
 Quanto ao botão de pulo, decidi mantê-lo por enquanto. Talvez eu faça pulos automáticos mais a frente no projeto, mas, por enquanto, usar a barra de espaço é o suficiente. Fiz também algumas mudanças ao mapa para testar o movimento.
 
-Meu próximo passo foi tentar concretizar minha ideia de construir plataformar no mapa durante a execução do jogo. Para isso, criei um _script_ na cena do mapa em si, em vez da cena do Player. Dessa vez, essa não veio pronta para eu adaptar.
+Meu próximo passo foi tentar concretizar minha ideia de construir plataformas no mapa durante a execução do jogo. Para isso, criei um _script_ na cena do mapa em si, em vez da cena do Player. Dessa vez, essa não veio pronta para eu adaptar.
 
 ![Código Mapa](../Arquivos/Imagens/04_49.png 'Código Mapa')
+<sup><sub> Novo _script_ para o mapa </sup></sub>
 
 No _script padrão_, sempre temos duas funções: _ready_ e _process_. Eu poderia usar apenas uma, ambas ou nenhuma delas. Para este caso, não precisarei usar _ready_ por enquanto, mas process será importante. 
 
 Meu objetivo é fazer a seguinte ação: Ao clicar em algum pedaço do mapa, eu gostaria que fosse criado um _tile_ no lugar onde cliquei. Eu posso dividir essa ideia em alguns aspectos diferentes:
 - Reconhecer o input de clique
 - Localizar a posição desse clique no mapa
-- Interagir com o _tilemap_ para criar um novo tile nessa posição
+- Interagir com o _tilemap_ para criar um novo _tile_ nessa posição
 
 Felizmente, isso é tudo bem simples de fazer. A primeira coisa que eu checo em minha função _process_ é se houve um clique do mouse. Para isso, eu uso o singleton _Input_. Um singleton, no contexto da _engine_ Godot, se refere a qualquer _script_ que pode ser invocado em qualquer outro _script_ durante a execução do jogo. Ou seja, um _script_ de acesso universal que fica carregado na memória o tempo todo.
 
 _Input_, como o nome sugere, é um singleton que captura qualquer input feito pelo jogador, seja através de um controle, mouse, teclado, ou qualquer outro método de _input_ reconhecido pela _engine_. Daí vem nossa primeira linha, uma condicional. Caso o botão esquerdo do mouse seja clicado, faremos algo:
 
 ![Código Mapa 2](../Arquivos/Imagens/04_50.png 'Código Mapa 2')
+<sup><sub> Condicional com _input_ </sup></sub>
 
 O que seria esse algo? O que eu descrevi acima. Primeiro, vamos descobrir a posição do ponteiro do mouse. Uma simples pesquisa no Google me retornou qual função deveria ser usada, _get_global_mouse_pos_.
 
 ![Pesquisa 1](../Arquivos/Imagens/04_51.png 'Pesquisa 1')
+<sup><sub> Pesquisa para posição do mouse </sup></sub>
 
 ![Pesquisa 2](../Arquivos/Imagens/04_52.png 'Pesquisa 2')
+<sup><sub> Resultado da pesquisa </sup></sub>
 
 Além de saber a posição no mapa, eu também precisarei incluir essa posição no meu _tilemap_. Eu sei, por experiência, que o _tilemap_ trabalha com uma _grid_ quadriculada, e nela trabalha com coordenadas X,Y. Porém, eu não sabia como traduzir as posições globais para as coordenadas do _tilemap_. Por isso, procurei a documentação da _engine_ para _tilemaps_.
 
 Convenientemente, Godot já deixa a maior parte da documentação disponível no próprio editor de _scripts_. Através do botão "Search Help", eu encontrei a documentação para o _tilemap_. Percebo que _tilemap_ tem muitas funções, então eu procuro por palavras-chave como "position" ou "coordinates". Não demora muito para encontrar o que eu preciso.
 
 ![Documentação 1](../Arquivos/Imagens/04_53.png 'Documentação 1')
+<sup><sub> Documentação de _Tilemap_ </sup></sub>
 
 A primeira função interessante é _local_to_map_. Ela retorna a posição em coordenadas do mapa para uma **posição local**. Entretanto, a posição adquirida do mouse é uma posição global. Eu sei que isso não vai fazer diferença nesse caso (porque o meu _tilemap_ está na origem, ou seja, a posição global será a mesma que a local), mas apenas por questões de boas práticas, vou incluir a função _to_local_ para passar essa posição global para local. Assim, mesmo que eu tire o mapa da origem global, não terei problemas com isso.
 
 ![Documentação 2](../Arquivos/Imagens/04_55.png 'Documentação 2')
+<sup><sub> Função relevante </sup></sub>
 
 Essas funções são as peças do quebra cabeça para montar o jogo que desejo ter. Primeiramente, para usar funções do _tilemap_ eu preciso de acesso a ele. Em Godot 4, acessar um nó pelo _script_ é simples, basta criar uma variável anotada como @onready, e apontar para seu nome na árvore com o símbolo $. Além disso, eu crio uma variável para salvar a posição do meu clique (mouse_position), e uma variável para salvar as coordenadas em posição local (tile_position).
 
 ![Código Mapa 3](../Arquivos/Imagens/04_56.png 'Código Mapa 3')
+<sup><sub> Adicionando funções ao código do mapa </sup></sub>
 
 Tendo feito isso tudo, o próximo passo é: Reconhecer se não há nenhum bloco na posição clicada, incluir um bloco caso não tenha nada. Nesse caso, as funções relevantes são _get_cell_source_id_, que retorna o ID do _tile_ nesta coordenada, e -1 caso não haja nada. E a função _set_cell_, que insere determinado _tile_ na coordenada indicada.
 
 ![Documentação 3](../Arquivos/Imagens/04_54.png 'Documentação 3')
+<sup><sub> Função para encontrar o ID do _tile_ </sup></sub>
 
 ![Documentação 4](../Arquivos/Imagens/04_57.png 'Documentação 4')
+<sup><sub> Função para configurar um _tile_ </sup></sub>
 
 Essas duas são as últimas peças necessárias para criar o que eu tenho em mente. Caso o ID para esta coordenada seja -1, sabemos que isso é um espaço vazio, logo, inserimos a célula 0 nessa posição.
 
 ![Código Mapa 4](../Arquivos/Imagens/04_58.png 'Código Mapa 4')
+<sup><sub> Aplicando as funções ao código do mapa </sup></sub>
 
 ![Protótipo Novamente](../Arquivos/Imagens/04_59.gif "Protótipo Novamente")
+<sup><sub> Resultado das adições ao protótipo </sup></sub>
 
 Se você deu uma olhada no gif acima, provavelmente notou um problema. É possível criar plataformas na mesma posição onde o personagem está, causando com que ele seja lançado para cima em alta velocidade. Não preciso dizer que isso não estava em minhas intenções. Outra coisa que eu notei foi o fato de que o personagem é rápido demais, o que dificulta o controle de onde você está incluindo blocos ou não. Por ora, decidi incluir também a opção de excluir blocos, apenas para teste.
 
-A primeira coisa que fiz foi incluir ainda **outro** _tilemap_. Este outro tilemap permite que eu construa um mapa que não pode ser deletado, mas que o que o jogador construir possa ser. Assim, não encontro o problema de o jogador destruir o mapa completamente (o que poderia ser interessante, mas não é minha intenção com esse jogo).
+A primeira coisa que fiz foi incluir ainda **outro** _tilemap_. Este outro _tilemap_ permite que eu construa um mapa que não pode ser deletado, mas que o que o jogador construir possa ser. Assim, não encontro o problema de o jogador destruir o mapa completamente (o que poderia ser interessante, mas não é minha intenção com esse jogo).
 
 ![Código Mapa 5](../Arquivos/Imagens/04_60.png 'Código Mapa 5')
+<sup><sub> Adicionando deleção de _tiles_ </sup></sub>
 
 Aqui, incluí também o _tilemap2_. Agora, a primeira verificação procura se existe um _tile_ nessa coordenada tanto para o _tilemap_ 1 quanto para o 2, e caso contrário o _tile_ é inserido no _tilemap2_. Em seguida, fiz um bloco de código similar ao anterior para o botão direito do mouse. Para o botão direito, se existe alguma coisa na coordenada clicada, esse _tile_ é deletado.
 
 Também fiz uma mudança ao código do Player. Nele incluí um nó de "Area2D". Este nó tem algumas propriedades especiais para detecção de vários objetos, inclusive, verificação se o mouse está dentro de sua área, o que será útil para mim. Minha intenção aqui é que eu **não** consiga criar novos _tiles_ se o mouse estiver muito próximo do jogador.
 
 ![Mudança ao Player](../Arquivos/Imagens/04_61.png 'Mudança ao Player')
+<sup><sub> Ajuste de colisões no _Player_ </sup></sub>
 
 Por isso, criei essa área em volta do Player. Além disso, incluí os sinais relevantes no código. No menu na direita, existe uma opção "Node", onde você pode ver os diferentes _signals_ que cada nó possui. Estes _signals_ são ativados em reação a diferentes condições. Nesse caso, selecionei as condições "Mouse entered" e "Mouse exited" para a área 2D. 
 
 ![Signals](../Arquivos/Imagens/04_62.png 'Signals')
+<sup><sub> _Signals_ </sup></sub>
 
 Ao clicar duas vezes em qualquer signal, o mesmo cria um nome e pede para selecionar a qual nó este sinal será conectado. Essa conexão apenas ocorre quando um nó contém um script. Aqui a minha intenção é conectá-lo ao próprio Player.
 
 ![Signals 2](../Arquivos/Imagens/04_63.png 'Signals 2')
+<sup><sub> Conectando _signal_ </sup></sub>
 
 Neste exemplo, ele só pode ser conectado ao próprio Player. Porém, eu preciso que essa informação chegue ao _script_ do meu mapa. Eu poderia acessar o meu _Player_ através do _script_ do mapa. Mas, uma opção de melhor organização é emitir um novo sinal a partir do meu próprio Player. Esse sinal será criado manualmente, já que o sinal de Area2D não existe para um CharacterBody2D (que é o tipo do meu Player).
 
 O primeiro passo é declarar o sinal no código. Em seguida, editar o código dos sinais abaixo para emiti-lo. Para cada um, emito o signal como _true_ ou _false_, para que eu possa usar o mesmo sinal para os dois casos.
 
 ![Signals 3](../Arquivos/Imagens/04_64.png 'Signals 3')
+<sup><sub> Declarando _signal_ por código </sup></sub>
 
 ![Signals 4](../Arquivos/Imagens/04_65.png 'Signals 4')
+<sup><sub> Emitindo _signal_ por código </sup></sub>
 
 Agora, posso pegar este signal que criei no meu _Player_ e usá-lo no meu mapa principal. Uma vez conectado, eu crio uma variável _mouse_on_player_ e a configuro como _false_. Agora, toda vez que o mouse entrar ou sair da Area2D do meu Player, essa emitirá um signal que causará com que o _Player_ emita o signal com _true_ ou _false_, e esse valor será atribuído à variável _mouse_on_player_. 
 
 ![Signals 5](../Arquivos/Imagens/04_66.png 'Signals 5')
+<sup><sub> Conectando _signal_ ao mapa </sup></sub>
 
 ![Signals 6](../Arquivos/Imagens/04_67.png 'Signals 6')
+<sup><sub> Nova função atrelada ao _signal_ </sup></sub>
 
 Por fim, eu incluo uma última alteração no código do meu mapa. Nas linhas 13 e 14, caso o meu mouse esteja na área delimitada pelo Area2D, o jogador não conseguirá incluir blocos novos nessa posição, pois o comando retorna, interrompendo a execução da função neste frame. Isso não acontece para o caso de deleção. Ou seja, o jogador consegue destruir blocos próximos a ele, mas não consegue criar novos.
 
 ![Signals 7](../Arquivos/Imagens/04_68.png 'Signals 7')
-<sup><sub>  </sup></sub>
+<sup><sub> Ajuste no código do mapa </sup></sub>
 
 ![Execução pós mudança](../Arquivos/Imagens/04_69.gif "Execução pós mudança")
-<sup><sub> Nova execução </sup></sub>
+<sup><sub> Execução após os ajustes </sup></sub>
 
 Agora é possível notar que eu exagerei um pouco no tamanho da minha área, principalmente para baixo, e eu mudei o tamanho da área mais a frente para que não inclua o espaço logo abaixo do personagem. De qualquer forma, a deleção e bloqueio pela área estão funcionando normalmente. 
 
