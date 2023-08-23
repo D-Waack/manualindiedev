@@ -7,7 +7,7 @@
 ## Introdução
 _Este capítulo é direcionado para a equipe após a criação do protótipo 0._
 
-Se você chegou aqui inteiro, isso é um ótimo sinal. A criação do protótipo 0 é um dos passos mais difíceis para um iniciante. Mas não se engane, a maior parte do trabalho virá nessa etapa de agora.
+Se você chegou aqui inteiro, isso é um ótimo sinal. A criação do protótipo 0 é um dos passos mais difíceis para um iniciante. Mas não se engane, a maior parte do trabalho virá nessa etapa atual.
 
 Você criou seu protótipo 0 e resolveu vários problemas no caminho. Provavelmente, o que você tem agora não é o ideal, mas já tem uma breve noção de como funcionará o seu jogo. Uma noção do que tem que ser mudado, do que tem que ser adicionado, e de que ainda há muito trabalho pela frente.
 
@@ -28,7 +28,7 @@ Lembrando também que estas são as sugestões de um desenvolvedor que não tem 
 Links para os capítulos:
 
 - [Enredos/Narrativa - Capítulo 8](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo8.md)
-- [Playtesting - Capítlo 7](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md)
+- [_Playtesting_ - Capítulo 7](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md)
 - [Arte/Modelagem - Capítulo 9](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo9.md)
 - [Música/_Sound Design_ - Capítulo 10](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo10.md)
 - [_Level Design_ - Capítulo 12](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo12.md)
@@ -51,9 +51,9 @@ Quando for seguir com este processo, interessa a leitura do capítulo a seguir:
 - [Integrando Diferentes Aspectos - Capítulo 11](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo11.md)
 
 ## Primeiros passos
-Costumo recomendar como primeiro passo que faça uma revisão de seu protótipo 0, e siga com a expansão do projeto a partir dele. Quando fazendo o protótipo 0, a maior preocupação é ter um sistema funcionando para testar sua idiea. Agora, você vai precisar aprimorá-lo para que sirva como base do seu projeto inteiro.
+Costumo recomendar como primeiro passo que faça uma revisão de seu protótipo 0, e siga com a expansão do projeto a partir dele. Quando fazendo o protótipo 0, a maior preocupação é ter um sistema funcionando para testar sua ideia. Agora, você vai precisar aprimorá-lo para que sirva como base do seu projeto inteiro.
 
-Para isso, minha sugestão é que volte por todos os seus _scripts_ e configurações para certificar-se de que está seguindo boas práticas de programação e desenvolvimento, algumas das quais vou listar a seguir. Além dessas, vou citar algumas práticas que se referem ao gerenciamento do projeto em si.
+Para isso, minha sugestão é que volte por todos os seus _scripts_ e configurações para certificar-se de que está seguindo boas práticas de programação e desenvolvimento, algumas das quais listo a seguir. Além dessas, vou citar algumas práticas que se referem ao gerenciamento do projeto em si.
 
 Junto com a revisão do protótipo, é interessante revisar também o _design_ e atualizar seu GDD não somente após essa revisão, mas também a cada novo ciclo.
 
@@ -81,7 +81,7 @@ Sempre inclua comentários quando implementando algo não trivial. Não é neces
 
 Outro detalhe importante é a nomenclatura de suas variáveis e funções. Você é livre para dar o nome que quiser a estes, mas é sempre preferível que esse nome seja claro sobre a função deste objeto. Mesmo um nome simples pode aumentar imensamente a legibilidade de seu código.
 
-Esses cuidados não são apenas para outros desenvolvedores que vão trabalhar no mesmo projeto, mas também para o desenvolvedor que escreveu o código. Certos projetos podem levar meses e até anos para serem finalizados, e a maioria das pessoas não tem a memória boa o suficiente para lembrar cada script de um projeto por meses.
+Esses cuidados não são apenas para outros desenvolvedores que vão trabalhar no mesmo projeto, mas também para o desenvolvedor que escreveu o código. Certos projetos podem levar meses e até anos para serem finalizados, e a maioria das pessoas não tem a memória boa o suficiente para lembrar cada _script_ de um projeto por meses.
 
 - Separe códigos com objetivos diferentes
 
@@ -103,7 +103,7 @@ Fazer _updates_ de posições e valores a cada _frame_ vai causar com que a velo
 
 Isso é algo com o qual eu também peco, pois gosto de incluir diversos _sprites_ e modelos de testes em meus projetos. É importante deletar recursos que não estão sendo utilizados para que não criem dificuldade para navegação do seu projeto, e não inflem o tempo de _build_ do seu jogo desnecessariamente.
 
-É claro, tirá-los do projeto vai impedir que data-miners encontrem os recursos aleatórios e especulem sobre versões antigas do jogo, o que pode ser interessante.
+É claro, tirá-los do projeto vai impedir que _data-miners_ encontrem os recursos aleatórios e especulem sobre versões antigas do jogo, o que pode ser interessante.
 
 - Use _switch cases_ em vez de _else, if_
 
@@ -129,7 +129,7 @@ No geral, é preferível evitar o uso de variáveis e funções globais o máxim
 
 - Não inclua objetos/entidades demais
 
-Encher a sua tela de objetos diversos é um ótimo jeito de destruir a performance do seu jogo. Alguns gêneros de jogos, entretanto, precisam que hajam inúmeros objetos em tela, mas isso gerará maior trabalho de otimização mais a frente.
+Encher a sua tela de objetos diversos é um ótimo jeito de destruir o desempenho do seu jogo. Alguns gêneros de jogos, entretanto, precisam que hajam inúmeros objetos em tela, mas isso gerará maior trabalho de otimização mais a frente.
 
 ## Revisitando o _Design_
 Durante o desenvolvimento do protótipo 0 e da _alfa_, é provavel que você tenha novas ideias para o jogo, ou que chegue a conclusões que ideias que teve anteriormente não serão adequadas ou boas. Nestes casos, você sempre tem a opção de alterar as ideias planejadas no _design_, sejam mecânicas diferentes ou novas, sejam mudanças no cenário, ou quaisquer outras mudanças.
@@ -182,7 +182,7 @@ A maioria das _engines_ vai te oferecer a opção de exportar um executável do 
 
 Essas builds serão muito úteis para _playtesting_, pois podem ser enviadas a terceiros sem que eles tenham acesso ao seu projeto completo. Entretanto, lembre-se de tomar cuidado. Cerfique-se de que confia em todas as pessoas a quem vai mandar essas builds, para que eles não o espalhem sem sua permissão.
 
-Mais sobre isso no capítulo de [playtesting](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md).
+Mais sobre isso no capítulo de [_playtesting_](https://github.com/D-Waack/manualindiedev/blob/main/Capitulos/capitulo7.md).
 
 ## Processo de alfa exemplificado
 Eu comecei o processo da minha alfa com uma breve lista de funções para adicionar ao jogo: menu principal, menu de seleção de fases, _player completo_ (+ arco e flecha, animações, walljumps), mapas, botões diversos na cena do mapa, marcadores de morte, coletáveis, obstáculos, funcionamento do _ranking_, save/load.
@@ -195,7 +195,7 @@ Aqui eu descrevo os passos que tomei para desenvolvimento das diferentes versõe
 - 4: adicionei objetos coletáveis, fiz novos ajustes no _setup_ do mapa principal
 - 5: criei outro mapa de testes, fiz ajustes no mapa, incluindo também um plano de fundo
 - 6: adicionei novos coletáveis, e criei um novo obstáculo (espinhos)
-- 7: fiz um update na tela de vitória para que inclua elementos coletados (e _rankings_), fiz ajustes no script das plataformas para incluir funcionamento de obstáculos, incluí um plano de fundo melhor
+- 7: fiz um update na tela de vitória para que inclua elementos coletados (e _rankings_), fiz ajustes no _script_ das plataformas para incluir funcionamento de obstáculos, incluí um plano de fundo melhor
 - 8: fiz um update para diferentes painéis, além de incluir uma nova plataforma e fazer um ajuste no mapa de testes
 - 9: adicionei a função de _walljump_, fiz um ajuste no coletável _puzzle_, adicionei uma função de retorno da câmera a sua posição inicial, fiz um ajuste provisório para um problema de movimento
 - 10: incluí texturas e funcionalidades para os botões em tela, adicionei um novo botão de pulo
