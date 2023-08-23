@@ -401,7 +401,7 @@ Ao clicar duas vezes em qualquer _signal_, o mesmo cria um nome e pede para sele
 
 Neste exemplo, ele só pode ser conectado ao próprio _Player_. Porém, eu preciso que essa informação chegue ao _script_ do meu mapa. Eu poderia acessar o meu _Player_ através do _script_ do mapa. Mas, uma opção de melhor organização é emitir um novo sinal a partir do meu próprio _Player_. Esse sinal será criado manualmente, já que o sinal de Area2D não existe para um CharacterBody2D (que é o tipo do meu _Player_).
 
-O primeiro passo é declarar o sinal no código. Em seguida, editar o código dos sinais abaixo para emiti-lo. Para cada um, emito o signal como _true_ ou _false_, para que eu possa usar o mesmo sinal para os dois casos.
+O primeiro passo é declarar o sinal no código. Em seguida, editar o código dos sinais abaixo para emiti-lo. Para cada um, emito o _signal_ como _true_ ou _false_, para que eu possa usar o mesmo sinal para os dois casos.
 
 ![Signals 3](../Arquivos/Imagens/04_64.png 'Signals 3')
 <sup><sub> Declarando _signal_ por código </sup></sub>
@@ -409,7 +409,7 @@ O primeiro passo é declarar o sinal no código. Em seguida, editar o código do
 ![Signals 4](../Arquivos/Imagens/04_65.png 'Signals 4')
 <sup><sub> Emitindo _signal_ por código </sup></sub>
 
-Agora, posso pegar este signal que criei no meu _Player_ e usá-lo no meu mapa principal. Uma vez conectado, eu crio uma variável _mouse_on_player_ e a configuro como _false_. Agora, toda vez que o mouse entrar ou sair da Area2D do meu Player, essa emitirá um signal que causará com que o _Player_ emita o signal com _true_ ou _false_, e esse valor será atribuído à variável _mouse_on_player_. 
+Agora, posso pegar este _signal_ que criei no meu _Player_ e usá-lo no meu mapa principal. Uma vez conectado, eu crio uma variável _mouse_on_player_ e a configuro como _false_. Agora, toda vez que o mouse entrar ou sair da Area2D do meu _Player_, essa emitirá um _signal_ que causará com que o _Player_ emita o _signal_ com _true_ ou _false_, e esse valor será atribuído à variável _mouse_on_player_. 
 
 ![Signals 5](../Arquivos/Imagens/04_66.png 'Signals 5')
 <sup><sub> Conectando _signal_ ao mapa </sup></sub>
@@ -448,7 +448,7 @@ Logo, o design revisado do meu jogo é o seguinte: ao início de cada fase, voc�
 
 ### Protótipo 0 v2
 
-Imediatamente eu me ponho a trabalhar nesta segunda versão do meu protótipo. Primeiramente, após certificar-me que o meu backup estava disponível no _github_, desfiz todo o meu _script_ na cena do mapa. Para o meu Player, excluí a Area2D e as funções para os dois sinais, além do sinal que declarei. 
+Imediatamente eu me ponho a trabalhar nesta segunda versão do meu protótipo. Primeiramente, após certificar-me que o meu backup estava disponível no _github_, desfiz todo o meu _script_ na cena do mapa. Para o meu _Player_, excluí a Area2D e as funções para os dois sinais, além do sinal que declarei. 
 
 Além disso, no mapa original, mudei a posição de meu _Player_ para que ele comece a execução caindo. Um detalhe importante sobre essa nova ideia é de que, a princípio, mais do mapa deve estar visível a todo o tempo. Por isso, aumentei a resolução da tela novamente. Também adicionei um novo nó à cena de meu mapa, e o renomeei para "Objects". Este nó vai servir como um _container_ para todos os objetos que incluirei em cada fase.
 
@@ -465,7 +465,7 @@ Agora, eu preciso fazer com que seja possível arrastá-los antes do jogo começ
 ![Nós de controle](../Arquivos/Imagens/04_73.png 'Nós de controle')
 <sup><sub> Nós de controle </sup></sub>  
 
-Criei uma simples textura para este botão e a incluí como a textura do nó relevante. Além disso, incluí a função _ready_ no _script_ do Player, para que seu processo físico seja desativado antes de iniciar a execução do jogo, e ele não se jogue da plataforma imediatamente.
+Criei uma simples textura para este botão e a incluí como a textura do nó relevante. Além disso, incluí a função _ready_ no _script_ do _Player_, para que seu processo físico seja desativado antes de iniciar a execução do jogo, e ele não se jogue da plataforma imediatamente.
 
 ![Script player stop](../Arquivos/Imagens/04_74.png 'Script player stop')
 <sup><sub> Ajuste em função _ready_ </sup></sub>
@@ -475,7 +475,7 @@ Tratando-se dos objetos que devem ser arrastados, ativei a opção _pickable_ em
 ![Opção de arrasto](../Arquivos/Imagens/04_75.png 'Opção de arrasto')
 <sup><sub> Opção de arrasto </sup></sub>
 
-Antes de poder testar se o que eu fiz funcionou, percebo que não consigo ver os objetos, pois a câmera continua centrada no Player, e sequer posso mexê-lo. Por isso, passei a trabalhar na câmera. No próprio _script_ do mapa, na função _ready_, incluo um limite de fundo e de esquerda para a câmera. Esse limite impede que a câmera caia além do fundo da tela, ou vá além do início do mapa. 
+Antes de poder testar se o que fiz funcionou, percebo que não consigo ver os objetos, pois a câmera continua centrada no _Player_, e sequer posso mexê-lo. Por isso, passei a trabalhar na câmera. No próprio _script_ do mapa, na função _ready_, incluo um limite de fundo e de esquerda para a câmera. Esse limite impede que a câmera caia além do fundo da tela, ou vá além do início do mapa. 
 
 ![Câmera inadequada](../Arquivos/Imagens/04_76.png 'Câmera inadequada')
 <sup><sub> Câmera inadequada </sup></sub>
@@ -490,26 +490,26 @@ Ao tentar rodar isso, percebo que os objetos ainda não são arrastáveis. A op�
 ![Script para objetos arrastáveis](../Arquivos/Imagens/04_78.png 'Script para objetos arrastáveis')
 <sup><sub> _Script_ para objetos arrastáveis </sup></sub>
 
-Criei algumas cópias deles, e as incluí na tela. Agora sim conseguimos arrastar os objetos. Porém, permance um problema: Conseguimos arrastar objetos para dentro de outros. Terei que lidar com isso eventualmente.
+Criei algumas cópias deles, e as incluí na tela. Agora, sim, conseguimos arrastar os objetos. Porém, permanece um problema: conseguimos arrastar objetos para dentro de outros. Terei que lidar com isso eventualmente.
 
 ![Gif, Objetos arrastáveis](../Arquivos/Imagens/04_79.gif "Gif, Objetos arrastáveis")
 <sup><sub> Objetos arrastáveis </sup></sub>
 
 Outra coisa que eu gostaria de poder arrastar é a câmera, como em um arrasto (_scroll_) de celular. Isso não é tão simples de implementar, pois não desejo que isso aconteça durante a execução do jogo em si, apenas na etapa de preparação da fase. Para isso, utilizarei um conceito muito importante para o desenvolvimento de jogos, o das máquinas de estado.
 
-Primeiramente, preciso decidir como isso vai funcionar. Minha intenção é que por padrão, arrastar o clique na tela causará com que ocorra o scroll da câmera. Por esse motivo, arrastar objetos deve tomar outro formato. A solução que pensei foi que, caso o jogador pressione/clique a posição do objeto por certo tempo, este irá entrar no modo de arrasto, e a câmera não mudará de posição. Mais a frente, interessa fazer um scroll seletivo da tela (por exemplo, quando o objeto está no canto).
+Primeiramente, preciso decidir como isso vai funcionar. Minha intenção é que, por padrão, arrastar o clique na tela causará com que ocorra o scroll da câmera. Por esse motivo, arrastar objetos deve tomar outro formato. A solução que pensei foi que, caso o jogador pressione/clique a posição do objeto por certo tempo, este irá entrar no modo de arrasto, e a câmera não mudará de posição. Mais a frente, interessa fazer um scroll seletivo da tela (por exemplo, quando o objeto está no canto).
 
 ![Máquina de estados](../Arquivos/Imagens/04_80.png 'Máquina de estados')
 <sup><sub> Máquina de estados </sup></sub>
 
-Dividi a execução da cena em três estados: Prepare, Select, Run. Prepare é o estado padrão, onde você pode fazer o scroll da tela e selecionar objetos. Select é o estado onde você está selecionando um objeto. E Run é o estado para iniciar a execução de cada fase. Mudei o processo para seguir com esses estados, e ali ele se refere a dois novos scripts. Um para a câmera, e outro para o container de objetos.
+Dividi a execução da cena em três estados: _Prepare_, _Select_, _Run_. _Prepare_ é o estado padrão, onde você pode fazer o scroll da tela e selecionar objetos. _Select_ é o estado onde você está selecionando um objeto. E _Run_ é o estado para iniciar a execução de cada fase. Mudei o processo para seguir com esses estados, e ali ele se refere a dois novos _scripts_. Um para a câmera, e outro para o _container_ de objetos.
 
 Primeiramente, alterei o _script_ dos objetos para _apenas_ selecioná-los quando o jogador segura o clique por 0.15 segundos. Isso evita atrapalhar o jogador, selecionando um objeto quando ele deseja apenas fazer o _scroll_ da tela.
 
 ![Script de objetos arrastáveis novo](../Arquivos/Imagens/04_81.png 'Script de objetos arrastáveis novo')
 <sup><sub> _Script_ de objetos arrastáveis </sup></sub>
 
-Se o jogador mover o toque antes do timer acabar, o objeto não é selecionado, e o _scroll_ normal da tela segue. Caso contrário, o objeto é selecionado e arrastado. Em seguida, adicionei um _script_ ao container de objetos. Este simplesmente verifica se algum dos objetos está selecionado. Caso haja algum, marca uma variável como verdadeiro. E caso contrário, esta é marcada como falso.
+Se o jogador mover o toque antes do timer acabar, o objeto não é selecionado, e o _scroll_ normal da tela segue. Caso contrário, o objeto é selecionado e arrastado. Em seguida, adicionei um _script_ ao _container_ de objetos. Este simplesmente verifica se algum dos objetos está selecionado. Caso haja algum, marca uma variável como verdadeiro. E caso contrário, esta é marcada como falso.
 
 ![Script de objetos arrastáveis novo](../Arquivos/Imagens/04_82.png 'Script de objetos arrastáveis novo')
 <sup><sub> Script de objetos arrastáveis novo </sup></sub>
@@ -524,7 +524,7 @@ Dependendo de qual for esse estado, permitimos ou não que a câmera seja arrast
 ![Máquina de estados 3](../Arquivos/Imagens/04_84.png 'Máquina de estados 3')
 <sup><sub> Máquina de estados 3 </sup></sub>
 
-E por fim, o _script_ da câmera é bem simples: Caso a variável _can_drag_ seja verdadeira, fazemos o scroll da tela para o lado onde ela for deslizada. O gif abaixo ilustra os resultados:
+E por fim, o _script_ da câmera é bem simples: caso a variável _can_drag_ seja verdadeira, fazemos o scroll da tela para o lado onde ela for deslizada. O _gif_ abaixo ilustra os resultados:
 
 ![Camera Script](../Arquivos/Imagens/04_85.png 'Camera Script')
 <sup><sub> Script da câmera </sup></sub>
@@ -532,37 +532,37 @@ E por fim, o _script_ da câmera é bem simples: Caso a variável _can_drag_ sej
 ![Gif, Arrasto e Scroll](../Arquivos/Imagens/04_86.gif "Gif, Arrasto e Scroll")
 <sup><sub> Arrasto e scroll </sup></sub>
 
-Agora, resta trabalhar na execução em si. Incluí o botão de _play_ embaixo de um nó _CanvasLayer_, que faz que os objetos abaixo dele sempre estejam presentes na tela. Em seguida, conectei o sinal de clique do botão ao nó de controle principal, e esse ao nó pai do mapa. Ao clicar no botão, a cadeia de _signals_muda o estado no _script_ principal, e permite que o jogo se incie.
+Agora, resta trabalhar na execução em si. Incluí o botão de _play_ embaixo de um nó _CanvasLayer_, que faz que os objetos abaixo dele sempre estejam presentes na tela. Em seguida, conectei o sinal de clique do botão ao nó de controle principal, e esse ao nó pai do mapa. Ao clicar no botão, a cadeia de _signals_muda o estado no _script_ principal, e permite que o jogo se inicie.
 
-Beleza, minha ideia funcionou. É claro, isso ainda não é um jogo. Temos algumas coisas a considerar: Problemas de colisão, um highlight para objetos selecionados, velocidade, _scroll_ da tela, condições de vitória e derrota. E, olhando melhor, percebo que ainda é possível arrastar os objetos durante a execução. Ainda falta bastante para termos um protótipo 0 completo. Mas já temos uma ideia de como esse jogo será.
+Beleza, minha ideia funcionou. É claro, isso ainda não é um jogo. Temos algumas coisas a considerar: problemas de colisão, um _highlight_ para objetos selecionados, velocidade, _scroll_ da tela, condições de vitória e derrota. E, olhando melhor, percebo que ainda é possível arrastar os objetos durante a execução. Ainda falta bastante para termos um protótipo 0 completo. Mas já temos uma ideia de como esse jogo será.
 
 ![Execução completa](../Arquivos/Imagens/04_87.gif "Execução completa")
 <sup><sub> Execução do protótipo </sup></sub>
 
-Primeiramente, conserto o problema que mencionei acima, para que o jogador não possa arrastar objetos ou deslizar a tela durante a execução da fase. Além disso, incluí um _shader_ de contorno nos objetos quando selecionados, adaptado a partir [deste _shader_](https://godotshaders.com/shader/2d-outline-inline/). Lembrando-me de incluir a opção _local_to_scene_ para que o mesmo shader não se aplique a todas as cópias do mesmo objeto em tela.
+Primeiramente, conserto o problema que mencionei acima, para que o jogador não possa arrastar objetos ou deslizar a tela durante a execução da fase. Além disso, incluí um _shader_ de contorno nos objetos quando selecionados, adaptado a partir [deste _shader_](https://godotshaders.com/shader/2d-outline-inline/). Lembrando-me de incluir a opção _local_to_scene_ para que o mesmo _shader_ não se aplique a todas as cópias do mesmo objeto em tela.
 
 ![Condicionais de arrasto](../Arquivos/Imagens/04_89.png 'Condicionais de arrasto')
 <sup><sub> Condicionais para o arrasto </sup></sub>
 
 ![Shader de outline](../Arquivos/Imagens/04_88.png 'Shader de outline')
-<sup><sub> Shader de cotorno </sup></sub>
+<sup><sub> _Shader_ de cotorno </sup></sub>
 
-Decidi incluir também uma condição de derrota, já que eu estou caindo várias vezes no buraco em meus testes, e tenho que resetar o jogo toda vez. No fundo do mapa, incluí um nó do tipo _Marker2D_, que eu nomeei BottomBoundary, e que basicamente marca uma posição. Além disso, incluí uma condição na função _process_, que roda uma função _kill_ do _Player_ caso sua posição Y seja maior do que a posição Y do _Marker2D_.
+Decidi incluir também uma condição de derrota, já que eu estou caindo várias vezes no buraco em meus testes, e tenho que reiniciar o jogo toda vez. No fundo do mapa, incluí um nó do tipo _Marker2D_, que eu nomeei BottomBoundary, e que basicamente marca uma posição. Além disso, incluí uma condição na função _process_, que roda uma função _kill_ do _Player_ caso sua posição Y seja maior do que a posição Y do _Marker2D_.
 
 ![Marker2D](../Arquivos/Imagens/04_90.png 'Marker2D')
 <sup><sub> Configurando limites </sup></sub>
 
 ![Kill caso abaixo do marker](../Arquivos/Imagens/04_91.png 'Kill caso abaixo do marker')
-<sup><sub> Kill caso abaixo do fundo da tela </sup></sub>
+<sup><sub> _Kill_ caso abaixo do fundo da tela </sup></sub>
 
-No Player, a função kill simplesmente desativa seu processo físico, e emite um signal que será reconhecido pelo _script_ do mapa. Você pode pensar que é redundante que o mapa invoque uma função que simplesmente irá emitir um signal para ele mesmo. Mas eu faço isso porque este não será o único meio pelo qual o _Player_ morrerá, então este será interessante para outras situações.
+No _Player_, a função _kill_ simplesmente desativa seu processo físico, e emite um _signal_ que será reconhecido pelo _script_ do mapa. Você pode pensar que é redundante que o mapa invoque uma função que simplesmente irá emitir um _signal_ para ele mesmo. Mas eu faço isso porque este não será o único meio pelo qual o _Player_ morrerá, então este será interessante para outras situações.
 
 ![Função kill](../Arquivos/Imagens/04_92.png 'Função kill')
-<sup><sub> Função Kill </sup></sub>
+<sup><sub> Função _Kill_ </sup></sub>
 
-Minha intenção é que, após o jogador morrer, o jogo imediatamente volte ao estado em que estava antes que isso acontecesse. Ou seja, que o mapa permaneça da maneira que estava para que o jogador possa testar uma iteração nova a partir da anterior. Dessa forma, não faz sentido reiniciar a cena inteira, pois as posições dos objetos seriam resetadas. O que preciso fazer é retornar apenas o jogador (e quaisquer coletáveis) para a posição original deles, e voltar ao estado de edição da fase.
+Minha intenção é que, após o jogador morrer, o jogo imediatamente volte ao estado em que estava antes que isso acontecesse. Ou seja, que o mapa permaneça da maneira que estava para que o jogador possa testar uma iteração nova a partir da anterior. Dessa forma, não faz sentido reiniciar a cena inteira, pois as posições dos objetos seriam reiniciadas. O que preciso fazer é retornar apenas o jogador (e quaisquer coletáveis) para a posição original deles, e voltar ao estado de edição da fase.
 
-Para isso, incluí uma variável que salva a posição inicial do jogador configurada no editor do mapa. Além disso, uma função que retorna o personagem para o lugar original. Não incluirei a câmera, porque provavelmente o ponto de interesse de edição para o jogador será onde ele morreu. Além disso, incluirei um marcador de mortes mais a frente no desenvolvimento. Também mudei o funcionamento da função _block_grabbing_ para levar uma condição _true_ or _false_, para que eu possa reativá-los quando necessário.
+Para isso, incluí uma variável que salva a posição inicial do jogador configurada no editor do mapa. Além disso, uma função que retorna o personagem para o lugar original. Não incluirei a câmera, porque provavelmente o ponto de interesse de edição para o jogador será onde ele morreu. Além disso, incluirei um marcador de mortes mais a frente no desenvolvimento. Também mudei o funcionamento da função _block_grabbing_ para levar uma condição _true_ ou _false_, para que eu possa reativá-los quando necessário.
 
 ![Salvando posição do Player](../Arquivos/Imagens/04_93.png 'Salvando posição do Player')
 <sup><sub> Salvando posição incial </sup></sub>
@@ -572,7 +572,7 @@ Para isso, incluí uma variável que salva a posição inicial do jogador config
 
 Pensando bem, talvez seja interessante fazer com que a câmera volte à posição inicial antes que o personagem passe a se mover. Também vou considerar usar um animador _tween_ para fazer isso mais adiante. Por agora, quero fazer com que objetos não consigam sobrepor um ao outro. E isso causou bastante trabalho e dificuldade, e ainda não está perfeito. Também fiz com que a câmera fizesse o scroll durante a seleção, o que foi bem simples. 
 
-Mais importante que qualquer coisa, falta algo fundamental para que isso se torne um jogo. Nós temos uma condição de derrota, mas não uma de vitória. Fiz um objeto para representar a vitória do jogador. Eu mudo o formato da fase e incluo o objeto _goal_. E dou ao meu _Player_ um nome de classe. Por fim, _Goal_ recebe um _script_ simples. Caso entre um corpo da classe Player, emita um signal de vitória.
+Mais importante que qualquer coisa, falta algo fundamental para que isso se torne um jogo. Nós temos uma condição de derrota, mas não uma de vitória. Fiz um objeto para representar a vitória do jogador. Eu mudo o formato da fase e incluo o objeto _goal_. E dou ao meu _Player_ um nome de classe. Por fim, _Goal_ recebe um _script_ simples. Caso entre um corpo da classe _Player_, emita um _signal_ de vitória.
 
 ![Novo Mapa](../Arquivos/Imagens/04_95.png 'Novo Mapa')
 <sup><sub> Novo mapa </sup></sub>
@@ -586,7 +586,7 @@ Mais importante que qualquer coisa, falta algo fundamental para que isso se torn
 ![Tela de vitória](../Arquivos/Imagens/04_98.png 'Tela de vitória')
 <sup><sub> Função da tela de vitória </sup></sub>
 
-Ao final disso, quando meu _Player_ encostar na bandeia _goal_, a função fará com que o novo painel (ColorRect) que adicionei apareça com a mensagem de vitória. Agora, podemos chamar isso de um jogo. Não é um jogo bom, e não é um jogo completo, mas é um jogo, como pode ver no gif abaixo:
+Ao final disso, quando meu _Player_ encostar na bandeia _goal_, a função fará com que o novo painel (ColorRect) que adicionei apareça com a mensagem de vitória. Agora, podemos chamar isso de um jogo. Não é um jogo bom, e não é um jogo completo, mas é um jogo, como pode ver no _gif_ abaixo:
 
 ![Protótipo 0](../Arquivos/Imagens/04_99.gif "Protótipo 0")
 <sup><sub> Protótipo 0 </sup></sub>
@@ -601,7 +601,7 @@ O objetivo de seu protótipo 0 é testar sua ideia de forma mais concreta do que
 
 Ao final desse capítulo, espero que tenha uma certa ideia de como planejar e executar a criação de seu protótipo 0. Isso não deve ser algo muito formal, e eu não me preocupei muito com boas práticas ou com um processo tão organizado. Meu único objetivo era completar uma simples versão jogável de minha ideia, e o seu deve ser similar a isso.
 
-É claro, isso também se deve ao fato de que o meu é um projeto simples. Se o seu objetivo é criar um MMO RPG, ou um jogo com dúzias de menus, cálculos e opções diferentes, o seu protótipo 0 seria um projeto maior. Mas tente sempre focar apenas nos aspectos fundamentais. Se é um jogo de carta, preocupe-se com fazer os cálculos funcionarem e os objetos interagirem, não em como as cartas se encaixam na tela, ou nos efeitos. Da mesma forma, se o seu RPG tem foco em combate, tem montar uma versão simples desse combate. Etc.
+É claro, isso também se deve ao fato de que o meu é um projeto simples. Se o seu objetivo é criar um MMO RPG, ou um jogo com dúzias de menus, cálculos e opções diferentes, o seu protótipo 0 seria um projeto maior. Mas tente sempre focar apenas nos aspectos fundamentais. Se é um jogo de carta, preocupe-se com fazer os cálculos funcionarem e os objetos interagirem, não em como as cartas se encaixam na tela, ou nos efeitos. Da mesma forma, se o seu RPG tem foco em combate, tente montar uma versão simples desse combate. Etc.
 
 O trabalho de criar esse protótipo inicial não é trivial. E esse é um passo muito importante. Se o seu time é inexperiente, ele vai naturalmente encontrar problemas e dúvidas durante o processo. 
 
