@@ -16,12 +16,12 @@ Enquanto eu não sou qualificado para te dar uma aula sobre narrativas, entendo 
 
 Histórias em jogos costumam vir em diferentes formatos. Os principais são estes citados acima. 
 
-Se você procurar um jogo antigo o suficiente, você vai encontrar a narrativa inteira confiada a uma breve seção no manual em papel que vinha junto com o jogo.
+Se você procurar um jogo antigo o suficiente, você vai encontrar a narrativa inteira confiada a uma breve seção no manual em papel que vinha com o jogo.
 
 ![Manual Super Mario Bros. 3](../Arquivos/Imagens/08_01.jpg 'Manual Super Mario Bros. 3')
 <sup><sub> História no manual de Super Mario Bros. 3 (Nintendo (1988)) </sup></sub>
 
-Isso era perfeito para jogos simples, mas para jogos maiores, que queriam contar histórias mais complexas que evoluiam ao decorrer do jogo, isso não era exatamente uma opção. A solução mais primitiva que os desenvolvedores utilizavam para isso eram as _caixas de diálogo_.
+Isso era perfeito para jogos simples, mas para jogos maiores, que queriam contar histórias mais complexas que evoluíam ao decorrer do jogo, isso não era exatamente uma opção. A solução mais primitiva que os desenvolvedores utilizavam para isso eram as _caixas de diálogo_.
 
 Nas primeiras gerações de jogos, o método mais viável para transmitir informação era puro texto, já que arquivos de áudio tomariam espaço demais para os meios de armazenamento utilizados na época. Jogos como _Final Fantasy_ e _The Legend of Zelda_, que davam importância para sua narrativa, utilizavam caixas de diálogo para contar suas histórias. Estas poderiam expressar falas dos personagens, informações importantes ou narrações.
 
@@ -39,18 +39,18 @@ Hoje em dia, mais de 30 anos depois, este método de _storytelling_ ainda é usa
 ![Botw - Caixa de diálogo](../Arquivos/Imagens/08_05.jpg 'Caixa de Diálogo - Breath of the Wild')
 <sup><sub> Caixa de diálogo - The Legend of Zelda - Breath of the Wild (Nintendo (2017)) </sup></sub>
 
-Atualmente é muito comum encontrar um híbrido entre caixas de diálogo e dublagem. E jogos do gênero _Visual Novel_ são em sua maioria simples sequências gigantescas de caixas de diálogo com ocasionais escolhas. 
+Atualmente é muito comum encontrar um híbrido entre caixas de diálogo e dublagem. E jogos do gênero _Visual Novel_ são, em sua maioria, simples sequências gigantescas de caixas de diálogo com ocasionais escolhas. 
 
 ![Exemplo VN - Steins;Gate](../Arquivos/Imagens/08_06.jpg 'Exemplo VN - Steins;Gate')
 <sup><sub> Exemplo de VN - Steins;Gate (Nitroplus (2009)) </sup></sub>
 
 Além desses casos, caixas de diálogo ainda são usadas mesmo em jogos "completamente dublados" para transmitir diferentes informações como tutoriais e mensagens encontradas no ambiente.
 
-As _Cutscenes_ foram a próxima evolução para apresentação de histórias em jogos. Enquanto você poderia encontrar cutscenes em jogos mais antigos, esse formato foi concretizado com o advento de jogos 3D. Antes disso, jogos como _Kirby_ já contavam suas histórias por meio de animações. Jogos como _Chrono Trigger_ e _Final Fantasy VI_ já experimentavam com formatos cinematográficos e cenas narrativas que ocorriam em tempo real. E alguns jogos utilizavam _slides_ animados para criar esse tipo de efeito cinematográfico.
+As _Cutscenes_ foram a próxima evolução para apresentação de histórias em jogos. Enquanto você poderia encontrar _cutscenes_ em jogos mais antigos, esse formato foi concretizado com o advento de jogos 3D. Antes disso, jogos como _Kirby_ já contavam suas histórias por meio de animações. Jogos como _Chrono Trigger_ e _Final Fantasy VI_ já experimentavam com formatos cinematográficos e cenas narrativas que ocorriam em tempo real. E alguns jogos utilizavam _slides_ animados para criar esse tipo de efeito cinematográfico.
 
 No entanto, com a evolução dos jogos para a terceira dimensão, começamos a ver um foco maior nesse meio de contar histórias. A _cutscene_ é, como o nome implica, uma cena que "corta" o jogo para apresentar um momento de narrativa. Geralmente, uma _cutscene_ interrompe o _flow_ normal do jogo, os personagens passam a se mover sozinhos pelo ambiente, e ocorre algum diálogo.
 
-Nessa época, estas cenas passaram a ser dubladas. Aparecendo no final dos anos 90, esse formato de cena ainda é o meio mais usado para contar histórias em jogos até hoje. É claro, a tecnologia não se manteve a mesma até os dias de hoje. Essas _cutscenes_ evoluiram de cenas criadas no próprio jogo para arquivos de vídeo pré-gravados (FMV - full motion videos que geralmente apresentavam gráficos melhores do que os do jogo), para eventualmente voltarem a serem parte do próprio jogo.
+Nessa época, estas cenas passaram a ser dubladas. Aparecendo no final dos anos 90, esse formato de cena ainda é o meio mais usado para contar histórias em jogos até hoje. É claro, a tecnologia não se manteve a mesma até hoje. Essas _cutscenes_ evoluíram de cenas criadas no próprio jogo para arquivos de vídeo pré-gravados (FMV - _full motion videos_, que geralmente apresentavam gráficos melhores do que os do jogo), para eventualmente voltarem a ser parte do próprio jogo.
 
 Durante os anos, muitos jogos passaram a ser criticados por serem "cinematográficos demais", se assemelhando mais a filmes com cenas interativas entre as _cutscenes_, do que jogos em si. Talvez como uma resposta isso, muitos jogos passaram a oferecer _cutscenes_ interativas, onde o personagem pode se mover (com certa limitação) e interagir com o ambiente durante a cena, aumentando a imersão do jogador durante a experiência. Este formato também é muito usado atualmente.
 
@@ -78,7 +78,7 @@ Existem alguns meios diferentes de descrever uma história. O "enredo", que desc
 
 Na literatura, assim como em filmes, encontramos temas diversos como solidão, justiça, identidade, amadurecimento, vingança, sobrevivência, guerra, entre dúzias de outros. Os jogos seguem a mesma ideia, e apresentam estes mesmos temas. O formato que utilizam para explorar estes temas, porém, podem ou não ser os mesmos. 
 
-A maior diferença entre os outros meios artísticos e os jogos é a _interatividade_. Por causa disso, é possível fazer explorar um tema diretamente através das ações de um jogador. Muitos jogos utilizam artifícios para fazer com que os jogadores se sintam na pele do personagem, podendo explorar temas como solidão, medo, desespero, realização, esforço, perserverança, crescimento, de uma maneira muito mais _real_ do que outros formatos de mídia.
+A maior diferença entre os outros meios artísticos e os jogos é a _interatividade_. Por causa disso, é possível fazer explorar um tema diretamente através das ações de um jogador. Muitos jogos utilizam artifícios para fazer com que os jogadores se sintam na pele do personagem, podendo explorar temas como solidão, medo, desespero, realização, esforço, perseverança, crescimento, de uma maneira muito mais _real_ do que outros formatos de mídia.
 
 Alguns jogos como _Undertale_ ainda utilizam aspectos comuns de jogos para subverter as expectativas do jogador, neste caso para contar uma história de pacifismo e aceitação com muito mais impacto do que outro jogo ou filme que narra sobre violência de uma maneira mais direta.
 
@@ -104,8 +104,8 @@ Você provavelmente já tem isso decidido. O que costuma dar mais trabalho é de
 
 Existem tantas abordagens diferentes para esse tipo de coisa quanto jogos, então eu vou deixar algumas dicas simples:
 
-- Introduza primeiro o _gameplay_, antes de entrar em _backstories_, intrigas políticas, acontecimentos do mundo, motivações dos personanges. Você quer engajar o seu jogador o mais rápido o possível, e ele pouco vai se importar com o seu mundo antes de reconhecer se o jogo é divertido ou não. Uma _cutscene_ de introdução é aceitável, mas tente mantê-la curta.
-- Da mesma forma, tente manter cenas de diálogo e _cutscenes_ relativamente curtas. Se seu jogo for mais focado na narrativa, isso não será um problema, mas se o foco for o _gameplay_, é possível que o jogador não se interesse tanto pela história. Sempre permita que ele pule _cutscenes_, principalmente porque é frustrante jogar um jogo pela segunda vez e ser forçado a assistir a história toda de novo.
+- Introduza primeiro o _gameplay_, antes de entrar em _backstories_, intrigas políticas, acontecimentos do mundo, motivações dos personagens. Você quer engajar o seu jogador o mais rápido o possível, e ele pouco vai se importar com o seu mundo antes de reconhecer se o jogo é divertido ou não. Uma _cutscene_ de introdução é aceitável, mas tente mantê-la curta.
+- Da mesma forma, tente manter cenas de diálogo e _cutscenes_ relativamente curtas. Se seu jogo for mais focado na narrativa, isso não será um problema, mas se o foco for o _gameplay_, é possível que o jogador não se interesse tanto pela história. Sempre permita que ele pule _cutscenes_, principalmente porque é frustrante jogar um jogo pela segunda vez e ser forçado a assistir toda a história de novo.
 - Escolhas os momentos. Após o fim de uma área ou missão é uma boa hora para introduzir uma nova cena calma de exposição, mas no meio de uma batalha não é, a não ser que isso faça sentido no contexto do jogo. 
 - Seja criativo e lembre-se de alternativas. Caixas de diálogo e dublagem não precisam estar atreladas a cenas. Um NPC pode abrir uma caixa de diálogo quando interagir com ele. Personagens podem falar e conversar durante _gameplay_ em jogos dublados. Algo escrito em uma parede, ou um áudio/livro disponível para visualização no jogo pode fazer muito mais sentido do que uma cena onde personagens expõe informações de maneira não natural. 
 
